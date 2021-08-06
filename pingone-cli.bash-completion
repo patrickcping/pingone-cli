@@ -1,0 +1,950 @@
+# pingone-cli completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp pingone-cli.bash-completion /etc/bash-completion.d/pingone-cli
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/pingone-cli.bash-completion ] && source ~/pingone-cli.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_pingone-cli()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["envIDRpAuthenticateGet"]=1
+    operations["envIDRpCallbackProviderTypeGet"]=1
+    operations["environmentsEnvIDExternalAuthenticationsExtAuthIDGet"]=1
+    operations["envIDFlowsFlowIDGet"]=1
+    operations["v1EnvIDFlowsFlowIDPost"]=1
+    operations["envIDFlowsFlowIDPost"]=1
+    operations["envIDAsAuthorizeGet"]=1
+    operations["envIDAsAuthorizePost"]=1
+    operations["envIDAsIntrospectPost"]=1
+    operations["envIDAsJwksGet"]=1
+    operations["envIDAsResumeGet"]=1
+    operations["envIDAsRevokePost"]=1
+    operations["envIDAsSignoffGet"]=1
+    operations["envIDAsTokenPost"]=1
+    operations["envIDAsUserinfoGet"]=1
+    operations["envIDAsUserinfoPost"]=1
+    operations["envIDAsWellKnownOpenidConfigurationGet"]=1
+    operations["envIDSaml20IdpSloGet"]=1
+    operations["envIDSaml20IdpSloPost"]=1
+    operations["envIDSaml20IdpSsoGet"]=1
+    operations["envIDSaml20IdpSsoPost"]=1
+    operations["envIDSaml20IdpStartssoGet"]=1
+    operations["envIDSaml20MetadataAppIDGet"]=1
+    operations["envIDSaml20SpAcsPost"]=1
+    operations["envIDSaml20SpMetadataIdpIDGet"]=1
+    operations["envIDSaml20SpSsoGet"]=1
+    operations["v1EnvironmentsEnvIDActiveIdentityCountsGet"]=1
+    operations["v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet"]=1
+    operations["v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDDelete"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDPut"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesPost"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreeIDLanguagesLangIDRevisionsRevisionIDDelete"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsPost"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsRevisionIDGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDDelete"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsAgreementIDPut"]=1
+    operations["v1EnvironmentsEnvIDAgreementsGet"]=1
+    operations["v1EnvironmentsEnvIDAgreementsPost"]=1
+    operations["v1EnvironmentsEnvIDAlertChannelsAlertChannelIDPut"]=1
+    operations["v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete"]=1
+    operations["v1EnvironmentsEnvIDAlertChannelsGet"]=1
+    operations["v1EnvironmentsEnvIDAlertChannelsPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSecretGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSecretPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDDelete"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppDDelete"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsAppIDPut"]=1
+    operations["v1EnvironmentsEnvIDApplicationsGet"]=1
+    operations["v1EnvironmentsEnvIDApplicationsPost"]=1
+    operations["v1EnvironmentsEnvIDActivitiesActivityIDGet"]=1
+    operations["v1EnvironmentsEnvIDActivitiesGet"]=1
+    operations["v1EnvironmentsEnvIDActivitiesPost"]=1
+    operations["v1EnvironmentsEnvIDApplicationSignonsGet"]=1
+    operations["v1EnvironmentsEnvIDBillOfMaterialsGet"]=1
+    operations["v1EnvironmentsEnvIDBillOfMaterialsPut"]=1
+    operations["v1EnvironmentsEnvIDBrandingSettingsGet"]=1
+    operations["v1EnvironmentsEnvIDBrandingSettingsPut"]=1
+    operations["v1EnvironmentsEnvIDThemesGet"]=1
+    operations["v1EnvironmentsEnvIDThemesPost"]=1
+    operations["v1EnvironmentsEnvIDThemesThemeIDDefaultGet"]=1
+    operations["v1EnvironmentsEnvIDThemesThemeIDDefaultPut"]=1
+    operations["v1EnvironmentsEnvIDThemesThemeIDDelete"]=1
+    operations["v1EnvironmentsEnvIDThemesThemeIDGet"]=1
+    operations["v1EnvironmentsEnvIDThemesThemeIDPut"]=1
+    operations["v1EnvironmentsEnvIDCapabilitiesGet"]=1
+    operations["v1OrganizationsOrgIDCapabilitiesGet"]=1
+    operations["v1EnvironmentsEnvIDCertificatesCertIDApplicationsGet"]=1
+    operations["v1EnvironmentsEnvIDCertificatesCertIDDelete"]=1
+    operations["v1EnvironmentsEnvIDCertificatesCertIDGet"]=1
+    operations["v1EnvironmentsEnvIDCertificatesGet"]=1
+    operations["v1EnvironmentsEnvIDCertificatesPost"]=1
+    operations["v1EnvironmentsEnvIDDecryptionsPost"]=1
+    operations["v1EnvironmentsEnvIDEncryptionsPost"]=1
+    operations["v1EnvironmentsEnvIDKeysGet"]=1
+    operations["v1EnvironmentsEnvIDKeysKeyIDApplicationsGet"]=1
+    operations["v1EnvironmentsEnvIDKeysKeyIDCsrGet"]=1
+    operations["v1EnvironmentsEnvIDKeysKeyIDCsrPut"]=1
+    operations["v1EnvironmentsEnvIDKeysKeyIDDelete"]=1
+    operations["v1EnvironmentsEnvIDKeysKeyIDGet"]=1
+    operations["v1EnvironmentsEnvIDKeysKeyIDPut"]=1
+    operations["v1EnvironmentsEnvIDKeysPost"]=1
+    operations["v1EnvironmentsEnvIDSigningsPost"]=1
+    operations["v1EnvironmentsEnvIDVerificationsPost"]=1
+    operations["v1EnvironmentsEnvIDCustomDomainsDomIDDelete"]=1
+    operations["v1EnvironmentsEnvIDCustomDomainsDomIDGet"]=1
+    operations["v1EnvironmentsEnvIDCustomDomainsDomIDPost"]=1
+    operations["v1EnvironmentsEnvIDCustomDomainsGet"]=1
+    operations["v1EnvironmentsEnvIDCustomDomainsPost"]=1
+    operations["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut"]=1
+    operations["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet"]=1
+    operations["v1EnvironmentsEnvIDDelete"]=1
+    operations["v1EnvironmentsEnvIDGet"]=1
+    operations["v1EnvironmentsEnvIDPut"]=1
+    operations["v1EnvironmentsEnvIDTypePut"]=1
+    operations["v1EnvironmentsGet"]=1
+    operations["v1EnvironmentsPost"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDDelete"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDGet"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGatewayIDPut"]=1
+    operations["v1EnvironmentsEnvIDGatewaysGet"]=1
+    operations["v1EnvironmentsEnvIDGatewaysPost"]=1
+    operations["v1EnvironmentsEnvIDGroupsGet"]=1
+    operations["v1EnvironmentsEnvIDGroupsGroupIDDelete"]=1
+    operations["v1EnvironmentsEnvIDGroupsGroupIDGet"]=1
+    operations["v1EnvironmentsEnvIDGroupsGroupIDPut"]=1
+    operations["v1EnvironmentsEnvIDGroupsPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete"]=1
+    operations["v1EnvironmentsEnvIDPropagationMappingsMappingIDGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationMappingsMappingIDPut"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationPlansGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationPlansPlanIDDelete"]=1
+    operations["v1EnvironmentsEnvIDPropagationPlansPlanIDGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationPlansPlanIDPut"]=1
+    operations["v1EnvironmentsEnvIDPropagationPlansPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationRevisionsIdlatestGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationRevisionsPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationRevisionsPreviousRevisionIDGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationPlansPlanIDRulesGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesRuleIDDelete"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesRuleIDGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationRulesStoreIDPut"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoreMetadataAqueraPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoreMetadataSalesforceContactsPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoreMetadataSalesforcePost"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoreMetadataScimPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoresConnectionStatusPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoresGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoresPost"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoresStoreIDDelete"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoresStoreIDGet"]=1
+    operations["v1EnvironmentsEnvIDPropagationStoresStoreIDPut"]=1
+    operations["v11EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDDelete"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesGet"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDGet"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersGet"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersPost"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDDelete"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDGet"]=1
+    operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut"]=1
+    operations["v1EnvironmentsEnvIDImagesImgIDDelete"]=1
+    operations["v1EnvironmentsEnvIDImagesImgIDGet"]=1
+    operations["v1EnvironmentsEnvIDImagesPost"]=1
+    operations["v1EnvironmentsEnvIDIntegrationsGet"]=1
+    operations["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet"]=1
+    operations["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsGet"]=1
+    operations["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsIntegrationVersionIDAssetGet"]=1
+    operations["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsIntegrationVersionIDGet"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDStatusGet"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDDelete"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDGet"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDPut"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDStatusPost"]=1
+    operations["v1EnvironmentsEnvIDLanguagesGet"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDDelete"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDGet"]=1
+    operations["v1EnvironmentsEnvIDLanguagesLanguageIDPut"]=1
+    operations["v1EnvironmentsEnvIDLanguagesPost"]=1
+    operations["v1OrganizationsOrgIDLicensesGet"]=1
+    operations["v1OrganizationsOrgIDLicensesLicenseIDGet"]=1
+    operations["v1OrganizationsOrgIDLicensesLicenseIDNameGet"]=1
+    operations["v1OrganizationsOrgIDLicensesLicenseIDNamePut"]=1
+    operations["v1EnvironmentsEnvIDMfaSettingsDelete"]=1
+    operations["v1EnvironmentsEnvIDMfaSettingsGet"]=1
+    operations["v1EnvironmentsEnvIDMfaSettingsPut"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsDelete"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsGet"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsPut"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsGet"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsPut"]=1
+    operations["v1EnvironmentsEnvIDTemplatesGet"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDDelete"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDGet"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDPut"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsDelete"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsGet"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsPatch"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameContentsPost"]=1
+    operations["v1EnvironmentsEnvIDTemplatesTemplateNameGet"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsDelete"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsGet"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPhoneDeliverySettingsIdGet"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPhoneDeliverySettingsIdPut"]=1
+    operations["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPost"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIDTrustedEmailsGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsPost"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdDelete"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdPost"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdDelete"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdDkimGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdOwnershipGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdSpfGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsGet"]=1
+    operations["v1EnvironmentsEnvIDEmailDomainsPost"]=1
+    operations["v1OrganizationsGet"]=1
+    operations["v1OrganizationsOrgIDGet"]=1
+    operations["v1EnvironmentsEnvIDPasswordPoliciesGet"]=1
+    operations["v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDGet"]=1
+    operations["v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut"]=1
+    operations["v1EnvironmentsEnvIDPopulationsGet"]=1
+    operations["v1EnvironmentsEnvIDPopulationsPopIDDelete"]=1
+    operations["v1EnvironmentsEnvIDPopulationsPopIDGet"]=1
+    operations["v1EnvironmentsEnvIDPopulationsPopIDPut"]=1
+    operations["v1EnvironmentsEnvIDPopulationsPost"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesGet"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesPost"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"]=1
+    operations["v1EnvironmentsEnvIDResourcesGet"]=1
+    operations["v1EnvironmentsEnvIDResourcesPost"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDDelete"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDGet"]=1
+    operations["v1EnvironmentsEnvIDResourcesResourceIDPut"]=1
+    operations["v1EnvironmentsEnvIDRiskPredictorsGet"]=1
+    operations["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]=1
+    operations["v1EnvironmentsEnvIDRiskEvaluationsPost"]=1
+    operations["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut"]=1
+    operations["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet"]=1
+    operations["v1EnvironmentsEnvIDRiskPolicySetsGet"]=1
+    operations["v1EnvironmentsEnvIDRiskPolicySetsPost"]=1
+    operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]=1
+    operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"]=1
+    operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"]=1
+    operations["v1RolesGet"]=1
+    operations["v1RolesRoleIDGet"]=1
+    operations["v1EnvironmentsEnvIDSchemasGet"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost"]=1
+    operations["v1EnvironmentsEnvIDSchemasSchemaIDGet"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesGet"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDGet"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDPut"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPost"]=1
+    operations["v1Environments9ad15e9e3ac643f7A053D46b87d6c4a7SignOnPoliciesPolicyIDActionsPost"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDDelete"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDGet"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDPut"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsGet"]=1
+    operations["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsPost"]=1
+    operations["v1EnvironmentsEnvIDSubscriptionsGet"]=1
+    operations["v1EnvironmentsEnvIDSubscriptionsPost"]=1
+    operations["v1EnvironmentsEnvIDSubscriptionsSubscriptionIDDelete"]=1
+    operations["v1EnvironmentsEnvIDSubscriptionsSubscriptionIDGet"]=1
+    operations["v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut"]=1
+    operations["v1EnvironmentsEnvIDTotalIdentitiesGet"]=1
+    operations["v1EnvironmentsEnvIDUserActivitiesGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDEnabledGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDEnabledPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"]=1
+    operations["v1EnvironmentsEnvIDUsersGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDLogsPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDNicknamePut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDevicesPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPairingKeysPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDSessionsGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDAgreementConsentsGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPasswordGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPasswordPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPasswordPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPopulationGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPopulationPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet"]=1
+    operations["v1EnvironmentsEnvIDUsersPost"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDDelete"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPatch"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDPut"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet"]=1
+    operations["v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["envIDRpAuthenticateGet"]="envID= providerId= flowId= "
+    operation_parameters["envIDRpCallbackProviderTypeGet"]="envID= providerType= code= state= "
+    operation_parameters["environmentsEnvIDExternalAuthenticationsExtAuthIDGet"]="envID= extAuthID= Cookie: "
+    operation_parameters["envIDFlowsFlowIDGet"]="envID= flowID= Cookie: "
+    operation_parameters["v1EnvIDFlowsFlowIDPost"]="envID= flowID= Content-Type: Cookie: "
+    operation_parameters["envIDFlowsFlowIDPost"]="envID= flowID= Content-Type: Cookie: "
+    operation_parameters["envIDAsAuthorizeGet"]="envID= response_type= client_id= response_mode= scope= state= request= "
+    operation_parameters["envIDAsAuthorizePost"]="envID= Content-Type: "
+    operation_parameters["envIDAsIntrospectPost"]="envID= Content-Type: "
+    operation_parameters["envIDAsJwksGet"]="envID= "
+    operation_parameters["envIDAsResumeGet"]="envID= flowId= Cookie: "
+    operation_parameters["envIDAsRevokePost"]="envID= Content-Type: "
+    operation_parameters["envIDAsSignoffGet"]="envID= id_token_hint= Cookie: "
+    operation_parameters["envIDAsTokenPost"]="envID= Content-Type: "
+    operation_parameters["envIDAsUserinfoGet"]="envID= "
+    operation_parameters["envIDAsUserinfoPost"]="envID= "
+    operation_parameters["envIDAsWellKnownOpenidConfigurationGet"]="envID= "
+    operation_parameters["envIDSaml20IdpSloGet"]="envID= SAMLRequest= RelayState= "
+    operation_parameters["envIDSaml20IdpSloPost"]="envID= Content-Type: "
+    operation_parameters["envIDSaml20IdpSsoGet"]="envID= SAMLRequest= RelayState= "
+    operation_parameters["envIDSaml20IdpSsoPost"]="envID= Content-Type: "
+    operation_parameters["envIDSaml20IdpStartssoGet"]="envID= spEntityId= applicationUrl= Content-Type: "
+    operation_parameters["envIDSaml20MetadataAppIDGet"]="envID= appID= "
+    operation_parameters["envIDSaml20SpAcsPost"]="envID= Content-Type: "
+    operation_parameters["envIDSaml20SpMetadataIdpIDGet"]="envID= idpID= "
+    operation_parameters["envIDSaml20SpSsoGet"]="envID= idpId= flowId= "
+    operation_parameters["v1EnvironmentsEnvIDActiveIdentityCountsGet"]="envID= filter= limit= order= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet"]="envID= filter= limit= order= samplePeriod= Authorization: "
+    operation_parameters["v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet"]="orgID= licenseID= aggregatedBy= limit= order= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesGet"]="envID= agreementID= "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDDelete"]="envID= agreementID= languageID= "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDGet"]="envID= agreementID= languageID= "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDPut"]="envID= agreementID= languageID= Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesPost"]="envID= agreementID= Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreeIDLanguagesLangIDRevisionsRevisionIDDelete"]=""
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsGet"]="envID= agreementID= languageID= "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsPost"]="envID= agreementID= languageID= Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsRevisionIDGet"]="envID= agreementID= languageID= revisionID= "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDDelete"]="envID= agreementID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDGet"]="envID= agreementID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsAgreementIDPut"]="envID= agreementID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAgreementsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAlertChannelsAlertChannelIDPut"]="envID= alertChannelID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete"]="envID= alertChannelsID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAlertChannelsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDAlertChannelsPost"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete"]="envID= appID= samlAttrID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet"]="envID= appID= samlAttrID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut"]="envID= appID= samlAttrID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"]="envID= appID= pushCredID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"]="envID= appID= pushCredID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"]="envID= appID= pushCredID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete"]="envID= appID= grantID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet"]="envID= appID= grantID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut"]="envID= appID= grantID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]="envID= appID= roleAssignmentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"]="envID= appID= roleAssignmentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSecretGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSecretPost"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDDelete"]="envID= appID= SOPAssignmentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDGet"]="envID= appID= SOPAssignmentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut"]="envID= appID= SOPAssignmentID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppDDelete"]="envID= appD= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGet"]="envID= appID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPut"]="envID= appID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDActivitiesActivityIDGet"]="envID= activityID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDActivitiesGet"]="envID= filter= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDActivitiesPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDApplicationSignonsGet"]="envID= limit= samplePeriod= samplePeriodCount= filter= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDBillOfMaterialsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDBillOfMaterialsPut"]="envID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDBrandingSettingsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDBrandingSettingsPut"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDThemesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDThemesPost"]="envID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDThemesThemeIDDefaultGet"]="envID= themeID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDThemesThemeIDDefaultPut"]="envID= themeID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDThemesThemeIDDelete"]="envID= themeID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDThemesThemeIDGet"]="envID= themeID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDThemesThemeIDPut"]="envID= themeID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDCapabilitiesGet"]="envID= Authorization: "
+    operation_parameters["v1OrganizationsOrgIDCapabilitiesGet"]="orgID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCertificatesCertIDApplicationsGet"]="envID= certID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCertificatesCertIDDelete"]="envID= certID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCertificatesCertIDGet"]="envID= certID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCertificatesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCertificatesPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDDecryptionsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEncryptionsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysKeyIDApplicationsGet"]="envID= keyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysKeyIDCsrGet"]="envID= keyID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDKeysKeyIDCsrPut"]="envID= keyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysKeyIDDelete"]="envID= keyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysKeyIDGet"]="envID= keyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysKeyIDPut"]="envID= keyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDKeysPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSigningsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDVerificationsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCustomDomainsDomIDDelete"]="envID= domID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCustomDomainsDomIDGet"]="envID= domID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCustomDomainsDomIDPost"]="envID= domID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCustomDomainsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDCustomDomainsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut"]="envID= deviceAuthPolicyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDDelete"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPut"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTypePut"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsGet"]="Authorization: "
+    operation_parameters["v1EnvironmentsPost"]="Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"]="envID= gatewayID= credentialID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"]="envID= gatewayID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"]="envID= gatewayID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet"]="envID= gatewayID= instanceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete"]="envID= gatewayID= gatewayRoleAssignmentsID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet"]="envID= gatewayID= gatewayRoleAssignmentsID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut"]="envID= gatewayID= gatewayRoleAssignmentsID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet"]="envID= gatewayID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost"]="envID= gatewayID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDDelete"]="envID= gatewayID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDGet"]="envID= gatewayID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDPut"]="envID= gatewayID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGatewaysPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDGroupsGet"]="envID= filter= limit= "
+    operation_parameters["v1EnvironmentsEnvIDGroupsGroupIDDelete"]="envID= groupID= "
+    operation_parameters["v1EnvironmentsEnvIDGroupsGroupIDGet"]="envID= groupID= include= "
+    operation_parameters["v1EnvironmentsEnvIDGroupsGroupIDPut"]="envID= groupID= "
+    operation_parameters["v1EnvironmentsEnvIDGroupsPost"]="envID= "
+    operation_parameters["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete"]="envID= mappingID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationMappingsMappingIDGet"]="envID= mappingID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationMappingsMappingIDPut"]="envID= mappingID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsGet"]="envID= ruleID= Accept: Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsPost"]="envID= ruleID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationPlansGet"]="envID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationPlansPlanIDDelete"]="envID= planID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationPlansPlanIDGet"]="envID= planID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationPlansPlanIDPut"]="envID= planID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationPlansPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRevisionsIdlatestGet"]="envID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRevisionsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRevisionsPreviousRevisionIDGet"]="envID= previousRevisionID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationPlansPlanIDRulesGet"]="envID= planID= Accept: Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesGet"]="envID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesRuleIDDelete"]="envID= ruleID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesRuleIDGet"]="envID= ruleID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationRulesStoreIDPut"]="envID= storeID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoreMetadataAqueraPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoreMetadataSalesforceContactsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoreMetadataSalesforcePost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoreMetadataScimPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoresConnectionStatusPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoresGet"]="envID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoresPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoresStoreIDDelete"]="envID= storeID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoresStoreIDGet"]="envID= storeID= Accept: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPropagationStoresStoreIDPut"]="envID= storeID= Content-Type: Authorization: "
+    operation_parameters["v11EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDDelete"]="envID= providerID= idpAttrID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesGet"]="envID= providerID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDGet"]="envID= providerID= idpAttrID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut"]="envID= providerID= idpAttrID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost"]="envID= providerID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDDelete"]="envID= providerID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDGet"]="envID= providerID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut"]="envID= providerID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDImagesImgIDDelete"]="envID= imgID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDImagesImgIDGet"]="envID= imgID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDImagesPost"]="envID= Content-Type: Content-Disposition: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDIntegrationsGet"]="envID= "
+    operation_parameters["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet"]="envID= integrationID= "
+    operation_parameters["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsGet"]="envID= integrationID= "
+    operation_parameters["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsIntegrationVersionIDAssetGet"]="envID= integrationID= integrationVersionID= "
+    operation_parameters["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsIntegrationVersionIDGet"]="envID= integrationID= integrationVersionID= "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDStatusGet"]="envID= languageID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDDelete"]="envID= languageID= l10nStatusID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDGet"]="envID= languageID= l10nStatusID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDPut"]="envID= languageID= l10nStatusID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDStatusPost"]="envID= languageID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDDelete"]="envID= languageID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDGet"]="envID= languageID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesLanguageIDPut"]="envID= languageID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDLanguagesPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1OrganizationsOrgIDLicensesGet"]="orgID= Authorization: "
+    operation_parameters["v1OrganizationsOrgIDLicensesLicenseIDGet"]="orgID= licenseID= Authorization: "
+    operation_parameters["v1OrganizationsOrgIDLicensesLicenseIDNameGet"]="orgID= licenseID= Authorization: "
+    operation_parameters["v1OrganizationsOrgIDLicensesLicenseIDNamePut"]="orgID= licenseID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDMfaSettingsDelete"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDMfaSettingsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDMfaSettingsPut"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsDelete"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsPut"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsPut"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDDelete"]="envID= templateName= contentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDGet"]="envID= templateName= contentID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDPut"]="envID= templateName= contentID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsDelete"]="envID= templateName= filter= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsGet"]="envID= templateName= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsPatch"]="envID= templateName= filter= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameContentsPost"]="envID= templateName= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTemplatesTemplateNameGet"]="envID= templateName= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsDelete"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPhoneDeliverySettingsIdGet"]="envID= phoneDeliverySettingsId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPhoneDeliverySettingsIdPut"]="envID= phoneDeliverySettingsId= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIDTrustedEmailsGet"]="envID= emailDomainID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsPost"]="envID= emailDomainId= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdDelete"]="envID= emailDomainId= trustedEmailId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdGet"]="envID= emailDomainId= trustedEmailId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdPost"]="envID= emailDomainId= trustedEmailId= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdDelete"]="envID= emailDomainId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdDkimGet"]="envID= emailDomainId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdGet"]="envID= emailDomainId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdOwnershipGet"]="envID= emailDomainId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsEmailDomainIdSpfGet"]="envID= emailDomainId= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDEmailDomainsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1OrganizationsGet"]="Authorization: "
+    operation_parameters["v1OrganizationsOrgIDGet"]="orgID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPasswordPoliciesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDGet"]="envID= passwordPolicyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut"]="envID= passwordPolicyID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPopulationsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPopulationsPopIDDelete"]="envID= popID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPopulationsPopIDGet"]="envID= popID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPopulationsPopIDPut"]="envID= popID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDPopulationsPost"]="envID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet"]="envID= resourceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost"]="envID= resourceID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete"]="envID= resourceID= resourceAttrID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet"]="envID= resourceID= resourceAttrID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut"]="envID= resourceID= resourceAttrID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesGet"]="envID= resourceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesPost"]="envID= resourceID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"]="envID= resourceID= scopeID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"]="envID= resourceID= scopeID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"]="envID= resourceID= scopeID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDDelete"]="envID= resourceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDGet"]="envID= resourceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDPut"]="envID= resourceID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskPredictorsGet"]="envID= "
+    operation_parameters["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]="envID= riskPredictorID= "
+    operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut"]="envID= riskID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet"]="envID= riskID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsPost"]="envID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]="envID= riskPolicySetID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"]="envID= riskPolicySetID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"]="envID= riskPolicySetID= Authorization: Content-Type: "
+    operation_parameters["v1RolesGet"]="Authorization: "
+    operation_parameters["v1RolesRoleIDGet"]="roleID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete"]="envID= schemaID= attributeID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet"]="envID= schemaID= attributeID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch"]="envID= schemaID= attributeID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut"]="envID= schemaID= attributeID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet"]="envID= schemaID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost"]="envID= schemaID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDGet"]="envID= schemaID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete"]="envID= policyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDGet"]="envID= policyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDPut"]="envID= policyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPost"]="envID= Content-Type: Authorization: "
+    operation_parameters["v1Environments9ad15e9e3ac643f7A053D46b87d6c4a7SignOnPoliciesPolicyIDActionsPost"]="policyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDDelete"]="envID= policyID= actionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDGet"]="envID= policyID= actionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDPut"]="envID= policyID= actionID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsGet"]="envID= policyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsPost"]="envID= policyID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSubscriptionsGet"]="envID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSubscriptionsPost"]="envID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSubscriptionsSubscriptionIDDelete"]="envID= subscriptionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSubscriptionsSubscriptionIDGet"]="envID= subscriptionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut"]="envID= subscriptionID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDTotalIdentitiesGet"]="envID= filter= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUserActivitiesGet"]="envID= filter= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDEnabledGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDEnabledPut"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersGet"]="envID= filter= "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDGet"]="envID= userID= include= "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"]="envID= userID= expand= limit= filter= "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"]="envID= userID= groupID= "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"]="envID= userID= groupID= expand= "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost"]="envID= userID= "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete"]="envID= userID= linkedAccountID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDGet"]="envID= userID= linkedAccountID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesDelete"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDDelete"]="envID= userID= deviceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDGet"]="envID= userID= deviceID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDLogsPut"]="envID= userID= deviceID= Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDNicknamePut"]="envID= userID= deviceID= Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDPost"]="envID= userID= deviceID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDevicesPost"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDDelete"]="envID= userID= pairingKeyID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDGet"]="envID= userID= pairingKeyID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPairingKeysPost"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDSessionsGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete"]="envID= userID= sessionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet"]="envID= userID= sessionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPost"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDGet"]="envID= userID= agreementID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDPost"]="envID= userID= agreementID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDAgreementConsentsGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDDelete"]="envID= userID= transactionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDGet"]="envID= userID= transactionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDPut"]="envID= userID= transactionID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPasswordGet"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPasswordPost"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPasswordPut"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPopulationGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPopulationPut"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost"]="envID= userID= Content-Type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete"]="envID= userID= roleAssignmentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet"]="envID= userID= roleAssignmentID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersPost"]="envID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDelete"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet"]="envID= userID= Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut"]="envID= userID= Authorization: Content-Type: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPatch"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPut"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet"]="envID= userID= content-type: Authorization: "
+    operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut"]="envID= userID= content-type: Authorization: "
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the pingone-cli and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # OpenAPI specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _pingone-cli pingone-cli
+
+# ex: ts=4 sw=4 et filetype=sh
