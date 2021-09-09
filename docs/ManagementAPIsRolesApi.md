@@ -18,15 +18,12 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1RolesGet Authorization:value
+pingone-cli v1RolesGet
 ```
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string** |  | [optional] [default to null]
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -34,7 +31,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -53,7 +50,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1RolesRoleIDGet roleID=value Authorization:value
+pingone-cli v1RolesRoleIDGet roleID=value
 ```
 
 ### Parameters
@@ -62,7 +59,6 @@ pingone-cli v1RolesRoleIDGet roleID=value Authorization:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **roleID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -70,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

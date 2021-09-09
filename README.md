@@ -1,8 +1,8 @@
-# PingOne Platform API Bash client
+# PingOne Platform API - Management Bash client
 
 ## Overview
 
-This is a Bash client script for accessing PingOne Platform API service.
+This is a Bash client script for accessing PingOne Platform API - Management service.
 
 The script uses cURL underneath for making all REST calls.
 
@@ -100,32 +100,6 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AuthenticationAPIsExternalAuthenticationApi* | [**envIDRpAuthenticateGet**](docs/AuthenticationAPIsExternalAuthenticationApi.md#envidrpauthenticateget) | **GET** /{envID}/rp/authenticate | READ External Authentication Initialization
-*AuthenticationAPIsExternalAuthenticationApi* | [**envIDRpCallbackProviderTypeGet**](docs/AuthenticationAPIsExternalAuthenticationApi.md#envidrpcallbackprovidertypeget) | **GET** /{envID}/rp/callback/{providerType} | READ External Authentication Callback
-*AuthenticationAPIsExternalAuthenticationApi* | [**environmentsEnvIDExternalAuthenticationsExtAuthIDGet**](docs/AuthenticationAPIsExternalAuthenticationApi.md#environmentsenvidexternalauthenticationsextauthidget) | **GET** /environments/{envID}/externalAuthentications/{extAuthID} | READ External Authentication Status
-*AuthenticationAPIsFlowsFlowsApi* | [**envIDFlowsFlowIDGet**](docs/AuthenticationAPIsFlowsFlowsApi.md#envidflowsflowidget) | **GET** /{envID}/flows/{flowID} | READ Flow
-*AuthenticationAPIsFlowsFlowsApi* | [**v1EnvIDFlowsFlowIDPost**](docs/AuthenticationAPIsFlowsFlowsApi.md#v1envidflowsflowidpost) | **POST** /v1/{envID}/flows/{flowID} | Reset Flow
-*AuthenticationAPIsFlowsRegistrationAndVerificationApi* | [**envIDFlowsFlowIDPost**](docs/AuthenticationAPIsFlowsRegistrationAndVerificationApi.md#envidflowsflowidpost) | **POST** /{envID}/flows/{flowID} | Verify User
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsAuthorizeGet**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasauthorizeget) | **GET** /{envID}/as/authorize | Authorize (Transaction Approval)
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsAuthorizePost**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasauthorizepost) | **POST** /{envID}/as/authorize | Authorize (implicit)
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsIntrospectPost**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasintrospectpost) | **POST** /{envID}/as/introspect | Token Introspection (Refresh Token)
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsJwksGet**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasjwksget) | **GET** /{envID}/as/jwks | READ JWKS
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsResumeGet**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasresumeget) | **GET** /{envID}/as/resume | Resume
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsRevokePost**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasrevokepost) | **POST** /{envID}/as/revoke | Token Revocation
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsSignoffGet**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidassignoffget) | **GET** /{envID}/as/signoff | Signoff
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsTokenPost**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidastokenpost) | **POST** /{envID}/as/token | Token Exchange (Gateway Credential)
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsUserinfoGet**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasuserinfoget) | **GET** /{envID}/as/userinfo | Userinfo
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsUserinfoPost**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidasuserinfopost) | **POST** /{envID}/as/userinfo | Userinfo
-*AuthenticationAPIsOpenIDConnectOAuth2Api* | [**envIDAsWellKnownOpenidConfigurationGet**](docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md#envidaswellknownopenidconfigurationget) | **GET** /{envID}/as/.well-known/openid-configuration | Discovery OpenID Configuration
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20IdpSloGet**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20idpsloget) | **GET** /{envID}/saml20/idp/slo | SAML SLO Using GET
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20IdpSloPost**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20idpslopost) | **POST** /{envID}/saml20/idp/slo | SAML SLO Using POST
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20IdpSsoGet**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20idpssoget) | **GET** /{envID}/saml20/idp/sso | SAML SSO Using GET
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20IdpSsoPost**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20idpssopost) | **POST** /{envID}/saml20/idp/sso | SAML SSO Using POST
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20IdpStartssoGet**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20idpstartssoget) | **GET** /{envID}/saml20/idp/startsso | Identity Provider Initiated SSO
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20MetadataAppIDGet**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20metadataappidget) | **GET** /{envID}/saml20/metadata/{appID} | READ SAML Metadata
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20SpAcsPost**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20spacspost) | **POST** /{envID}/saml20/sp/acs | SAML ACS Endpoint for Identity Provider Initiated Inbound SSO
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20SpMetadataIdpIDGet**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20spmetadataidpidget) | **GET** /{envID}/saml20/sp/metadata/{idpID} | READ SAML Service Provider Metadata
-*AuthenticationAPIsSAML20Api* | [**envIDSaml20SpSsoGet**](docs/AuthenticationAPIsSAML20Api.md#envidsaml20spssoget) | **GET** /{envID}/saml20/sp/sso | Service Provider Initiated Inbound SSO
 *ManagementAPIsActiveIdentityCountsApi* | [**v1EnvironmentsEnvIDActiveIdentityCountsGet**](docs/ManagementAPIsActiveIdentityCountsApi.md#v1environmentsenvidactiveidentitycountsget) | **GET** /v1/environments/{envID}/activeIdentityCounts | READ Active Identity Counts (Deprecated)
 *ManagementAPIsActiveIdentityCountsApi* | [**v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet**](docs/ManagementAPIsActiveIdentityCountsApi.md#v1environmentsenvidmetricsactiveidentitycountsget) | **GET** /v1/environments/{envID}/metrics/activeIdentityCounts | READ Active Identity Counts by Date Range
 *ManagementAPIsActiveIdentityCountsApi* | [**v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet**](docs/ManagementAPIsActiveIdentityCountsApi.md#v1organizationsorgidlicenseslicenseidmetricsactiveidentitycountsget) | **GET** /v1/organizations/{orgID}/licenses/{licenseID}/metrics/activeIdentityCounts | READ Active Identity Counts by License
@@ -344,11 +318,11 @@ Class | Method | HTTP request | Description
 *ManagementAPIsPasswordPoliciesApi* | [**v1EnvironmentsEnvIDPasswordPoliciesGet**](docs/ManagementAPIsPasswordPoliciesApi.md#v1environmentsenvidpasswordpoliciesget) | **GET** /v1/environments/{envID}/passwordPolicies | READ All Password Policies
 *ManagementAPIsPasswordPoliciesApi* | [**v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDGet**](docs/ManagementAPIsPasswordPoliciesApi.md#v1environmentsenvidpasswordpoliciespasswordpolicyidget) | **GET** /v1/environments/{envID}/passwordPolicies/{passwordPolicyID} | READ One Password Policy
 *ManagementAPIsPasswordPoliciesApi* | [**v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut**](docs/ManagementAPIsPasswordPoliciesApi.md#v1environmentsenvidpasswordpoliciespasswordpolicyidput) | **PUT** /v1/environments/{envID}/passwordPolicies/{passwordPolicyID} | UPDATE Password Policy
-*ManagementAPIsPopulationsApi* | [**v1EnvironmentsEnvIDPopulationsGet**](docs/ManagementAPIsPopulationsApi.md#v1environmentsenvidpopulationsget) | **GET** /v1/environments/{envID}/populations | READ All Populations
-*ManagementAPIsPopulationsApi* | [**v1EnvironmentsEnvIDPopulationsPopIDDelete**](docs/ManagementAPIsPopulationsApi.md#v1environmentsenvidpopulationspopiddelete) | **DELETE** /v1/environments/{envID}/populations/{popID} | DELETE Population
-*ManagementAPIsPopulationsApi* | [**v1EnvironmentsEnvIDPopulationsPopIDGet**](docs/ManagementAPIsPopulationsApi.md#v1environmentsenvidpopulationspopidget) | **GET** /v1/environments/{envID}/populations/{popID} | READ One Population
-*ManagementAPIsPopulationsApi* | [**v1EnvironmentsEnvIDPopulationsPopIDPut**](docs/ManagementAPIsPopulationsApi.md#v1environmentsenvidpopulationspopidput) | **PUT** /v1/environments/{envID}/populations/{popID} | UPDATE Population
-*ManagementAPIsPopulationsApi* | [**v1EnvironmentsEnvIDPopulationsPost**](docs/ManagementAPIsPopulationsApi.md#v1environmentsenvidpopulationspost) | **POST** /v1/environments/{envID}/populations | CREATE Population
+*ManagementAPIsPopulationsApi* | [**createPopulation**](docs/ManagementAPIsPopulationsApi.md#createpopulation) | **POST** /v1/environments/{envID}/populations | CREATE Population
+*ManagementAPIsPopulationsApi* | [**deletePopulation**](docs/ManagementAPIsPopulationsApi.md#deletepopulation) | **DELETE** /v1/environments/{envID}/populations/{popID} | DELETE Population
+*ManagementAPIsPopulationsApi* | [**readAllPopulations**](docs/ManagementAPIsPopulationsApi.md#readallpopulations) | **GET** /v1/environments/{envID}/populations | READ All Populations
+*ManagementAPIsPopulationsApi* | [**readOnePopulation**](docs/ManagementAPIsPopulationsApi.md#readonepopulation) | **GET** /v1/environments/{envID}/populations/{popID} | READ One Population
+*ManagementAPIsPopulationsApi* | [**updatePopulation**](docs/ManagementAPIsPopulationsApi.md#updatepopulation) | **PUT** /v1/environments/{envID}/populations/{popID} | UPDATE Population
 *ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesGet**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributesget) | **GET** /v1/environments/{envID}/resources/{resourceID}/attributes | READ All Resource Attributes
 *ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesPost**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributespost) | **POST** /v1/environments/{envID}/resources/{resourceID}/attributes | CREATE Resource Attribute
 *ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributesresourceattriddelete) | **DELETE** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | DELETE Resource Attribute
@@ -427,8 +401,8 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersMFAPairingKeysApi* | [**v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDGet**](docs/ManagementAPIsUsersMFAPairingKeysApi.md#v1environmentsenvidusersuseridpairingkeyspairingkeyidget) | **GET** /v1/environments/{envID}/users/{userID}/pairingKeys/{pairingKeyID} | READ One MFA Pairing Key
 *ManagementAPIsUsersMFAPairingKeysApi* | [**v1EnvironmentsEnvIDUsersUserIDPairingKeysPost**](docs/ManagementAPIsUsersMFAPairingKeysApi.md#v1environmentsenvidusersuseridpairingkeyspost) | **POST** /v1/environments/{envID}/users/{userID}/pairingKeys | CREATE MFA Pairing Key
 *ManagementAPIsUsersSessionsApi* | [**v1EnvironmentsEnvIDUsersUserIDSessionsGet**](docs/ManagementAPIsUsersSessionsApi.md#v1environmentsenvidusersuseridsessionsget) | **GET** /v1/environments/{envID}/users/{userID}/sessions | READ All Sessions
-*ManagementAPIsUsersSessionsApi* | [**v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete**](docs/ManagementAPIsUsersSessionsApi.md#v1environmentsenvidusersuseridsessionssessioniddelete) | **DELETE** /v1/environments/{envID}/users/{userID}/sessions{sessionID} | DELETE Session
-*ManagementAPIsUsersSessionsApi* | [**v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet**](docs/ManagementAPIsUsersSessionsApi.md#v1environmentsenvidusersuseridsessionssessionidget) | **GET** /v1/environments/{envID}/users/{userID}/sessions{sessionID} | READ One Session
+*ManagementAPIsUsersSessionsApi* | [**v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete**](docs/ManagementAPIsUsersSessionsApi.md#v1environmentsenvidusersuseridsessionssessioniddelete) | **DELETE** /v1/environments/{envID}/users/{userID}/sessions/{sessionID} | DELETE Session
+*ManagementAPIsUsersSessionsApi* | [**v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet**](docs/ManagementAPIsUsersSessionsApi.md#v1environmentsenvidusersuseridsessionssessionidget) | **GET** /v1/environments/{envID}/users/{userID}/sessions/{sessionID} | READ One Session
 *ManagementAPIsUsersUserAccountsApi* | [**v1EnvironmentsEnvIDUsersUserIDPost**](docs/ManagementAPIsUsersUserAccountsApi.md#v1environmentsenvidusersuseridpost) | **POST** /v1/environments/{envID}/users/{userID} | User Account Unlock
 *ManagementAPIsUsersUserAgreementConsentsApi* | [**v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDGet**](docs/ManagementAPIsUsersUserAgreementConsentsApi.md#v1environmentsenvidusersuseridagreementconsentsagreementidget) | **GET** /v1/environments/{envID}/users/{userID}/agreementConsents/{agreementID} | READ One User Agreement Consent
 *ManagementAPIsUsersUserAgreementConsentsApi* | [**v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDPost**](docs/ManagementAPIsUsersUserAgreementConsentsApi.md#v1environmentsenvidusersuseridagreementconsentsagreementidpost) | **POST** /v1/environments/{envID}/users/{userID}/agreementConsents/{agreementID} | Revoke Agreement
@@ -459,20 +433,17 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [Error](docs/Error.md)
+ - [ErrorDetails](docs/ErrorDetails.md)
+ - [Population](docs/Population.md)
+ - [Populations](docs/Populations.md)
+ - [PopulationsEmbedded](docs/PopulationsEmbedded.md)
 
 
 ## Documentation For Authorization
 
 
-## basicAuth
-
-- **Type**: HTTP basic authentication
-
-## bearerAuth
-
-- **Type**: HTTP basic authentication
-
-## noauthAuth
+## bearer
 
 - **Type**: HTTP basic authentication
 

@@ -5,8 +5,8 @@ All URIs are relative to **
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**v1EnvironmentsEnvIDUsersUserIDSessionsGet**](ManagementAPIsUsersSessionsApi.md#v1EnvironmentsEnvIDUsersUserIDSessionsGet) | **GET** /v1/environments/{envID}/users/{userID}/sessions | READ All Sessions
-[**v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete**](ManagementAPIsUsersSessionsApi.md#v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete) | **DELETE** /v1/environments/{envID}/users/{userID}/sessions{sessionID} | DELETE Session
-[**v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet**](ManagementAPIsUsersSessionsApi.md#v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet) | **GET** /v1/environments/{envID}/users/{userID}/sessions{sessionID} | READ One Session
+[**v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete**](ManagementAPIsUsersSessionsApi.md#v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete) | **DELETE** /v1/environments/{envID}/users/{userID}/sessions/{sessionID} | DELETE Session
+[**v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet**](ManagementAPIsUsersSessionsApi.md#v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet) | **GET** /v1/environments/{envID}/users/{userID}/sessions/{sessionID} | READ One Session
 
 
 
@@ -19,7 +19,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDSessionsGet envID=value userID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDSessionsGet envID=value userID=value
 ```
 
 ### Parameters
@@ -29,7 +29,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -37,7 +36,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -47,7 +46,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete
+## v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete
 
 DELETE Session
 
@@ -56,7 +55,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete envID=value userID=value sessionID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete envID=value userID=value sessionID=value
 ```
 
 ### Parameters
@@ -67,7 +66,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **sessionID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -75,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -85,7 +83,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet
+## v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet
 
 READ One Session
 
@@ -94,7 +92,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet envID=value userID=value sessionID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet envID=value userID=value sessionID=value
 ```
 
 ### Parameters
@@ -105,7 +103,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **sessionID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -113,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

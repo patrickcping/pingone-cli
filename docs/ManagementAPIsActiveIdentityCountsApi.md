@@ -19,7 +19,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDActiveIdentityCountsGet envID=value Authorization:value  filter=value  limit=value  order=value
+pingone-cli v1EnvironmentsEnvIDActiveIdentityCountsGet envID=value  filter=value  limit=value  order=value
 ```
 
 ### Parameters
@@ -28,7 +28,6 @@ pingone-cli v1EnvironmentsEnvIDActiveIdentityCountsGet envID=value Authorization
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **filter** | **string** |  | [optional] [default to null]
  **limit** | **integer** |  | [optional] [default to null]
  **order** | **string** |  | [optional] [default to null]
@@ -39,7 +38,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -58,7 +57,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet envID=value Authorization:value  filter=value  limit=value  order=value  samplePeriod=value
+pingone-cli v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet envID=value  filter=value  limit=value  order=value  samplePeriod=value
 ```
 
 ### Parameters
@@ -67,7 +66,6 @@ pingone-cli v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet envID=value Author
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **filter** | **string** |  | [optional] [default to null]
  **limit** | **integer** |  | [optional] [default to null]
  **order** | **string** |  | [optional] [default to null]
@@ -79,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -98,7 +96,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet orgID=value licenseID=value Authorization:value  aggregatedBy=value  limit=value  order=value
+pingone-cli v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet orgID=value licenseID=value  aggregatedBy=value  limit=value  order=value
 ```
 
 ### Parameters
@@ -108,7 +106,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgID** | **string** |  | [default to null]
  **licenseID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **aggregatedBy** | **string** |  | [optional] [default to null]
  **limit** | **integer** |  | [optional] [default to null]
  **order** | **string** |  | [optional] [default to null]
@@ -119,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

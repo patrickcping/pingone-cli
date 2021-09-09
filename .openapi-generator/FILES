@@ -1,11 +1,8 @@
 Dockerfile
 README.md
 _pingone-cli
-docs/AuthenticationAPIsExternalAuthenticationApi.md
-docs/AuthenticationAPIsFlowsFlowsApi.md
-docs/AuthenticationAPIsFlowsRegistrationAndVerificationApi.md
-docs/AuthenticationAPIsOpenIDConnectOAuth2Api.md
-docs/AuthenticationAPIsSAML20Api.md
+docs/Error.md
+docs/ErrorDetails.md
 docs/ManagementAPIsActiveIdentityCountsApi.md
 docs/ManagementAPIsAgreementManagementAgreementLanguagesResourcesApi.md
 docs/ManagementAPIsAgreementManagementAgreementRevisionsResourcesApi.md
@@ -83,5 +80,8 @@ docs/ManagementAPIsUsersUserPasswordsApi.md
 docs/ManagementAPIsUsersUserPopulationsApi.md
 docs/ManagementAPIsUsersUserRoleAssignmentsApi.md
 docs/ManagementAPIsUsersUsersApi.md
+docs/Population.md
+docs/Populations.md
+docs/PopulationsEmbedded.md
 pingone-cli
 pingone-cli.bash-completion

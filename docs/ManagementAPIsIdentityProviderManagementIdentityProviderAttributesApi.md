@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v11EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDDelete envID=value providerID=value idpAttrID=value Authorization:value
+pingone-cli v11EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDDelete envID=value providerID=value idpAttrID=value
 ```
 
 ### Parameters
@@ -32,7 +32,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **providerID** | **string** |  | [default to null]
  **idpAttrID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -40,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -59,7 +58,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesGet envID=value providerID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesGet envID=value providerID=value
 ```
 
 ### Parameters
@@ -69,7 +68,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **providerID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -77,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -96,7 +94,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDGet envID=value providerID=value idpAttrID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDGet envID=value providerID=value idpAttrID=value
 ```
 
 ### Parameters
@@ -107,7 +105,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **providerID** | **string** |  | [default to null]
  **idpAttrID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -115,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -134,7 +131,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut envID=value providerID=value idpAttrID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut envID=value providerID=value idpAttrID=value Content-Type:value
 ```
 
 ### Parameters
@@ -146,7 +143,6 @@ Name | Type | Description  | Notes
  **providerID** | **string** |  | [default to null]
  **idpAttrID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -155,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -174,7 +170,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost envID=value providerID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost envID=value providerID=value Content-Type:value
 ```
 
 ### Parameters
@@ -185,7 +181,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **providerID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -194,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

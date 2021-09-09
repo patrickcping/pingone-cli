@@ -296,28 +296,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "envIDRpAuthenticateGet[READ External Authentication Initialization]" \
-            "envIDRpCallbackProviderTypeGet[READ External Authentication Callback]" \
-            "environmentsEnvIDExternalAuthenticationsExtAuthIDGet[READ External Authentication Status]"             "envIDFlowsFlowIDGet[READ Flow]" \
-            "v1EnvIDFlowsFlowIDPost[Reset Flow]"             "envIDFlowsFlowIDPost[Verify User]"             "envIDAsAuthorizeGet[Authorize (Transaction Approval)]" \
-            "envIDAsAuthorizePost[Authorize (implicit)]" \
-            "envIDAsIntrospectPost[Token Introspection (Refresh Token)]" \
-            "envIDAsJwksGet[READ JWKS]" \
-            "envIDAsResumeGet[Resume]" \
-            "envIDAsRevokePost[Token Revocation]" \
-            "envIDAsSignoffGet[Signoff]" \
-            "envIDAsTokenPost[Token Exchange (Gateway Credential)]" \
-            "envIDAsUserinfoGet[Userinfo]" \
-            "envIDAsUserinfoPost[Userinfo]" \
-            "envIDAsWellKnownOpenidConfigurationGet[Discovery OpenID Configuration]"             "envIDSaml20IdpSloGet[SAML SLO Using GET]" \
-            "envIDSaml20IdpSloPost[SAML SLO Using POST]" \
-            "envIDSaml20IdpSsoGet[SAML SSO Using GET]" \
-            "envIDSaml20IdpSsoPost[SAML SSO Using POST]" \
-            "envIDSaml20IdpStartssoGet[Identity Provider Initiated SSO]" \
-            "envIDSaml20MetadataAppIDGet[READ SAML Metadata]" \
-            "envIDSaml20SpAcsPost[SAML ACS Endpoint for Identity Provider Initiated Inbound SSO]" \
-            "envIDSaml20SpMetadataIdpIDGet[READ SAML Service Provider Metadata]" \
-            "envIDSaml20SpSsoGet[Service Provider Initiated Inbound SSO]"             "v1EnvironmentsEnvIDActiveIdentityCountsGet[READ Active Identity Counts (Deprecated)]" \
+            "v1EnvironmentsEnvIDActiveIdentityCountsGet[READ Active Identity Counts (Deprecated)]" \
             "v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet[READ Active Identity Counts by Date Range]" \
             "v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet[READ Active Identity Counts by License]"             "v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesGet[READ All Languages]" \
             "v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDDelete[DELETE Language]" \
@@ -486,11 +465,11 @@ case $state in
             "v1EnvironmentsEnvIDEmailDomainsPost[CREATE Trusted Email Domain]"             "v1OrganizationsGet[READ All Organizations]" \
             "v1OrganizationsOrgIDGet[READ One Organization]"             "v1EnvironmentsEnvIDPasswordPoliciesGet[READ All Password Policies]" \
             "v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDGet[READ One Password Policy]" \
-            "v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut[UPDATE Password Policy]"             "v1EnvironmentsEnvIDPopulationsGet[READ All Populations]" \
-            "v1EnvironmentsEnvIDPopulationsPopIDDelete[DELETE Population]" \
-            "v1EnvironmentsEnvIDPopulationsPopIDGet[READ One Population]" \
-            "v1EnvironmentsEnvIDPopulationsPopIDPut[UPDATE Population]" \
-            "v1EnvironmentsEnvIDPopulationsPost[CREATE Population]"             "v1EnvironmentsEnvIDResourcesResourceIDAttributesGet[READ All Resource Attributes]" \
+            "v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut[UPDATE Password Policy]"             "createPopulation[CREATE Population]" \
+            "deletePopulation[DELETE Population]" \
+            "readAllPopulations[READ All Populations]" \
+            "readOnePopulation[READ One Population]" \
+            "updatePopulation[UPDATE Population]"             "v1EnvironmentsEnvIDResourcesResourceIDAttributesGet[READ All Resource Attributes]" \
             "v1EnvironmentsEnvIDResourcesResourceIDAttributesPost[CREATE Resource Attribute]" \
             "v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete[DELETE Resource Attribute]" \
             "v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet[READ One Resource Attribute]" \
@@ -549,8 +528,8 @@ case $state in
             "v1EnvironmentsEnvIDUsersUserIDDevicesPost[SET Device Order]"             "v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDDelete[DELETE MFA Pairing Key]" \
             "v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDGet[READ One MFA Pairing Key]" \
             "v1EnvironmentsEnvIDUsersUserIDPairingKeysPost[CREATE MFA Pairing Key]"             "v1EnvironmentsEnvIDUsersUserIDSessionsGet[READ All Sessions]" \
-            "v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete[DELETE Session]" \
-            "v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet[READ One Session]"             "v1EnvironmentsEnvIDUsersUserIDPost[User Account Unlock]"             "v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDGet[READ One User Agreement Consent]" \
+            "v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete[DELETE Session]" \
+            "v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet[READ One Session]"             "v1EnvironmentsEnvIDUsersUserIDPost[User Account Unlock]"             "v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDGet[READ One User Agreement Consent]" \
             "v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDPost[Revoke Agreement]" \
             "v1EnvironmentsEnvIDUsersUserIDAgreementConsentsGet[READ All User Agreement Consents]"             "v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsGet[READ All ID Verification Transaction Records for a User]" \
             "v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost[CREATE ID Verification Transaction Record for a User]" \
@@ -577,231 +556,6 @@ case $state in
     ;;
   args)
     case $line[1] in
-      envIDRpAuthenticateGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "providerId=:[QUERY] "
-"flowId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDRpCallbackProviderTypeGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"providerType=:[PATH] "
-          "code=:[QUERY] "
-"state=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      environmentsEnvIDExternalAuthenticationsExtAuthIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"extAuthID=:[PATH] "
-                    "Cookie\::[HEADER] Use this for localhost"
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDFlowsFlowIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"flowID=:[PATH] "
-                    "Cookie\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvIDFlowsFlowIDPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"flowID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-"Cookie\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDFlowsFlowIDPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"flowID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-"Cookie\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsAuthorizeGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "response_type=:[QUERY] "
-"client_id=:[QUERY] "
-"response_mode=:[QUERY] "
-"scope=:[QUERY] "
-"state=:[QUERY] "
-"request=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsAuthorizePost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsIntrospectPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsJwksGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsResumeGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "flowId=:[QUERY] "
-          "Cookie\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsRevokePost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsSignoffGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "id_token_hint=:[QUERY] Required"
-          "Cookie\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsTokenPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsUserinfoGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsUserinfoPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDAsWellKnownOpenidConfigurationGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20IdpSloGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "SAMLRequest=:[QUERY] "
-"RelayState=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20IdpSloPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20IdpSsoGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "SAMLRequest=:[QUERY] "
-"RelayState=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20IdpSsoPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20IdpStartssoGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "spEntityId=:[QUERY] "
-"applicationUrl=:[QUERY] "
-          "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20MetadataAppIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20SpAcsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20SpMetadataIdpIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"idpID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      envIDSaml20SpSsoGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "idpId=:[QUERY] "
-"flowId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       v1EnvironmentsEnvIDActiveIdentityCountsGet)
         local -a _op_arguments
         _op_arguments=(
@@ -809,8 +563,7 @@ case $state in
           "filter=:[QUERY] "
 "limit=:[QUERY] "
 "order=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDMetricsActiveIdentityCountsGet)
@@ -821,8 +574,7 @@ case $state in
 "limit=:[QUERY] "
 "order=:[QUERY] "
 "samplePeriod=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsOrgIDLicensesLicenseIDMetricsActiveIdentityCountsGet)
@@ -833,8 +585,7 @@ case $state in
           "aggregatedBy=:[QUERY] "
 "limit=:[QUERY] "
 "order=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesGet)
@@ -922,8 +673,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "agreementID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAgreementsAgreementIDGet)
@@ -931,8 +681,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "agreementID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAgreementsAgreementIDPut)
@@ -941,7 +690,6 @@ case $state in
           "envID=:[PATH] "
 "agreementID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -949,8 +697,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAgreementsPost)
@@ -958,7 +705,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -967,8 +713,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "alertChannelID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete)
@@ -976,24 +721,21 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "alertChannelsID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAlertChannelsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDAlertChannelsPost)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDAttributesGet)
@@ -1001,8 +743,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDAttributesPost)
@@ -1011,7 +752,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1021,8 +761,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "samlAttrID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet)
@@ -1031,8 +770,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "samlAttrID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut)
@@ -1042,7 +780,6 @@ case $state in
 "appID=:[PATH] "
 "samlAttrID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1051,8 +788,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost)
@@ -1061,7 +797,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1081,8 +816,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "pushCredID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
@@ -1092,7 +826,6 @@ case $state in
 "appID=:[PATH] "
 "pushCredID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1101,8 +834,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete)
@@ -1111,8 +843,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "grantID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet)
@@ -1121,8 +852,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "grantID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut)
@@ -1132,7 +862,6 @@ case $state in
 "appID=:[PATH] "
 "grantID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1142,7 +871,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1151,8 +879,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost)
@@ -1161,7 +888,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1171,8 +897,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "roleAssignmentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet)
@@ -1181,8 +906,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "roleAssignmentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDSecretGet)
@@ -1190,8 +914,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDSecretPost)
@@ -1200,7 +923,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1209,8 +931,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost)
@@ -1219,7 +940,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1229,8 +949,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "SOPAssignmentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDGet)
@@ -1239,8 +958,7 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "SOPAssignmentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut)
@@ -1250,7 +968,6 @@ case $state in
 "appID=:[PATH] "
 "SOPAssignmentID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1260,7 +977,6 @@ case $state in
           "envID=:[PATH] "
 "appD=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1269,8 +985,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsAppIDPut)
@@ -1279,7 +994,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1287,8 +1001,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDApplicationsPost)
@@ -1296,7 +1009,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1305,8 +1017,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "activityID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDActivitiesGet)
@@ -1314,8 +1025,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
           "filter=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDActivitiesPost)
@@ -1323,7 +1033,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1335,24 +1044,21 @@ case $state in
 "samplePeriod=:[QUERY] "
 "samplePeriodCount=:[QUERY] "
 "filter=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDBillOfMaterialsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDBillOfMaterialsPut)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1441,16 +1147,14 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsOrgIDCapabilitiesGet)
         local -a _op_arguments
         _op_arguments=(
           "orgID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCertificatesCertIDApplicationsGet)
@@ -1458,8 +1162,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "certID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCertificatesCertIDDelete)
@@ -1467,8 +1170,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "certID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCertificatesCertIDGet)
@@ -1476,16 +1178,14 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "certID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCertificatesGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCertificatesPost)
@@ -1493,7 +1193,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1502,7 +1201,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1511,7 +1209,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1519,8 +1216,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDKeysKeyIDApplicationsGet)
@@ -1528,8 +1224,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "keyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDKeysKeyIDCsrGet)
@@ -1537,8 +1232,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "keyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1548,7 +1242,6 @@ case $state in
           "envID=:[PATH] "
 "keyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1557,8 +1250,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "keyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDKeysKeyIDGet)
@@ -1567,7 +1259,6 @@ case $state in
           "envID=:[PATH] "
 "keyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1577,7 +1268,6 @@ case $state in
           "envID=:[PATH] "
 "keyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1586,7 +1276,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1595,7 +1284,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1604,7 +1292,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1613,8 +1300,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "domID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCustomDomainsDomIDGet)
@@ -1622,8 +1308,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "domID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCustomDomainsDomIDPost)
@@ -1632,7 +1317,6 @@ case $state in
           "envID=:[PATH] "
 "domID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1640,8 +1324,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDCustomDomainsPost)
@@ -1649,7 +1332,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1659,7 +1341,6 @@ case $state in
           "envID=:[PATH] "
 "deviceAuthPolicyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1667,24 +1348,21 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDDelete)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDPut)
@@ -1692,7 +1370,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1701,22 +1378,19 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsGet)
         local -a _op_arguments
         _op_arguments=(
-                              "Authorization\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsPost)
         local -a _op_arguments
         _op_arguments=(
                               "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1726,8 +1400,7 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
 "credentialID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost)
@@ -1736,7 +1409,6 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1745,8 +1417,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet)
@@ -1755,8 +1426,7 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
 "instanceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete)
@@ -1765,8 +1435,7 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
 "gatewayRoleAssignmentsID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet)
@@ -1775,8 +1444,7 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
 "gatewayRoleAssignmentsID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut)
@@ -1786,7 +1454,6 @@ case $state in
 "gatewayID=:[PATH] "
 "gatewayRoleAssignmentsID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1795,8 +1462,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost)
@@ -1805,7 +1471,6 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1814,8 +1479,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDGet)
@@ -1823,8 +1487,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysGatewayIDPut)
@@ -1833,7 +1496,6 @@ case $state in
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1841,8 +1503,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDGatewaysPost)
@@ -1850,7 +1511,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1901,7 +1561,6 @@ case $state in
           "envID=:[PATH] "
 "mappingID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1911,7 +1570,6 @@ case $state in
           "envID=:[PATH] "
 "mappingID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1921,7 +1579,6 @@ case $state in
           "envID=:[PATH] "
 "mappingID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1932,7 +1589,6 @@ case $state in
 "ruleID=:[PATH] "
                     "Accept\::[HEADER] "
 "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1942,7 +1598,6 @@ case $state in
           "envID=:[PATH] "
 "ruleID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1951,7 +1606,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1961,7 +1615,6 @@ case $state in
           "envID=:[PATH] "
 "planID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1971,7 +1624,6 @@ case $state in
           "envID=:[PATH] "
 "planID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1981,7 +1633,6 @@ case $state in
           "envID=:[PATH] "
 "planID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1990,7 +1641,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1999,7 +1649,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2008,7 +1657,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2018,7 +1666,6 @@ case $state in
           "envID=:[PATH] "
 "previousRevisionID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2029,7 +1676,6 @@ case $state in
 "planID=:[PATH] "
                     "Accept\::[HEADER] "
 "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2047,7 +1693,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2057,7 +1702,6 @@ case $state in
           "envID=:[PATH] "
 "ruleID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2067,7 +1711,6 @@ case $state in
           "envID=:[PATH] "
 "ruleID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2077,7 +1720,6 @@ case $state in
           "envID=:[PATH] "
 "storeID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2086,7 +1728,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2095,7 +1736,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2104,7 +1744,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2113,7 +1752,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2122,7 +1760,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2131,7 +1768,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2140,7 +1776,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2150,7 +1785,6 @@ case $state in
           "envID=:[PATH] "
 "storeID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2160,7 +1794,6 @@ case $state in
           "envID=:[PATH] "
 "storeID=:[PATH] "
                     "Accept\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2170,7 +1803,6 @@ case $state in
           "envID=:[PATH] "
 "storeID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2180,8 +1812,7 @@ case $state in
           "envID=:[PATH] "
 "providerID=:[PATH] "
 "idpAttrID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesGet)
@@ -2189,8 +1820,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "providerID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDGet)
@@ -2199,8 +1829,7 @@ case $state in
           "envID=:[PATH] "
 "providerID=:[PATH] "
 "idpAttrID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut)
@@ -2210,7 +1839,6 @@ case $state in
 "providerID=:[PATH] "
 "idpAttrID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2220,7 +1848,6 @@ case $state in
           "envID=:[PATH] "
 "providerID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2228,8 +1855,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIdentityProvidersPost)
@@ -2237,7 +1863,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2246,8 +1871,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "providerID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIdentityProvidersProviderIDGet)
@@ -2255,8 +1879,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "providerID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIdentityProvidersProviderIDPut)
@@ -2265,7 +1888,6 @@ case $state in
           "envID=:[PATH] "
 "providerID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2274,8 +1896,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "imgID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDImagesImgIDGet)
@@ -2283,8 +1904,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "imgID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDImagesPost)
@@ -2293,7 +1913,6 @@ case $state in
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
 "Content-Disposition\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2343,8 +1962,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "languageID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDDelete)
@@ -2353,8 +1971,7 @@ case $state in
           "envID=:[PATH] "
 "languageID=:[PATH] "
 "l10nStatusID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDGet)
@@ -2363,8 +1980,7 @@ case $state in
           "envID=:[PATH] "
 "languageID=:[PATH] "
 "l10nStatusID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDPut)
@@ -2374,7 +1990,6 @@ case $state in
 "languageID=:[PATH] "
 "l10nStatusID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2384,7 +1999,6 @@ case $state in
           "envID=:[PATH] "
 "languageID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2392,8 +2006,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDLanguagesLanguageIDDelete)
@@ -2401,8 +2014,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "languageID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDLanguagesLanguageIDGet)
@@ -2410,8 +2022,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "languageID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDLanguagesLanguageIDPut)
@@ -2420,7 +2031,6 @@ case $state in
           "envID=:[PATH] "
 "languageID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2429,7 +2039,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2437,8 +2046,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "orgID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsOrgIDLicensesLicenseIDGet)
@@ -2446,8 +2054,7 @@ case $state in
         _op_arguments=(
           "orgID=:[PATH] "
 "licenseID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsOrgIDLicensesLicenseIDNameGet)
@@ -2455,8 +2062,7 @@ case $state in
         _op_arguments=(
           "orgID=:[PATH] "
 "licenseID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsOrgIDLicensesLicenseIDNamePut)
@@ -2465,7 +2071,6 @@ case $state in
           "orgID=:[PATH] "
 "licenseID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2473,40 +2078,35 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDMfaSettingsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDMfaSettingsPut)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsDelete)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsPut)
@@ -2514,7 +2114,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2522,8 +2121,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsPut)
@@ -2531,7 +2129,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2539,8 +2136,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDDelete)
@@ -2549,8 +2145,7 @@ case $state in
           "envID=:[PATH] "
 "templateName=:[PATH] "
 "contentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDGet)
@@ -2560,7 +2155,6 @@ case $state in
 "templateName=:[PATH] "
 "contentID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2571,7 +2165,6 @@ case $state in
 "templateName=:[PATH] "
 "contentID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2581,8 +2174,7 @@ case $state in
           "envID=:[PATH] "
 "templateName=:[PATH] "
           "filter=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDTemplatesTemplateNameContentsGet)
@@ -2590,8 +2182,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "templateName=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDTemplatesTemplateNameContentsPatch)
@@ -2600,8 +2191,7 @@ case $state in
           "envID=:[PATH] "
 "templateName=:[PATH] "
           "filter=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDTemplatesTemplateNameContentsPost)
@@ -2610,7 +2200,6 @@ case $state in
           "envID=:[PATH] "
 "templateName=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2619,24 +2208,21 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "templateName=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsDelete)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPhoneDeliverySettingsIdGet)
@@ -2644,8 +2230,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "phoneDeliverySettingsId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPhoneDeliverySettingsIdPut)
@@ -2654,7 +2239,6 @@ case $state in
           "envID=:[PATH] "
 "phoneDeliverySettingsId=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2663,7 +2247,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2672,8 +2255,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "emailDomainID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsPost)
@@ -2682,7 +2264,6 @@ case $state in
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2692,8 +2273,7 @@ case $state in
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
 "trustedEmailId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdGet)
@@ -2702,8 +2282,7 @@ case $state in
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
 "trustedEmailId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdPost)
@@ -2713,7 +2292,6 @@ case $state in
 "emailDomainId=:[PATH] "
 "trustedEmailId=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2722,8 +2300,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdDkimGet)
@@ -2731,8 +2308,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdGet)
@@ -2740,8 +2316,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdOwnershipGet)
@@ -2749,8 +2324,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsEmailDomainIdSpfGet)
@@ -2758,16 +2332,14 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "emailDomainId=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDEmailDomainsPost)
@@ -2775,31 +2347,27 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsGet)
         local -a _op_arguments
         _op_arguments=(
-                              "Authorization\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1OrganizationsOrgIDGet)
         local -a _op_arguments
         _op_arguments=(
           "orgID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDPasswordPoliciesGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDGet)
@@ -2807,8 +2375,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "passwordPolicyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut)
@@ -2817,52 +2384,48 @@ case $state in
           "envID=:[PATH] "
 "passwordPolicyID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDPopulationsGet)
+      createPopulation)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
+                    "content-type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDPopulationsPopIDDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"popID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDPopulationsPopIDGet)
+      deletePopulation)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "popID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDPopulationsPopIDPut)
+      readAllPopulations)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+          "limit=:[QUERY] Adding a paging value to limit the number of resources displayed per page"
+"filter=:[QUERY] Adding a SCIM filter for a population ID or population name to display only those resources associated with the specified population. Only the id and name parameters are supported"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOnePopulation)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"popID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePopulation)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "popID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDPopulationsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2871,8 +2434,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "resourceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDAttributesPost)
@@ -2881,7 +2443,6 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2891,8 +2452,7 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
 "resourceAttrID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet)
@@ -2901,8 +2461,7 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
 "resourceAttrID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut)
@@ -2912,7 +2471,6 @@ case $state in
 "resourceID=:[PATH] "
 "resourceAttrID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2921,8 +2479,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "resourceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDScopesPost)
@@ -2931,7 +2488,6 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2941,8 +2497,7 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
 "scopeID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet)
@@ -2951,8 +2506,7 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
 "scopeID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut)
@@ -2962,7 +2516,6 @@ case $state in
 "resourceID=:[PATH] "
 "scopeID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2970,8 +2523,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesPost)
@@ -2979,7 +2531,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2988,8 +2539,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "resourceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDGet)
@@ -2997,8 +2547,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "resourceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDPut)
@@ -3007,7 +2556,6 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3031,7 +2579,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3041,7 +2588,6 @@ case $state in
           "envID=:[PATH] "
 "riskID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3050,24 +2596,21 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "riskID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDRiskPolicySetsGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDRiskPolicySetsPost)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3076,8 +2619,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "riskPolicySetID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet)
@@ -3085,8 +2627,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "riskPolicySetID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut)
@@ -3094,32 +2635,28 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "riskPolicySetID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1RolesGet)
         local -a _op_arguments
         _op_arguments=(
-                              "Authorization\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1RolesRoleIDGet)
         local -a _op_arguments
         _op_arguments=(
           "roleID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSchemasGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete)
@@ -3129,7 +2666,6 @@ case $state in
 "schemaID=:[PATH] "
 "attributeID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3139,8 +2675,7 @@ case $state in
           "envID=:[PATH] "
 "schemaID=:[PATH] "
 "attributeID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch)
@@ -3150,7 +2685,6 @@ case $state in
 "schemaID=:[PATH] "
 "attributeID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3161,7 +2695,6 @@ case $state in
 "schemaID=:[PATH] "
 "attributeID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3170,8 +2703,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "schemaID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost)
@@ -3180,7 +2712,6 @@ case $state in
           "envID=:[PATH] "
 "schemaID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3189,16 +2720,14 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "schemaID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete)
@@ -3206,8 +2735,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "policyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesPolicyIDGet)
@@ -3215,8 +2743,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "policyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesPolicyIDPut)
@@ -3225,7 +2752,6 @@ case $state in
           "envID=:[PATH] "
 "policyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3234,7 +2760,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3243,7 +2768,6 @@ case $state in
         _op_arguments=(
           "policyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3253,8 +2777,7 @@ case $state in
           "envID=:[PATH] "
 "policyID=:[PATH] "
 "actionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDGet)
@@ -3263,8 +2786,7 @@ case $state in
           "envID=:[PATH] "
 "policyID=:[PATH] "
 "actionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDPut)
@@ -3274,7 +2796,6 @@ case $state in
 "policyID=:[PATH] "
 "actionID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3283,8 +2804,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "policyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsPost)
@@ -3293,7 +2813,6 @@ case $state in
           "envID=:[PATH] "
 "policyID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3301,8 +2820,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSubscriptionsPost)
@@ -3310,7 +2828,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3319,8 +2836,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "subscriptionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSubscriptionsSubscriptionIDGet)
@@ -3328,8 +2844,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "subscriptionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut)
@@ -3338,7 +2853,6 @@ case $state in
           "envID=:[PATH] "
 "subscriptionID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3347,8 +2861,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
           "filter=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUserActivitiesGet)
@@ -3356,8 +2869,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
           "filter=:[QUERY] "
-          "Authorization\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDEnabledGet)
@@ -3365,8 +2877,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDEnabledPut)
@@ -3375,7 +2886,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3384,8 +2894,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut)
@@ -3394,7 +2903,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3458,8 +2966,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete)
@@ -3468,8 +2975,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "linkedAccountID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDGet)
@@ -3478,8 +2984,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "linkedAccountID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDDevicesDelete)
@@ -3488,7 +2993,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3498,8 +3002,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "deviceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDGet)
@@ -3508,8 +3011,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "deviceID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDLogsPut)
@@ -3539,7 +3041,6 @@ case $state in
 "userID=:[PATH] "
 "deviceID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3548,8 +3049,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDDevicesPost)
@@ -3558,7 +3058,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3568,8 +3067,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "pairingKeyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDGet)
@@ -3578,8 +3076,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "pairingKeyID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3589,7 +3086,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3598,28 +3094,25 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDSessionssessionIDDelete)
+      v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
 "sessionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDSessionssessionIDGet)
+      v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDGet)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
 "sessionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDPost)
@@ -3628,7 +3121,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3638,8 +3130,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "agreementID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDAgreementConsentsAgreementIDPost)
@@ -3648,8 +3139,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "agreementID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3658,8 +3148,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsGet)
@@ -3667,8 +3156,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost)
@@ -3677,7 +3165,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3687,8 +3174,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "transactionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDGet)
@@ -3697,8 +3183,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "transactionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDPut)
@@ -3707,8 +3192,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "transactionID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDPasswordGet)
@@ -3717,7 +3201,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3727,7 +3210,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3737,7 +3219,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3746,8 +3227,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDPopulationPut)
@@ -3756,7 +3236,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3765,8 +3244,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost)
@@ -3775,7 +3253,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3785,8 +3262,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "roleAssignmentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet)
@@ -3795,8 +3271,7 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
 "roleAssignmentID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersPost)
@@ -3804,7 +3279,6 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3813,8 +3287,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet)
@@ -3822,8 +3295,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-)
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut)
@@ -3831,8 +3303,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
-                    "Authorization\::[HEADER] "
-"Content-Type\::[HEADER] "
+                    "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3842,7 +3313,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3852,7 +3322,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3862,7 +3331,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3872,7 +3340,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "content-type\::[HEADER] "
-"Authorization\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

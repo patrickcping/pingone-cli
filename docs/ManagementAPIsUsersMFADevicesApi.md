@@ -24,7 +24,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDelete envID=value userID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDelete envID=value userID=value Content-Type:value
 ```
 
 ### Parameters
@@ -35,7 +35,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -43,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -62,7 +61,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDDelete envID=value userID=value deviceID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDDelete envID=value userID=value deviceID=value
 ```
 
 ### Parameters
@@ -73,7 +72,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **deviceID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -81,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -100,7 +98,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDGet envID=value userID=value deviceID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDGet envID=value userID=value deviceID=value
 ```
 
 ### Parameters
@@ -111,7 +109,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **deviceID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -119,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -158,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -197,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -216,7 +213,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDPost envID=value userID=value deviceID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDPost envID=value userID=value deviceID=value Content-Type:value
 ```
 
 ### Parameters
@@ -228,7 +225,6 @@ Name | Type | Description  | Notes
  **userID** | **string** |  | [default to null]
  **deviceID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -237,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -256,7 +252,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesGet envID=value userID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesGet envID=value userID=value
 ```
 
 ### Parameters
@@ -266,7 +262,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -274,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -293,7 +288,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesPost envID=value userID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDevicesPost envID=value userID=value Content-Type:value
 ```
 
 ### Parameters
@@ -304,7 +299,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -313,7 +307,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

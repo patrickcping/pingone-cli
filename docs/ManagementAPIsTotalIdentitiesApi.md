@@ -17,7 +17,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDTotalIdentitiesGet envID=value Authorization:value  filter=value
+pingone-cli v1EnvironmentsEnvIDTotalIdentitiesGet envID=value  filter=value
 ```
 
 ### Parameters
@@ -26,7 +26,6 @@ pingone-cli v1EnvironmentsEnvIDTotalIdentitiesGet envID=value Authorization:valu
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **filter** | **string** |  | [optional] [default to null]
 
 ### Return type
@@ -35,7 +34,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

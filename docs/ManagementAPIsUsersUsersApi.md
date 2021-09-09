@@ -24,7 +24,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersPost envID=value content-type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersPost envID=value content-type:value
 ```
 
 ### Parameters
@@ -34,7 +34,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -43,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -62,7 +61,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDDelete envID=value userID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDDelete envID=value userID=value
 ```
 
 ### Parameters
@@ -72,7 +71,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -80,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -99,7 +97,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet envID=value userID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet envID=value userID=value
 ```
 
 ### Parameters
@@ -109,7 +107,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -117,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -136,7 +133,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut envID=value userID=value Authorization:value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut envID=value userID=value Content-Type:value
 ```
 
 ### Parameters
@@ -146,7 +143,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
@@ -156,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -175,7 +171,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDPatch envID=value userID=value content-type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDPatch envID=value userID=value content-type:value
 ```
 
 ### Parameters
@@ -186,7 +182,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -195,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -214,7 +209,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDPut envID=value userID=value content-type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDPut envID=value userID=value content-type:value
 ```
 
 ### Parameters
@@ -225,7 +220,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -234,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -253,7 +247,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet envID=value userID=value content-type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet envID=value userID=value content-type:value
 ```
 
 ### Parameters
@@ -264,7 +258,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -272,7 +265,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -291,7 +284,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut envID=value userID=value content-type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut envID=value userID=value content-type:value
 ```
 
 ### Parameters
@@ -302,7 +295,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -311,7 +303,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

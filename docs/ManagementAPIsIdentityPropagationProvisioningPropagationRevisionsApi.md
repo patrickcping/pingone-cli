@@ -19,7 +19,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationRevisionsIdlatestGet envID=value Accept:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationRevisionsIdlatestGet envID=value Accept:value
 ```
 
 ### Parameters
@@ -29,7 +29,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **accept** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -37,7 +36,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -56,7 +55,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationRevisionsPost envID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationRevisionsPost envID=value Content-Type:value
 ```
 
 ### Parameters
@@ -66,7 +65,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -74,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -93,7 +91,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationRevisionsPreviousRevisionIDGet envID=value previousRevisionID=value Accept:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationRevisionsPreviousRevisionIDGet envID=value previousRevisionID=value Accept:value
 ```
 
 ### Parameters
@@ -104,7 +102,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **previousRevisionID** | **string** |  | [default to null]
  **accept** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -112,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

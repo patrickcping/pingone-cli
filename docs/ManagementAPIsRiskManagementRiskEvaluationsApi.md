@@ -19,7 +19,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDRiskEvaluationsPost envID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDRiskEvaluationsPost envID=value Content-Type:value
 ```
 
 ### Parameters
@@ -29,7 +29,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -38,7 +37,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -57,7 +56,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut envID=value riskID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut envID=value riskID=value Content-Type:value
 ```
 
 ### Parameters
@@ -68,7 +67,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **riskID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -77,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -96,7 +94,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet envID=value riskID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet envID=value riskID=value
 ```
 
 ### Parameters
@@ -106,7 +104,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **riskID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -114,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIDTrustedEmailsGet envID=value emailDomainID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIDTrustedEmailsGet envID=value emailDomainID=value
 ```
 
 ### Parameters
@@ -31,7 +31,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **emailDomainID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -39,7 +38,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -58,7 +57,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsPost envID=value emailDomainId=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsPost envID=value emailDomainId=value Content-Type:value
 ```
 
 ### Parameters
@@ -69,7 +68,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **emailDomainId** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -78,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -97,7 +95,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdDelete envID=value emailDomainId=value trustedEmailId=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdDelete envID=value emailDomainId=value trustedEmailId=value
 ```
 
 ### Parameters
@@ -108,7 +106,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **emailDomainId** | **string** |  | [default to null]
  **trustedEmailId** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -116,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -135,7 +132,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdGet envID=value emailDomainId=value trustedEmailId=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdGet envID=value emailDomainId=value trustedEmailId=value
 ```
 
 ### Parameters
@@ -146,7 +143,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **emailDomainId** | **string** |  | [default to null]
  **trustedEmailId** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -154,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -173,7 +169,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdPost envID=value emailDomainId=value trustedEmailId=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdPost envID=value emailDomainId=value trustedEmailId=value Content-Type:value
 ```
 
 ### Parameters
@@ -185,7 +181,6 @@ Name | Type | Description  | Notes
  **emailDomainId** | **string** |  | [default to null]
  **trustedEmailId** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -193,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationMappingMappingIDDelete envID=value mappingID=value Accept:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationMappingMappingIDDelete envID=value mappingID=value Accept:value
 ```
 
 ### Parameters
@@ -32,7 +32,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **mappingID** | **string** |  | [default to null]
  **accept** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -40,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -59,7 +58,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationMappingsMappingIDGet envID=value mappingID=value Accept:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationMappingsMappingIDGet envID=value mappingID=value Accept:value
 ```
 
 ### Parameters
@@ -70,7 +69,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **mappingID** | **string** |  | [default to null]
  **accept** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -78,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -97,7 +95,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationMappingsMappingIDPut envID=value mappingID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationMappingsMappingIDPut envID=value mappingID=value Content-Type:value
 ```
 
 ### Parameters
@@ -108,7 +106,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **mappingID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -117,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -136,7 +133,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsGet envID=value ruleID=value Accept:value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsGet envID=value ruleID=value Accept:value Content-Type:value
 ```
 
 ### Parameters
@@ -148,7 +145,6 @@ Name | Type | Description  | Notes
  **ruleID** | **string** |  | [default to null]
  **accept** | **string** |  | [optional] [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -156,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -175,7 +171,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsPost envID=value ruleID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsPost envID=value ruleID=value Content-Type:value
 ```
 
 ### Parameters
@@ -186,7 +182,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **ruleID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -195,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

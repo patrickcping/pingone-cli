@@ -19,7 +19,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDImagesImgIDDelete envID=value imgID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDImagesImgIDDelete envID=value imgID=value
 ```
 
 ### Parameters
@@ -29,7 +29,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **imgID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -37,7 +36,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -56,7 +55,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDImagesImgIDGet envID=value imgID=value Authorization:value
+pingone-cli v1EnvironmentsEnvIDImagesImgIDGet envID=value imgID=value
 ```
 
 ### Parameters
@@ -66,7 +65,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **imgID** | **string** |  | [default to null]
- **authorization** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -74,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -93,7 +91,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDImagesPost envID=value Content-Type:value Content-Disposition:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDImagesPost envID=value Content-Type:value Content-Disposition:value
 ```
 
 ### Parameters
@@ -104,8 +102,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
  **contentDisposition** | **string** |  | [optional] [default to null]
- **authorization** | **string** |  | [optional] [default to null]
- **body** | **binary** |  | [optional]
 
 ### Return type
 
@@ -113,11 +109,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
-- **Content-Type**: image/png
+- **Content-Type**: Not Applicable
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
