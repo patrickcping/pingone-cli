@@ -156,8 +156,8 @@ Class | Method | HTTP request | Description
 *ManagementAPIsAuditActivitiesApi* | [**v1EnvironmentsEnvIDActivitiesGet**](docs/ManagementAPIsAuditActivitiesApi.md#v1environmentsenvidactivitiesget) | **GET** /v1/environments/{envID}/activities | GET User Activities
 *ManagementAPIsAuditActivitiesApi* | [**v1EnvironmentsEnvIDActivitiesPost**](docs/ManagementAPIsAuditActivitiesApi.md#v1environmentsenvidactivitiespost) | **POST** /v1/environments/{envID}/activities | GET User Activities
 *ManagementAPIsAuthenticationsPerApplicationApi* | [**v1EnvironmentsEnvIDApplicationSignonsGet**](docs/ManagementAPIsAuthenticationsPerApplicationApi.md#v1environmentsenvidapplicationsignonsget) | **GET** /v1/environments/{envID}/applicationSignons | READ Authentications Per Application (Partial)
-*ManagementAPIsBillOfMaterialsBOMApi* | [**v1EnvironmentsEnvIDBillOfMaterialsGet**](docs/ManagementAPIsBillOfMaterialsBOMApi.md#v1environmentsenvidbillofmaterialsget) | **GET** /v1/environments/{envID}/billOfMaterials | READ One Bill of Materials
-*ManagementAPIsBillOfMaterialsBOMApi* | [**v1EnvironmentsEnvIDBillOfMaterialsPut**](docs/ManagementAPIsBillOfMaterialsBOMApi.md#v1environmentsenvidbillofmaterialsput) | **PUT** /v1/environments/{envID}/billOfMaterials | UPDATE Bill of Materials
+*ManagementAPIsBillOfMaterialsBOMApi* | [**readOneBillOfMaterials**](docs/ManagementAPIsBillOfMaterialsBOMApi.md#readonebillofmaterials) | **GET** /v1/environments/{envID}/billOfMaterials | READ One Bill of Materials
+*ManagementAPIsBillOfMaterialsBOMApi* | [**updateBillOfMaterials**](docs/ManagementAPIsBillOfMaterialsBOMApi.md#updatebillofmaterials) | **PUT** /v1/environments/{envID}/billOfMaterials | UPDATE Bill of Materials
 *ManagementAPIsBrandingBrandingSettingsApi* | [**v1EnvironmentsEnvIDBrandingSettingsGet**](docs/ManagementAPIsBrandingBrandingSettingsApi.md#v1environmentsenvidbrandingsettingsget) | **GET** /v1/environments/{envID}/brandingSettings | READ Branding Settings
 *ManagementAPIsBrandingBrandingSettingsApi* | [**v1EnvironmentsEnvIDBrandingSettingsPut**](docs/ManagementAPIsBrandingBrandingSettingsApi.md#v1environmentsenvidbrandingsettingsput) | **PUT** /v1/environments/{envID}/brandingSettings | UPDATE Branding Settings
 *ManagementAPIsBrandingBrandingThemesApi* | [**v1EnvironmentsEnvIDThemesGet**](docs/ManagementAPIsBrandingBrandingThemesApi.md#v1environmentsenvidthemesget) | **GET** /v1/environments/{envID}/themes | READ Branding Themes
@@ -193,12 +193,12 @@ Class | Method | HTTP request | Description
 *ManagementAPIsCustomDomainsApi* | [**v1EnvironmentsEnvIDCustomDomainsPost**](docs/ManagementAPIsCustomDomainsApi.md#v1environmentsenvidcustomdomainspost) | **POST** /v1/environments/{envID}/customDomains | CREATE Domain
 *ManagementAPIsDeviceAuthenticationPolicyApi* | [**v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut**](docs/ManagementAPIsDeviceAuthenticationPolicyApi.md#v1environmentsenviddeviceauthenticationpolicydeviceauthpolicyidput) | **PUT** /v1/environments/{envID}/deviceAuthenticationPolicy/{deviceAuthPolicyID} | UPDATE Device Authentication Policy
 *ManagementAPIsDeviceAuthenticationPolicyApi* | [**v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet**](docs/ManagementAPIsDeviceAuthenticationPolicyApi.md#v1environmentsenviddeviceauthenticationpolicyget) | **GET** /v1/environments/{envID}/deviceAuthenticationPolicy | READ Device Authentication Policy
-*ManagementAPIsEnvironmentsApi* | [**v1EnvironmentsEnvIDDelete**](docs/ManagementAPIsEnvironmentsApi.md#v1environmentsenviddelete) | **DELETE** /v1/environments/{envID} | DELETE Environment
-*ManagementAPIsEnvironmentsApi* | [**v1EnvironmentsEnvIDGet**](docs/ManagementAPIsEnvironmentsApi.md#v1environmentsenvidget) | **GET** /v1/environments/{envID} | READ One Environment
-*ManagementAPIsEnvironmentsApi* | [**v1EnvironmentsEnvIDPut**](docs/ManagementAPIsEnvironmentsApi.md#v1environmentsenvidput) | **PUT** /v1/environments/{envID} | UPDATE Environment
-*ManagementAPIsEnvironmentsApi* | [**v1EnvironmentsEnvIDTypePut**](docs/ManagementAPIsEnvironmentsApi.md#v1environmentsenvidtypeput) | **PUT** /v1/environments/{envID}/type | UPDATE Environment Type
-*ManagementAPIsEnvironmentsApi* | [**v1EnvironmentsGet**](docs/ManagementAPIsEnvironmentsApi.md#v1environmentsget) | **GET** /v1/environments | READ All Environments
-*ManagementAPIsEnvironmentsApi* | [**v1EnvironmentsPost**](docs/ManagementAPIsEnvironmentsApi.md#v1environmentspost) | **POST** /v1/environments | CREATE Environment (Active License)
+*ManagementAPIsEnvironmentsApi* | [**createEnvironmentActiveLicense**](docs/ManagementAPIsEnvironmentsApi.md#createenvironmentactivelicense) | **POST** /v1/environments | CREATE Environment (Active License)
+*ManagementAPIsEnvironmentsApi* | [**deleteEnvironment**](docs/ManagementAPIsEnvironmentsApi.md#deleteenvironment) | **DELETE** /v1/environments/{envID} | DELETE Environment
+*ManagementAPIsEnvironmentsApi* | [**readAllEnvironments**](docs/ManagementAPIsEnvironmentsApi.md#readallenvironments) | **GET** /v1/environments | READ All Environments
+*ManagementAPIsEnvironmentsApi* | [**readOneEnvironment**](docs/ManagementAPIsEnvironmentsApi.md#readoneenvironment) | **GET** /v1/environments/{envID} | READ One Environment
+*ManagementAPIsEnvironmentsApi* | [**updateEnvironment**](docs/ManagementAPIsEnvironmentsApi.md#updateenvironment) | **PUT** /v1/environments/{envID} | UPDATE Environment
+*ManagementAPIsEnvironmentsApi* | [**updateEnvironmentType**](docs/ManagementAPIsEnvironmentsApi.md#updateenvironmenttype) | **PUT** /v1/environments/{envID}/type | UPDATE Environment Type
 *ManagementAPIsGatewayManagementGatewayCredentialsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete**](docs/ManagementAPIsGatewayManagementGatewayCredentialsApi.md#v1environmentsenvidgatewaysgatewayidcredentialscredentialiddelete) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID}/credentials/{credentialID} | DELETE Gateway Credentials
 *ManagementAPIsGatewayManagementGatewayCredentialsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost**](docs/ManagementAPIsGatewayManagementGatewayCredentialsApi.md#v1environmentsenvidgatewaysgatewayidcredentialspost) | **POST** /v1/environments/{envID}/gateways/{gatewayID}/credentials | CREATE Gateway Credentials
 *ManagementAPIsGatewayManagementGatewayInstancesApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet**](docs/ManagementAPIsGatewayManagementGatewayInstancesApi.md#v1environmentsenvidgatewaysgatewayidinstancesget) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances | READ All Gateway Instances
@@ -433,11 +433,18 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [BillOfMaterials](docs/BillOfMaterials.md)
+ - [BillOfMaterialsBookmarks](docs/BillOfMaterialsBookmarks.md)
+ - [BillOfMaterialsProducts](docs/BillOfMaterialsProducts.md)
+ - [EntityArray](docs/EntityArray.md)
+ - [EntityArrayEmbedded](docs/EntityArrayEmbedded.md)
+ - [Environment](docs/Environment.md)
+ - [EnvironmentLicense](docs/EnvironmentLicense.md)
+ - [EnvironmentOrganization](docs/EnvironmentOrganization.md)
  - [Error](docs/Error.md)
  - [ErrorDetails](docs/ErrorDetails.md)
+ - [InlineObject2](docs/InlineObject2.md)
  - [Population](docs/Population.md)
- - [Populations](docs/Populations.md)
- - [PopulationsEmbedded](docs/PopulationsEmbedded.md)
 
 
 ## Documentation For Authorization

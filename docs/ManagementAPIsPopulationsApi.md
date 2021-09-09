@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Populations**](Populations.md)
+[**EntityArray**](EntityArray.md)
 
 ### Authorization
 

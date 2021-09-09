@@ -1,8 +1,17 @@
 Dockerfile
 README.md
 _pingone-cli
+docs/BillOfMaterials.md
+docs/BillOfMaterialsBookmarks.md
+docs/BillOfMaterialsProducts.md
+docs/EntityArray.md
+docs/EntityArrayEmbedded.md
+docs/Environment.md
+docs/EnvironmentLicense.md
+docs/EnvironmentOrganization.md
 docs/Error.md
 docs/ErrorDetails.md
+docs/InlineObject2.md
 docs/ManagementAPIsActiveIdentityCountsApi.md
 docs/ManagementAPIsAgreementManagementAgreementLanguagesResourcesApi.md
 docs/ManagementAPIsAgreementManagementAgreementRevisionsResourcesApi.md
@@ -81,7 +90,5 @@ docs/ManagementAPIsUsersUserPopulationsApi.md
 docs/ManagementAPIsUsersUserRoleAssignmentsApi.md
 docs/ManagementAPIsUsersUsersApi.md
 docs/Population.md
-docs/Populations.md
-docs/PopulationsEmbedded.md
 pingone-cli
 pingone-cli.bash-completion

@@ -4,12 +4,12 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1EnvironmentsEnvIDBillOfMaterialsGet**](ManagementAPIsBillOfMaterialsBOMApi.md#v1EnvironmentsEnvIDBillOfMaterialsGet) | **GET** /v1/environments/{envID}/billOfMaterials | READ One Bill of Materials
-[**v1EnvironmentsEnvIDBillOfMaterialsPut**](ManagementAPIsBillOfMaterialsBOMApi.md#v1EnvironmentsEnvIDBillOfMaterialsPut) | **PUT** /v1/environments/{envID}/billOfMaterials | UPDATE Bill of Materials
+[**readOneBillOfMaterials**](ManagementAPIsBillOfMaterialsBOMApi.md#readOneBillOfMaterials) | **GET** /v1/environments/{envID}/billOfMaterials | READ One Bill of Materials
+[**updateBillOfMaterials**](ManagementAPIsBillOfMaterialsBOMApi.md#updateBillOfMaterials) | **PUT** /v1/environments/{envID}/billOfMaterials | UPDATE Bill of Materials
 
 
 
-## v1EnvironmentsEnvIDBillOfMaterialsGet
+## readOneBillOfMaterials
 
 READ One Bill of Materials
 
@@ -18,7 +18,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDBillOfMaterialsGet envID=value
+pingone-cli readOneBillOfMaterials envID=value
 ```
 
 ### Parameters
@@ -30,7 +30,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**BillOfMaterials**](BillOfMaterials.md)
 
 ### Authorization
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDBillOfMaterialsPut
+## updateBillOfMaterials
 
 UPDATE Bill of Materials
 
@@ -53,7 +53,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDBillOfMaterialsPut envID=value Content-Type:value
+pingone-cli updateBillOfMaterials envID=value Content-Type:value
 ```
 
 ### Parameters
@@ -63,11 +63,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
- **body** | **map** |  | [optional]
+ **billOfMaterials** | [**BillOfMaterials**](BillOfMaterials.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**BillOfMaterials**](BillOfMaterials.md)
 
 ### Authorization
 

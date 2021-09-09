@@ -269,10 +269,10 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationSignonsG
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationSignonsGet:::samplePeriod"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationSignonsGet:::samplePeriodCount"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationSignonsGet:::filter"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsPut:::body"]=0
+operation_parameters_minimum_occurrences["readOneBillOfMaterials:::envID"]=1
+operation_parameters_minimum_occurrences["updateBillOfMaterials:::envID"]=1
+operation_parameters_minimum_occurrences["updateBillOfMaterials:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateBillOfMaterials:::BillOfMaterials"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBrandingSettingsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBrandingSettingsGet:::Authorization"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDBrandingSettingsPut:::envID"]=1
@@ -368,16 +368,18 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticatio
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut:::body"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDTypePut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDTypePut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDTypePut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsPost:::body"]=0
+operation_parameters_minimum_occurrences["createEnvironmentActiveLicense:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createEnvironmentActiveLicense:::Environment"]=0
+operation_parameters_minimum_occurrences["deleteEnvironment:::envID"]=1
+operation_parameters_minimum_occurrences["readAllEnvironments:::limit"]=0
+operation_parameters_minimum_occurrences["readAllEnvironments:::filter"]=0
+operation_parameters_minimum_occurrences["readOneEnvironment:::envID"]=1
+operation_parameters_minimum_occurrences["updateEnvironment:::envID"]=1
+operation_parameters_minimum_occurrences["updateEnvironment:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateEnvironment:::Environment"]=0
+operation_parameters_minimum_occurrences["updateEnvironmentType:::envID"]=1
+operation_parameters_minimum_occurrences["updateEnvironmentType:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateEnvironmentType:::InlineObject2"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::gatewayID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::credentialID"]=1
@@ -1207,10 +1209,10 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationSignonsG
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationSignonsGet:::samplePeriod"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationSignonsGet:::samplePeriodCount"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationSignonsGet:::filter"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBillOfMaterialsPut:::body"]=0
+operation_parameters_maximum_occurrences["readOneBillOfMaterials:::envID"]=0
+operation_parameters_maximum_occurrences["updateBillOfMaterials:::envID"]=0
+operation_parameters_maximum_occurrences["updateBillOfMaterials:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateBillOfMaterials:::BillOfMaterials"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBrandingSettingsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBrandingSettingsGet:::Authorization"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDBrandingSettingsPut:::envID"]=0
@@ -1306,16 +1308,18 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticatio
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut:::body"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDTypePut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDTypePut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDTypePut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsPost:::body"]=0
+operation_parameters_maximum_occurrences["createEnvironmentActiveLicense:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createEnvironmentActiveLicense:::Environment"]=0
+operation_parameters_maximum_occurrences["deleteEnvironment:::envID"]=0
+operation_parameters_maximum_occurrences["readAllEnvironments:::limit"]=0
+operation_parameters_maximum_occurrences["readAllEnvironments:::filter"]=0
+operation_parameters_maximum_occurrences["readOneEnvironment:::envID"]=0
+operation_parameters_maximum_occurrences["updateEnvironment:::envID"]=0
+operation_parameters_maximum_occurrences["updateEnvironment:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateEnvironment:::Environment"]=0
+operation_parameters_maximum_occurrences["updateEnvironmentType:::envID"]=0
+operation_parameters_maximum_occurrences["updateEnvironmentType:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateEnvironmentType:::InlineObject2"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::gatewayID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::credentialID"]=0
@@ -2142,10 +2146,10 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationSignonsGet::
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationSignonsGet:::samplePeriod"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationSignonsGet:::samplePeriodCount"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationSignonsGet:::filter"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDBillOfMaterialsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDBillOfMaterialsPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDBillOfMaterialsPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDBillOfMaterialsPut:::body"]=""
+operation_parameters_collection_type["readOneBillOfMaterials:::envID"]=""
+operation_parameters_collection_type["updateBillOfMaterials:::envID"]=""
+operation_parameters_collection_type["updateBillOfMaterials:::Content-Type"]=""
+operation_parameters_collection_type["updateBillOfMaterials:::BillOfMaterials"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDBrandingSettingsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDBrandingSettingsGet:::Authorization"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDBrandingSettingsPut:::envID"]=""
@@ -2241,16 +2245,18 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDDeviceAuthenticationPol
 operation_parameters_collection_type["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut:::body"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDTypePut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDTypePut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDTypePut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsPost:::body"]=""
+operation_parameters_collection_type["createEnvironmentActiveLicense:::Content-Type"]=""
+operation_parameters_collection_type["createEnvironmentActiveLicense:::Environment"]=""
+operation_parameters_collection_type["deleteEnvironment:::envID"]=""
+operation_parameters_collection_type["readAllEnvironments:::limit"]=""
+operation_parameters_collection_type["readAllEnvironments:::filter"]=""
+operation_parameters_collection_type["readOneEnvironment:::envID"]=""
+operation_parameters_collection_type["updateEnvironment:::envID"]=""
+operation_parameters_collection_type["updateEnvironment:::Content-Type"]=""
+operation_parameters_collection_type["updateEnvironment:::Environment"]=""
+operation_parameters_collection_type["updateEnvironmentType:::envID"]=""
+operation_parameters_collection_type["updateEnvironmentType:::Content-Type"]=""
+operation_parameters_collection_type["updateEnvironmentType:::InlineObject2"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::gatewayID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::credentialID"]=""
@@ -3390,8 +3396,8 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsBillOfMaterialsBOM]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDBillOfMaterialsGet${OFF};READ One Bill of Materials (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDBillOfMaterialsPut${OFF};UPDATE Bill of Materials (AUTH)
+  ${CYAN}readOneBillOfMaterials${OFF};READ One Bill of Materials (AUTH)
+  ${CYAN}updateBillOfMaterials${OFF};UPDATE Bill of Materials (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3462,12 +3468,12 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsEnvironments]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDDelete${OFF};DELETE Environment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGet${OFF};READ One Environment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDPut${OFF};UPDATE Environment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDTypePut${OFF};UPDATE Environment Type (AUTH)
-  ${CYAN}v1EnvironmentsGet${OFF};READ All Environments (AUTH)
-  ${CYAN}v1EnvironmentsPost${OFF};CREATE Environment (Active License) (AUTH)
+  ${CYAN}createEnvironmentActiveLicense${OFF};CREATE Environment (Active License) (AUTH)
+  ${CYAN}deleteEnvironment${OFF};DELETE Environment (AUTH)
+  ${CYAN}readAllEnvironments${OFF};READ All Environments (AUTH)
+  ${CYAN}readOneEnvironment${OFF};READ One Environment (AUTH)
+  ${CYAN}updateEnvironment${OFF};UPDATE Environment (AUTH)
+  ${CYAN}updateEnvironmentType${OFF};UPDATE Environment Type (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4147,8 +4153,8 @@ print_v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4236,8 +4242,8 @@ print_v1EnvironmentsEnvIDAgreementsAgreeIDLanguagesLangIDRevisionsRevisionIDDele
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4327,8 +4333,8 @@ print_v1EnvironmentsEnvIDAgreementsAgreementIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4459,8 +4465,8 @@ print_v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4568,8 +4574,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4683,8 +4689,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete_help()
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4773,8 +4779,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4911,8 +4917,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete_
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5043,8 +5049,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentID
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5112,8 +5118,8 @@ print_v1EnvironmentsEnvIDApplicationsAppDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5299,12 +5305,12 @@ print_v1EnvironmentsEnvIDApplicationSignonsGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDBillOfMaterialsGet operation
+# Print help for readOneBillOfMaterials operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDBillOfMaterialsGet_help() {
+print_readOneBillOfMaterials_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDBillOfMaterialsGet - READ One Bill of Materials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneBillOfMaterials - READ One Bill of Materials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5319,12 +5325,12 @@ print_v1EnvironmentsEnvIDBillOfMaterialsGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDBillOfMaterialsPut operation
+# Print help for updateBillOfMaterials operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDBillOfMaterialsPut_help() {
+print_updateBillOfMaterials_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDBillOfMaterialsPut - UPDATE Bill of Materials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBillOfMaterials - UPDATE Bill of Materials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5496,8 +5502,8 @@ print_v1EnvironmentsEnvIDThemesThemeIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5625,8 +5631,8 @@ print_v1EnvironmentsEnvIDCertificatesCertIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5839,8 +5845,8 @@ print_v1EnvironmentsEnvIDKeysKeyIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5973,8 +5979,8 @@ print_v1EnvironmentsEnvIDCustomDomainsDomIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6110,12 +6116,77 @@ print_v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDDelete operation
+# Print help for createEnvironmentActiveLicense operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDDelete_help() {
+print_createEnvironmentActiveLicense_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDDelete - DELETE Environment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createEnvironmentActiveLicense - CREATE Environment (Active License)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteEnvironment operation
+#
+##############################################################################
+print_deleteEnvironment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteEnvironment - DELETE Environment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllEnvironments operation
+#
+##############################################################################
+print_readAllEnvironments_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllEnvironments - READ All Environments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}limit${OFF} ${BLUE}[integer]${OFF} ${CYAN}(default: null)${OFF} - Adding a paging value to limit the number of resources displayed per page${YELLOW} Specify as: limit=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - Adding a SCIM filter for an environment to display only those resources associated with the specified environment. 'sw', 'eq' and 'and' are supported${YELLOW} Specify as: filter=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneEnvironment operation
+#
+##############################################################################
+print_readOneEnvironment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneEnvironment - READ One Environment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6130,32 +6201,12 @@ print_v1EnvironmentsEnvIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGet operation
+# Print help for updateEnvironment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGet_help() {
+print_updateEnvironment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGet - READ One Environment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDPut operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDPut - UPDATE Environment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateEnvironment - UPDATE Environment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6173,57 +6224,17 @@ print_v1EnvironmentsEnvIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDTypePut operation
+# Print help for updateEnvironmentType operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDTypePut_help() {
+print_updateEnvironmentType_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDTypePut - UPDATE Environment Type${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateEnvironmentType - UPDATE Environment Type${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsGet operation
-#
-##############################################################################
-print_v1EnvironmentsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsGet - READ All Environments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsPost operation
-#
-##############################################################################
-print_v1EnvironmentsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsPost - CREATE Environment (Active License)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -6253,8 +6264,8 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6340,8 +6351,8 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsI
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6453,8 +6464,8 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6586,8 +6597,8 @@ print_v1EnvironmentsEnvIDGroupsGroupIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6676,8 +6687,8 @@ print_v1EnvironmentsEnvIDPropagationMappingMappingIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6812,8 +6823,8 @@ print_v1EnvironmentsEnvIDPropagationPlansPlanIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7035,8 +7046,8 @@ print_v1EnvironmentsEnvIDPropagationRulesRuleIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7262,8 +7273,8 @@ print_v1EnvironmentsEnvIDPropagationStoresStoreIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7330,8 +7341,8 @@ print_v11EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDDelete_h
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7486,8 +7497,8 @@ print_v1EnvironmentsEnvIDIdentityProvidersProviderIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7552,8 +7563,8 @@ print_v1EnvironmentsEnvIDImagesImgIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7744,8 +7755,8 @@ print_v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7856,8 +7867,8 @@ print_v1EnvironmentsEnvIDLanguagesLanguageIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8030,8 +8041,8 @@ print_v1EnvironmentsEnvIDMfaSettingsDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8092,8 +8103,8 @@ print_v1EnvironmentsEnvIDNotificationsSettingsDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8218,8 +8229,8 @@ print_v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8289,8 +8300,8 @@ print_v1EnvironmentsEnvIDTemplatesTemplateNameContentsDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8400,8 +8411,8 @@ print_v1EnvironmentsEnvIDNotificationsSettingsEmailDeliverySettingsDelete_help()
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8555,8 +8566,8 @@ print_v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsTrustedEmailIdDel
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8621,8 +8632,8 @@ print_v1EnvironmentsEnvIDEmailDomainsEmailDomainIdDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9031,8 +9042,8 @@ print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete_help(
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9145,8 +9156,8 @@ print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9256,8 +9267,8 @@ print_v1EnvironmentsEnvIDResourcesResourceIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9474,8 +9485,8 @@ print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9600,8 +9611,8 @@ print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9779,8 +9790,8 @@ print_v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9892,8 +9903,8 @@ print_v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10048,8 +10059,8 @@ print_v1EnvironmentsEnvIDSubscriptionsSubscriptionIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10321,8 +10332,8 @@ print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10411,8 +10422,8 @@ print_v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10455,8 +10466,8 @@ print_v1EnvironmentsEnvIDUsersUserIDDevicesDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10477,8 +10488,8 @@ print_v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10641,8 +10652,8 @@ print_v1EnvironmentsEnvIDUsersUserIDPairingKeysPairingKeyIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10731,8 +10742,8 @@ print_v1EnvironmentsEnvIDUsersUserIDSessionsSessionIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10906,8 +10917,8 @@ print_v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDDelete_help()
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -11134,8 +11145,8 @@ print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete_help()
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -11200,8 +11211,8 @@ print_v1EnvironmentsEnvIDUsersUserIDDelete_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -14160,10 +14171,10 @@ call_v1EnvironmentsEnvIDApplicationSignonsGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDBillOfMaterialsGet operation
+# Call readOneBillOfMaterials operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDBillOfMaterialsGet() {
+call_readOneBillOfMaterials() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -14196,10 +14207,10 @@ call_v1EnvironmentsEnvIDBillOfMaterialsGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDBillOfMaterialsPut operation
+# Call updateBillOfMaterials operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDBillOfMaterialsPut() {
+call_updateBillOfMaterials() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -16038,10 +16049,88 @@ call_v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDDelete operation
+# Call createEnvironmentActiveLicense operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDDelete() {
+call_createEnvironmentActiveLicense() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteEnvironment operation
+#
+##############################################################################
+call_deleteEnvironment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -16074,10 +16163,46 @@ call_v1EnvironmentsEnvIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGet operation
+# Call readAllEnvironments operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGet() {
+call_readAllEnvironments() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(limit filter  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneEnvironment operation
+#
+##############################################################################
+call_readOneEnvironment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -16110,10 +16235,10 @@ call_v1EnvironmentsEnvIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDPut operation
+# Call updateEnvironment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDPut() {
+call_updateEnvironment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -16188,10 +16313,10 @@ call_v1EnvironmentsEnvIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDTypePut operation
+# Call updateEnvironmentType operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDTypePut() {
+call_updateEnvironmentType() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -16205,120 +16330,6 @@ call_v1EnvironmentsEnvIDTypePut() {
         exit 1
     fi
     local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsGet operation
-#
-##############################################################################
-call_v1EnvironmentsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsPost operation
-#
-##############################################################################
-call_v1EnvironmentsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -28199,11 +28210,11 @@ case $key in
     v1EnvironmentsEnvIDApplicationSignonsGet)
     operation="v1EnvironmentsEnvIDApplicationSignonsGet"
     ;;
-    v1EnvironmentsEnvIDBillOfMaterialsGet)
-    operation="v1EnvironmentsEnvIDBillOfMaterialsGet"
+    readOneBillOfMaterials)
+    operation="readOneBillOfMaterials"
     ;;
-    v1EnvironmentsEnvIDBillOfMaterialsPut)
-    operation="v1EnvironmentsEnvIDBillOfMaterialsPut"
+    updateBillOfMaterials)
+    operation="updateBillOfMaterials"
     ;;
     v1EnvironmentsEnvIDBrandingSettingsGet)
     operation="v1EnvironmentsEnvIDBrandingSettingsGet"
@@ -28310,23 +28321,23 @@ case $key in
     v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet)
     operation="v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet"
     ;;
-    v1EnvironmentsEnvIDDelete)
-    operation="v1EnvironmentsEnvIDDelete"
+    createEnvironmentActiveLicense)
+    operation="createEnvironmentActiveLicense"
     ;;
-    v1EnvironmentsEnvIDGet)
-    operation="v1EnvironmentsEnvIDGet"
+    deleteEnvironment)
+    operation="deleteEnvironment"
     ;;
-    v1EnvironmentsEnvIDPut)
-    operation="v1EnvironmentsEnvIDPut"
+    readAllEnvironments)
+    operation="readAllEnvironments"
     ;;
-    v1EnvironmentsEnvIDTypePut)
-    operation="v1EnvironmentsEnvIDTypePut"
+    readOneEnvironment)
+    operation="readOneEnvironment"
     ;;
-    v1EnvironmentsGet)
-    operation="v1EnvironmentsGet"
+    updateEnvironment)
+    operation="updateEnvironment"
     ;;
-    v1EnvironmentsPost)
-    operation="v1EnvironmentsPost"
+    updateEnvironmentType)
+    operation="updateEnvironmentType"
     ;;
     v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete)
     operation="v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"
@@ -29263,11 +29274,11 @@ case $operation in
     v1EnvironmentsEnvIDApplicationSignonsGet)
     call_v1EnvironmentsEnvIDApplicationSignonsGet
     ;;
-    v1EnvironmentsEnvIDBillOfMaterialsGet)
-    call_v1EnvironmentsEnvIDBillOfMaterialsGet
+    readOneBillOfMaterials)
+    call_readOneBillOfMaterials
     ;;
-    v1EnvironmentsEnvIDBillOfMaterialsPut)
-    call_v1EnvironmentsEnvIDBillOfMaterialsPut
+    updateBillOfMaterials)
+    call_updateBillOfMaterials
     ;;
     v1EnvironmentsEnvIDBrandingSettingsGet)
     call_v1EnvironmentsEnvIDBrandingSettingsGet
@@ -29374,23 +29385,23 @@ case $operation in
     v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet)
     call_v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet
     ;;
-    v1EnvironmentsEnvIDDelete)
-    call_v1EnvironmentsEnvIDDelete
+    createEnvironmentActiveLicense)
+    call_createEnvironmentActiveLicense
     ;;
-    v1EnvironmentsEnvIDGet)
-    call_v1EnvironmentsEnvIDGet
+    deleteEnvironment)
+    call_deleteEnvironment
     ;;
-    v1EnvironmentsEnvIDPut)
-    call_v1EnvironmentsEnvIDPut
+    readAllEnvironments)
+    call_readAllEnvironments
     ;;
-    v1EnvironmentsEnvIDTypePut)
-    call_v1EnvironmentsEnvIDTypePut
+    readOneEnvironment)
+    call_readOneEnvironment
     ;;
-    v1EnvironmentsGet)
-    call_v1EnvironmentsGet
+    updateEnvironment)
+    call_updateEnvironment
     ;;
-    v1EnvironmentsPost)
-    call_v1EnvironmentsPost
+    updateEnvironmentType)
+    call_updateEnvironmentType
     ;;
     v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete)
     call_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete

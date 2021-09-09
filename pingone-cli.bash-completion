@@ -124,8 +124,8 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDActivitiesGet"]=1
     operations["v1EnvironmentsEnvIDActivitiesPost"]=1
     operations["v1EnvironmentsEnvIDApplicationSignonsGet"]=1
-    operations["v1EnvironmentsEnvIDBillOfMaterialsGet"]=1
-    operations["v1EnvironmentsEnvIDBillOfMaterialsPut"]=1
+    operations["readOneBillOfMaterials"]=1
+    operations["updateBillOfMaterials"]=1
     operations["v1EnvironmentsEnvIDBrandingSettingsGet"]=1
     operations["v1EnvironmentsEnvIDBrandingSettingsPut"]=1
     operations["v1EnvironmentsEnvIDThemesGet"]=1
@@ -161,12 +161,12 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDCustomDomainsPost"]=1
     operations["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut"]=1
     operations["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet"]=1
-    operations["v1EnvironmentsEnvIDDelete"]=1
-    operations["v1EnvironmentsEnvIDGet"]=1
-    operations["v1EnvironmentsEnvIDPut"]=1
-    operations["v1EnvironmentsEnvIDTypePut"]=1
-    operations["v1EnvironmentsGet"]=1
-    operations["v1EnvironmentsPost"]=1
+    operations["createEnvironmentActiveLicense"]=1
+    operations["deleteEnvironment"]=1
+    operations["readAllEnvironments"]=1
+    operations["readOneEnvironment"]=1
+    operations["updateEnvironment"]=1
+    operations["updateEnvironmentType"]=1
     operations["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"]=1
     operations["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"]=1
     operations["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"]=1
@@ -457,8 +457,8 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDActivitiesGet"]="envID= filter= "
     operation_parameters["v1EnvironmentsEnvIDActivitiesPost"]="envID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationSignonsGet"]="envID= limit= samplePeriod= samplePeriodCount= filter= "
-    operation_parameters["v1EnvironmentsEnvIDBillOfMaterialsGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDBillOfMaterialsPut"]="envID= Content-Type: "
+    operation_parameters["readOneBillOfMaterials"]="envID= "
+    operation_parameters["updateBillOfMaterials"]="envID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDBrandingSettingsGet"]="envID= Authorization: "
     operation_parameters["v1EnvironmentsEnvIDBrandingSettingsPut"]="envID= Content-Type: Authorization: "
     operation_parameters["v1EnvironmentsEnvIDThemesGet"]="envID= Authorization: "
@@ -494,12 +494,12 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDCustomDomainsPost"]="envID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut"]="envID= deviceAuthPolicyID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDDeviceAuthenticationPolicyGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDDelete"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDPut"]="envID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDTypePut"]="envID= Content-Type: "
-    operation_parameters["v1EnvironmentsGet"]=""
-    operation_parameters["v1EnvironmentsPost"]="Content-Type: "
+    operation_parameters["createEnvironmentActiveLicense"]="Content-Type: "
+    operation_parameters["deleteEnvironment"]="envID= "
+    operation_parameters["readAllEnvironments"]="limit= filter= "
+    operation_parameters["readOneEnvironment"]="envID= "
+    operation_parameters["updateEnvironment"]="envID= Content-Type: "
+    operation_parameters["updateEnvironmentType"]="envID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"]="envID= gatewayID= credentialID= "
     operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"]="envID= gatewayID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"]="envID= gatewayID= "
