@@ -4,15 +4,53 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1EnvironmentsEnvIDApplicationsAppIDGrantsGet**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#v1EnvironmentsEnvIDApplicationsAppIDGrantsGet) | **GET** /v1/environments/{envID}/applications/{appID}/grants | READ All Grants for an Application
+[**createGrant**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#createGrant) | **POST** /v1/environments/{envID}/applications/{appID}/grants | CREATE Grant
+[**readAllGrantsForAnApplication**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#readAllGrantsForAnApplication) | **GET** /v1/environments/{envID}/applications/{appID}/grants | READ All Grants for an Application
 [**v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete) | **DELETE** /v1/environments/{envID}/applications/{appID}/grants/{grantID} | DELETE Grant
 [**v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet) | **GET** /v1/environments/{envID}/applications/{appID}/grants/{grantID} | READ One Grant for an Application
 [**v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut) | **PUT** /v1/environments/{envID}/applications/{appID}/grants/{grantID} | UPDATE Grant
-[**v1EnvironmentsEnvIDApplicationsAppIDGrantsPost**](ManagementAPIsApplicationsApplicationResourceGrantsApi.md#v1EnvironmentsEnvIDApplicationsAppIDGrantsPost) | **POST** /v1/environments/{envID}/applications/{appID}/grants | CREATE Grant
 
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDGrantsGet
+## createGrant
+
+CREATE Grant
+
+By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
+
+### Example
+
+```bash
+pingone-cli createGrant envID=value appID=value Content-Type:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **envID** | **string** |  | [default to null]
+ **appID** | **string** |  | [default to null]
+ **contentType** | **string** |  | [optional] [default to null]
+ **applicationResourceGrant** | [**ApplicationResourceGrant**](ApplicationResourceGrant.md) |  | [optional]
+
+### Return type
+
+[**ApplicationResourceGrant**](ApplicationResourceGrant.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## readAllGrantsForAnApplication
 
 READ All Grants for an Application
 
@@ -21,7 +59,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDGrantsGet envID=value appID=value
+pingone-cli readAllGrantsForAnApplication envID=value appID=value
 ```
 
 ### Parameters
@@ -34,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EntityArray**](EntityArray.md)
 
 ### Authorization
 
@@ -142,44 +180,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
  **grantID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
- **body** | **map** |  | [optional]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## v1EnvironmentsEnvIDApplicationsAppIDGrantsPost
-
-CREATE Grant
-
-By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
-
-### Example
-
-```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDGrantsPost envID=value appID=value Content-Type:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **envID** | **string** |  | [default to null]
- **appID** | **string** |  | [default to null]
  **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 

@@ -89,21 +89,21 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete"]=1
     operations["v1EnvironmentsEnvIDAlertChannelsGet"]=1
     operations["v1EnvironmentsEnvIDAlertChannelsPost"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut"]=1
+    operations["createApplicationAttributeMapping"]=1
+    operations["deleteApplicationAttributeMapping"]=1
+    operations["readAllApplicationAttributeMappings"]=1
+    operations["readOneApplicationAttributeMapping"]=1
+    operations["updateApplicationAttributeMapping"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet"]=1
+    operations["createGrant"]=1
+    operations["readAllGrantsForAnApplication"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]=1
@@ -422,21 +422,21 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete"]="envID= alertChannelsID= "
     operation_parameters["v1EnvironmentsEnvIDAlertChannelsGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDAlertChannelsPost"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost"]="envID= appID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete"]="envID= appID= samlAttrID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet"]="envID= appID= samlAttrID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut"]="envID= appID= samlAttrID= Content-Type: "
+    operation_parameters["createApplicationAttributeMapping"]="envID= appID= Content-Type: "
+    operation_parameters["deleteApplicationAttributeMapping"]="envID= appID= samlAttrID= "
+    operation_parameters["readAllApplicationAttributeMappings"]="envID= appID= "
+    operation_parameters["readOneApplicationAttributeMapping"]="envID= appID= samlAttrID= "
+    operation_parameters["updateApplicationAttributeMapping"]="envID= appID= samlAttrID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"]="envID= appID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"]="envID= appID= pushCredID= Authorization: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"]="envID= appID= pushCredID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"]="envID= appID= pushCredID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet"]="envID= appID= "
+    operation_parameters["createGrant"]="envID= appID= Content-Type: "
+    operation_parameters["readAllGrantsForAnApplication"]="envID= appID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete"]="envID= appID= grantID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet"]="envID= appID= grantID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut"]="envID= appID= grantID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"]="envID= appID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]="envID= appID= roleAssignmentID= "

@@ -312,19 +312,19 @@ case $state in
             "v1EnvironmentsEnvIDAgreementsPost[CREATE Agreement]"             "v1EnvironmentsEnvIDAlertChannelsAlertChannelIDPut[UPDATE Alert Channel]" \
             "v1EnvironmentsEnvIDAlertChannelsAlertChannelsIDDelete[DELETE Alert Channel]" \
             "v1EnvironmentsEnvIDAlertChannelsGet[READ All Alert Channels per Environment]" \
-            "v1EnvironmentsEnvIDAlertChannelsPost[CREATE Alert Channel (Email)]"             "v1EnvironmentsEnvIDApplicationsAppIDAttributesGet[READ All Application Attribute Mappings]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDAttributesPost[CREATE Application Attribute Mapping]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete[DELETE Application Attribute Mapping]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet[READ One Application Attribute Mapping]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut[UPDATE Application Attribute Mapping]"             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet[READ All MFA Push Credentials]" \
+            "v1EnvironmentsEnvIDAlertChannelsPost[CREATE Alert Channel (Email)]"             "createApplicationAttributeMapping[CREATE Application Attribute Mapping]" \
+            "deleteApplicationAttributeMapping[DELETE Application Attribute Mapping]" \
+            "readAllApplicationAttributeMappings[READ All Application Attribute Mappings]" \
+            "readOneApplicationAttributeMapping[READ One Application Attribute Mapping]" \
+            "updateApplicationAttributeMapping[UPDATE Application Attribute Mapping]"             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet[READ All MFA Push Credentials]" \
             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost[CREATE MFA Push Credential (FCM)]" \
             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete[DELETE MFA Push Credential]" \
             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet[READ One MFA Push Credential]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut[UPDATE MFA Push Credential]"             "v1EnvironmentsEnvIDApplicationsAppIDGrantsGet[READ All Grants for an Application]" \
+            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut[UPDATE MFA Push Credential]"             "createGrant[CREATE Grant]" \
+            "readAllGrantsForAnApplication[READ All Grants for an Application]" \
             "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete[DELETE Grant]" \
             "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet[READ One Grant for an Application]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut[UPDATE Grant]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDGrantsPost[CREATE Grant]"             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet[READ Application Role Assignments]" \
+            "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut[UPDATE Grant]"             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet[READ Application Role Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost[CREATE Application Role Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete[DELETE Application Role Assignment]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet[READ One Application Role Assignment]"             "readApplicationSecret[READ Application Secret]" \
@@ -738,15 +738,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDAttributesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDApplicationsAppIDAttributesPost)
+      createApplicationAttributeMapping)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -755,7 +747,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete)
+      deleteApplicationAttributeMapping)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -764,7 +756,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet)
+      readAllApplicationAttributeMappings)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"appID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneApplicationAttributeMapping)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -773,7 +773,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut)
+      updateApplicationAttributeMapping)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -829,7 +829,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDGrantsGet)
+      createGrant)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"appID=:[PATH] "
+                    "Content-Type\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllGrantsForAnApplication)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -861,15 +870,6 @@ case $state in
           "envID=:[PATH] "
 "appID=:[PATH] "
 "grantID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDApplicationsAppIDGrantsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
                     "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

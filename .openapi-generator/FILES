@@ -5,12 +5,17 @@ docs/Application.md
 docs/ApplicationAccessControl.md
 docs/ApplicationAccessControlGroup.md
 docs/ApplicationAccessControlRole.md
+docs/ApplicationAttributeMapping.md
 docs/ApplicationIcon.md
 docs/ApplicationMobile.md
 docs/ApplicationMobileIntegrityDetection.md
 docs/ApplicationMobileIntegrityDetectionCacheDuration.md
 docs/ApplicationOIDC.md
 docs/ApplicationOIDCAllOf.md
+docs/ApplicationResourceGrant.md
+docs/ApplicationResourceGrantApplication.md
+docs/ApplicationResourceGrantResource.md
+docs/ApplicationResourceGrantScopes.md
 docs/ApplicationSAML.md
 docs/ApplicationSAMLAllOf.md
 docs/ApplicationSAMLAllOfIdpSigningtype.md

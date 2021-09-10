@@ -3,8 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**attributes** | [**array[ApplicationAttributeMapping]**](ApplicationAttributeMapping.md) |  | [optional] [default to null]
 **applications** | [**array[AnyOf&lt;ApplicationSAML,ApplicationOIDC&gt;]**](AnyOf&lt;ApplicationSAML,ApplicationOIDC&gt;.md) |  | [optional] [default to null]
 **environments** | [**array[Environment]**](Environment.md) |  | [optional] [default to null]
+**grants** | [**array[ApplicationResourceGrant]**](ApplicationResourceGrant.md) |  | [optional] [default to null]
 **groups** | [**array[Group]**](Group.md) |  | [optional] [default to null]
 **groupMemberships** | [**array[GroupMembership]**](GroupMembership.md) |  | [optional] [default to null]
 **populations** | [**array[Population]**](Population.md) |  | [optional] [default to null]

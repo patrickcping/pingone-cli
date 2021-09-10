@@ -158,23 +158,23 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDAlertChannelsAlertC
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDAlertChannelsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDAlertChannelsPost:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDAlertChannelsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::samlAttrID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::samlAttrID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::samlAttrID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::body"]=0
+operation_parameters_minimum_occurrences["createApplicationAttributeMapping:::envID"]=1
+operation_parameters_minimum_occurrences["createApplicationAttributeMapping:::appID"]=1
+operation_parameters_minimum_occurrences["createApplicationAttributeMapping:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
+operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::envID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::appID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::samlAttrID"]=1
+operation_parameters_minimum_occurrences["readAllApplicationAttributeMappings:::envID"]=1
+operation_parameters_minimum_occurrences["readAllApplicationAttributeMappings:::appID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::envID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::appID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::samlAttrID"]=1
+operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::envID"]=1
+operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::appID"]=1
+operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::samlAttrID"]=1
+operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::envID"]=1
@@ -193,8 +193,12 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPu
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet:::appID"]=1
+operation_parameters_minimum_occurrences["createGrant:::envID"]=1
+operation_parameters_minimum_occurrences["createGrant:::appID"]=1
+operation_parameters_minimum_occurrences["createGrant:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createGrant:::ApplicationResourceGrant"]=0
+operation_parameters_minimum_occurrences["readAllGrantsForAnApplication:::envID"]=1
+operation_parameters_minimum_occurrences["readAllGrantsForAnApplication:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::grantID"]=1
@@ -206,10 +210,6 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGr
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::grantID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::body"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=1
@@ -1098,23 +1098,23 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDAlertChannelsAlertC
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDAlertChannelsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDAlertChannelsPost:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDAlertChannelsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::samlAttrID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::samlAttrID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::samlAttrID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::body"]=0
+operation_parameters_maximum_occurrences["createApplicationAttributeMapping:::envID"]=0
+operation_parameters_maximum_occurrences["createApplicationAttributeMapping:::appID"]=0
+operation_parameters_maximum_occurrences["createApplicationAttributeMapping:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
+operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::envID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::appID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::samlAttrID"]=0
+operation_parameters_maximum_occurrences["readAllApplicationAttributeMappings:::envID"]=0
+operation_parameters_maximum_occurrences["readAllApplicationAttributeMappings:::appID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::envID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::appID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::samlAttrID"]=0
+operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::envID"]=0
+operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::appID"]=0
+operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::samlAttrID"]=0
+operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::envID"]=0
@@ -1133,8 +1133,12 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPu
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet:::appID"]=0
+operation_parameters_maximum_occurrences["createGrant:::envID"]=0
+operation_parameters_maximum_occurrences["createGrant:::appID"]=0
+operation_parameters_maximum_occurrences["createGrant:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createGrant:::ApplicationResourceGrant"]=0
+operation_parameters_maximum_occurrences["readAllGrantsForAnApplication:::envID"]=0
+operation_parameters_maximum_occurrences["readAllGrantsForAnApplication:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::grantID"]=0
@@ -1146,10 +1150,6 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGr
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::grantID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::body"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=0
@@ -2035,23 +2035,23 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDAlertChannelsAlertChann
 operation_parameters_collection_type["v1EnvironmentsEnvIDAlertChannelsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDAlertChannelsPost:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDAlertChannelsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete:::samlAttrID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet:::samlAttrID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::samlAttrID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut:::body"]=""
+operation_parameters_collection_type["createApplicationAttributeMapping:::envID"]=""
+operation_parameters_collection_type["createApplicationAttributeMapping:::appID"]=""
+operation_parameters_collection_type["createApplicationAttributeMapping:::Content-Type"]=""
+operation_parameters_collection_type["createApplicationAttributeMapping:::ApplicationAttributeMapping"]=""
+operation_parameters_collection_type["deleteApplicationAttributeMapping:::envID"]=""
+operation_parameters_collection_type["deleteApplicationAttributeMapping:::appID"]=""
+operation_parameters_collection_type["deleteApplicationAttributeMapping:::samlAttrID"]=""
+operation_parameters_collection_type["readAllApplicationAttributeMappings:::envID"]=""
+operation_parameters_collection_type["readAllApplicationAttributeMappings:::appID"]=""
+operation_parameters_collection_type["readOneApplicationAttributeMapping:::envID"]=""
+operation_parameters_collection_type["readOneApplicationAttributeMapping:::appID"]=""
+operation_parameters_collection_type["readOneApplicationAttributeMapping:::samlAttrID"]=""
+operation_parameters_collection_type["updateApplicationAttributeMapping:::envID"]=""
+operation_parameters_collection_type["updateApplicationAttributeMapping:::appID"]=""
+operation_parameters_collection_type["updateApplicationAttributeMapping:::samlAttrID"]=""
+operation_parameters_collection_type["updateApplicationAttributeMapping:::Content-Type"]=""
+operation_parameters_collection_type["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::envID"]=""
@@ -2070,8 +2070,12 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCr
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGet:::appID"]=""
+operation_parameters_collection_type["createGrant:::envID"]=""
+operation_parameters_collection_type["createGrant:::appID"]=""
+operation_parameters_collection_type["createGrant:::Content-Type"]=""
+operation_parameters_collection_type["createGrant:::ApplicationResourceGrant"]=""
+operation_parameters_collection_type["readAllGrantsForAnApplication:::envID"]=""
+operation_parameters_collection_type["readAllGrantsForAnApplication:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::grantID"]=""
@@ -2083,10 +2087,6 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrants
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::grantID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsPost:::body"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=""
@@ -3316,11 +3316,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplicationAttributeMapping]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDAttributesGet${OFF};READ All Application Attribute Mappings (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDAttributesPost${OFF};CREATE Application Attribute Mapping (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete${OFF};DELETE Application Attribute Mapping (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet${OFF};READ One Application Attribute Mapping (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut${OFF};UPDATE Application Attribute Mapping (AUTH)
+  ${CYAN}createApplicationAttributeMapping${OFF};CREATE Application Attribute Mapping (AUTH)
+  ${CYAN}deleteApplicationAttributeMapping${OFF};DELETE Application Attribute Mapping (AUTH)
+  ${CYAN}readAllApplicationAttributeMappings${OFF};READ All Application Attribute Mappings (AUTH)
+  ${CYAN}readOneApplicationAttributeMapping${OFF};READ One Application Attribute Mapping (AUTH)
+  ${CYAN}updateApplicationAttributeMapping${OFF};UPDATE Application Attribute Mapping (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3336,11 +3336,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplicationResourceGrants]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGet${OFF};READ All Grants for an Application (AUTH)
+  ${CYAN}createGrant${OFF};CREATE Grant (AUTH)
+  ${CYAN}readAllGrantsForAnApplication${OFF};READ All Grants for an Application (AUTH)
   ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete${OFF};DELETE Grant (AUTH)
   ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet${OFF};READ One Grant for an Application (AUTH)
   ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut${OFF};UPDATE Grant (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsPost${OFF};CREATE Grant (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4512,33 +4512,12 @@ print_v1EnvironmentsEnvIDAlertChannelsPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDAttributesGet operation
+# Print help for createApplicationAttributeMapping operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDAttributesGet_help() {
+print_createApplicationAttributeMapping_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDAttributesGet - READ All Application Attribute Mappings${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDAttributesPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDAttributesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDAttributesPost - CREATE Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createApplicationAttributeMapping - CREATE Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4557,12 +4536,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDAttributesPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete operation
+# Print help for deleteApplicationAttributeMapping operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete_help() {
+print_deleteApplicationAttributeMapping_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete - DELETE Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteApplicationAttributeMapping - DELETE Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4579,12 +4558,33 @@ print_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet operation
+# Print help for readAllApplicationAttributeMappings operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet_help() {
+print_readAllApplicationAttributeMappings_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet - READ One Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllApplicationAttributeMappings - READ All Application Attribute Mappings${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneApplicationAttributeMapping operation
+#
+##############################################################################
+print_readOneApplicationAttributeMapping_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneApplicationAttributeMapping - READ One Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4601,12 +4601,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut operation
+# Print help for updateApplicationAttributeMapping operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut_help() {
+print_updateApplicationAttributeMapping_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut - UPDATE Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateApplicationAttributeMapping - UPDATE Application Attribute Mapping${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4741,12 +4741,36 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDGrantsGet operation
+# Print help for createGrant operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGet_help() {
+print_createGrant_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDGrantsGet - READ All Grants for an Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGrant - CREATE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllGrantsForAnApplication operation
+#
+##############################################################################
+print_readAllGrantsForAnApplication_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllGrantsForAnApplication - READ All Grants for an Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4828,30 +4852,6 @@ print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDGrantsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDGrantsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDGrantsPost - CREATE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -12407,46 +12407,10 @@ call_v1EnvironmentsEnvIDAlertChannelsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDAttributesGet operation
+# Call createApplicationAttributeMapping operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDAttributesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDAttributesPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDAttributesPost() {
+call_createApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -12521,10 +12485,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDAttributesPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete operation
+# Call deleteApplicationAttributeMapping operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete() {
+call_deleteApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID samlAttrID)
@@ -12557,10 +12521,46 @@ call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet operation
+# Call readAllApplicationAttributeMappings operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet() {
+call_readAllApplicationAttributeMappings() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneApplicationAttributeMapping operation
+#
+##############################################################################
+call_readOneApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID samlAttrID)
@@ -12593,10 +12593,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut operation
+# Call updateApplicationAttributeMapping operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut() {
+call_updateApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID samlAttrID)
@@ -12935,10 +12935,88 @@ call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDGrantsGet operation
+# Call createGrant operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGet() {
+call_createGrant() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/grants" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call readAllGrantsForAnApplication operation
+#
+##############################################################################
+call_readAllGrantsForAnApplication() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -13060,84 +13138,6 @@ call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut() {
         exit 1
     fi
     local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDGrantsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDGrantsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/grants" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -28105,20 +28105,20 @@ case $key in
     v1EnvironmentsEnvIDAlertChannelsPost)
     operation="v1EnvironmentsEnvIDAlertChannelsPost"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDAttributesGet"
+    createApplicationAttributeMapping)
+    operation="createApplicationAttributeMapping"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesPost)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDAttributesPost"
+    deleteApplicationAttributeMapping)
+    operation="deleteApplicationAttributeMapping"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete"
+    readAllApplicationAttributeMappings)
+    operation="readAllApplicationAttributeMappings"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet"
+    readOneApplicationAttributeMapping)
+    operation="readOneApplicationAttributeMapping"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut"
+    updateApplicationAttributeMapping)
+    operation="updateApplicationAttributeMapping"
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet)
     operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"
@@ -28135,8 +28135,11 @@ case $key in
     v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
     operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsGet"
+    createGrant)
+    operation="createGrant"
+    ;;
+    readAllGrantsForAnApplication)
+    operation="readAllGrantsForAnApplication"
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete)
     operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete"
@@ -28146,9 +28149,6 @@ case $key in
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut)
     operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut"
-    ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsPost)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsPost"
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
     operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"
@@ -29169,20 +29169,20 @@ case $operation in
     v1EnvironmentsEnvIDAlertChannelsPost)
     call_v1EnvironmentsEnvIDAlertChannelsPost
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDAttributesGet
+    createApplicationAttributeMapping)
+    call_createApplicationAttributeMapping
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesPost)
-    call_v1EnvironmentsEnvIDApplicationsAppIDAttributesPost
+    deleteApplicationAttributeMapping)
+    call_deleteApplicationAttributeMapping
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete)
-    call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDDelete
+    readAllApplicationAttributeMappings)
+    call_readAllApplicationAttributeMappings
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDGet
+    readOneApplicationAttributeMapping)
+    call_readOneApplicationAttributeMapping
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut)
-    call_v1EnvironmentsEnvIDApplicationsAppIDAttributesSamlAttrIDPut
+    updateApplicationAttributeMapping)
+    call_updateApplicationAttributeMapping
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet)
     call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet
@@ -29199,8 +29199,11 @@ case $operation in
     v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
     call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGet
+    createGrant)
+    call_createGrant
+    ;;
+    readAllGrantsForAnApplication)
+    call_readAllGrantsForAnApplication
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete)
     call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete
@@ -29210,9 +29213,6 @@ case $operation in
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut)
     call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut
-    ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsPost)
-    call_v1EnvironmentsEnvIDApplicationsAppIDGrantsPost
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
     call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet
