@@ -222,11 +222,11 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRo
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::Content-Type"]=0
+operation_parameters_minimum_occurrences["readApplicationSecret:::envID"]=1
+operation_parameters_minimum_occurrences["readApplicationSecret:::appID"]=1
+operation_parameters_minimum_occurrences["updateApplicationSecret:::envID"]=1
+operation_parameters_minimum_occurrences["updateApplicationSecret:::appID"]=1
+operation_parameters_minimum_occurrences["updateApplicationSecret:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost:::envID"]=1
@@ -244,19 +244,19 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSi
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::SOPAssignmentID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppDDelete:::appD"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppDDelete:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsPost:::body"]=0
+operation_parameters_minimum_occurrences["createApplication:::envID"]=1
+operation_parameters_minimum_occurrences["createApplication:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createApplication:::UNKNOWN_BASE_TYPE"]=0
+operation_parameters_minimum_occurrences["deleteApplication:::envID"]=1
+operation_parameters_minimum_occurrences["deleteApplication:::appID"]=1
+operation_parameters_minimum_occurrences["deleteApplication:::Content-Type"]=0
+operation_parameters_minimum_occurrences["readAllApplications:::envID"]=1
+operation_parameters_minimum_occurrences["readOneApplication:::envID"]=1
+operation_parameters_minimum_occurrences["readOneApplication:::appID"]=1
+operation_parameters_minimum_occurrences["updateApplication:::envID"]=1
+operation_parameters_minimum_occurrences["updateApplication:::appID"]=1
+operation_parameters_minimum_occurrences["updateApplication:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateApplication:::UNKNOWN_BASE_TYPE"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDActivitiesActivityIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDActivitiesActivityIDGet:::activityID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDActivitiesGet:::envID"]=1
@@ -420,19 +420,19 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGet:::envID
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGet:::filter"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGet:::limit"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDDelete:::groupID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDGet:::groupID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDGet:::include"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDPut:::groupID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGroupsPost:::body"]=0
+operation_parameters_minimum_occurrences["createGroup:::envID"]=1
+operation_parameters_minimum_occurrences["createGroup:::Group"]=0
+operation_parameters_minimum_occurrences["deleteGroup:::envID"]=1
+operation_parameters_minimum_occurrences["deleteGroup:::groupID"]=1
+operation_parameters_minimum_occurrences["readAllGroups:::envID"]=1
+operation_parameters_minimum_occurrences["readAllGroups:::filter"]=0
+operation_parameters_minimum_occurrences["readAllGroups:::limit"]=0
+operation_parameters_minimum_occurrences["readOneGroup:::envID"]=1
+operation_parameters_minimum_occurrences["readOneGroup:::groupID"]=1
+operation_parameters_minimum_occurrences["readOneGroup:::include"]=0
+operation_parameters_minimum_occurrences["updateGroup:::envID"]=1
+operation_parameters_minimum_occurrences["updateGroup:::groupID"]=1
+operation_parameters_minimum_occurrences["updateGroup:::Group"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::mappingID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::Accept"]=0
@@ -745,18 +745,18 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceID
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::scopeID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDDelete:::resourceID"]=1
+operation_parameters_minimum_occurrences["createResource:::envID"]=1
+operation_parameters_minimum_occurrences["createResource:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createResource:::Resource"]=0
+operation_parameters_minimum_occurrences["deleteResource:::envID"]=1
+operation_parameters_minimum_occurrences["deleteResource:::resourceID"]=1
+operation_parameters_minimum_occurrences["readAllResources:::envID"]=1
+operation_parameters_minimum_occurrences["updateResource:::envID"]=1
+operation_parameters_minimum_occurrences["updateResource:::resourceID"]=1
+operation_parameters_minimum_occurrences["updateResource:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateResource:::Resource"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::body"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=1
@@ -1162,11 +1162,11 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRo
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::Content-Type"]=0
+operation_parameters_maximum_occurrences["readApplicationSecret:::envID"]=0
+operation_parameters_maximum_occurrences["readApplicationSecret:::appID"]=0
+operation_parameters_maximum_occurrences["updateApplicationSecret:::envID"]=0
+operation_parameters_maximum_occurrences["updateApplicationSecret:::appID"]=0
+operation_parameters_maximum_occurrences["updateApplicationSecret:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost:::envID"]=0
@@ -1184,19 +1184,19 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSi
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::SOPAssignmentID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppDDelete:::appD"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppDDelete:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsPost:::body"]=0
+operation_parameters_maximum_occurrences["createApplication:::envID"]=0
+operation_parameters_maximum_occurrences["createApplication:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createApplication:::UNKNOWN_BASE_TYPE"]=0
+operation_parameters_maximum_occurrences["deleteApplication:::envID"]=0
+operation_parameters_maximum_occurrences["deleteApplication:::appID"]=0
+operation_parameters_maximum_occurrences["deleteApplication:::Content-Type"]=0
+operation_parameters_maximum_occurrences["readAllApplications:::envID"]=0
+operation_parameters_maximum_occurrences["readOneApplication:::envID"]=0
+operation_parameters_maximum_occurrences["readOneApplication:::appID"]=0
+operation_parameters_maximum_occurrences["updateApplication:::envID"]=0
+operation_parameters_maximum_occurrences["updateApplication:::appID"]=0
+operation_parameters_maximum_occurrences["updateApplication:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateApplication:::UNKNOWN_BASE_TYPE"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDActivitiesActivityIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDActivitiesActivityIDGet:::activityID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDActivitiesGet:::envID"]=0
@@ -1360,19 +1360,19 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGet:::envID
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGet:::filter"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGet:::limit"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDDelete:::groupID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDGet:::groupID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDGet:::include"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDPut:::groupID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsGroupIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGroupsPost:::body"]=0
+operation_parameters_maximum_occurrences["createGroup:::envID"]=0
+operation_parameters_maximum_occurrences["createGroup:::Group"]=0
+operation_parameters_maximum_occurrences["deleteGroup:::envID"]=0
+operation_parameters_maximum_occurrences["deleteGroup:::groupID"]=0
+operation_parameters_maximum_occurrences["readAllGroups:::envID"]=0
+operation_parameters_maximum_occurrences["readAllGroups:::filter"]=0
+operation_parameters_maximum_occurrences["readAllGroups:::limit"]=0
+operation_parameters_maximum_occurrences["readOneGroup:::envID"]=0
+operation_parameters_maximum_occurrences["readOneGroup:::groupID"]=0
+operation_parameters_maximum_occurrences["readOneGroup:::include"]=0
+operation_parameters_maximum_occurrences["updateGroup:::envID"]=0
+operation_parameters_maximum_occurrences["updateGroup:::groupID"]=0
+operation_parameters_maximum_occurrences["updateGroup:::Group"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::mappingID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::Accept"]=0
@@ -1685,18 +1685,18 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceID
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::scopeID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDDelete:::resourceID"]=0
+operation_parameters_maximum_occurrences["createResource:::envID"]=0
+operation_parameters_maximum_occurrences["createResource:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createResource:::Resource"]=0
+operation_parameters_maximum_occurrences["deleteResource:::envID"]=0
+operation_parameters_maximum_occurrences["deleteResource:::resourceID"]=0
+operation_parameters_maximum_occurrences["readAllResources:::envID"]=0
+operation_parameters_maximum_occurrences["updateResource:::envID"]=0
+operation_parameters_maximum_occurrences["updateResource:::resourceID"]=0
+operation_parameters_maximum_occurrences["updateResource:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateResource:::Resource"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDPut:::body"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=0
@@ -2099,11 +2099,11 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAs
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSecretGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSecretGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSecretPost:::Content-Type"]=""
+operation_parameters_collection_type["readApplicationSecret:::envID"]=""
+operation_parameters_collection_type["readApplicationSecret:::appID"]=""
+operation_parameters_collection_type["updateApplicationSecret:::envID"]=""
+operation_parameters_collection_type["updateApplicationSecret:::appID"]=""
+operation_parameters_collection_type["updateApplicationSecret:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost:::envID"]=""
@@ -2121,19 +2121,19 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOn
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::SOPAssignmentID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppDDelete:::appD"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppDDelete:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPut:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsPost:::body"]=""
+operation_parameters_collection_type["createApplication:::envID"]=""
+operation_parameters_collection_type["createApplication:::Content-Type"]=""
+operation_parameters_collection_type["createApplication:::UNKNOWN_BASE_TYPE"]=""
+operation_parameters_collection_type["deleteApplication:::envID"]=""
+operation_parameters_collection_type["deleteApplication:::appID"]=""
+operation_parameters_collection_type["deleteApplication:::Content-Type"]=""
+operation_parameters_collection_type["readAllApplications:::envID"]=""
+operation_parameters_collection_type["readOneApplication:::envID"]=""
+operation_parameters_collection_type["readOneApplication:::appID"]=""
+operation_parameters_collection_type["updateApplication:::envID"]=""
+operation_parameters_collection_type["updateApplication:::appID"]=""
+operation_parameters_collection_type["updateApplication:::Content-Type"]=""
+operation_parameters_collection_type["updateApplication:::UNKNOWN_BASE_TYPE"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDActivitiesActivityIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDActivitiesActivityIDGet:::activityID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDActivitiesGet:::envID"]=""
@@ -2297,19 +2297,19 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGet:::envID"]="
 operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysPost:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysPost:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGet:::filter"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGet:::limit"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDDelete:::groupID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDGet:::groupID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDGet:::include"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDPut:::groupID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsGroupIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGroupsPost:::body"]=""
+operation_parameters_collection_type["createGroup:::envID"]=""
+operation_parameters_collection_type["createGroup:::Group"]=""
+operation_parameters_collection_type["deleteGroup:::envID"]=""
+operation_parameters_collection_type["deleteGroup:::groupID"]=""
+operation_parameters_collection_type["readAllGroups:::envID"]=""
+operation_parameters_collection_type["readAllGroups:::filter"]=""
+operation_parameters_collection_type["readAllGroups:::limit"]=""
+operation_parameters_collection_type["readOneGroup:::envID"]=""
+operation_parameters_collection_type["readOneGroup:::groupID"]=""
+operation_parameters_collection_type["readOneGroup:::include"]=""
+operation_parameters_collection_type["updateGroup:::envID"]=""
+operation_parameters_collection_type["updateGroup:::groupID"]=""
+operation_parameters_collection_type["updateGroup:::Group"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::mappingID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete:::Accept"]=""
@@ -2622,18 +2622,18 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScop
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::scopeID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDDelete:::resourceID"]=""
+operation_parameters_collection_type["createResource:::envID"]=""
+operation_parameters_collection_type["createResource:::Content-Type"]=""
+operation_parameters_collection_type["createResource:::Resource"]=""
+operation_parameters_collection_type["deleteResource:::envID"]=""
+operation_parameters_collection_type["deleteResource:::resourceID"]=""
+operation_parameters_collection_type["readAllResources:::envID"]=""
+operation_parameters_collection_type["updateResource:::envID"]=""
+operation_parameters_collection_type["updateResource:::resourceID"]=""
+operation_parameters_collection_type["updateResource:::Content-Type"]=""
+operation_parameters_collection_type["updateResource:::Resource"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDPut:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDPut:::body"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=""
@@ -3355,8 +3355,8 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplicationSecret]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDSecretGet${OFF};READ Application Secret (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDSecretPost${OFF};UPDATE Application Secret (AUTH)
+  ${CYAN}readApplicationSecret${OFF};READ Application Secret (AUTH)
+  ${CYAN}updateApplicationSecret${OFF};UPDATE Application Secret (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3372,11 +3372,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplications]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppDDelete${OFF};DELETE Application (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGet${OFF};READ One Application (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDPut${OFF};UPDATE Application (SAML) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsGet${OFF};READ All Applications (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsPost${OFF};CREATE Application (SAML Protocol) (AUTH)
+  ${CYAN}createApplication${OFF};CREATE Application (AUTH)
+  ${CYAN}deleteApplication${OFF};DELETE Application (AUTH)
+  ${CYAN}readAllApplications${OFF};READ All Applications (AUTH)
+  ${CYAN}readOneApplication${OFF};READ One Application (AUTH)
+  ${CYAN}updateApplication${OFF};UPDATE Application (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3513,11 +3513,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsGroups]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDGroupsGet${OFF};READ All Groups (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGroupsGroupIDDelete${OFF};DELETE Group (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGroupsGroupIDGet${OFF};READ One Group (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGroupsGroupIDPut${OFF};UPDATE Group (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGroupsPost${OFF};CREATE Group (AUTH)
+  ${CYAN}createGroup${OFF};CREATE Group (AUTH)
+  ${CYAN}deleteGroup${OFF};DELETE Group (AUTH)
+  ${CYAN}readAllGroups${OFF};READ All Groups (AUTH)
+  ${CYAN}readOneGroup${OFF};READ One Group (AUTH)
+  ${CYAN}updateGroup${OFF};UPDATE Group (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3763,11 +3763,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsResourcesResources]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDResourcesGet${OFF};READ All Resources (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesPost${OFF};CREATE Resource (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDDelete${OFF};DELETE Resource (AUTH)
+  ${CYAN}createResource${OFF};CREATE Resource (AUTH)
+  ${CYAN}deleteResource${OFF};DELETE Resource (AUTH)
+  ${CYAN}readAllResources${OFF};READ All Resources (AUTH)
+  ${CYAN}updateResource${OFF};UPDATE Resource (AUTH)
   ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDGet${OFF};READ One Resource (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDPut${OFF};UPDATE Resource (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4507,8 +4507,8 @@ print_v1EnvironmentsEnvIDAlertChannelsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4552,8 +4552,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDAttributesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4666,8 +4666,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4850,8 +4850,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDGrantsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4895,8 +4895,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -4944,12 +4944,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet_hel
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDSecretGet operation
+# Print help for readApplicationSecret operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDSecretGet_help() {
+print_readApplicationSecret_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDSecretGet - READ Application Secret${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readApplicationSecret - READ Application Secret${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4965,12 +4965,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDSecretGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDSecretPost operation
+# Print help for updateApplicationSecret operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDSecretPost_help() {
+print_updateApplicationSecret_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDSecretPost - UPDATE Application Secret${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateApplicationSecret - UPDATE Application Secret${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5027,8 +5027,8 @@ print_v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5101,18 +5101,41 @@ print_v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentID
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppDDelete operation
+# Print help for createApplication operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppDDelete_help() {
+print_createApplication_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppDDelete - DELETE Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createApplication - CREATE Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}appD${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appD=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteApplication operation
+#
+##############################################################################
+print_deleteApplication_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteApplication - DELETE Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -5123,12 +5146,32 @@ print_v1EnvironmentsEnvIDApplicationsAppDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDGet operation
+# Print help for readAllApplications operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDGet_help() {
+print_readAllApplications_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDGet - READ One Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllApplications - READ All Applications${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneApplication operation
+#
+##############################################################################
+print_readOneApplication_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneApplication - READ One Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5144,61 +5187,18 @@ print_v1EnvironmentsEnvIDApplicationsAppIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDPut operation
+# Print help for updateApplication operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDPut_help() {
+print_updateApplication_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDPut - UPDATE Application (SAML)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateApplication - UPDATE Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsGet - READ All Applications${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsPost - CREATE Application (SAML Protocol)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -5433,8 +5433,8 @@ print_v1EnvironmentsEnvIDThemesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5693,8 +5693,8 @@ print_v1EnvironmentsEnvIDCertificatesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -5912,8 +5912,8 @@ print_v1EnvironmentsEnvIDKeysPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6067,8 +6067,8 @@ print_v1EnvironmentsEnvIDCustomDomainsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6133,8 +6133,8 @@ print_createEnvironmentActiveLicense_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6286,8 +6286,8 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6443,8 +6443,8 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6552,17 +6552,60 @@ print_v1EnvironmentsEnvIDGatewaysPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGroupsGet operation
+# Print help for createGroup operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGroupsGet_help() {
+print_createGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGroupsGet - READ All Groups${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGroup - CREATE Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteGroup operation
+#
+##############################################################################
+print_deleteGroup_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteGroup - DELETE Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}groupID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllGroups operation
+#
+##############################################################################
+print_readAllGroups_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllGroups - READ All Groups${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6581,33 +6624,12 @@ print_v1EnvironmentsEnvIDGroupsGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGroupsGroupIDDelete operation
+# Print help for readOneGroup operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGroupsGroupIDDelete_help() {
+print_readOneGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGroupsGroupIDDelete - DELETE Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}groupID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGroupsGroupIDGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGroupsGroupIDGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGroupsGroupIDGet - READ One Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneGroup - READ One Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6625,40 +6647,18 @@ print_v1EnvironmentsEnvIDGroupsGroupIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGroupsGroupIDPut operation
+# Print help for updateGroup operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGroupsGroupIDPut_help() {
+print_updateGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGroupsGroupIDPut - UPDATE Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateGroup - UPDATE Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}groupID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGroupsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGroupsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGroupsPost - CREATE Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -6780,8 +6780,8 @@ print_v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6892,8 +6892,8 @@ print_v1EnvironmentsEnvIDPropagationPlansPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6934,8 +6934,8 @@ print_v1EnvironmentsEnvIDPropagationRevisionsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7024,8 +7024,8 @@ print_v1EnvironmentsEnvIDPropagationRulesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7251,8 +7251,8 @@ print_v1EnvironmentsEnvIDPropagationStoresPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7433,8 +7433,8 @@ print_v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7606,8 +7606,8 @@ print_v1EnvironmentsEnvIDImagesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7802,8 +7802,8 @@ print_v1EnvironmentsEnvIDLanguagesLanguageIDStatusL10nStatusIDPut_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7826,8 +7826,8 @@ print_v1EnvironmentsEnvIDLanguagesLanguageIDStatusPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7935,8 +7935,8 @@ print_v1EnvironmentsEnvIDLanguagesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8370,8 +8370,8 @@ print_v1EnvironmentsEnvIDTemplatesTemplateNameContentsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8499,8 +8499,8 @@ print_v1EnvironmentsEnvIDNotificationsSettingsPhoneDeliverySettingsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8544,8 +8544,8 @@ print_v1EnvironmentsEnvIDEmailDomainsEmailDomainIdTrustedEmailsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8759,8 +8759,8 @@ print_v1EnvironmentsEnvIDEmailDomainsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9020,8 +9020,8 @@ print_v1EnvironmentsEnvIDResourcesResourceIDAttributesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9134,8 +9134,8 @@ print_v1EnvironmentsEnvIDResourcesResourceIDScopesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9208,32 +9208,12 @@ print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesGet operation
+# Print help for createResource operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesGet_help() {
+print_createResource_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesGet - READ All Resources${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDResourcesPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDResourcesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesPost - CREATE Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createResource - CREATE Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9246,17 +9226,17 @@ print_v1EnvironmentsEnvIDResourcesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDDelete operation
+# Print help for deleteResource operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDDelete_help() {
+print_deleteResource_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDDelete - DELETE Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteResource - DELETE Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9272,6 +9252,50 @@ print_v1EnvironmentsEnvIDResourcesResourceIDDelete_help() {
 }
 ##############################################################################
 #
+# Print help for readAllResources operation
+#
+##############################################################################
+print_readAllResources_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllResources - READ All Resources${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateResource operation
+#
+##############################################################################
+print_updateResource_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateResource - UPDATE Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for v1EnvironmentsEnvIDResourcesResourceIDGet operation
 #
 ##############################################################################
@@ -9284,30 +9308,6 @@ print_v1EnvironmentsEnvIDResourcesResourceIDGet_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDPut operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDPut - UPDATE Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -9376,8 +9376,8 @@ print_v1EnvironmentsEnvIDRiskEvaluationsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9464,8 +9464,8 @@ print_v1EnvironmentsEnvIDRiskPolicySetsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9728,8 +9728,8 @@ print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9858,8 +9858,8 @@ print_v1EnvironmentsEnvIDSignOnPoliciesPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9881,8 +9881,8 @@ print_v1Environments9ad15e9e3ac643f7A053D46b87d6c4a7SignOnPoliciesPolicyIDAction
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9995,8 +9995,8 @@ print_v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10038,8 +10038,8 @@ print_v1EnvironmentsEnvIDSubscriptionsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10699,8 +10699,8 @@ print_v1EnvironmentsEnvIDUsersUserIDPairingKeysPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -10895,8 +10895,8 @@ print_v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -13385,10 +13385,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDSecretGet operation
+# Call readApplicationSecret operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDSecretGet() {
+call_readApplicationSecret() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -13421,10 +13421,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDSecretGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDSecretPost operation
+# Call updateApplicationSecret operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDSecretPost() {
+call_updateApplicationSecret() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -13721,95 +13721,23 @@ call_v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDP
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppDDelete operation
+# Call createApplication operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppDDelete() {
+call_createApplication() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID appD)
+    local path_parameter_names=(envID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appD}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDPut operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -13871,10 +13799,46 @@ call_v1EnvironmentsEnvIDApplicationsAppIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsGet operation
+# Call deleteApplication operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsGet() {
+call_deleteApplication() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllApplications operation
+#
+##############################################################################
+call_readAllApplications() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -13907,23 +13871,59 @@ call_v1EnvironmentsEnvIDApplicationsGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsPost operation
+# Call readOneApplication operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsPost() {
+call_readOneApplication() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
+    local path_parameter_names=(envID appID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="POST"
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateApplication operation
+#
+##############################################################################
+call_updateApplication() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -17063,131 +17063,23 @@ call_v1EnvironmentsEnvIDGatewaysPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGroupsGet operation
+# Call createGroup operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGroupsGet() {
+call_createGroup() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(filter limit  )
+    local query_parameter_names=(  )
     local path
 
     if ! path=$(build_request_path "/v1/environments/{envID}/groups" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGroupsGroupIDDelete operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGroupsGroupIDDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID groupID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/groups/{groupID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGroupsGroupIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGroupsGroupIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID groupID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(include  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/groups/{groupID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGroupsGroupIDPut operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGroupsGroupIDPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID groupID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/groups/{groupID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -17249,23 +17141,131 @@ call_v1EnvironmentsEnvIDGroupsGroupIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGroupsPost operation
+# Call deleteGroup operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGroupsPost() {
+call_deleteGroup() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID groupID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/groups/{groupID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllGroups operation
+#
+##############################################################################
+call_readAllGroups() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(  )
+    local query_parameter_names=(filter limit  )
     local path
 
     if ! path=$(build_request_path "/v1/environments/{envID}/groups" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="POST"
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneGroup operation
+#
+##############################################################################
+call_readOneGroup() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID groupID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(include  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/groups/{groupID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateGroup operation
+#
+##############################################################################
+call_updateGroup() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID groupID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/groups/{groupID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -23063,46 +23063,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesGet operation
+# Call createResource operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/resources" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDResourcesPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDResourcesPost() {
+call_createResource() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -23177,10 +23141,10 @@ call_v1EnvironmentsEnvIDResourcesPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDDelete operation
+# Call deleteResource operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDDelete() {
+call_deleteResource() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID)
@@ -23213,19 +23177,19 @@ call_v1EnvironmentsEnvIDResourcesResourceIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDGet operation
+# Call readAllResources operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDGet() {
+call_readAllResources() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID resourceID)
+    local path_parameter_names=(envID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/resources" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -23249,10 +23213,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDPut operation
+# Call updateResource operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDPut() {
+call_updateResource() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID)
@@ -23322,6 +23286,42 @@ call_v1EnvironmentsEnvIDResourcesResourceIDPut() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call v1EnvironmentsEnvIDResourcesResourceIDGet operation
+#
+##############################################################################
+call_v1EnvironmentsEnvIDResourcesResourceIDGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID resourceID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -28162,11 +28162,11 @@ case $key in
     v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet)
     operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDSecretGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDSecretGet"
+    readApplicationSecret)
+    operation="readApplicationSecret"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDSecretPost)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDSecretPost"
+    updateApplicationSecret)
+    operation="updateApplicationSecret"
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet)
     operation="v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"
@@ -28183,20 +28183,20 @@ case $key in
     v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut)
     operation="v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppDDelete)
-    operation="v1EnvironmentsEnvIDApplicationsAppDDelete"
+    createApplication)
+    operation="createApplication"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDGet"
+    deleteApplication)
+    operation="deleteApplication"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPut)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDPut"
+    readAllApplications)
+    operation="readAllApplications"
     ;;
-    v1EnvironmentsEnvIDApplicationsGet)
-    operation="v1EnvironmentsEnvIDApplicationsGet"
+    readOneApplication)
+    operation="readOneApplication"
     ;;
-    v1EnvironmentsEnvIDApplicationsPost)
-    operation="v1EnvironmentsEnvIDApplicationsPost"
+    updateApplication)
+    operation="updateApplication"
     ;;
     v1EnvironmentsEnvIDActivitiesActivityIDGet)
     operation="v1EnvironmentsEnvIDActivitiesActivityIDGet"
@@ -28381,20 +28381,20 @@ case $key in
     v1EnvironmentsEnvIDGatewaysPost)
     operation="v1EnvironmentsEnvIDGatewaysPost"
     ;;
-    v1EnvironmentsEnvIDGroupsGet)
-    operation="v1EnvironmentsEnvIDGroupsGet"
+    createGroup)
+    operation="createGroup"
     ;;
-    v1EnvironmentsEnvIDGroupsGroupIDDelete)
-    operation="v1EnvironmentsEnvIDGroupsGroupIDDelete"
+    deleteGroup)
+    operation="deleteGroup"
     ;;
-    v1EnvironmentsEnvIDGroupsGroupIDGet)
-    operation="v1EnvironmentsEnvIDGroupsGroupIDGet"
+    readAllGroups)
+    operation="readAllGroups"
     ;;
-    v1EnvironmentsEnvIDGroupsGroupIDPut)
-    operation="v1EnvironmentsEnvIDGroupsGroupIDPut"
+    readOneGroup)
+    operation="readOneGroup"
     ;;
-    v1EnvironmentsEnvIDGroupsPost)
-    operation="v1EnvironmentsEnvIDGroupsPost"
+    updateGroup)
+    operation="updateGroup"
     ;;
     v1EnvironmentsEnvIDPropagationMappingMappingIDDelete)
     operation="v1EnvironmentsEnvIDPropagationMappingMappingIDDelete"
@@ -28741,20 +28741,20 @@ case $key in
     v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut)
     operation="v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"
     ;;
-    v1EnvironmentsEnvIDResourcesGet)
-    operation="v1EnvironmentsEnvIDResourcesGet"
+    createResource)
+    operation="createResource"
     ;;
-    v1EnvironmentsEnvIDResourcesPost)
-    operation="v1EnvironmentsEnvIDResourcesPost"
+    deleteResource)
+    operation="deleteResource"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDDelete)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDDelete"
+    readAllResources)
+    operation="readAllResources"
+    ;;
+    updateResource)
+    operation="updateResource"
     ;;
     v1EnvironmentsEnvIDResourcesResourceIDGet)
     operation="v1EnvironmentsEnvIDResourcesResourceIDGet"
-    ;;
-    v1EnvironmentsEnvIDResourcesResourceIDPut)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDPut"
     ;;
     v1EnvironmentsEnvIDRiskPredictorsGet)
     operation="v1EnvironmentsEnvIDRiskPredictorsGet"
@@ -29226,11 +29226,11 @@ case $operation in
     v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet)
     call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDSecretGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDSecretGet
+    readApplicationSecret)
+    call_readApplicationSecret
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDSecretPost)
-    call_v1EnvironmentsEnvIDApplicationsAppIDSecretPost
+    updateApplicationSecret)
+    call_updateApplicationSecret
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet)
     call_v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet
@@ -29247,20 +29247,20 @@ case $operation in
     v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut)
     call_v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut
     ;;
-    v1EnvironmentsEnvIDApplicationsAppDDelete)
-    call_v1EnvironmentsEnvIDApplicationsAppDDelete
+    createApplication)
+    call_createApplication
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDGet
+    deleteApplication)
+    call_deleteApplication
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPut)
-    call_v1EnvironmentsEnvIDApplicationsAppIDPut
+    readAllApplications)
+    call_readAllApplications
     ;;
-    v1EnvironmentsEnvIDApplicationsGet)
-    call_v1EnvironmentsEnvIDApplicationsGet
+    readOneApplication)
+    call_readOneApplication
     ;;
-    v1EnvironmentsEnvIDApplicationsPost)
-    call_v1EnvironmentsEnvIDApplicationsPost
+    updateApplication)
+    call_updateApplication
     ;;
     v1EnvironmentsEnvIDActivitiesActivityIDGet)
     call_v1EnvironmentsEnvIDActivitiesActivityIDGet
@@ -29445,20 +29445,20 @@ case $operation in
     v1EnvironmentsEnvIDGatewaysPost)
     call_v1EnvironmentsEnvIDGatewaysPost
     ;;
-    v1EnvironmentsEnvIDGroupsGet)
-    call_v1EnvironmentsEnvIDGroupsGet
+    createGroup)
+    call_createGroup
     ;;
-    v1EnvironmentsEnvIDGroupsGroupIDDelete)
-    call_v1EnvironmentsEnvIDGroupsGroupIDDelete
+    deleteGroup)
+    call_deleteGroup
     ;;
-    v1EnvironmentsEnvIDGroupsGroupIDGet)
-    call_v1EnvironmentsEnvIDGroupsGroupIDGet
+    readAllGroups)
+    call_readAllGroups
     ;;
-    v1EnvironmentsEnvIDGroupsGroupIDPut)
-    call_v1EnvironmentsEnvIDGroupsGroupIDPut
+    readOneGroup)
+    call_readOneGroup
     ;;
-    v1EnvironmentsEnvIDGroupsPost)
-    call_v1EnvironmentsEnvIDGroupsPost
+    updateGroup)
+    call_updateGroup
     ;;
     v1EnvironmentsEnvIDPropagationMappingMappingIDDelete)
     call_v1EnvironmentsEnvIDPropagationMappingMappingIDDelete
@@ -29805,20 +29805,20 @@ case $operation in
     v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut)
     call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut
     ;;
-    v1EnvironmentsEnvIDResourcesGet)
-    call_v1EnvironmentsEnvIDResourcesGet
+    createResource)
+    call_createResource
     ;;
-    v1EnvironmentsEnvIDResourcesPost)
-    call_v1EnvironmentsEnvIDResourcesPost
+    deleteResource)
+    call_deleteResource
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDDelete)
-    call_v1EnvironmentsEnvIDResourcesResourceIDDelete
+    readAllResources)
+    call_readAllResources
+    ;;
+    updateResource)
+    call_updateResource
     ;;
     v1EnvironmentsEnvIDResourcesResourceIDGet)
     call_v1EnvironmentsEnvIDResourcesResourceIDGet
-    ;;
-    v1EnvironmentsEnvIDResourcesResourceIDPut)
-    call_v1EnvironmentsEnvIDResourcesResourceIDPut
     ;;
     v1EnvironmentsEnvIDRiskPredictorsGet)
     call_v1EnvironmentsEnvIDRiskPredictorsGet

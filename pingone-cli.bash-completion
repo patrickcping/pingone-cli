@@ -108,18 +108,18 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDSecretGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDSecretPost"]=1
+    operations["readApplicationSecret"]=1
+    operations["updateApplicationSecret"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDDelete"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDGet"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppDDelete"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDPut"]=1
-    operations["v1EnvironmentsEnvIDApplicationsGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsPost"]=1
+    operations["createApplication"]=1
+    operations["deleteApplication"]=1
+    operations["readAllApplications"]=1
+    operations["readOneApplication"]=1
+    operations["updateApplication"]=1
     operations["v1EnvironmentsEnvIDActivitiesActivityIDGet"]=1
     operations["v1EnvironmentsEnvIDActivitiesGet"]=1
     operations["v1EnvironmentsEnvIDActivitiesPost"]=1
@@ -181,11 +181,11 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDGatewaysGatewayIDPut"]=1
     operations["v1EnvironmentsEnvIDGatewaysGet"]=1
     operations["v1EnvironmentsEnvIDGatewaysPost"]=1
-    operations["v1EnvironmentsEnvIDGroupsGet"]=1
-    operations["v1EnvironmentsEnvIDGroupsGroupIDDelete"]=1
-    operations["v1EnvironmentsEnvIDGroupsGroupIDGet"]=1
-    operations["v1EnvironmentsEnvIDGroupsGroupIDPut"]=1
-    operations["v1EnvironmentsEnvIDGroupsPost"]=1
+    operations["createGroup"]=1
+    operations["deleteGroup"]=1
+    operations["readAllGroups"]=1
+    operations["readOneGroup"]=1
+    operations["updateGroup"]=1
     operations["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete"]=1
     operations["v1EnvironmentsEnvIDPropagationMappingsMappingIDGet"]=1
     operations["v1EnvironmentsEnvIDPropagationMappingsMappingIDPut"]=1
@@ -301,11 +301,11 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"]=1
     operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"]=1
     operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"]=1
-    operations["v1EnvironmentsEnvIDResourcesGet"]=1
-    operations["v1EnvironmentsEnvIDResourcesPost"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDDelete"]=1
+    operations["createResource"]=1
+    operations["deleteResource"]=1
+    operations["readAllResources"]=1
+    operations["updateResource"]=1
     operations["v1EnvironmentsEnvIDResourcesResourceIDGet"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDPut"]=1
     operations["v1EnvironmentsEnvIDRiskPredictorsGet"]=1
     operations["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]=1
     operations["v1EnvironmentsEnvIDRiskEvaluationsPost"]=1
@@ -441,18 +441,18 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]="envID= appID= roleAssignmentID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"]="envID= appID= roleAssignmentID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSecretGet"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSecretPost"]="envID= appID= Content-Type: "
+    operation_parameters["readApplicationSecret"]="envID= appID= "
+    operation_parameters["updateApplicationSecret"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"]="envID= appID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDDelete"]="envID= appID= SOPAssignmentID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDGet"]="envID= appID= SOPAssignmentID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut"]="envID= appID= SOPAssignmentID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppDDelete"]="envID= appD= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDGet"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPut"]="envID= appID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsPost"]="envID= Content-Type: "
+    operation_parameters["createApplication"]="envID= Content-Type: "
+    operation_parameters["deleteApplication"]="envID= appID= Content-Type: "
+    operation_parameters["readAllApplications"]="envID= "
+    operation_parameters["readOneApplication"]="envID= appID= "
+    operation_parameters["updateApplication"]="envID= appID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDActivitiesActivityIDGet"]="envID= activityID= "
     operation_parameters["v1EnvironmentsEnvIDActivitiesGet"]="envID= filter= "
     operation_parameters["v1EnvironmentsEnvIDActivitiesPost"]="envID= Content-Type: "
@@ -514,11 +514,11 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDPut"]="envID= gatewayID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDGatewaysGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDGatewaysPost"]="envID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDGroupsGet"]="envID= filter= limit= "
-    operation_parameters["v1EnvironmentsEnvIDGroupsGroupIDDelete"]="envID= groupID= "
-    operation_parameters["v1EnvironmentsEnvIDGroupsGroupIDGet"]="envID= groupID= include= "
-    operation_parameters["v1EnvironmentsEnvIDGroupsGroupIDPut"]="envID= groupID= "
-    operation_parameters["v1EnvironmentsEnvIDGroupsPost"]="envID= "
+    operation_parameters["createGroup"]="envID= "
+    operation_parameters["deleteGroup"]="envID= groupID= "
+    operation_parameters["readAllGroups"]="envID= filter= limit= "
+    operation_parameters["readOneGroup"]="envID= groupID= include= "
+    operation_parameters["updateGroup"]="envID= groupID= "
     operation_parameters["v1EnvironmentsEnvIDPropagationMappingMappingIDDelete"]="envID= mappingID= Accept: "
     operation_parameters["v1EnvironmentsEnvIDPropagationMappingsMappingIDGet"]="envID= mappingID= Accept: "
     operation_parameters["v1EnvironmentsEnvIDPropagationMappingsMappingIDPut"]="envID= mappingID= Content-Type: "
@@ -634,11 +634,11 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"]="envID= resourceID= scopeID= "
     operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"]="envID= resourceID= scopeID= "
     operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"]="envID= resourceID= scopeID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDResourcesGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesPost"]="envID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDDelete"]="envID= resourceID= "
+    operation_parameters["createResource"]="envID= Content-Type: "
+    operation_parameters["deleteResource"]="envID= resourceID= "
+    operation_parameters["readAllResources"]="envID= "
+    operation_parameters["updateResource"]="envID= resourceID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDGet"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDPut"]="envID= resourceID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDRiskPredictorsGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]="envID= riskPredictorID= "
     operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsPost"]="envID= Content-Type: "

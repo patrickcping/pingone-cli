@@ -327,16 +327,16 @@ case $state in
             "v1EnvironmentsEnvIDApplicationsAppIDGrantsPost[CREATE Grant]"             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet[READ Application Role Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost[CREATE Application Role Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete[DELETE Application Role Assignment]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet[READ One Application Role Assignment]"             "v1EnvironmentsEnvIDApplicationsAppIDSecretGet[READ Application Secret]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDSecretPost[UPDATE Application Secret]"             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet[READ All SOP Assignments]" \
+            "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet[READ One Application Role Assignment]"             "readApplicationSecret[READ Application Secret]" \
+            "updateApplicationSecret[UPDATE Application Secret]"             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet[READ All SOP Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost[CREATE SOP Assignment]" \
             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDDelete[DELETE SOP Assignment]" \
             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDGet[READ One SOP Assignment]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut[UPDATE SOP Assignment]"             "v1EnvironmentsEnvIDApplicationsAppDDelete[DELETE Application]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDGet[READ One Application]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPut[UPDATE Application (SAML)]" \
-            "v1EnvironmentsEnvIDApplicationsGet[READ All Applications]" \
-            "v1EnvironmentsEnvIDApplicationsPost[CREATE Application (SAML Protocol)]"             "v1EnvironmentsEnvIDActivitiesActivityIDGet[GET One User Activity]" \
+            "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDPut[UPDATE SOP Assignment]"             "createApplication[CREATE Application]" \
+            "deleteApplication[DELETE Application]" \
+            "readAllApplications[READ All Applications]" \
+            "readOneApplication[READ One Application]" \
+            "updateApplication[UPDATE Application]"             "v1EnvironmentsEnvIDActivitiesActivityIDGet[GET One User Activity]" \
             "v1EnvironmentsEnvIDActivitiesGet[GET User Activities]" \
             "v1EnvironmentsEnvIDActivitiesPost[GET User Activities]"             "v1EnvironmentsEnvIDApplicationSignonsGet[READ Authentications Per Application (Partial)]"             "readOneBillOfMaterials[READ One Bill of Materials]" \
             "updateBillOfMaterials[UPDATE Bill of Materials]"             "v1EnvironmentsEnvIDBrandingSettingsGet[READ Branding Settings]" \
@@ -383,11 +383,11 @@ case $state in
             "v1EnvironmentsEnvIDGatewaysGatewayIDGet[READ One Gateway]" \
             "v1EnvironmentsEnvIDGatewaysGatewayIDPut[UPDATE Gateway]" \
             "v1EnvironmentsEnvIDGatewaysGet[READ All Gateways]" \
-            "v1EnvironmentsEnvIDGatewaysPost[CREATE Ping Federate Gateway]"             "v1EnvironmentsEnvIDGroupsGet[READ All Groups]" \
-            "v1EnvironmentsEnvIDGroupsGroupIDDelete[DELETE Group]" \
-            "v1EnvironmentsEnvIDGroupsGroupIDGet[READ One Group]" \
-            "v1EnvironmentsEnvIDGroupsGroupIDPut[UPDATE Group]" \
-            "v1EnvironmentsEnvIDGroupsPost[CREATE Group]"             "v1EnvironmentsEnvIDPropagationMappingMappingIDDelete[DELETE Mapping]" \
+            "v1EnvironmentsEnvIDGatewaysPost[CREATE Ping Federate Gateway]"             "createGroup[CREATE Group]" \
+            "deleteGroup[DELETE Group]" \
+            "readAllGroups[READ All Groups]" \
+            "readOneGroup[READ One Group]" \
+            "updateGroup[UPDATE Group]"             "v1EnvironmentsEnvIDPropagationMappingMappingIDDelete[DELETE Mapping]" \
             "v1EnvironmentsEnvIDPropagationMappingsMappingIDGet[READ One Mapping]" \
             "v1EnvironmentsEnvIDPropagationMappingsMappingIDPut[UPDATE Mapping]" \
             "v1EnvironmentsEnvIDPropagationRulesRuleIDMappingsGet[READ One Rule  Mapping]" \
@@ -477,11 +477,11 @@ case $state in
             "v1EnvironmentsEnvIDResourcesResourceIDScopesPost[CREATE PingOne access control scope]" \
             "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete[DELETE Scope]" \
             "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet[READ One Scope]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut[UPDATE PingOne access control scope]"             "v1EnvironmentsEnvIDResourcesGet[READ All Resources]" \
-            "v1EnvironmentsEnvIDResourcesPost[CREATE Resource]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDDelete[DELETE Resource]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDGet[READ One Resource]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDPut[UPDATE Resource]"             "v1EnvironmentsEnvIDRiskPredictorsGet[READ All Risk Predictors]" \
+            "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut[UPDATE PingOne access control scope]"             "createResource[CREATE Resource]" \
+            "deleteResource[DELETE Resource]" \
+            "readAllResources[READ All Resources]" \
+            "updateResource[UPDATE Resource]" \
+            "v1EnvironmentsEnvIDResourcesResourceIDGet[READ One Resource]"             "v1EnvironmentsEnvIDRiskPredictorsGet[READ All Risk Predictors]" \
             "v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet[READ One Risk Predictor]"             "v1EnvironmentsEnvIDRiskEvaluationsPost[CREATE Risk Evaluation]" \
             "v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut[UPDATE Risk Evaluation]" \
             "v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet[READ One Risk Evaluation]"             "v1EnvironmentsEnvIDRiskPolicySetsGet[READ Risk Policy Sets]" \
@@ -909,7 +909,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDSecretGet)
+      readApplicationSecret)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -917,7 +917,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDSecretPost)
+      updateApplicationSecret)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -971,24 +971,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppDDelete)
+      createApplication)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-"appD=:[PATH] "
                     "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDApplicationsAppIDPut)
+      deleteApplication)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -997,17 +988,26 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsGet)
+      readAllApplications)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsPost)
+      readOneApplication)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
+"appID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateApplication)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"appID=:[PATH] "
                     "Content-Type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1516,7 +1516,22 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGroupsGet)
+      createGroup)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteGroup)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"groupID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllGroups)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1525,15 +1540,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGroupsGroupIDDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"groupID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGroupsGroupIDGet)
+      readOneGroup)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1542,18 +1549,11 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGroupsGroupIDPut)
+      updateGroup)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "groupID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGroupsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2521,14 +2521,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDResourcesPost)
+      createResource)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2536,12 +2529,28 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDDelete)
+      deleteResource)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "resourceID=:[PATH] "
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllResources)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateResource)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"resourceID=:[PATH] "
+                    "Content-Type\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDResourcesResourceIDGet)
@@ -2550,15 +2559,6 @@ case $state in
           "envID=:[PATH] "
 "resourceID=:[PATH] "
                     )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDResourcesResourceIDPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"resourceID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDRiskPredictorsGet)

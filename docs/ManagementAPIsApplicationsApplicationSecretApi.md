@@ -4,12 +4,12 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1EnvironmentsEnvIDApplicationsAppIDSecretGet**](ManagementAPIsApplicationsApplicationSecretApi.md#v1EnvironmentsEnvIDApplicationsAppIDSecretGet) | **GET** /v1/environments/{envID}/applications/{appID}/secret | READ Application Secret
-[**v1EnvironmentsEnvIDApplicationsAppIDSecretPost**](ManagementAPIsApplicationsApplicationSecretApi.md#v1EnvironmentsEnvIDApplicationsAppIDSecretPost) | **POST** /v1/environments/{envID}/applications/{appID}/secret | UPDATE Application Secret
+[**readApplicationSecret**](ManagementAPIsApplicationsApplicationSecretApi.md#readApplicationSecret) | **GET** /v1/environments/{envID}/applications/{appID}/secret | READ Application Secret
+[**updateApplicationSecret**](ManagementAPIsApplicationsApplicationSecretApi.md#updateApplicationSecret) | **POST** /v1/environments/{envID}/applications/{appID}/secret | UPDATE Application Secret
 
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDSecretGet
+## readApplicationSecret
 
 READ Application Secret
 
@@ -18,7 +18,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDSecretGet envID=value appID=value
+pingone-cli readApplicationSecret envID=value appID=value
 ```
 
 ### Parameters
@@ -31,7 +31,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**ApplicationSecret**](ApplicationSecret.md)
 
 ### Authorization
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDSecretPost
+## updateApplicationSecret
 
 UPDATE Application Secret
 
@@ -54,7 +54,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDSecretPost envID=value appID=value Content-Type:value
+pingone-cli updateApplicationSecret envID=value appID=value Content-Type:value
 ```
 
 ### Parameters
