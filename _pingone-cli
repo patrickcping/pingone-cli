@@ -488,8 +488,8 @@ case $state in
             "v1EnvironmentsEnvIDRiskPolicySetsPost[CREATE Risk Policy Set]" \
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete[DELETE Risk Policy Set]" \
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet[READ One Risk Policy Set]" \
-            "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut[UPDATE Risk Policy Set]"             "v1RolesGet[READ All Roles]" \
-            "v1RolesRoleIDGet[READ One Role]"             "v1EnvironmentsEnvIDSchemasGet[READ All Schemas]" \
+            "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut[UPDATE Risk Policy Set]"             "readAllRoles[READ All Roles]" \
+            "readOneRole[READ One Role]"             "v1EnvironmentsEnvIDSchemasGet[READ All Schemas]" \
             "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete[DELETE Attribute]" \
             "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet[READ One Attribute]" \
             "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch[UPDATE Attribute (Patch)]" \
@@ -511,8 +511,8 @@ case $state in
             "v1EnvironmentsEnvIDSubscriptionsSubscriptionIDGet[READ One Subscription]" \
             "v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut[UPDATE Subscription]"             "v1EnvironmentsEnvIDTotalIdentitiesGet[READ Total Identity Counts]"             "v1EnvironmentsEnvIDUserActivitiesGet[READ User Activities]"             "v1EnvironmentsEnvIDUsersUserIDEnabledGet[READ User Enabled]" \
             "v1EnvironmentsEnvIDUsersUserIDEnabledPut[UPDATE User Enabled]"             "v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet[READ User MFA Enabled]" \
-            "v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut[UPDATE User MFA Enabled]"             "v1EnvironmentsEnvIDUsersGet[READ All Users in a Group with Other User Attribute]" \
-            "v1EnvironmentsEnvIDUsersUserIDGet[READ All Group IDs for User]" \
+            "v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut[UPDATE User MFA Enabled]"             "readAllGroupIDsForUser[READ All Group IDs for User]" \
+            "readAllUsersInAGroupWithOtherUserAttribute[READ All Users in a Group with Other User Attribute]" \
             "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet[READ All Group Memberships for User]" \
             "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete[REMOVE User from Group]" \
             "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet[READ One Group Membership for User]" \
@@ -538,15 +538,15 @@ case $state in
             "v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsTransactionIDPut[UPDATE ID Verification Transaction Record for a User]"             "v1EnvironmentsEnvIDUsersUserIDPasswordGet[READ Password State]" \
             "v1EnvironmentsEnvIDUsersUserIDPasswordPost[Password Locked Out]" \
             "v1EnvironmentsEnvIDUsersUserIDPasswordPut[UPDATE Password (Set)]"             "v1EnvironmentsEnvIDUsersUserIDPopulationGet[READ User Population]" \
-            "v1EnvironmentsEnvIDUsersUserIDPopulationPut[UPDATE User Population]"             "v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet[READ Role Assignments]" \
-            "v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost[CREATE User Role Assignment]" \
-            "v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete[DELETE User's Role Assignment]" \
-            "v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet[READ One Role Assignment]"             "v1EnvironmentsEnvIDUsersPost[CREATE User (Import)]" \
-            "v1EnvironmentsEnvIDUsersUserIDDelete[DELETE User]" \
+            "v1EnvironmentsEnvIDUsersUserIDPopulationPut[UPDATE User Population]"             "createUserRoleAssignment[CREATE User Role Assignment]" \
+            "deleteUserRoleAssignment[DELETE User's Role Assignment]" \
+            "readOneRoleAssignment[READ One Role Assignment]" \
+            "readUserRoleAssignments[READ Role Assignments]"             "createUserImport[CREATE User (Import)]" \
+            "deleteUser[DELETE User]" \
+            "updateUserPatch[UPDATE User (Patch)]" \
+            "updateUserPut[UPDATE User (Put)]" \
             "v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet[READ User Identity Provider]" \
             "v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut[UPDATE User Identity Provider]" \
-            "v1EnvironmentsEnvIDUsersUserIDPatch[UPDATE User (Patch)]" \
-            "v1EnvironmentsEnvIDUsersUserIDPut[UPDATE User (Put)]" \
             "v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet[READ user verification status]" \
             "v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut[UPDATE user verification status]" \
 
@@ -2641,13 +2641,13 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1RolesGet)
+      readAllRoles)
         local -a _op_arguments
         _op_arguments=(
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1RolesRoleIDGet)
+      readOneRole)
         local -a _op_arguments
         _op_arguments=(
           "roleID=:[PATH] "
@@ -2908,20 +2908,20 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "filter=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDUsersUserIDGet)
+      readAllGroupIDsForUser)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
           "include=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllUsersInAGroupWithOtherUserAttribute)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+          "filter=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3241,15 +3241,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"userID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost)
+      createUserRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -3258,7 +3250,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete)
+      deleteUserRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -3267,7 +3259,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet)
+      readOneRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -3276,7 +3268,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersPost)
+      readUserRoleAssignments)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"userID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createUserImport)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -3284,12 +3284,30 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDDelete)
+      deleteUser)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateUserPatch)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"userID=:[PATH] "
+                    "content-type\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateUserPut)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"userID=:[PATH] "
+                    "content-type\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet)
@@ -3306,24 +3324,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDUsersUserIDPatch)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"userID=:[PATH] "
-                    "content-type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDUsersUserIDPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"userID=:[PATH] "
-                    "content-type\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

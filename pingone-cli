@@ -781,7 +781,7 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskP
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::riskPolicySetID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1RolesRoleIDGet:::roleID"]=1
+operation_parameters_minimum_occurrences["readOneRole:::roleID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::schemaID"]=1
@@ -868,11 +868,11 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabl
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::content-type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersGet:::filter"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDGet:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDGet:::include"]=0
+operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::envID"]=1
+operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::userID"]=1
+operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::include"]=0
+operation_parameters_minimum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::filter"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=0
@@ -989,37 +989,37 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulati
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::content-type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::roleAssignmentID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersPost:::content-type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDDelete:::userID"]=1
+operation_parameters_minimum_occurrences["createUserRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["createUserRoleAssignment:::userID"]=1
+operation_parameters_minimum_occurrences["createUserRoleAssignment:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createUserRoleAssignment:::RoleAssignment"]=0
+operation_parameters_minimum_occurrences["deleteUserRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["deleteUserRoleAssignment:::userID"]=1
+operation_parameters_minimum_occurrences["deleteUserRoleAssignment:::roleAssignmentID"]=1
+operation_parameters_minimum_occurrences["readOneRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["readOneRoleAssignment:::userID"]=1
+operation_parameters_minimum_occurrences["readOneRoleAssignment:::roleAssignmentID"]=1
+operation_parameters_minimum_occurrences["readUserRoleAssignments:::envID"]=1
+operation_parameters_minimum_occurrences["readUserRoleAssignments:::userID"]=1
+operation_parameters_minimum_occurrences["createUserImport:::envID"]=1
+operation_parameters_minimum_occurrences["createUserImport:::content-type"]=0
+operation_parameters_minimum_occurrences["createUserImport:::User"]=0
+operation_parameters_minimum_occurrences["deleteUser:::envID"]=1
+operation_parameters_minimum_occurrences["deleteUser:::userID"]=1
+operation_parameters_minimum_occurrences["updateUserPatch:::envID"]=1
+operation_parameters_minimum_occurrences["updateUserPatch:::userID"]=1
+operation_parameters_minimum_occurrences["updateUserPatch:::content-type"]=0
+operation_parameters_minimum_occurrences["updateUserPatch:::User"]=0
+operation_parameters_minimum_occurrences["updateUserPut:::envID"]=1
+operation_parameters_minimum_occurrences["updateUserPut:::userID"]=1
+operation_parameters_minimum_occurrences["updateUserPut:::content-type"]=0
+operation_parameters_minimum_occurrences["updateUserPut:::User"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::content-type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::content-type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::body"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::content-type"]=0
@@ -1721,7 +1721,7 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskP
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::riskPolicySetID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1RolesRoleIDGet:::roleID"]=0
+operation_parameters_maximum_occurrences["readOneRole:::roleID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::schemaID"]=0
@@ -1808,11 +1808,11 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabl
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::content-type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersGet:::filter"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDGet:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDGet:::include"]=0
+operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::envID"]=0
+operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::userID"]=0
+operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::include"]=0
+operation_parameters_maximum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::filter"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=0
@@ -1929,37 +1929,37 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulati
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::content-type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::roleAssignmentID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersPost:::content-type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDDelete:::userID"]=0
+operation_parameters_maximum_occurrences["createUserRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["createUserRoleAssignment:::userID"]=0
+operation_parameters_maximum_occurrences["createUserRoleAssignment:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createUserRoleAssignment:::RoleAssignment"]=0
+operation_parameters_maximum_occurrences["deleteUserRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["deleteUserRoleAssignment:::userID"]=0
+operation_parameters_maximum_occurrences["deleteUserRoleAssignment:::roleAssignmentID"]=0
+operation_parameters_maximum_occurrences["readOneRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["readOneRoleAssignment:::userID"]=0
+operation_parameters_maximum_occurrences["readOneRoleAssignment:::roleAssignmentID"]=0
+operation_parameters_maximum_occurrences["readUserRoleAssignments:::envID"]=0
+operation_parameters_maximum_occurrences["readUserRoleAssignments:::userID"]=0
+operation_parameters_maximum_occurrences["createUserImport:::envID"]=0
+operation_parameters_maximum_occurrences["createUserImport:::content-type"]=0
+operation_parameters_maximum_occurrences["createUserImport:::User"]=0
+operation_parameters_maximum_occurrences["deleteUser:::envID"]=0
+operation_parameters_maximum_occurrences["deleteUser:::userID"]=0
+operation_parameters_maximum_occurrences["updateUserPatch:::envID"]=0
+operation_parameters_maximum_occurrences["updateUserPatch:::userID"]=0
+operation_parameters_maximum_occurrences["updateUserPatch:::content-type"]=0
+operation_parameters_maximum_occurrences["updateUserPatch:::User"]=0
+operation_parameters_maximum_occurrences["updateUserPut:::envID"]=0
+operation_parameters_maximum_occurrences["updateUserPut:::userID"]=0
+operation_parameters_maximum_occurrences["updateUserPut:::content-type"]=0
+operation_parameters_maximum_occurrences["updateUserPut:::User"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::content-type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPatch:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::content-type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDPut:::body"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::content-type"]=0
@@ -2658,7 +2658,7 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolic
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::riskPolicySetID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=""
-operation_parameters_collection_type["v1RolesRoleIDGet:::roleID"]=""
+operation_parameters_collection_type["readOneRole:::roleID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::schemaID"]=""
@@ -2745,11 +2745,11 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPu
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::content-type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersGet:::filter"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDGet:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDGet:::include"]=""
+operation_parameters_collection_type["readAllGroupIDsForUser:::envID"]=""
+operation_parameters_collection_type["readAllGroupIDsForUser:::userID"]=""
+operation_parameters_collection_type["readAllGroupIDsForUser:::include"]=""
+operation_parameters_collection_type["readAllUsersInAGroupWithOtherUserAttribute:::envID"]=""
+operation_parameters_collection_type["readAllUsersInAGroupWithOtherUserAttribute:::filter"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=""
@@ -2866,37 +2866,37 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPopulationPu
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::content-type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPopulationPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete:::roleAssignmentID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersPost:::content-type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDDelete:::userID"]=""
+operation_parameters_collection_type["createUserRoleAssignment:::envID"]=""
+operation_parameters_collection_type["createUserRoleAssignment:::userID"]=""
+operation_parameters_collection_type["createUserRoleAssignment:::Content-Type"]=""
+operation_parameters_collection_type["createUserRoleAssignment:::RoleAssignment"]=""
+operation_parameters_collection_type["deleteUserRoleAssignment:::envID"]=""
+operation_parameters_collection_type["deleteUserRoleAssignment:::userID"]=""
+operation_parameters_collection_type["deleteUserRoleAssignment:::roleAssignmentID"]=""
+operation_parameters_collection_type["readOneRoleAssignment:::envID"]=""
+operation_parameters_collection_type["readOneRoleAssignment:::userID"]=""
+operation_parameters_collection_type["readOneRoleAssignment:::roleAssignmentID"]=""
+operation_parameters_collection_type["readUserRoleAssignments:::envID"]=""
+operation_parameters_collection_type["readUserRoleAssignments:::userID"]=""
+operation_parameters_collection_type["createUserImport:::envID"]=""
+operation_parameters_collection_type["createUserImport:::content-type"]=""
+operation_parameters_collection_type["createUserImport:::User"]=""
+operation_parameters_collection_type["deleteUser:::envID"]=""
+operation_parameters_collection_type["deleteUser:::userID"]=""
+operation_parameters_collection_type["updateUserPatch:::envID"]=""
+operation_parameters_collection_type["updateUserPatch:::userID"]=""
+operation_parameters_collection_type["updateUserPatch:::content-type"]=""
+operation_parameters_collection_type["updateUserPatch:::User"]=""
+operation_parameters_collection_type["updateUserPut:::envID"]=""
+operation_parameters_collection_type["updateUserPut:::userID"]=""
+operation_parameters_collection_type["updateUserPut:::content-type"]=""
+operation_parameters_collection_type["updateUserPut:::User"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPatch:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPatch:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPatch:::content-type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPatch:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPut:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPut:::content-type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDPut:::body"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet:::content-type"]=""
@@ -3798,8 +3798,8 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsRoles]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1RolesGet${OFF};READ All Roles (AUTH)
-  ${CYAN}v1RolesRoleIDGet${OFF};READ One Role (AUTH)
+  ${CYAN}readAllRoles${OFF};READ All Roles (AUTH)
+  ${CYAN}readOneRole${OFF};READ One Role (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3875,8 +3875,8 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsUsersGroupMembership]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDUsersGet${OFF};READ All Users in a Group with Other User Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDGet${OFF};READ All Group IDs for User (AUTH)
+  ${CYAN}readAllGroupIDsForUser${OFF};READ All Group IDs for User (AUTH)
+  ${CYAN}readAllUsersInAGroupWithOtherUserAttribute${OFF};READ All Users in a Group with Other User Attribute (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet${OFF};READ All Group Memberships for User (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete${OFF};REMOVE User from Group (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet${OFF};READ One Group Membership for User (AUTH)
@@ -3962,21 +3962,21 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsUsersUserRoleAssignments]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet${OFF};READ Role Assignments (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost${OFF};CREATE User Role Assignment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete${OFF};DELETE User's Role Assignment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet${OFF};READ One Role Assignment (AUTH)
+  ${CYAN}createUserRoleAssignment${OFF};CREATE User Role Assignment (AUTH)
+  ${CYAN}deleteUserRoleAssignment${OFF};DELETE User's Role Assignment (AUTH)
+  ${CYAN}readOneRoleAssignment${OFF};READ One Role Assignment (AUTH)
+  ${CYAN}readUserRoleAssignments${OFF};READ Role Assignments (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsUsersUsers]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDUsersPost${OFF};CREATE User (Import) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDDelete${OFF};DELETE User (AUTH)
+  ${CYAN}createUserImport${OFF};CREATE User (Import) (AUTH)
+  ${CYAN}deleteUser${OFF};DELETE User (AUTH)
+  ${CYAN}updateUserPatch${OFF};UPDATE User (Patch) (AUTH)
+  ${CYAN}updateUserPut${OFF};UPDATE User (Put) (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet${OFF};READ User Identity Provider (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut${OFF};UPDATE User Identity Provider (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDPatch${OFF};UPDATE User (Patch) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDPut${OFF};UPDATE User (Put) (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet${OFF};READ user verification status (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut${OFF};UPDATE user verification status (AUTH)
 EOF
@@ -9535,12 +9535,12 @@ print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1RolesGet operation
+# Print help for readAllRoles operation
 #
 ##############################################################################
-print_v1RolesGet_help() {
+print_readAllRoles_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1RolesGet - READ All Roles${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllRoles - READ All Roles${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9553,12 +9553,12 @@ print_v1RolesGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1RolesRoleIDGet operation
+# Print help for readOneRole operation
 #
 ##############################################################################
-print_v1RolesRoleIDGet_help() {
+print_readOneRole_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1RolesRoleIDGet - READ One Role${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneRole - READ One Role${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10243,18 +10243,19 @@ print_v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersGet operation
+# Print help for readAllGroupIDsForUser operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersGet_help() {
+print_readAllGroupIDsForUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersGet - READ All Users in a Group with Other User Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllGroupIDsForUser - READ All Group IDs for User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: filter=value${OFF}" \
+    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}include${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: include=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -10265,19 +10266,18 @@ print_v1EnvironmentsEnvIDUsersGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDGet operation
+# Print help for readAllUsersInAGroupWithOtherUserAttribute operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDGet_help() {
+print_readAllUsersInAGroupWithOtherUserAttribute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDGet - READ All Group IDs for User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllUsersInAGroupWithOtherUserAttribute - READ All Users in a Group with Other User Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}include${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: include=value${OFF}" \
+    echo -e "  * ${GREEN}filter${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: filter=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -11083,33 +11083,12 @@ print_v1EnvironmentsEnvIDUsersUserIDPopulationPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet operation
+# Print help for createUserRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet_help() {
+print_createUserRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet - READ Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost - CREATE User Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createUserRoleAssignment - CREATE User Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11123,17 +11102,17 @@ print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete operation
+# Print help for deleteUserRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete_help() {
+print_deleteUserRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete - DELETE User's Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteUserRoleAssignment - DELETE User's Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11150,12 +11129,12 @@ print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete_help()
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet operation
+# Print help for readOneRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet_help() {
+print_readOneRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet - READ One Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneRoleAssignment - READ One Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11172,12 +11151,33 @@ print_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersPost operation
+# Print help for readUserRoleAssignments operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersPost_help() {
+print_readUserRoleAssignments_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersPost - CREATE User (Import)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readUserRoleAssignments - READ Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createUserImport operation
+#
+##############################################################################
+print_createUserImport_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createUserImport - CREATE User (Import)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11190,17 +11190,17 @@ print_v1EnvironmentsEnvIDUsersPost_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDDelete operation
+# Print help for deleteUser operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDDelete_help() {
+print_deleteUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDDelete - DELETE User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteUser - DELETE User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11213,6 +11213,54 @@ print_v1EnvironmentsEnvIDUsersUserIDDelete_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=204
     echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateUserPatch operation
+#
+##############################################################################
+print_updateUserPatch_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateUserPatch - UPDATE User (Patch)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}content-type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: content-type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateUserPut operation
+#
+##############################################################################
+print_updateUserPut_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateUserPut - UPDATE User (Put)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}content-type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: content-type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -11250,54 +11298,6 @@ print_v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut_help() {
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDUsersUserIDPatch operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDPatch_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDPatch - UPDATE User (Patch)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}content-type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: content-type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDUsersUserIDPut operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDPut - UPDATE User (Put)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}content-type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: content-type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -23855,10 +23855,10 @@ call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut() {
 
 ##############################################################################
 #
-# Call v1RolesGet operation
+# Call readAllRoles operation
 #
 ##############################################################################
-call_v1RolesGet() {
+call_readAllRoles() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
@@ -23891,10 +23891,10 @@ call_v1RolesGet() {
 
 ##############################################################################
 #
-# Call v1RolesRoleIDGet operation
+# Call readOneRole operation
 #
 ##############################################################################
-call_v1RolesRoleIDGet() {
+call_readOneRole() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(roleID)
@@ -25511,19 +25511,19 @@ call_v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersGet operation
+# Call readAllGroupIDsForUser operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersGet() {
+call_readAllGroupIDsForUser() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
+    local path_parameter_names=(envID userID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(filter  )
+    local query_parameter_names=(include  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/users" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -25547,19 +25547,19 @@ call_v1EnvironmentsEnvIDUsersGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDGet operation
+# Call readAllUsersInAGroupWithOtherUserAttribute operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDGet() {
+call_readAllUsersInAGroupWithOtherUserAttribute() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID)
+    local path_parameter_names=(envID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(include  )
+    local query_parameter_names=(filter  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/users" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -27263,46 +27263,10 @@ call_v1EnvironmentsEnvIDUsersUserIDPopulationPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet operation
+# Call createUserRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/roleAssignments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost() {
+call_createUserRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID)
@@ -27377,10 +27341,10 @@ call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete operation
+# Call deleteUserRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete() {
+call_deleteUserRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID roleAssignmentID)
@@ -27413,10 +27377,10 @@ call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet operation
+# Call readOneRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet() {
+call_readOneRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID roleAssignmentID)
@@ -27449,10 +27413,46 @@ call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersPost operation
+# Call readUserRoleAssignments operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersPost() {
+call_readUserRoleAssignments() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/roleAssignments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createUserImport operation
+#
+##############################################################################
+call_createUserImport() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -27527,10 +27527,10 @@ call_v1EnvironmentsEnvIDUsersPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDDelete operation
+# Call deleteUser operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDDelete() {
+call_deleteUser() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID)
@@ -27563,124 +27563,10 @@ call_v1EnvironmentsEnvIDUsersUserIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet operation
+# Call updateUserPatch operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/identityProvider" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/identityProvider" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDPatch operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDPatch() {
+call_updateUserPatch() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID)
@@ -27755,10 +27641,10 @@ call_v1EnvironmentsEnvIDUsersUserIDPatch() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDUsersUserIDPut operation
+# Call updateUserPut operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDPut() {
+call_updateUserPut() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID)
@@ -27768,6 +27654,120 @@ call_v1EnvironmentsEnvIDUsersUserIDPut() {
     local path
 
     if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet operation
+#
+##############################################################################
+call_v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/identityProvider" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut operation
+#
+##############################################################################
+call_v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/identityProvider" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -28786,11 +28786,11 @@ case $key in
     v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut)
     operation="v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"
     ;;
-    v1RolesGet)
-    operation="v1RolesGet"
+    readAllRoles)
+    operation="readAllRoles"
     ;;
-    v1RolesRoleIDGet)
-    operation="v1RolesRoleIDGet"
+    readOneRole)
+    operation="readOneRole"
     ;;
     v1EnvironmentsEnvIDSchemasGet)
     operation="v1EnvironmentsEnvIDSchemasGet"
@@ -28882,11 +28882,11 @@ case $key in
     v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut)
     operation="v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"
     ;;
-    v1EnvironmentsEnvIDUsersGet)
-    operation="v1EnvironmentsEnvIDUsersGet"
+    readAllGroupIDsForUser)
+    operation="readAllGroupIDsForUser"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDGet)
-    operation="v1EnvironmentsEnvIDUsersUserIDGet"
+    readAllUsersInAGroupWithOtherUserAttribute)
+    operation="readAllUsersInAGroupWithOtherUserAttribute"
     ;;
     v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
     operation="v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"
@@ -28993,35 +28993,35 @@ case $key in
     v1EnvironmentsEnvIDUsersUserIDPopulationPut)
     operation="v1EnvironmentsEnvIDUsersUserIDPopulationPut"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet)
-    operation="v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet"
+    createUserRoleAssignment)
+    operation="createUserRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost)
-    operation="v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost"
+    deleteUserRoleAssignment)
+    operation="deleteUserRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete)
-    operation="v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete"
+    readOneRoleAssignment)
+    operation="readOneRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet)
-    operation="v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet"
+    readUserRoleAssignments)
+    operation="readUserRoleAssignments"
     ;;
-    v1EnvironmentsEnvIDUsersPost)
-    operation="v1EnvironmentsEnvIDUsersPost"
+    createUserImport)
+    operation="createUserImport"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDDelete)
-    operation="v1EnvironmentsEnvIDUsersUserIDDelete"
+    deleteUser)
+    operation="deleteUser"
+    ;;
+    updateUserPatch)
+    operation="updateUserPatch"
+    ;;
+    updateUserPut)
+    operation="updateUserPut"
     ;;
     v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet)
     operation="v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet"
     ;;
     v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut)
     operation="v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut"
-    ;;
-    v1EnvironmentsEnvIDUsersUserIDPatch)
-    operation="v1EnvironmentsEnvIDUsersUserIDPatch"
-    ;;
-    v1EnvironmentsEnvIDUsersUserIDPut)
-    operation="v1EnvironmentsEnvIDUsersUserIDPut"
     ;;
     v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet)
     operation="v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet"
@@ -29850,11 +29850,11 @@ case $operation in
     v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut)
     call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut
     ;;
-    v1RolesGet)
-    call_v1RolesGet
+    readAllRoles)
+    call_readAllRoles
     ;;
-    v1RolesRoleIDGet)
-    call_v1RolesRoleIDGet
+    readOneRole)
+    call_readOneRole
     ;;
     v1EnvironmentsEnvIDSchemasGet)
     call_v1EnvironmentsEnvIDSchemasGet
@@ -29946,11 +29946,11 @@ case $operation in
     v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut)
     call_v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut
     ;;
-    v1EnvironmentsEnvIDUsersGet)
-    call_v1EnvironmentsEnvIDUsersGet
+    readAllGroupIDsForUser)
+    call_readAllGroupIDsForUser
     ;;
-    v1EnvironmentsEnvIDUsersUserIDGet)
-    call_v1EnvironmentsEnvIDUsersUserIDGet
+    readAllUsersInAGroupWithOtherUserAttribute)
+    call_readAllUsersInAGroupWithOtherUserAttribute
     ;;
     v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
     call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet
@@ -30057,35 +30057,35 @@ case $operation in
     v1EnvironmentsEnvIDUsersUserIDPopulationPut)
     call_v1EnvironmentsEnvIDUsersUserIDPopulationPut
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet)
-    call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet
+    createUserRoleAssignment)
+    call_createUserRoleAssignment
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost)
-    call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost
+    deleteUserRoleAssignment)
+    call_deleteUserRoleAssignment
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete)
-    call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete
+    readOneRoleAssignment)
+    call_readOneRoleAssignment
     ;;
-    v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet)
-    call_v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet
+    readUserRoleAssignments)
+    call_readUserRoleAssignments
     ;;
-    v1EnvironmentsEnvIDUsersPost)
-    call_v1EnvironmentsEnvIDUsersPost
+    createUserImport)
+    call_createUserImport
     ;;
-    v1EnvironmentsEnvIDUsersUserIDDelete)
-    call_v1EnvironmentsEnvIDUsersUserIDDelete
+    deleteUser)
+    call_deleteUser
+    ;;
+    updateUserPatch)
+    call_updateUserPatch
+    ;;
+    updateUserPut)
+    call_updateUserPut
     ;;
     v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet)
     call_v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet
     ;;
     v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut)
     call_v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut
-    ;;
-    v1EnvironmentsEnvIDUsersUserIDPatch)
-    call_v1EnvironmentsEnvIDUsersUserIDPatch
-    ;;
-    v1EnvironmentsEnvIDUsersUserIDPut)
-    call_v1EnvironmentsEnvIDUsersUserIDPut
     ;;
     v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet)
     call_v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet

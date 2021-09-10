@@ -4,12 +4,12 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1RolesGet**](ManagementAPIsRolesApi.md#v1RolesGet) | **GET** /v1/roles | READ All Roles
-[**v1RolesRoleIDGet**](ManagementAPIsRolesApi.md#v1RolesRoleIDGet) | **GET** /v1/roles/{roleID} | READ One Role
+[**readAllRoles**](ManagementAPIsRolesApi.md#readAllRoles) | **GET** /v1/roles | READ All Roles
+[**readOneRole**](ManagementAPIsRolesApi.md#readOneRole) | **GET** /v1/roles/{roleID} | READ One Role
 
 
 
-## v1RolesGet
+## readAllRoles
 
 READ All Roles
 
@@ -18,7 +18,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1RolesGet
+pingone-cli readAllRoles
 ```
 
 ### Parameters
@@ -27,7 +27,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-(empty response body)
+[**EntityArray**](EntityArray.md)
 
 ### Authorization
 
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1RolesRoleIDGet
+## readOneRole
 
 READ One Role
 
@@ -50,7 +50,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1RolesRoleIDGet roleID=value
+pingone-cli readOneRole roleID=value
 ```
 
 ### Parameters
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**Role**](Role.md)
 
 ### Authorization
 

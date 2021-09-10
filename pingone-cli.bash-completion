@@ -316,8 +316,8 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]=1
     operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"]=1
     operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"]=1
-    operations["v1RolesGet"]=1
-    operations["v1RolesRoleIDGet"]=1
+    operations["readAllRoles"]=1
+    operations["readOneRole"]=1
     operations["v1EnvironmentsEnvIDSchemasGet"]=1
     operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete"]=1
     operations["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet"]=1
@@ -348,8 +348,8 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDUsersUserIDEnabledPut"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"]=1
-    operations["v1EnvironmentsEnvIDUsersGet"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDGet"]=1
+    operations["readAllGroupIDsForUser"]=1
+    operations["readAllUsersInAGroupWithOtherUserAttribute"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"]=1
@@ -385,16 +385,16 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDUsersUserIDPasswordPut"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDPopulationGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDPopulationPut"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet"]=1
-    operations["v1EnvironmentsEnvIDUsersPost"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDDelete"]=1
+    operations["createUserRoleAssignment"]=1
+    operations["deleteUserRoleAssignment"]=1
+    operations["readOneRoleAssignment"]=1
+    operations["readUserRoleAssignments"]=1
+    operations["createUserImport"]=1
+    operations["deleteUser"]=1
+    operations["updateUserPatch"]=1
+    operations["updateUserPut"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDPatch"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDPut"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut"]=1
 
@@ -649,8 +649,8 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]="envID= riskPolicySetID= "
     operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"]="envID= riskPolicySetID= "
     operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"]="envID= riskPolicySetID= Content-Type: "
-    operation_parameters["v1RolesGet"]=""
-    operation_parameters["v1RolesRoleIDGet"]="roleID= "
+    operation_parameters["readAllRoles"]=""
+    operation_parameters["readOneRole"]="roleID= "
     operation_parameters["v1EnvironmentsEnvIDSchemasGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete"]="envID= schemaID= attributeID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet"]="envID= schemaID= attributeID= "
@@ -681,8 +681,8 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDEnabledPut"]="envID= userID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet"]="envID= userID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"]="envID= userID= content-type: "
-    operation_parameters["v1EnvironmentsEnvIDUsersGet"]="envID= filter= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDGet"]="envID= userID= include= "
+    operation_parameters["readAllGroupIDsForUser"]="envID= userID= include= "
+    operation_parameters["readAllUsersInAGroupWithOtherUserAttribute"]="envID= filter= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"]="envID= userID= expand= limit= filter= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"]="envID= userID= groupID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"]="envID= userID= groupID= expand= "
@@ -718,16 +718,16 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDPasswordPut"]="envID= userID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDPopulationGet"]="envID= userID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDPopulationPut"]="envID= userID= content-type: "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet"]="envID= userID= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost"]="envID= userID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete"]="envID= userID= roleAssignmentID= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet"]="envID= userID= roleAssignmentID= "
-    operation_parameters["v1EnvironmentsEnvIDUsersPost"]="envID= content-type: "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDDelete"]="envID= userID= "
+    operation_parameters["createUserRoleAssignment"]="envID= userID= Content-Type: "
+    operation_parameters["deleteUserRoleAssignment"]="envID= userID= roleAssignmentID= "
+    operation_parameters["readOneRoleAssignment"]="envID= userID= roleAssignmentID= "
+    operation_parameters["readUserRoleAssignments"]="envID= userID= "
+    operation_parameters["createUserImport"]="envID= content-type: "
+    operation_parameters["deleteUser"]="envID= userID= "
+    operation_parameters["updateUserPatch"]="envID= userID= content-type: "
+    operation_parameters["updateUserPut"]="envID= userID= content-type: "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet"]="envID= userID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut"]="envID= userID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPatch"]="envID= userID= content-type: "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDPut"]="envID= userID= content-type: "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet"]="envID= userID= content-type: "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut"]="envID= userID= content-type: "
 

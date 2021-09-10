@@ -31,7 +31,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EntityArray**](EntityArray.md)
 
 ### Authorization
 

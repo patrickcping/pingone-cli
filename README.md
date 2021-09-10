@@ -348,8 +348,8 @@ Class | Method | HTTP request | Description
 *ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetiddelete) | **DELETE** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | DELETE Risk Policy Set
 *ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetidget) | **GET** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | READ One Risk Policy Set
 *ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetidput) | **PUT** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | UPDATE Risk Policy Set
-*ManagementAPIsRolesApi* | [**v1RolesGet**](docs/ManagementAPIsRolesApi.md#v1rolesget) | **GET** /v1/roles | READ All Roles
-*ManagementAPIsRolesApi* | [**v1RolesRoleIDGet**](docs/ManagementAPIsRolesApi.md#v1rolesroleidget) | **GET** /v1/roles/{roleID} | READ One Role
+*ManagementAPIsRolesApi* | [**readAllRoles**](docs/ManagementAPIsRolesApi.md#readallroles) | **GET** /v1/roles | READ All Roles
+*ManagementAPIsRolesApi* | [**readOneRole**](docs/ManagementAPIsRolesApi.md#readonerole) | **GET** /v1/roles/{roleID} | READ One Role
 *ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasGet**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasget) | **GET** /v1/environments/{envID}/schemas | READ All Schemas
 *ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesattributeiddelete) | **DELETE** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | DELETE Attribute
 *ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesattributeidget) | **GET** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | READ One Attribute
@@ -380,8 +380,8 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersEnableUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDEnabledPut**](docs/ManagementAPIsUsersEnableUsersApi.md#v1environmentsenvidusersuseridenabledput) | **PUT** /v1/environments/{envID}/users/{userID}/enabled | UPDATE User Enabled
 *ManagementAPIsUsersEnableUsersMFAApi* | [**v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet**](docs/ManagementAPIsUsersEnableUsersMFAApi.md#v1environmentsenvidusersuseridmfaenabledget) | **GET** /v1/environments/{envID}/users/{userID}/mfaEnabled | READ User MFA Enabled
 *ManagementAPIsUsersEnableUsersMFAApi* | [**v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut**](docs/ManagementAPIsUsersEnableUsersMFAApi.md#v1environmentsenvidusersuseridmfaenabledput) | **PUT** /v1/environments/{envID}/users/{userID}/mfaEnabled | UPDATE User MFA Enabled
-*ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersGet**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersget) | **GET** /v1/environments/{envID}/users | READ All Users in a Group with Other User Attribute
-*ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDGet**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridget) | **GET** /v1/environments/{envID}/users/{userID} | READ All Group IDs for User
+*ManagementAPIsUsersGroupMembershipApi* | [**readAllGroupIDsForUser**](docs/ManagementAPIsUsersGroupMembershipApi.md#readallgroupidsforuser) | **GET** /v1/environments/{envID}/users/{userID} | READ All Group IDs for User
+*ManagementAPIsUsersGroupMembershipApi* | [**readAllUsersInAGroupWithOtherUserAttribute**](docs/ManagementAPIsUsersGroupMembershipApi.md#readallusersinagroupwithotheruserattribute) | **GET** /v1/environments/{envID}/users | READ All Users in a Group with Other User Attribute
 *ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridmemberofgroupsget) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups | READ All Group Memberships for User
 *ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridmemberofgroupsgroupiddelete) | **DELETE** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | REMOVE User from Group
 *ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridmemberofgroupsgroupidget) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | READ One Group Membership for User
@@ -417,16 +417,16 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersUserPasswordsApi* | [**v1EnvironmentsEnvIDUsersUserIDPasswordPut**](docs/ManagementAPIsUsersUserPasswordsApi.md#v1environmentsenvidusersuseridpasswordput) | **PUT** /v1/environments/{envID}/users/{userID}/password | UPDATE Password (Set)
 *ManagementAPIsUsersUserPopulationsApi* | [**v1EnvironmentsEnvIDUsersUserIDPopulationGet**](docs/ManagementAPIsUsersUserPopulationsApi.md#v1environmentsenvidusersuseridpopulationget) | **GET** /v1/environments/{envID}/users/{userID}/population | READ User Population
 *ManagementAPIsUsersUserPopulationsApi* | [**v1EnvironmentsEnvIDUsersUserIDPopulationPut**](docs/ManagementAPIsUsersUserPopulationsApi.md#v1environmentsenvidusersuseridpopulationput) | **PUT** /v1/environments/{envID}/users/{userID}/population | UPDATE User Population
-*ManagementAPIsUsersUserRoleAssignmentsApi* | [**v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsGet**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#v1environmentsenvidusersuseridroleassignmentsget) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments | READ Role Assignments
-*ManagementAPIsUsersUserRoleAssignmentsApi* | [**v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsPost**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#v1environmentsenvidusersuseridroleassignmentspost) | **POST** /v1/environments/{envID}/users/{userID}/roleAssignments | CREATE User Role Assignment
-*ManagementAPIsUsersUserRoleAssignmentsApi* | [**v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDDelete**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#v1environmentsenvidusersuseridroleassignmentsroleassignmentiddelete) | **DELETE** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | DELETE User&#39;s Role Assignment
-*ManagementAPIsUsersUserRoleAssignmentsApi* | [**v1EnvironmentsEnvIDUsersUserIDRoleAssignmentsRoleAssignmentIDGet**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#v1environmentsenvidusersuseridroleassignmentsroleassignmentidget) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | READ One Role Assignment
-*ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersPost**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenviduserspost) | **POST** /v1/environments/{envID}/users | CREATE User (Import)
-*ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDDelete**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuseriddelete) | **DELETE** /v1/environments/{envID}/users/{userID} | DELETE User
+*ManagementAPIsUsersUserRoleAssignmentsApi* | [**createUserRoleAssignment**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#createuserroleassignment) | **POST** /v1/environments/{envID}/users/{userID}/roleAssignments | CREATE User Role Assignment
+*ManagementAPIsUsersUserRoleAssignmentsApi* | [**deleteUserRoleAssignment**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#deleteuserroleassignment) | **DELETE** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | DELETE User&#39;s Role Assignment
+*ManagementAPIsUsersUserRoleAssignmentsApi* | [**readOneRoleAssignment**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#readoneroleassignment) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | READ One Role Assignment
+*ManagementAPIsUsersUserRoleAssignmentsApi* | [**readUserRoleAssignments**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#readuserroleassignments) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments | READ Role Assignments
+*ManagementAPIsUsersUsersApi* | [**createUserImport**](docs/ManagementAPIsUsersUsersApi.md#createuserimport) | **POST** /v1/environments/{envID}/users | CREATE User (Import)
+*ManagementAPIsUsersUsersApi* | [**deleteUser**](docs/ManagementAPIsUsersUsersApi.md#deleteuser) | **DELETE** /v1/environments/{envID}/users/{userID} | DELETE User
+*ManagementAPIsUsersUsersApi* | [**updateUserPatch**](docs/ManagementAPIsUsersUsersApi.md#updateuserpatch) | **PATCH** /v1/environments/{envID}/users/{userID} | UPDATE User (Patch)
+*ManagementAPIsUsersUsersApi* | [**updateUserPut**](docs/ManagementAPIsUsersUsersApi.md#updateuserput) | **PUT** /v1/environments/{envID}/users/{userID} | UPDATE User (Put)
 *ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuserididentityproviderget) | **GET** /v1/environments/{envID}/users/{userID}/identityProvider | READ User Identity Provider
 *ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDIdentityProviderPut**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuserididentityproviderput) | **PUT** /v1/environments/{envID}/users/{userID}/identityProvider | UPDATE User Identity Provider
-*ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDPatch**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuseridpatch) | **PATCH** /v1/environments/{envID}/users/{userID} | UPDATE User (Patch)
-*ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDPut**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuseridput) | **PUT** /v1/environments/{envID}/users/{userID} | UPDATE User (Put)
 *ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDVerifyStatusGet**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuseridverifystatusget) | **GET** /v1/environments/{envID}/users/{userID}/verifyStatus | READ user verification status
 *ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDVerifyStatusPut**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuseridverifystatusput) | **PUT** /v1/environments/{envID}/users/{userID}/verifyStatus | UPDATE user verification status
 
@@ -441,10 +441,31 @@ Class | Method | HTTP request | Description
  - [Environment](docs/Environment.md)
  - [EnvironmentLicense](docs/EnvironmentLicense.md)
  - [EnvironmentOrganization](docs/EnvironmentOrganization.md)
- - [Error](docs/Error.md)
- - [ErrorDetails](docs/ErrorDetails.md)
+ - [GroupMembership](docs/GroupMembership.md)
  - [InlineObject2](docs/InlineObject2.md)
+ - [P1Error](docs/P1Error.md)
+ - [P1ErrorDetails](docs/P1ErrorDetails.md)
  - [Population](docs/Population.md)
+ - [Role](docs/Role.md)
+ - [RoleAssignment](docs/RoleAssignment.md)
+ - [RoleAssignmentEnvironment](docs/RoleAssignmentEnvironment.md)
+ - [RoleAssignmentRole](docs/RoleAssignmentRole.md)
+ - [RoleAssignmentScope](docs/RoleAssignmentScope.md)
+ - [RolePermissions](docs/RolePermissions.md)
+ - [User](docs/User.md)
+ - [UserAccount](docs/UserAccount.md)
+ - [UserAddress](docs/UserAddress.md)
+ - [UserEnvironment](docs/UserEnvironment.md)
+ - [UserIdentityProvider](docs/UserIdentityProvider.md)
+ - [UserLastSignOn](docs/UserLastSignOn.md)
+ - [UserLifecycle](docs/UserLifecycle.md)
+ - [UserName](docs/UserName.md)
+ - [UserPassword](docs/UserPassword.md)
+ - [UserPasswordExternal](docs/UserPasswordExternal.md)
+ - [UserPasswordExternalGateway](docs/UserPasswordExternalGateway.md)
+ - [UserPasswordExternalGatewayUserType](docs/UserPasswordExternalGatewayUserType.md)
+ - [UserPhoto](docs/UserPhoto.md)
+ - [UserPopulation](docs/UserPopulation.md)
 
 
 ## Documentation For Authorization
