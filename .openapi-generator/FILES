@@ -124,6 +124,9 @@ docs/RoleAssignment.md
 docs/RoleAssignmentRole.md
 docs/RoleAssignmentScope.md
 docs/RolePermissions.md
+docs/Schema.md
+docs/SchemaAttribute.md
+docs/SchemaAttributeSchema.md
 docs/User.md
 docs/UserAccount.md
 docs/UserAddress.md

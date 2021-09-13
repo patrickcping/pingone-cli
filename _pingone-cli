@@ -489,14 +489,14 @@ case $state in
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete[DELETE Risk Policy Set]" \
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet[READ One Risk Policy Set]" \
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut[UPDATE Risk Policy Set]"             "readAllRoles[READ All Roles]" \
-            "readOneRole[READ One Role]"             "v1EnvironmentsEnvIDSchemasGet[READ All Schemas]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete[DELETE Attribute]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet[READ One Attribute]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch[UPDATE Attribute (Patch)]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut[UPDATE Attribute (Put)]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet[READ All (Schema) Attributes]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost[CREATE Attribute]" \
-            "v1EnvironmentsEnvIDSchemasSchemaIDGet[READ One Schema]"             "v1EnvironmentsEnvIDSignOnPoliciesGet[READ All Sign On Policies]" \
+            "readOneRole[READ One Role]"             "createAttribute[CREATE Attribute]" \
+            "deleteAttribute[DELETE Attribute]" \
+            "readAllSchemaAttributes[READ All (Schema) Attributes]" \
+            "readAllSchemas[READ All Schemas]" \
+            "readOneAttribute[READ One Attribute]" \
+            "readOneSchema[READ One Schema]" \
+            "updateAttributePatch[UPDATE Attribute (Patch)]" \
+            "updateAttributePut[UPDATE Attribute (Put)]"             "v1EnvironmentsEnvIDSignOnPoliciesGet[READ All Sign On Policies]" \
             "v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete[DELETE Sign On Policy]" \
             "v1EnvironmentsEnvIDSignOnPoliciesPolicyIDGet[READ One Sign On Policy]" \
             "v1EnvironmentsEnvIDSignOnPoliciesPolicyIDPut[UPDATE Sign On Policy]" \
@@ -512,7 +512,6 @@ case $state in
             "v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut[UPDATE Subscription]"             "v1EnvironmentsEnvIDTotalIdentitiesGet[READ Total Identity Counts]"             "v1EnvironmentsEnvIDUserActivitiesGet[READ User Activities]"             "v1EnvironmentsEnvIDUsersUserIDEnabledGet[READ User Enabled]" \
             "v1EnvironmentsEnvIDUsersUserIDEnabledPut[UPDATE User Enabled]"             "v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet[READ User MFA Enabled]" \
             "v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut[UPDATE User MFA Enabled]"             "readAllGroupIDsForUser[READ All Group IDs for User]" \
-            "readAllUsersInAGroupWithOtherUserAttribute[READ All Users in a Group with Other User Attribute]" \
             "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet[READ All Group Memberships for User]" \
             "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete[REMOVE User from Group]" \
             "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet[READ One Group Membership for User]" \
@@ -541,8 +540,9 @@ case $state in
             "v1EnvironmentsEnvIDUsersUserIDPopulationPut[UPDATE User Population]"             "createUserRoleAssignment[CREATE User Role Assignment]" \
             "deleteUserRoleAssignment[DELETE User's Role Assignment]" \
             "readOneRoleAssignment[READ One Role Assignment]" \
-            "readUserRoleAssignments[READ Role Assignments]"             "createUserImport[CREATE User (Import)]" \
+            "readUserRoleAssignments[READ Role Assignments]"             "createUser[CREATE User]" \
             "deleteUser[DELETE User]" \
+            "readAllUsers[READ All Users]" \
             "updateUserPatch[UPDATE User (Patch)]" \
             "updateUserPut[UPDATE User (Put)]" \
             "v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet[READ User Identity Provider]" \
@@ -2654,14 +2654,16 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDSchemasGet)
+      createAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
-                    )
+"schemaID=:[PATH] "
+                    "Content-Type\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete)
+      deleteAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2671,7 +2673,22 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet)
+      readAllSchemaAttributes)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"schemaID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllSchemas)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2680,7 +2697,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch)
+      readOneSchema)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"schemaID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAttributePatch)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2690,7 +2715,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut)
+      updateAttributePut)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2698,31 +2723,6 @@ case $state in
 "attributeID=:[PATH] "
                     "Content-Type\::[HEADER] "
 )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"schemaID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"schemaID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDSchemasSchemaIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"schemaID=:[PATH] "
-                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDSignOnPoliciesGet)
@@ -2914,14 +2914,6 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
           "include=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      readAllUsersInAGroupWithOtherUserAttribute)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-          "filter=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3276,7 +3268,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      createUserImport)
+      createUser)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -3290,6 +3282,14 @@ case $state in
           "envID=:[PATH] "
 "userID=:[PATH] "
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllUsers)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+          "filter=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       updateUserPatch)

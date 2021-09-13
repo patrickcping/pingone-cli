@@ -5,7 +5,6 @@ All URIs are relative to **
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**readAllGroupIDsForUser**](ManagementAPIsUsersGroupMembershipApi.md#readAllGroupIDsForUser) | **GET** /v1/environments/{envID}/users/{userID} | READ All Group IDs for User
-[**readAllUsersInAGroupWithOtherUserAttribute**](ManagementAPIsUsersGroupMembershipApi.md#readAllUsersInAGroupWithOtherUserAttribute) | **GET** /v1/environments/{envID}/users | READ All Users in a Group with Other User Attribute
 [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet**](ManagementAPIsUsersGroupMembershipApi.md#v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups | READ All Group Memberships for User
 [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete**](ManagementAPIsUsersGroupMembershipApi.md#v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete) | **DELETE** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | REMOVE User from Group
 [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet**](ManagementAPIsUsersGroupMembershipApi.md#v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | READ One Group Membership for User
@@ -37,42 +36,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 (empty response body)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## readAllUsersInAGroupWithOtherUserAttribute
-
-READ All Users in a Group with Other User Attribute
-
-By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
-
-### Example
-
-```bash
-pingone-cli readAllUsersInAGroupWithOtherUserAttribute envID=value  filter=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **envID** | **string** |  | [default to null]
- **filter** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EntityArray**](EntityArray.md)
 
 ### Authorization
 

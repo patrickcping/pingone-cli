@@ -350,14 +350,14 @@ Class | Method | HTTP request | Description
 *ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetidput) | **PUT** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | UPDATE Risk Policy Set
 *ManagementAPIsRolesApi* | [**readAllRoles**](docs/ManagementAPIsRolesApi.md#readallroles) | **GET** /v1/roles | READ All Roles
 *ManagementAPIsRolesApi* | [**readOneRole**](docs/ManagementAPIsRolesApi.md#readonerole) | **GET** /v1/roles/{roleID} | READ One Role
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasGet**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasget) | **GET** /v1/environments/{envID}/schemas | READ All Schemas
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesattributeiddelete) | **DELETE** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | DELETE Attribute
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesattributeidget) | **GET** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | READ One Attribute
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesattributeidpatch) | **PATCH** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | UPDATE Attribute (Patch)
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesattributeidput) | **PUT** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | UPDATE Attribute (Put)
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributesget) | **GET** /v1/environments/{envID}/schemas/{schemaID}/attributes | READ All (Schema) Attributes
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidattributespost) | **POST** /v1/environments/{envID}/schemas/{schemaID}/attributes | CREATE Attribute
-*ManagementAPIsSchemasApi* | [**v1EnvironmentsEnvIDSchemasSchemaIDGet**](docs/ManagementAPIsSchemasApi.md#v1environmentsenvidschemasschemaidget) | **GET** /v1/environments/{envID}/schemas/{schemaID} | READ One Schema
+*ManagementAPIsSchemasApi* | [**createAttribute**](docs/ManagementAPIsSchemasApi.md#createattribute) | **POST** /v1/environments/{envID}/schemas/{schemaID}/attributes | CREATE Attribute
+*ManagementAPIsSchemasApi* | [**deleteAttribute**](docs/ManagementAPIsSchemasApi.md#deleteattribute) | **DELETE** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | DELETE Attribute
+*ManagementAPIsSchemasApi* | [**readAllSchemaAttributes**](docs/ManagementAPIsSchemasApi.md#readallschemaattributes) | **GET** /v1/environments/{envID}/schemas/{schemaID}/attributes | READ All (Schema) Attributes
+*ManagementAPIsSchemasApi* | [**readAllSchemas**](docs/ManagementAPIsSchemasApi.md#readallschemas) | **GET** /v1/environments/{envID}/schemas | READ All Schemas
+*ManagementAPIsSchemasApi* | [**readOneAttribute**](docs/ManagementAPIsSchemasApi.md#readoneattribute) | **GET** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | READ One Attribute
+*ManagementAPIsSchemasApi* | [**readOneSchema**](docs/ManagementAPIsSchemasApi.md#readoneschema) | **GET** /v1/environments/{envID}/schemas/{schemaID} | READ One Schema
+*ManagementAPIsSchemasApi* | [**updateAttributePatch**](docs/ManagementAPIsSchemasApi.md#updateattributepatch) | **PATCH** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | UPDATE Attribute (Patch)
+*ManagementAPIsSchemasApi* | [**updateAttributePut**](docs/ManagementAPIsSchemasApi.md#updateattributeput) | **PUT** /v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID} | UPDATE Attribute (Put)
 *ManagementAPIsSignOnPoliciesSignOnPoliciesApi* | [**v1EnvironmentsEnvIDSignOnPoliciesGet**](docs/ManagementAPIsSignOnPoliciesSignOnPoliciesApi.md#v1environmentsenvidsignonpoliciesget) | **GET** /v1/environments/{envID}/signOnPolicies | READ All Sign On Policies
 *ManagementAPIsSignOnPoliciesSignOnPoliciesApi* | [**v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete**](docs/ManagementAPIsSignOnPoliciesSignOnPoliciesApi.md#v1environmentsenvidsignonpoliciespolicyiddelete) | **DELETE** /v1/environments/{envID}/signOnPolicies/{policyID} | DELETE Sign On Policy
 *ManagementAPIsSignOnPoliciesSignOnPoliciesApi* | [**v1EnvironmentsEnvIDSignOnPoliciesPolicyIDGet**](docs/ManagementAPIsSignOnPoliciesSignOnPoliciesApi.md#v1environmentsenvidsignonpoliciespolicyidget) | **GET** /v1/environments/{envID}/signOnPolicies/{policyID} | READ One Sign On Policy
@@ -381,7 +381,6 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersEnableUsersMFAApi* | [**v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet**](docs/ManagementAPIsUsersEnableUsersMFAApi.md#v1environmentsenvidusersuseridmfaenabledget) | **GET** /v1/environments/{envID}/users/{userID}/mfaEnabled | READ User MFA Enabled
 *ManagementAPIsUsersEnableUsersMFAApi* | [**v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut**](docs/ManagementAPIsUsersEnableUsersMFAApi.md#v1environmentsenvidusersuseridmfaenabledput) | **PUT** /v1/environments/{envID}/users/{userID}/mfaEnabled | UPDATE User MFA Enabled
 *ManagementAPIsUsersGroupMembershipApi* | [**readAllGroupIDsForUser**](docs/ManagementAPIsUsersGroupMembershipApi.md#readallgroupidsforuser) | **GET** /v1/environments/{envID}/users/{userID} | READ All Group IDs for User
-*ManagementAPIsUsersGroupMembershipApi* | [**readAllUsersInAGroupWithOtherUserAttribute**](docs/ManagementAPIsUsersGroupMembershipApi.md#readallusersinagroupwithotheruserattribute) | **GET** /v1/environments/{envID}/users | READ All Users in a Group with Other User Attribute
 *ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridmemberofgroupsget) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups | READ All Group Memberships for User
 *ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridmemberofgroupsgroupiddelete) | **DELETE** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | REMOVE User from Group
 *ManagementAPIsUsersGroupMembershipApi* | [**v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet**](docs/ManagementAPIsUsersGroupMembershipApi.md#v1environmentsenvidusersuseridmemberofgroupsgroupidget) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | READ One Group Membership for User
@@ -421,8 +420,9 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersUserRoleAssignmentsApi* | [**deleteUserRoleAssignment**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#deleteuserroleassignment) | **DELETE** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | DELETE User&#39;s Role Assignment
 *ManagementAPIsUsersUserRoleAssignmentsApi* | [**readOneRoleAssignment**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#readoneroleassignment) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | READ One Role Assignment
 *ManagementAPIsUsersUserRoleAssignmentsApi* | [**readUserRoleAssignments**](docs/ManagementAPIsUsersUserRoleAssignmentsApi.md#readuserroleassignments) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments | READ Role Assignments
-*ManagementAPIsUsersUsersApi* | [**createUserImport**](docs/ManagementAPIsUsersUsersApi.md#createuserimport) | **POST** /v1/environments/{envID}/users | CREATE User (Import)
+*ManagementAPIsUsersUsersApi* | [**createUser**](docs/ManagementAPIsUsersUsersApi.md#createuser) | **POST** /v1/environments/{envID}/users | CREATE User
 *ManagementAPIsUsersUsersApi* | [**deleteUser**](docs/ManagementAPIsUsersUsersApi.md#deleteuser) | **DELETE** /v1/environments/{envID}/users/{userID} | DELETE User
+*ManagementAPIsUsersUsersApi* | [**readAllUsers**](docs/ManagementAPIsUsersUsersApi.md#readallusers) | **GET** /v1/environments/{envID}/users | READ All Users
 *ManagementAPIsUsersUsersApi* | [**updateUserPatch**](docs/ManagementAPIsUsersUsersApi.md#updateuserpatch) | **PATCH** /v1/environments/{envID}/users/{userID} | UPDATE User (Patch)
 *ManagementAPIsUsersUsersApi* | [**updateUserPut**](docs/ManagementAPIsUsersUsersApi.md#updateuserput) | **PUT** /v1/environments/{envID}/users/{userID} | UPDATE User (Put)
 *ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuserididentityproviderget) | **GET** /v1/environments/{envID}/users/{userID}/identityProvider | READ User Identity Provider
@@ -479,6 +479,9 @@ Class | Method | HTTP request | Description
  - [RoleAssignmentRole](docs/RoleAssignmentRole.md)
  - [RoleAssignmentScope](docs/RoleAssignmentScope.md)
  - [RolePermissions](docs/RolePermissions.md)
+ - [Schema](docs/Schema.md)
+ - [SchemaAttribute](docs/SchemaAttribute.md)
+ - [SchemaAttributeSchema](docs/SchemaAttributeSchema.md)
  - [User](docs/User.md)
  - [UserAccount](docs/UserAccount.md)
  - [UserAddress](docs/UserAddress.md)

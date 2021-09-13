@@ -782,32 +782,32 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskP
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::Content-Type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=0
 operation_parameters_minimum_occurrences["readOneRole:::roleID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::schemaID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::attributeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::schemaID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::attributeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::schemaID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::attributeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::schemaID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::attributeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet:::schemaID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::schemaID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDGet:::schemaID"]=1
+operation_parameters_minimum_occurrences["createAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["createAttribute:::schemaID"]=1
+operation_parameters_minimum_occurrences["createAttribute:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createAttribute:::SchemaAttribute"]=0
+operation_parameters_minimum_occurrences["deleteAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["deleteAttribute:::schemaID"]=1
+operation_parameters_minimum_occurrences["deleteAttribute:::attributeID"]=1
+operation_parameters_minimum_occurrences["deleteAttribute:::Content-Type"]=0
+operation_parameters_minimum_occurrences["readAllSchemaAttributes:::envID"]=1
+operation_parameters_minimum_occurrences["readAllSchemaAttributes:::schemaID"]=1
+operation_parameters_minimum_occurrences["readAllSchemas:::envID"]=1
+operation_parameters_minimum_occurrences["readOneAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["readOneAttribute:::schemaID"]=1
+operation_parameters_minimum_occurrences["readOneAttribute:::attributeID"]=1
+operation_parameters_minimum_occurrences["readOneSchema:::envID"]=1
+operation_parameters_minimum_occurrences["readOneSchema:::schemaID"]=1
+operation_parameters_minimum_occurrences["updateAttributePatch:::envID"]=1
+operation_parameters_minimum_occurrences["updateAttributePatch:::schemaID"]=1
+operation_parameters_minimum_occurrences["updateAttributePatch:::attributeID"]=1
+operation_parameters_minimum_occurrences["updateAttributePatch:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateAttributePatch:::SchemaAttribute"]=0
+operation_parameters_minimum_occurrences["updateAttributePut:::envID"]=1
+operation_parameters_minimum_occurrences["updateAttributePut:::schemaID"]=1
+operation_parameters_minimum_occurrences["updateAttributePut:::attributeID"]=1
+operation_parameters_minimum_occurrences["updateAttributePut:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateAttributePut:::SchemaAttribute"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSignOnPoliciesGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete:::policyID"]=1
@@ -871,8 +871,6 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabl
 operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::envID"]=1
 operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::userID"]=1
 operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::include"]=0
-operation_parameters_minimum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::envID"]=1
-operation_parameters_minimum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::filter"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=0
@@ -1001,11 +999,13 @@ operation_parameters_minimum_occurrences["readOneRoleAssignment:::userID"]=1
 operation_parameters_minimum_occurrences["readOneRoleAssignment:::roleAssignmentID"]=1
 operation_parameters_minimum_occurrences["readUserRoleAssignments:::envID"]=1
 operation_parameters_minimum_occurrences["readUserRoleAssignments:::userID"]=1
-operation_parameters_minimum_occurrences["createUserImport:::envID"]=1
-operation_parameters_minimum_occurrences["createUserImport:::content-type"]=0
-operation_parameters_minimum_occurrences["createUserImport:::User"]=0
+operation_parameters_minimum_occurrences["createUser:::envID"]=1
+operation_parameters_minimum_occurrences["createUser:::content-type"]=0
+operation_parameters_minimum_occurrences["createUser:::User"]=0
 operation_parameters_minimum_occurrences["deleteUser:::envID"]=1
 operation_parameters_minimum_occurrences["deleteUser:::userID"]=1
+operation_parameters_minimum_occurrences["readAllUsers:::envID"]=1
+operation_parameters_minimum_occurrences["readAllUsers:::filter"]=0
 operation_parameters_minimum_occurrences["updateUserPatch:::envID"]=1
 operation_parameters_minimum_occurrences["updateUserPatch:::userID"]=1
 operation_parameters_minimum_occurrences["updateUserPatch:::content-type"]=0
@@ -1722,32 +1722,32 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskP
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::Content-Type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=0
 operation_parameters_maximum_occurrences["readOneRole:::roleID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::schemaID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::attributeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::schemaID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::attributeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::schemaID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::attributeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::schemaID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::attributeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet:::schemaID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::schemaID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSchemasSchemaIDGet:::schemaID"]=0
+operation_parameters_maximum_occurrences["createAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["createAttribute:::schemaID"]=0
+operation_parameters_maximum_occurrences["createAttribute:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createAttribute:::SchemaAttribute"]=0
+operation_parameters_maximum_occurrences["deleteAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["deleteAttribute:::schemaID"]=0
+operation_parameters_maximum_occurrences["deleteAttribute:::attributeID"]=0
+operation_parameters_maximum_occurrences["deleteAttribute:::Content-Type"]=0
+operation_parameters_maximum_occurrences["readAllSchemaAttributes:::envID"]=0
+operation_parameters_maximum_occurrences["readAllSchemaAttributes:::schemaID"]=0
+operation_parameters_maximum_occurrences["readAllSchemas:::envID"]=0
+operation_parameters_maximum_occurrences["readOneAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["readOneAttribute:::schemaID"]=0
+operation_parameters_maximum_occurrences["readOneAttribute:::attributeID"]=0
+operation_parameters_maximum_occurrences["readOneSchema:::envID"]=0
+operation_parameters_maximum_occurrences["readOneSchema:::schemaID"]=0
+operation_parameters_maximum_occurrences["updateAttributePatch:::envID"]=0
+operation_parameters_maximum_occurrences["updateAttributePatch:::schemaID"]=0
+operation_parameters_maximum_occurrences["updateAttributePatch:::attributeID"]=0
+operation_parameters_maximum_occurrences["updateAttributePatch:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateAttributePatch:::SchemaAttribute"]=0
+operation_parameters_maximum_occurrences["updateAttributePut:::envID"]=0
+operation_parameters_maximum_occurrences["updateAttributePut:::schemaID"]=0
+operation_parameters_maximum_occurrences["updateAttributePut:::attributeID"]=0
+operation_parameters_maximum_occurrences["updateAttributePut:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateAttributePut:::SchemaAttribute"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSignOnPoliciesGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete:::policyID"]=0
@@ -1811,8 +1811,6 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabl
 operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::envID"]=0
 operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::userID"]=0
 operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::include"]=0
-operation_parameters_maximum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::envID"]=0
-operation_parameters_maximum_occurrences["readAllUsersInAGroupWithOtherUserAttribute:::filter"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=0
@@ -1941,11 +1939,13 @@ operation_parameters_maximum_occurrences["readOneRoleAssignment:::userID"]=0
 operation_parameters_maximum_occurrences["readOneRoleAssignment:::roleAssignmentID"]=0
 operation_parameters_maximum_occurrences["readUserRoleAssignments:::envID"]=0
 operation_parameters_maximum_occurrences["readUserRoleAssignments:::userID"]=0
-operation_parameters_maximum_occurrences["createUserImport:::envID"]=0
-operation_parameters_maximum_occurrences["createUserImport:::content-type"]=0
-operation_parameters_maximum_occurrences["createUserImport:::User"]=0
+operation_parameters_maximum_occurrences["createUser:::envID"]=0
+operation_parameters_maximum_occurrences["createUser:::content-type"]=0
+operation_parameters_maximum_occurrences["createUser:::User"]=0
 operation_parameters_maximum_occurrences["deleteUser:::envID"]=0
 operation_parameters_maximum_occurrences["deleteUser:::userID"]=0
+operation_parameters_maximum_occurrences["readAllUsers:::envID"]=0
+operation_parameters_maximum_occurrences["readAllUsers:::filter"]=0
 operation_parameters_maximum_occurrences["updateUserPatch:::envID"]=0
 operation_parameters_maximum_occurrences["updateUserPatch:::userID"]=0
 operation_parameters_maximum_occurrences["updateUserPatch:::content-type"]=0
@@ -2659,32 +2659,32 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolic
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::Content-Type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=""
 operation_parameters_collection_type["readOneRole:::roleID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::schemaID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::attributeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::schemaID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet:::attributeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::schemaID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::attributeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::schemaID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::attributeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet:::schemaID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::schemaID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDSchemasSchemaIDGet:::schemaID"]=""
+operation_parameters_collection_type["createAttribute:::envID"]=""
+operation_parameters_collection_type["createAttribute:::schemaID"]=""
+operation_parameters_collection_type["createAttribute:::Content-Type"]=""
+operation_parameters_collection_type["createAttribute:::SchemaAttribute"]=""
+operation_parameters_collection_type["deleteAttribute:::envID"]=""
+operation_parameters_collection_type["deleteAttribute:::schemaID"]=""
+operation_parameters_collection_type["deleteAttribute:::attributeID"]=""
+operation_parameters_collection_type["deleteAttribute:::Content-Type"]=""
+operation_parameters_collection_type["readAllSchemaAttributes:::envID"]=""
+operation_parameters_collection_type["readAllSchemaAttributes:::schemaID"]=""
+operation_parameters_collection_type["readAllSchemas:::envID"]=""
+operation_parameters_collection_type["readOneAttribute:::envID"]=""
+operation_parameters_collection_type["readOneAttribute:::schemaID"]=""
+operation_parameters_collection_type["readOneAttribute:::attributeID"]=""
+operation_parameters_collection_type["readOneSchema:::envID"]=""
+operation_parameters_collection_type["readOneSchema:::schemaID"]=""
+operation_parameters_collection_type["updateAttributePatch:::envID"]=""
+operation_parameters_collection_type["updateAttributePatch:::schemaID"]=""
+operation_parameters_collection_type["updateAttributePatch:::attributeID"]=""
+operation_parameters_collection_type["updateAttributePatch:::Content-Type"]=""
+operation_parameters_collection_type["updateAttributePatch:::SchemaAttribute"]=""
+operation_parameters_collection_type["updateAttributePut:::envID"]=""
+operation_parameters_collection_type["updateAttributePut:::schemaID"]=""
+operation_parameters_collection_type["updateAttributePut:::attributeID"]=""
+operation_parameters_collection_type["updateAttributePut:::Content-Type"]=""
+operation_parameters_collection_type["updateAttributePut:::SchemaAttribute"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDSignOnPoliciesGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDSignOnPoliciesPolicyIDDelete:::policyID"]=""
@@ -2748,8 +2748,6 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPu
 operation_parameters_collection_type["readAllGroupIDsForUser:::envID"]=""
 operation_parameters_collection_type["readAllGroupIDsForUser:::userID"]=""
 operation_parameters_collection_type["readAllGroupIDsForUser:::include"]=""
-operation_parameters_collection_type["readAllUsersInAGroupWithOtherUserAttribute:::envID"]=""
-operation_parameters_collection_type["readAllUsersInAGroupWithOtherUserAttribute:::filter"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=""
@@ -2878,11 +2876,13 @@ operation_parameters_collection_type["readOneRoleAssignment:::userID"]=""
 operation_parameters_collection_type["readOneRoleAssignment:::roleAssignmentID"]=""
 operation_parameters_collection_type["readUserRoleAssignments:::envID"]=""
 operation_parameters_collection_type["readUserRoleAssignments:::userID"]=""
-operation_parameters_collection_type["createUserImport:::envID"]=""
-operation_parameters_collection_type["createUserImport:::content-type"]=""
-operation_parameters_collection_type["createUserImport:::User"]=""
+operation_parameters_collection_type["createUser:::envID"]=""
+operation_parameters_collection_type["createUser:::content-type"]=""
+operation_parameters_collection_type["createUser:::User"]=""
 operation_parameters_collection_type["deleteUser:::envID"]=""
 operation_parameters_collection_type["deleteUser:::userID"]=""
+operation_parameters_collection_type["readAllUsers:::envID"]=""
+operation_parameters_collection_type["readAllUsers:::filter"]=""
 operation_parameters_collection_type["updateUserPatch:::envID"]=""
 operation_parameters_collection_type["updateUserPatch:::userID"]=""
 operation_parameters_collection_type["updateUserPatch:::content-type"]=""
@@ -3805,14 +3805,14 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsSchemas]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDSchemasGet${OFF};READ All Schemas (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete${OFF};DELETE Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet${OFF};READ One Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch${OFF};UPDATE Attribute (Patch) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut${OFF};UPDATE Attribute (Put) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet${OFF};READ All (Schema) Attributes (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost${OFF};CREATE Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDSchemasSchemaIDGet${OFF};READ One Schema (AUTH)
+  ${CYAN}createAttribute${OFF};CREATE Attribute (AUTH)
+  ${CYAN}deleteAttribute${OFF};DELETE Attribute (AUTH)
+  ${CYAN}readAllSchemaAttributes${OFF};READ All (Schema) Attributes (AUTH)
+  ${CYAN}readAllSchemas${OFF};READ All Schemas (AUTH)
+  ${CYAN}readOneAttribute${OFF};READ One Attribute (AUTH)
+  ${CYAN}readOneSchema${OFF};READ One Schema (AUTH)
+  ${CYAN}updateAttributePatch${OFF};UPDATE Attribute (Patch) (AUTH)
+  ${CYAN}updateAttributePut${OFF};UPDATE Attribute (Put) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3876,7 +3876,6 @@ echo "  $ops" | column -t -s ';'
     echo -e "${BOLD}${WHITE}[managementAPIsUsersGroupMembership]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}readAllGroupIDsForUser${OFF};READ All Group IDs for User (AUTH)
-  ${CYAN}readAllUsersInAGroupWithOtherUserAttribute${OFF};READ All Users in a Group with Other User Attribute (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet${OFF};READ All Group Memberships for User (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete${OFF};REMOVE User from Group (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet${OFF};READ One Group Membership for User (AUTH)
@@ -3971,8 +3970,9 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsUsersUsers]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}createUserImport${OFF};CREATE User (Import) (AUTH)
+  ${CYAN}createUser${OFF};CREATE User (AUTH)
   ${CYAN}deleteUser${OFF};DELETE User (AUTH)
+  ${CYAN}readAllUsers${OFF};READ All Users (AUTH)
   ${CYAN}updateUserPatch${OFF};UPDATE User (Patch) (AUTH)
   ${CYAN}updateUserPut${OFF};UPDATE User (Put) (AUTH)
   ${CYAN}v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet${OFF};READ User Identity Provider (AUTH)
@@ -9573,148 +9573,12 @@ print_readOneRole_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDSchemasGet operation
+# Print help for createAttribute operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDSchemasGet_help() {
+print_createAttribute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasGet - READ All Schemas${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete - DELETE Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet - READ One Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch - UPDATE Attribute (Patch)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut - UPDATE Attribute (Put)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet - READ All (Schema) Attributes${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost - CREATE Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createAttribute - CREATE Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9733,18 +9597,154 @@ print_v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDSchemasSchemaIDGet operation
+# Print help for deleteAttribute operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDSchemasSchemaIDGet_help() {
+print_deleteAttribute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDSchemasSchemaIDGet - READ One Schema${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteAttribute - DELETE Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllSchemaAttributes operation
+#
+##############################################################################
+print_readAllSchemaAttributes_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllSchemaAttributes - READ All (Schema) Attributes${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllSchemas operation
+#
+##############################################################################
+print_readAllSchemas_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllSchemas - READ All Schemas${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneAttribute operation
+#
+##############################################################################
+print_readOneAttribute_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneAttribute - READ One Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneSchema operation
+#
+##############################################################################
+print_readOneSchema_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneSchema - READ One Schema${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateAttributePatch operation
+#
+##############################################################################
+print_updateAttributePatch_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateAttributePatch - UPDATE Attribute (Patch)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateAttributePut operation
+#
+##############################################################################
+print_updateAttributePut_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateAttributePut - UPDATE Attribute (Put)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}schemaID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: schemaID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attributeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attributeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -10256,28 +10256,6 @@ print_readAllGroupIDsForUser_help() {
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}include${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: include=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for readAllUsersInAGroupWithOtherUserAttribute operation
-#
-##############################################################################
-print_readAllUsersInAGroupWithOtherUserAttribute_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}readAllUsersInAGroupWithOtherUserAttribute - READ All Users in a Group with Other User Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: filter=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -11172,12 +11150,12 @@ print_readUserRoleAssignments_help() {
 }
 ##############################################################################
 #
-# Print help for createUserImport operation
+# Print help for createUser operation
 #
 ##############################################################################
-print_createUserImport_help() {
+print_createUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createUserImport - CREATE User (Import)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createUser - CREATE User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11213,6 +11191,28 @@ print_deleteUser_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=204
     echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllUsers operation
+#
+##############################################################################
+print_readAllUsers_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllUsers - READ All Users${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: filter=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -23927,310 +23927,10 @@ call_readOneRole() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDSchemasGet operation
+# Call createAttribute operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDSchemasGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/schemas" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID schemaID attributeID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID schemaID attributeID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID schemaID attributeID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PATCH"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID schemaID attributeID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID schemaID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost() {
+call_createAttribute() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID schemaID)
@@ -24305,10 +24005,154 @@ call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDSchemasSchemaIDGet operation
+# Call deleteAttribute operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDSchemasSchemaIDGet() {
+call_deleteAttribute() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID schemaID attributeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllSchemaAttributes operation
+#
+##############################################################################
+call_readAllSchemaAttributes() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID schemaID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllSchemas operation
+#
+##############################################################################
+call_readAllSchemas() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/schemas" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneAttribute operation
+#
+##############################################################################
+call_readOneAttribute() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID schemaID attributeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneSchema operation
+#
+##############################################################################
+call_readOneSchema() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID schemaID)
@@ -24336,6 +24180,162 @@ call_v1EnvironmentsEnvIDSchemasSchemaIDGet() {
         echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateAttributePatch operation
+#
+##############################################################################
+call_updateAttributePatch() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID schemaID attributeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateAttributePut operation
+#
+##############################################################################
+call_updateAttributePut() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID schemaID attributeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/schemas/{schemaID}/attributes/{attributeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -25524,42 +25524,6 @@ call_readAllGroupIDsForUser() {
     local path
 
     if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call readAllUsersInAGroupWithOtherUserAttribute operation
-#
-##############################################################################
-call_readAllUsersInAGroupWithOtherUserAttribute() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(filter  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -27449,10 +27413,10 @@ call_readUserRoleAssignments() {
 
 ##############################################################################
 #
-# Call createUserImport operation
+# Call createUser operation
 #
 ##############################################################################
-call_createUserImport() {
+call_createUser() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -27544,6 +27508,42 @@ call_deleteUser() {
         exit 1
     fi
     local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllUsers operation
+#
+##############################################################################
+call_readAllUsers() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(filter  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -28792,29 +28792,29 @@ case $key in
     readOneRole)
     operation="readOneRole"
     ;;
-    v1EnvironmentsEnvIDSchemasGet)
-    operation="v1EnvironmentsEnvIDSchemasGet"
+    createAttribute)
+    operation="createAttribute"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete"
+    deleteAttribute)
+    operation="deleteAttribute"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet"
+    readAllSchemaAttributes)
+    operation="readAllSchemaAttributes"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch"
+    readAllSchemas)
+    operation="readAllSchemas"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut"
+    readOneAttribute)
+    operation="readOneAttribute"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet"
+    readOneSchema)
+    operation="readOneSchema"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost"
+    updateAttributePatch)
+    operation="updateAttributePatch"
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDGet)
-    operation="v1EnvironmentsEnvIDSchemasSchemaIDGet"
+    updateAttributePut)
+    operation="updateAttributePut"
     ;;
     v1EnvironmentsEnvIDSignOnPoliciesGet)
     operation="v1EnvironmentsEnvIDSignOnPoliciesGet"
@@ -28884,9 +28884,6 @@ case $key in
     ;;
     readAllGroupIDsForUser)
     operation="readAllGroupIDsForUser"
-    ;;
-    readAllUsersInAGroupWithOtherUserAttribute)
-    operation="readAllUsersInAGroupWithOtherUserAttribute"
     ;;
     v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
     operation="v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"
@@ -29005,11 +29002,14 @@ case $key in
     readUserRoleAssignments)
     operation="readUserRoleAssignments"
     ;;
-    createUserImport)
-    operation="createUserImport"
+    createUser)
+    operation="createUser"
     ;;
     deleteUser)
     operation="deleteUser"
+    ;;
+    readAllUsers)
+    operation="readAllUsers"
     ;;
     updateUserPatch)
     operation="updateUserPatch"
@@ -29856,29 +29856,29 @@ case $operation in
     readOneRole)
     call_readOneRole
     ;;
-    v1EnvironmentsEnvIDSchemasGet)
-    call_v1EnvironmentsEnvIDSchemasGet
+    createAttribute)
+    call_createAttribute
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDDelete
+    deleteAttribute)
+    call_deleteAttribute
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDGet
+    readAllSchemaAttributes)
+    call_readAllSchemaAttributes
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPatch
+    readAllSchemas)
+    call_readAllSchemas
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesAttributeIDPut
+    readOneAttribute)
+    call_readOneAttribute
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesGet
+    readOneSchema)
+    call_readOneSchema
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDAttributesPost
+    updateAttributePatch)
+    call_updateAttributePatch
     ;;
-    v1EnvironmentsEnvIDSchemasSchemaIDGet)
-    call_v1EnvironmentsEnvIDSchemasSchemaIDGet
+    updateAttributePut)
+    call_updateAttributePut
     ;;
     v1EnvironmentsEnvIDSignOnPoliciesGet)
     call_v1EnvironmentsEnvIDSignOnPoliciesGet
@@ -29948,9 +29948,6 @@ case $operation in
     ;;
     readAllGroupIDsForUser)
     call_readAllGroupIDsForUser
-    ;;
-    readAllUsersInAGroupWithOtherUserAttribute)
-    call_readAllUsersInAGroupWithOtherUserAttribute
     ;;
     v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
     call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet
@@ -30069,11 +30066,14 @@ case $operation in
     readUserRoleAssignments)
     call_readUserRoleAssignments
     ;;
-    createUserImport)
-    call_createUserImport
+    createUser)
+    call_createUser
     ;;
     deleteUser)
     call_deleteUser
+    ;;
+    readAllUsers)
+    call_readAllUsers
     ;;
     updateUserPatch)
     call_updateUserPatch
