@@ -760,15 +760,15 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceID
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::riskID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet:::riskID"]=1
+operation_parameters_minimum_occurrences["createRiskEvaluation:::envID"]=1
+operation_parameters_minimum_occurrences["createRiskEvaluation:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createRiskEvaluation:::RiskEvaluation"]=0
+operation_parameters_minimum_occurrences["readOneRiskEvaluation:::envID"]=1
+operation_parameters_minimum_occurrences["readOneRiskEvaluation:::riskID"]=1
+operation_parameters_minimum_occurrences["updateRiskEvaluation:::envID"]=1
+operation_parameters_minimum_occurrences["updateRiskEvaluation:::riskID"]=1
+operation_parameters_minimum_occurrences["updateRiskEvaluation:::Content-Type"]=0
+operation_parameters_minimum_occurrences["updateRiskEvaluation:::RiskEvaluation"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::Content-Type"]=0
@@ -868,24 +868,24 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabl
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::content-type"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::body"]=0
+operation_parameters_minimum_occurrences["addUserToGroup:::envID"]=1
+operation_parameters_minimum_occurrences["addUserToGroup:::userID"]=1
+operation_parameters_minimum_occurrences["addUserToGroup:::InlineObject3"]=0
 operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::envID"]=1
 operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::userID"]=1
 operation_parameters_minimum_occurrences["readAllGroupIDsForUser:::include"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::limit"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::filter"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::groupID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::groupID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::expand"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::userID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::body"]=0
+operation_parameters_minimum_occurrences["readAllGroupMembershipsForUser:::envID"]=1
+operation_parameters_minimum_occurrences["readAllGroupMembershipsForUser:::userID"]=1
+operation_parameters_minimum_occurrences["readAllGroupMembershipsForUser:::expand"]=0
+operation_parameters_minimum_occurrences["readAllGroupMembershipsForUser:::limit"]=0
+operation_parameters_minimum_occurrences["readAllGroupMembershipsForUser:::filter"]=0
+operation_parameters_minimum_occurrences["readOneGroupMembershipForUser:::envID"]=1
+operation_parameters_minimum_occurrences["readOneGroupMembershipForUser:::userID"]=1
+operation_parameters_minimum_occurrences["readOneGroupMembershipForUser:::groupID"]=1
+operation_parameters_minimum_occurrences["readOneGroupMembershipForUser:::expand"]=0
+operation_parameters_minimum_occurrences["removeUserFromGroup:::envID"]=1
+operation_parameters_minimum_occurrences["removeUserFromGroup:::userID"]=1
+operation_parameters_minimum_occurrences["removeUserFromGroup:::groupID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet:::userID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete:::envID"]=1
@@ -1700,15 +1700,15 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceID
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::riskID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet:::riskID"]=0
+operation_parameters_maximum_occurrences["createRiskEvaluation:::envID"]=0
+operation_parameters_maximum_occurrences["createRiskEvaluation:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createRiskEvaluation:::RiskEvaluation"]=0
+operation_parameters_maximum_occurrences["readOneRiskEvaluation:::envID"]=0
+operation_parameters_maximum_occurrences["readOneRiskEvaluation:::riskID"]=0
+operation_parameters_maximum_occurrences["updateRiskEvaluation:::envID"]=0
+operation_parameters_maximum_occurrences["updateRiskEvaluation:::riskID"]=0
+operation_parameters_maximum_occurrences["updateRiskEvaluation:::Content-Type"]=0
+operation_parameters_maximum_occurrences["updateRiskEvaluation:::RiskEvaluation"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::Content-Type"]=0
@@ -1808,24 +1808,24 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabl
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::content-type"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::body"]=0
+operation_parameters_maximum_occurrences["addUserToGroup:::envID"]=0
+operation_parameters_maximum_occurrences["addUserToGroup:::userID"]=0
+operation_parameters_maximum_occurrences["addUserToGroup:::InlineObject3"]=0
 operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::envID"]=0
 operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::userID"]=0
 operation_parameters_maximum_occurrences["readAllGroupIDsForUser:::include"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::limit"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::filter"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::groupID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::groupID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::expand"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::userID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::body"]=0
+operation_parameters_maximum_occurrences["readAllGroupMembershipsForUser:::envID"]=0
+operation_parameters_maximum_occurrences["readAllGroupMembershipsForUser:::userID"]=0
+operation_parameters_maximum_occurrences["readAllGroupMembershipsForUser:::expand"]=0
+operation_parameters_maximum_occurrences["readAllGroupMembershipsForUser:::limit"]=0
+operation_parameters_maximum_occurrences["readAllGroupMembershipsForUser:::filter"]=0
+operation_parameters_maximum_occurrences["readOneGroupMembershipForUser:::envID"]=0
+operation_parameters_maximum_occurrences["readOneGroupMembershipForUser:::userID"]=0
+operation_parameters_maximum_occurrences["readOneGroupMembershipForUser:::groupID"]=0
+operation_parameters_maximum_occurrences["readOneGroupMembershipForUser:::expand"]=0
+operation_parameters_maximum_occurrences["removeUserFromGroup:::envID"]=0
+operation_parameters_maximum_occurrences["removeUserFromGroup:::userID"]=0
+operation_parameters_maximum_occurrences["removeUserFromGroup:::groupID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet:::userID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete:::envID"]=0
@@ -2637,15 +2637,15 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::riskID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet:::riskID"]=""
+operation_parameters_collection_type["createRiskEvaluation:::envID"]=""
+operation_parameters_collection_type["createRiskEvaluation:::Content-Type"]=""
+operation_parameters_collection_type["createRiskEvaluation:::RiskEvaluation"]=""
+operation_parameters_collection_type["readOneRiskEvaluation:::envID"]=""
+operation_parameters_collection_type["readOneRiskEvaluation:::riskID"]=""
+operation_parameters_collection_type["updateRiskEvaluation:::envID"]=""
+operation_parameters_collection_type["updateRiskEvaluation:::riskID"]=""
+operation_parameters_collection_type["updateRiskEvaluation:::Content-Type"]=""
+operation_parameters_collection_type["updateRiskEvaluation:::RiskEvaluation"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsPost:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsPost:::Content-Type"]=""
@@ -2745,24 +2745,24 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPu
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::content-type"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut:::body"]=""
+operation_parameters_collection_type["addUserToGroup:::envID"]=""
+operation_parameters_collection_type["addUserToGroup:::userID"]=""
+operation_parameters_collection_type["addUserToGroup:::InlineObject3"]=""
 operation_parameters_collection_type["readAllGroupIDsForUser:::envID"]=""
 operation_parameters_collection_type["readAllGroupIDsForUser:::userID"]=""
 operation_parameters_collection_type["readAllGroupIDsForUser:::include"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::expand"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::limit"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet:::filter"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete:::groupID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::groupID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet:::expand"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::userID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost:::body"]=""
+operation_parameters_collection_type["readAllGroupMembershipsForUser:::envID"]=""
+operation_parameters_collection_type["readAllGroupMembershipsForUser:::userID"]=""
+operation_parameters_collection_type["readAllGroupMembershipsForUser:::expand"]=""
+operation_parameters_collection_type["readAllGroupMembershipsForUser:::limit"]=""
+operation_parameters_collection_type["readAllGroupMembershipsForUser:::filter"]=""
+operation_parameters_collection_type["readOneGroupMembershipForUser:::envID"]=""
+operation_parameters_collection_type["readOneGroupMembershipForUser:::userID"]=""
+operation_parameters_collection_type["readOneGroupMembershipForUser:::groupID"]=""
+operation_parameters_collection_type["readOneGroupMembershipForUser:::expand"]=""
+operation_parameters_collection_type["removeUserFromGroup:::envID"]=""
+operation_parameters_collection_type["removeUserFromGroup:::userID"]=""
+operation_parameters_collection_type["removeUserFromGroup:::groupID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet:::userID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete:::envID"]=""
@@ -3780,9 +3780,9 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsRiskManagementRiskEvaluations]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDRiskEvaluationsPost${OFF};CREATE Risk Evaluation (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut${OFF};UPDATE Risk Evaluation (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet${OFF};READ One Risk Evaluation (AUTH)
+  ${CYAN}createRiskEvaluation${OFF};CREATE Risk Evaluation (AUTH)
+  ${CYAN}readOneRiskEvaluation${OFF};READ One Risk Evaluation (AUTH)
+  ${CYAN}updateRiskEvaluation${OFF};UPDATE Risk Evaluation (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3875,11 +3875,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsUsersGroupMembership]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}addUserToGroup${OFF};ADD User to Group (AUTH)
   ${CYAN}readAllGroupIDsForUser${OFF};READ All Group IDs for User (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet${OFF};READ All Group Memberships for User (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete${OFF};REMOVE User from Group (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet${OFF};READ One Group Membership for User (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost${OFF};ADD User to Group (AUTH)
+  ${CYAN}readAllGroupMembershipsForUser${OFF};READ All Group Memberships for User (AUTH)
+  ${CYAN}readOneGroupMembershipForUser${OFF};READ One Group Membership for User (AUTH)
+  ${CYAN}removeUserFromGroup${OFF};REMOVE User from Group (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -9358,12 +9358,12 @@ print_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskEvaluationsPost operation
+# Print help for createRiskEvaluation operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskEvaluationsPost_help() {
+print_createRiskEvaluation_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskEvaluationsPost - CREATE Risk Evaluation${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createRiskEvaluation - CREATE Risk Evaluation${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9381,21 +9381,18 @@ print_v1EnvironmentsEnvIDRiskEvaluationsPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut operation
+# Print help for readOneRiskEvaluation operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut_help() {
+print_readOneRiskEvaluation_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut - UPDATE Risk Evaluation${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneRiskEvaluation - READ One Risk Evaluation${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}riskID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: riskID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -9405,18 +9402,21 @@ print_v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet operation
+# Print help for updateRiskEvaluation operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet_help() {
+print_updateRiskEvaluation_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet - READ One Risk Evaluation${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateRiskEvaluation - UPDATE Risk Evaluation${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}riskID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: riskID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -10243,6 +10243,29 @@ print_v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut_help() {
 }
 ##############################################################################
 #
+# Print help for addUserToGroup operation
+#
+##############################################################################
+print_addUserToGroup_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addUserToGroup - ADD User to Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for readAllGroupIDsForUser operation
 #
 ##############################################################################
@@ -10266,12 +10289,12 @@ print_readAllGroupIDsForUser_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet operation
+# Print help for readAllGroupMembershipsForUser operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet_help() {
+print_readAllGroupMembershipsForUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet - READ All Group Memberships for User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllGroupMembershipsForUser - READ All Group Memberships for User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10293,34 +10316,12 @@ print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete operation
+# Print help for readOneGroupMembershipForUser operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete_help() {
+print_readOneGroupMembershipForUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete - REMOVE User from Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}groupID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet - READ One Group Membership for User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneGroupMembershipForUser - READ One Group Membership for User${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10339,26 +10340,25 @@ print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost operation
+# Print help for removeUserFromGroup operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost_help() {
+print_removeUserFromGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost - ADD User to Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeUserFromGroup - REMOVE User from Group${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}userID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
+    echo -e "  * ${GREEN}groupID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -23399,10 +23399,10 @@ call_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskEvaluationsPost operation
+# Call createRiskEvaluation operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskEvaluationsPost() {
+call_createRiskEvaluation() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -23477,10 +23477,46 @@ call_v1EnvironmentsEnvIDRiskEvaluationsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut operation
+# Call readOneRiskEvaluation operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut() {
+call_readOneRiskEvaluation() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID riskID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/riskEvaluations/{riskID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRiskEvaluation operation
+#
+##############################################################################
+call_updateRiskEvaluation() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID riskID)
@@ -23550,42 +23586,6 @@ call_v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID riskID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/riskEvaluations/{riskID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -25511,154 +25511,10 @@ call_v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut() {
 
 ##############################################################################
 #
-# Call readAllGroupIDsForUser operation
+# Call addUserToGroup operation
 #
 ##############################################################################
-call_readAllGroupIDsForUser() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(include  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(expand limit filter  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/memberOfGroups" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID groupID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID userID groupID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(expand  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost() {
+call_addUserToGroup() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID)
@@ -25728,6 +25584,150 @@ call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call readAllGroupIDsForUser operation
+#
+##############################################################################
+call_readAllGroupIDsForUser() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(include  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllGroupMembershipsForUser operation
+#
+##############################################################################
+call_readAllGroupMembershipsForUser() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(expand limit filter  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/memberOfGroups" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneGroupMembershipForUser operation
+#
+##############################################################################
+call_readOneGroupMembershipForUser() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID groupID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(expand  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeUserFromGroup operation
+#
+##############################################################################
+call_removeUserFromGroup() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID userID groupID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -28762,14 +28762,14 @@ case $key in
     v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet)
     operation="v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"
     ;;
-    v1EnvironmentsEnvIDRiskEvaluationsPost)
-    operation="v1EnvironmentsEnvIDRiskEvaluationsPost"
+    createRiskEvaluation)
+    operation="createRiskEvaluation"
     ;;
-    v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut)
-    operation="v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut"
+    readOneRiskEvaluation)
+    operation="readOneRiskEvaluation"
     ;;
-    v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet)
-    operation="v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet"
+    updateRiskEvaluation)
+    operation="updateRiskEvaluation"
     ;;
     v1EnvironmentsEnvIDRiskPolicySetsGet)
     operation="v1EnvironmentsEnvIDRiskPolicySetsGet"
@@ -28882,20 +28882,20 @@ case $key in
     v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut)
     operation="v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"
     ;;
+    addUserToGroup)
+    operation="addUserToGroup"
+    ;;
     readAllGroupIDsForUser)
     operation="readAllGroupIDsForUser"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
-    operation="v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"
+    readAllGroupMembershipsForUser)
+    operation="readAllGroupMembershipsForUser"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete)
-    operation="v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"
+    readOneGroupMembershipForUser)
+    operation="readOneGroupMembershipForUser"
     ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet)
-    operation="v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"
-    ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost)
-    operation="v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost"
+    removeUserFromGroup)
+    operation="removeUserFromGroup"
     ;;
     v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet)
     operation="v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet"
@@ -29826,14 +29826,14 @@ case $operation in
     v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet)
     call_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet
     ;;
-    v1EnvironmentsEnvIDRiskEvaluationsPost)
-    call_v1EnvironmentsEnvIDRiskEvaluationsPost
+    createRiskEvaluation)
+    call_createRiskEvaluation
     ;;
-    v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut)
-    call_v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut
+    readOneRiskEvaluation)
+    call_readOneRiskEvaluation
     ;;
-    v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet)
-    call_v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet
+    updateRiskEvaluation)
+    call_updateRiskEvaluation
     ;;
     v1EnvironmentsEnvIDRiskPolicySetsGet)
     call_v1EnvironmentsEnvIDRiskPolicySetsGet
@@ -29946,20 +29946,20 @@ case $operation in
     v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut)
     call_v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut
     ;;
+    addUserToGroup)
+    call_addUserToGroup
+    ;;
     readAllGroupIDsForUser)
     call_readAllGroupIDsForUser
     ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
-    call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet
+    readAllGroupMembershipsForUser)
+    call_readAllGroupMembershipsForUser
     ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete)
-    call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete
+    readOneGroupMembershipForUser)
+    call_readOneGroupMembershipForUser
     ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet)
-    call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet
-    ;;
-    v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost)
-    call_v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost
+    removeUserFromGroup)
+    call_removeUserFromGroup
     ;;
     v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet)
     call_v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet

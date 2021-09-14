@@ -482,9 +482,9 @@ case $state in
             "readAllResources[READ All Resources]" \
             "updateResource[UPDATE Resource]" \
             "v1EnvironmentsEnvIDResourcesResourceIDGet[READ One Resource]"             "v1EnvironmentsEnvIDRiskPredictorsGet[READ All Risk Predictors]" \
-            "v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet[READ One Risk Predictor]"             "v1EnvironmentsEnvIDRiskEvaluationsPost[CREATE Risk Evaluation]" \
-            "v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut[UPDATE Risk Evaluation]" \
-            "v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet[READ One Risk Evaluation]"             "v1EnvironmentsEnvIDRiskPolicySetsGet[READ Risk Policy Sets]" \
+            "v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet[READ One Risk Predictor]"             "createRiskEvaluation[CREATE Risk Evaluation]" \
+            "readOneRiskEvaluation[READ One Risk Evaluation]" \
+            "updateRiskEvaluation[UPDATE Risk Evaluation]"             "v1EnvironmentsEnvIDRiskPolicySetsGet[READ Risk Policy Sets]" \
             "v1EnvironmentsEnvIDRiskPolicySetsPost[CREATE Risk Policy Set]" \
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete[DELETE Risk Policy Set]" \
             "v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet[READ One Risk Policy Set]" \
@@ -511,11 +511,11 @@ case $state in
             "v1EnvironmentsEnvIDSubscriptionsSubscriptionIDGet[READ One Subscription]" \
             "v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut[UPDATE Subscription]"             "v1EnvironmentsEnvIDTotalIdentitiesGet[READ Total Identity Counts]"             "v1EnvironmentsEnvIDUserActivitiesGet[READ User Activities]"             "v1EnvironmentsEnvIDUsersUserIDEnabledGet[READ User Enabled]" \
             "v1EnvironmentsEnvIDUsersUserIDEnabledPut[UPDATE User Enabled]"             "v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet[READ User MFA Enabled]" \
-            "v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut[UPDATE User MFA Enabled]"             "readAllGroupIDsForUser[READ All Group IDs for User]" \
-            "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet[READ All Group Memberships for User]" \
-            "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete[REMOVE User from Group]" \
-            "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet[READ One Group Membership for User]" \
-            "v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost[ADD User to Group]"             "v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet[READ Linked Accounts]" \
+            "v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut[UPDATE User MFA Enabled]"             "addUserToGroup[ADD User to Group]" \
+            "readAllGroupIDsForUser[READ All Group IDs for User]" \
+            "readAllGroupMembershipsForUser[READ All Group Memberships for User]" \
+            "readOneGroupMembershipForUser[READ One Group Membership for User]" \
+            "removeUserFromGroup[REMOVE User from Group]"             "v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet[READ Linked Accounts]" \
             "v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete[DELETE Linked Account]" \
             "v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDGet[READ One Linked Account]"             "v1EnvironmentsEnvIDUsersUserIDDevicesDelete[DELETE Device Order]" \
             "v1EnvironmentsEnvIDUsersUserIDDevicesDeviceIDDelete[DELETE MFA User Device]" \
@@ -2576,7 +2576,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDRiskEvaluationsPost)
+      createRiskEvaluation)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2584,21 +2584,21 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"riskID=:[PATH] "
-                    "Content-Type\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet)
+      readOneRiskEvaluation)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "riskID=:[PATH] "
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRiskEvaluation)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"riskID=:[PATH] "
+                    "Content-Type\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDRiskPolicySetsGet)
@@ -2908,6 +2908,14 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      addUserToGroup)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"userID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       readAllGroupIDsForUser)
         local -a _op_arguments
         _op_arguments=(
@@ -2917,7 +2925,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet)
+      readAllGroupMembershipsForUser)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2928,16 +2936,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"userID=:[PATH] "
-"groupID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet)
+      readOneGroupMembershipForUser)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2947,11 +2946,12 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost)
+      removeUserFromGroup)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "userID=:[PATH] "
+"groupID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

@@ -308,9 +308,9 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDResourcesResourceIDGet"]=1
     operations["v1EnvironmentsEnvIDRiskPredictorsGet"]=1
     operations["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]=1
-    operations["v1EnvironmentsEnvIDRiskEvaluationsPost"]=1
-    operations["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut"]=1
-    operations["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet"]=1
+    operations["createRiskEvaluation"]=1
+    operations["readOneRiskEvaluation"]=1
+    operations["updateRiskEvaluation"]=1
     operations["v1EnvironmentsEnvIDRiskPolicySetsGet"]=1
     operations["v1EnvironmentsEnvIDRiskPolicySetsPost"]=1
     operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]=1
@@ -348,11 +348,11 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDUsersUserIDEnabledPut"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"]=1
+    operations["addUserToGroup"]=1
     operations["readAllGroupIDsForUser"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"]=1
-    operations["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost"]=1
+    operations["readAllGroupMembershipsForUser"]=1
+    operations["readOneGroupMembershipForUser"]=1
+    operations["removeUserFromGroup"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete"]=1
     operations["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDGet"]=1
@@ -641,9 +641,9 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDGet"]="envID= resourceID= "
     operation_parameters["v1EnvironmentsEnvIDRiskPredictorsGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]="envID= riskPredictorID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsPost"]="envID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsRiskIDEventPut"]="envID= riskID= Content-Type: "
-    operation_parameters["v1EnvironmentsEnvIDRiskEvaluationsRiskIDGet"]="envID= riskID= "
+    operation_parameters["createRiskEvaluation"]="envID= Content-Type: "
+    operation_parameters["readOneRiskEvaluation"]="envID= riskID= "
+    operation_parameters["updateRiskEvaluation"]="envID= riskID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsPost"]="envID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]="envID= riskPolicySetID= "
@@ -681,11 +681,11 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDEnabledPut"]="envID= userID= Content-Type: "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet"]="envID= userID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut"]="envID= userID= content-type: "
+    operation_parameters["addUserToGroup"]="envID= userID= "
     operation_parameters["readAllGroupIDsForUser"]="envID= userID= include= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGet"]="envID= userID= expand= limit= filter= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDDelete"]="envID= userID= groupID= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsGroupIDGet"]="envID= userID= groupID= expand= "
-    operation_parameters["v1EnvironmentsEnvIDUsersUserIDMemberOfGroupsPost"]="envID= userID= "
+    operation_parameters["readAllGroupMembershipsForUser"]="envID= userID= expand= limit= filter= "
+    operation_parameters["readOneGroupMembershipForUser"]="envID= userID= groupID= expand= "
+    operation_parameters["removeUserFromGroup"]="envID= userID= groupID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsGet"]="envID= userID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDDelete"]="envID= userID= linkedAccountID= "
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDLinkedAccountsLinkedAccountIDGet"]="envID= userID= linkedAccountID= "
