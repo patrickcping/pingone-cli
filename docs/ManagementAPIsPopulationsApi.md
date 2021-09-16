@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createPopulation envID=value content-type:value
+pingone-cli createPopulation envID=value
 ```
 
 ### Parameters
@@ -31,7 +31,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **population** | [**Population**](Population.md) |  |
- **contentType** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -167,7 +166,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updatePopulation envID=value popID=value content-type:value
+pingone-cli updatePopulation envID=value popID=value
 ```
 
 ### Parameters
@@ -177,12 +176,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **popID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **population** | [**Population**](Population.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**Population**](Population.md)
 
 ### Authorization
 

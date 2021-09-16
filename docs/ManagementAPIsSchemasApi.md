@@ -24,7 +24,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createAttribute envID=value schemaID=value Content-Type:value
+pingone-cli createAttribute envID=value schemaID=value
 ```
 
 ### Parameters
@@ -34,7 +34,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **schemaID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **schemaAttribute** | [**SchemaAttribute**](SchemaAttribute.md) |  | [optional]
 
 ### Return type
@@ -62,7 +61,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli deleteAttribute envID=value schemaID=value attributeID=value Content-Type:value
+pingone-cli deleteAttribute envID=value schemaID=value attributeID=value
 ```
 
 ### Parameters
@@ -73,7 +72,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **schemaID** | **string** |  | [default to null]
  **attributeID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -244,7 +242,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateAttributePatch envID=value schemaID=value attributeID=value Content-Type:value
+pingone-cli updateAttributePatch envID=value schemaID=value attributeID=value
 ```
 
 ### Parameters
@@ -255,12 +253,11 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **schemaID** | **string** |  | [default to null]
  **attributeID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **schemaAttribute** | [**SchemaAttribute**](SchemaAttribute.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**SchemaAttribute**](SchemaAttribute.md)
 
 ### Authorization
 
@@ -283,7 +280,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateAttributePut envID=value schemaID=value attributeID=value Content-Type:value
+pingone-cli updateAttributePut envID=value schemaID=value attributeID=value
 ```
 
 ### Parameters
@@ -294,12 +291,11 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **schemaID** | **string** |  | [default to null]
  **attributeID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **schemaAttribute** | [**SchemaAttribute**](SchemaAttribute.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**SchemaAttribute**](SchemaAttribute.md)
 
 ### Authorization
 

@@ -22,7 +22,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createEnvironmentActiveLicense Content-Type:value
+pingone-cli createEnvironmentActiveLicense
 ```
 
 ### Parameters
@@ -30,7 +30,6 @@ pingone-cli createEnvironmentActiveLicense Content-Type:value
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **string** |  | [optional] [default to null]
  **environment** | [**Environment**](Environment.md) |  | [optional]
 
 ### Return type
@@ -164,7 +163,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateEnvironment envID=value Content-Type:value
+pingone-cli updateEnvironment envID=value
 ```
 
 ### Parameters
@@ -173,12 +172,11 @@ pingone-cli updateEnvironment envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **environment** | [**Environment**](Environment.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**Environment**](Environment.md)
 
 ### Authorization
 
@@ -201,7 +199,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateEnvironmentType envID=value Content-Type:value
+pingone-cli updateEnvironmentType envID=value
 ```
 
 ### Parameters
@@ -210,12 +208,11 @@ pingone-cli updateEnvironmentType envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **inlineObject2** | [**InlineObject2**](InlineObject2.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**Environment**](Environment.md)
 
 ### Authorization
 

@@ -95,7 +95,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut envID=value gatewayID=value gatewayRoleAssignmentsID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut envID=value gatewayID=value gatewayRoleAssignmentsID=value
 ```
 
 ### Parameters
@@ -106,7 +106,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **gatewayID** | **string** |  | [default to null]
  **gatewayRoleAssignmentsID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -170,7 +169,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost envID=value gatewayID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost envID=value gatewayID=value
 ```
 
 ### Parameters
@@ -180,7 +179,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **gatewayID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

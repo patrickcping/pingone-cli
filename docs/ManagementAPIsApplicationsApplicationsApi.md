@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createApplication envID=value Content-Type:value
+pingone-cli createApplication envID=value
 ```
 
 ### Parameters
@@ -30,7 +30,6 @@ pingone-cli createApplication envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **uNKNOWNBASETYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional]
 
 ### Return type
@@ -58,7 +57,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli deleteApplication envID=value appID=value Content-Type:value
+pingone-cli deleteApplication envID=value appID=value
 ```
 
 ### Parameters
@@ -68,7 +67,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -166,7 +164,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateApplication envID=value appID=value Content-Type:value
+pingone-cli updateApplication envID=value appID=value
 ```
 
 ### Parameters
@@ -176,12 +174,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **uNKNOWNBASETYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**OneOf<ApplicationSAML,ApplicationOIDC>**](OneOf&lt;ApplicationSAML,ApplicationOIDC&gt;.md)
 
 ### Authorization
 

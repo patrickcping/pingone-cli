@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createGrant envID=value appID=value Content-Type:value
+pingone-cli createGrant envID=value appID=value
 ```
 
 ### Parameters
@@ -31,7 +31,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **applicationResourceGrant** | [**ApplicationResourceGrant**](ApplicationResourceGrant.md) |  | [optional]
 
 ### Return type
@@ -169,7 +168,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut envID=value appID=value grantID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut envID=value appID=value grantID=value
 ```
 
 ### Parameters
@@ -180,7 +179,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
  **grantID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

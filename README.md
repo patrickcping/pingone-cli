@@ -381,7 +381,6 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersEnableUsersMFAApi* | [**v1EnvironmentsEnvIDUsersUserIDMfaEnabledGet**](docs/ManagementAPIsUsersEnableUsersMFAApi.md#v1environmentsenvidusersuseridmfaenabledget) | **GET** /v1/environments/{envID}/users/{userID}/mfaEnabled | READ User MFA Enabled
 *ManagementAPIsUsersEnableUsersMFAApi* | [**v1EnvironmentsEnvIDUsersUserIDMfaEnabledPut**](docs/ManagementAPIsUsersEnableUsersMFAApi.md#v1environmentsenvidusersuseridmfaenabledput) | **PUT** /v1/environments/{envID}/users/{userID}/mfaEnabled | UPDATE User MFA Enabled
 *ManagementAPIsUsersGroupMembershipApi* | [**addUserToGroup**](docs/ManagementAPIsUsersGroupMembershipApi.md#addusertogroup) | **POST** /v1/environments/{envID}/users/{userID}/memberOfGroups | ADD User to Group
-*ManagementAPIsUsersGroupMembershipApi* | [**readAllGroupIDsForUser**](docs/ManagementAPIsUsersGroupMembershipApi.md#readallgroupidsforuser) | **GET** /v1/environments/{envID}/users/{userID} | READ All Group IDs for User
 *ManagementAPIsUsersGroupMembershipApi* | [**readAllGroupMembershipsForUser**](docs/ManagementAPIsUsersGroupMembershipApi.md#readallgroupmembershipsforuser) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups | READ All Group Memberships for User
 *ManagementAPIsUsersGroupMembershipApi* | [**readOneGroupMembershipForUser**](docs/ManagementAPIsUsersGroupMembershipApi.md#readonegroupmembershipforuser) | **GET** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | READ One Group Membership for User
 *ManagementAPIsUsersGroupMembershipApi* | [**removeUserFromGroup**](docs/ManagementAPIsUsersGroupMembershipApi.md#removeuserfromgroup) | **DELETE** /v1/environments/{envID}/users/{userID}/memberOfGroups/{groupID} | REMOVE User from Group
@@ -423,6 +422,7 @@ Class | Method | HTTP request | Description
 *ManagementAPIsUsersUsersApi* | [**createUser**](docs/ManagementAPIsUsersUsersApi.md#createuser) | **POST** /v1/environments/{envID}/users | CREATE User
 *ManagementAPIsUsersUsersApi* | [**deleteUser**](docs/ManagementAPIsUsersUsersApi.md#deleteuser) | **DELETE** /v1/environments/{envID}/users/{userID} | DELETE User
 *ManagementAPIsUsersUsersApi* | [**readAllUsers**](docs/ManagementAPIsUsersUsersApi.md#readallusers) | **GET** /v1/environments/{envID}/users | READ All Users
+*ManagementAPIsUsersUsersApi* | [**readUser**](docs/ManagementAPIsUsersUsersApi.md#readuser) | **GET** /v1/environments/{envID}/users/{userID} | READ User
 *ManagementAPIsUsersUsersApi* | [**updateUserPatch**](docs/ManagementAPIsUsersUsersApi.md#updateuserpatch) | **PATCH** /v1/environments/{envID}/users/{userID} | UPDATE User (Patch)
 *ManagementAPIsUsersUsersApi* | [**updateUserPut**](docs/ManagementAPIsUsersUsersApi.md#updateuserput) | **PUT** /v1/environments/{envID}/users/{userID} | UPDATE User (Put)
 *ManagementAPIsUsersUsersApi* | [**v1EnvironmentsEnvIDUsersUserIDIdentityProviderGet**](docs/ManagementAPIsUsersUsersApi.md#v1environmentsenvidusersuserididentityproviderget) | **GET** /v1/environments/{envID}/users/{userID}/identityProvider | READ User Identity Provider

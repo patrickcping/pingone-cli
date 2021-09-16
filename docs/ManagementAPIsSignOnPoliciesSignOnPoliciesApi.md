@@ -128,7 +128,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPolicyIDPut envID=value policyID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPolicyIDPut envID=value policyID=value
 ```
 
 ### Parameters
@@ -138,7 +138,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **policyID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -166,7 +165,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPost envID=value
 ```
 
 ### Parameters
@@ -175,7 +174,6 @@ pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPost envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

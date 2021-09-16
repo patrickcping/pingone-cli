@@ -131,7 +131,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationPlansPlanIDPut envID=value planID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationPlansPlanIDPut envID=value planID=value
 ```
 
 ### Parameters
@@ -141,7 +141,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **planID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -169,7 +168,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationPlansPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationPlansPost envID=value
 ```
 
 ### Parameters
@@ -178,7 +177,6 @@ pingone-cli v1EnvironmentsEnvIDPropagationPlansPost envID=value Content-Type:val
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

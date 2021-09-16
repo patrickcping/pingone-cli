@@ -56,7 +56,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSubscriptionsPost envID=value content-type:value
+pingone-cli v1EnvironmentsEnvIDSubscriptionsPost envID=value
 ```
 
 ### Parameters
@@ -65,7 +65,6 @@ pingone-cli v1EnvironmentsEnvIDSubscriptionsPost envID=value content-type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -165,7 +164,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut envID=value subscriptionID=value content-type:value
+pingone-cli v1EnvironmentsEnvIDSubscriptionsSubscriptionIDPut envID=value subscriptionID=value
 ```
 
 ### Parameters
@@ -175,7 +174,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **subscriptionID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

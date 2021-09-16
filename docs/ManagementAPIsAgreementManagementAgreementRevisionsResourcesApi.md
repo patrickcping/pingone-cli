@@ -89,7 +89,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsPost envID=value agreementID=value languageID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDAgreementsAgreementIDLanguagesLanguageIDRevisionsPost envID=value agreementID=value languageID=value
 ```
 
 ### Parameters
@@ -100,7 +100,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **agreementID** | **string** |  | [default to null]
  **languageID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

@@ -19,7 +19,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createRiskEvaluation envID=value Content-Type:value
+pingone-cli createRiskEvaluation envID=value
 ```
 
 ### Parameters
@@ -28,7 +28,6 @@ pingone-cli createRiskEvaluation envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **riskEvaluation** | [**RiskEvaluation**](RiskEvaluation.md) |  | [optional]
 
 ### Return type
@@ -92,7 +91,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateRiskEvaluation envID=value riskID=value Content-Type:value
+pingone-cli updateRiskEvaluation envID=value riskID=value
 ```
 
 ### Parameters
@@ -102,8 +101,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **riskID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
- **riskEvaluation** | [**RiskEvaluation**](RiskEvaluation.md) |  | [optional]
+ **riskEvaluationEvent** | [**RiskEvaluationEvent**](RiskEvaluationEvent.md) |  | [optional]
 
 ### Return type
 

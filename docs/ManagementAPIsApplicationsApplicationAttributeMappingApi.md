@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createApplicationAttributeMapping envID=value appID=value Content-Type:value
+pingone-cli createApplicationAttributeMapping envID=value appID=value
 ```
 
 ### Parameters
@@ -31,7 +31,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **applicationAttributeMapping** | [**ApplicationAttributeMapping**](ApplicationAttributeMapping.md) |  | [optional]
 
 ### Return type
@@ -169,7 +168,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateApplicationAttributeMapping envID=value appID=value samlAttrID=value Content-Type:value
+pingone-cli updateApplicationAttributeMapping envID=value appID=value samlAttrID=value
 ```
 
 ### Parameters
@@ -180,12 +179,11 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
  **samlAttrID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **applicationAttributeMapping** | [**ApplicationAttributeMapping**](ApplicationAttributeMapping.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**ApplicationAttributeMapping**](ApplicationAttributeMapping.md)
 
 ### Authorization
 

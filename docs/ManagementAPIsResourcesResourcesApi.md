@@ -21,7 +21,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli createResource envID=value Content-Type:value
+pingone-cli createResource envID=value
 ```
 
 ### Parameters
@@ -30,7 +30,6 @@ pingone-cli createResource envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **resource** | [**Resource**](Resource.md) |  | [optional]
 
 ### Return type
@@ -129,7 +128,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateResource envID=value resourceID=value Content-Type:value
+pingone-cli updateResource envID=value resourceID=value
 ```
 
 ### Parameters
@@ -139,12 +138,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **resourceID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **resource** | [**Resource**](Resource.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**Resource**](Resource.md)
 
 ### Authorization
 

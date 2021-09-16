@@ -97,7 +97,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDGet envID=value templateName=value contentID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDGet envID=value templateName=value contentID=value
 ```
 
 ### Parameters
@@ -108,7 +108,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **templateName** | **string** |  | [default to null]
  **contentID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -135,7 +134,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDPut envID=value templateName=value contentID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDTemplatesTemplateNameContentsContentIDPut envID=value templateName=value contentID=value
 ```
 
 ### Parameters
@@ -146,7 +145,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **templateName** | **string** |  | [default to null]
  **contentID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -285,7 +283,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDTemplatesTemplateNameContentsPost envID=value templateName=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDTemplatesTemplateNameContentsPost envID=value templateName=value
 ```
 
 ### Parameters
@@ -295,7 +293,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **templateName** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

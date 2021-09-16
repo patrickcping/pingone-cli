@@ -131,7 +131,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut envID=value providerID=value idpAttrID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesIdpAttrIDPut envID=value providerID=value idpAttrID=value
 ```
 
 ### Parameters
@@ -142,7 +142,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **providerID** | **string** |  | [default to null]
  **idpAttrID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -170,7 +169,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost envID=value providerID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDIdentityProvidersProviderIDAttributesPost envID=value providerID=value
 ```
 
 ### Parameters
@@ -180,7 +179,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **providerID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

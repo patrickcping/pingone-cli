@@ -214,7 +214,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDDecryptionsPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDDecryptionsPost envID=value
 ```
 
 ### Parameters
@@ -223,7 +223,6 @@ pingone-cli v1EnvironmentsEnvIDDecryptionsPost envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -251,7 +250,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDEncryptionsPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDEncryptionsPost envID=value
 ```
 
 ### Parameters
@@ -260,7 +259,6 @@ pingone-cli v1EnvironmentsEnvIDEncryptionsPost envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -506,7 +504,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDKeysKeyIDPut envID=value keyID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDKeysKeyIDPut envID=value keyID=value
 ```
 
 ### Parameters
@@ -516,7 +514,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **keyID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -582,7 +579,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSigningsPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDSigningsPost envID=value
 ```
 
 ### Parameters
@@ -591,7 +588,6 @@ pingone-cli v1EnvironmentsEnvIDSigningsPost envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -619,7 +615,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDVerificationsPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDVerificationsPost envID=value
 ```
 
 ### Parameters
@@ -628,7 +624,6 @@ pingone-cli v1EnvironmentsEnvIDVerificationsPost envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

@@ -90,7 +90,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut envID=value passwordPolicyID=value content-type:value
+pingone-cli v1EnvironmentsEnvIDPasswordPoliciesPasswordPolicyIDPut envID=value passwordPolicyID=value
 ```
 
 ### Parameters
@@ -100,7 +100,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **passwordPolicyID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

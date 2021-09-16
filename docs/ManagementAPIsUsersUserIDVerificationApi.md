@@ -57,7 +57,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost envID=value userID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDUsersUserIDVerifyTransactionsPost envID=value userID=value
 ```
 
 ### Parameters
@@ -67,7 +67,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **userID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
 
 ### Return type
 

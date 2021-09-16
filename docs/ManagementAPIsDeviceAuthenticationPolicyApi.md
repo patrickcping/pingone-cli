@@ -18,7 +18,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut envID=value deviceAuthPolicyID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDDeviceAuthenticationPolicyDeviceAuthPolicyIDPut envID=value deviceAuthPolicyID=value
 ```
 
 ### Parameters
@@ -28,7 +28,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **deviceAuthPolicyID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

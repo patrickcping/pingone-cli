@@ -93,7 +93,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDAgreementsAgreementIDPut envID=value agreementID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDAgreementsAgreementIDPut envID=value agreementID=value
 ```
 
 ### Parameters
@@ -103,7 +103,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **agreementID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -166,7 +165,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDAgreementsPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDAgreementsPost envID=value
 ```
 
 ### Parameters
@@ -175,7 +174,6 @@ pingone-cli v1EnvironmentsEnvIDAgreementsPost envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

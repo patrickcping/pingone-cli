@@ -54,7 +54,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDBrandingSettingsPut envID=value Content-Type:value Authorization:value
+pingone-cli v1EnvironmentsEnvIDBrandingSettingsPut envID=value Authorization:value
 ```
 
 ### Parameters
@@ -63,7 +63,6 @@ pingone-cli v1EnvironmentsEnvIDBrandingSettingsPut envID=value Content-Type:valu
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **authorization** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 

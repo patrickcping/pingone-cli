@@ -127,7 +127,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1OrganizationsOrgIDLicensesLicenseIDNamePut orgID=value licenseID=value Content-Type:value
+pingone-cli v1OrganizationsOrgIDLicensesLicenseIDNamePut orgID=value licenseID=value
 ```
 
 ### Parameters
@@ -137,7 +137,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orgID** | **string** |  | [default to null]
  **licenseID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

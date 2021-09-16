@@ -95,7 +95,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationStoresPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationStoresPost envID=value
 ```
 
 ### Parameters
@@ -104,7 +104,6 @@ pingone-cli v1EnvironmentsEnvIDPropagationStoresPost envID=value Content-Type:va
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -206,7 +205,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationStoresStoreIDPut envID=value storeID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationStoresStoreIDPut envID=value storeID=value
 ```
 
 ### Parameters
@@ -216,7 +215,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **storeID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

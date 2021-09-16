@@ -20,7 +20,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataAqueraPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataAqueraPost envID=value
 ```
 
 ### Parameters
@@ -29,7 +29,6 @@ pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataAqueraPost envID=value Co
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -57,7 +56,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataSalesforceContactsPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataSalesforceContactsPost envID=value
 ```
 
 ### Parameters
@@ -66,7 +65,6 @@ pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataSalesforceContactsPost en
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -94,7 +92,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataSalesforcePost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataSalesforcePost envID=value
 ```
 
 ### Parameters
@@ -103,7 +101,6 @@ pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataSalesforcePost envID=valu
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -131,7 +128,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataScimPost envID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataScimPost envID=value
 ```
 
 ### Parameters
@@ -140,7 +137,6 @@ pingone-cli v1EnvironmentsEnvIDPropagationStoreMetadataScimPost envID=value Cont
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type

@@ -53,7 +53,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli updateBillOfMaterials envID=value Content-Type:value
+pingone-cli updateBillOfMaterials envID=value
 ```
 
 ### Parameters
@@ -62,7 +62,6 @@ pingone-cli updateBillOfMaterials envID=value Content-Type:value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **billOfMaterials** | [**BillOfMaterials**](BillOfMaterials.md) |  | [optional]
 
 ### Return type

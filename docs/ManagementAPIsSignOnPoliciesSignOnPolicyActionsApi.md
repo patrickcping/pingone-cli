@@ -22,7 +22,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1Environments9ad15e9e3ac643f7A053D46b87d6c4a7SignOnPoliciesPolicyIDActionsPost policyID=value Content-Type:value
+pingone-cli v1Environments9ad15e9e3ac643f7A053D46b87d6c4a7SignOnPoliciesPolicyIDActionsPost policyID=value
 ```
 
 ### Parameters
@@ -31,7 +31,6 @@ pingone-cli v1Environments9ad15e9e3ac643f7A053D46b87d6c4a7SignOnPoliciesPolicyID
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **policyID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -133,7 +132,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDPut envID=value policyID=value actionID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsActionIDPut envID=value policyID=value actionID=value
 ```
 
 ### Parameters
@@ -144,7 +143,6 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **policyID** | **string** |  | [default to null]
  **actionID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
@@ -208,7 +206,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsPost envID=value policyID=value Content-Type:value
+pingone-cli v1EnvironmentsEnvIDSignOnPoliciesPolicyIDActionsPost envID=value policyID=value
 ```
 
 ### Parameters
@@ -218,7 +216,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **policyID** | **string** |  | [default to null]
- **contentType** | **string** |  | [optional] [default to null]
  **body** | **map** |  | [optional]
 
 ### Return type
