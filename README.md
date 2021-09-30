@@ -457,6 +457,7 @@ Class | Method | HTTP request | Description
  - [ApplicationSecret](docs/ApplicationSecret.md)
  - [BillOfMaterials](docs/BillOfMaterials.md)
  - [BillOfMaterialsBookmarks](docs/BillOfMaterialsBookmarks.md)
+ - [BillOfMaterialsConsole](docs/BillOfMaterialsConsole.md)
  - [BillOfMaterialsProducts](docs/BillOfMaterialsProducts.md)
  - [EntityArray](docs/EntityArray.md)
  - [EntityArrayEmbedded](docs/EntityArrayEmbedded.md)

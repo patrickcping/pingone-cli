@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **userAgent** | **string** |  | [optional] [default to null]
+**cookie** | **string** |  | [optional] [default to null]
 **language** | **string** |  | [optional] [default to null]
 **colorDepth** | **integer** |  | [optional] [default to null]
 **deviceMemory** | **integer** |  | [optional] [default to null]
