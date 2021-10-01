@@ -143,6 +143,11 @@ docs/RiskEvaluationEventUser.md
 docs/RiskEvaluationEventUserGroups.md
 docs/RiskEvaluationResult.md
 docs/RiskEvaluationRiskPolicySet.md
+docs/RiskPredictor.md
+docs/RiskPredictorDefault.md
+docs/RiskPredictorDefaultResult.md
+docs/RiskPredictorMap.md
+docs/RiskPredictorMapBetween.md
 docs/Role.md
 docs/RoleAssignment.md
 docs/RoleAssignmentRole.md

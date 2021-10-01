@@ -338,8 +338,11 @@ Class | Method | HTTP request | Description
 *ManagementAPIsResourcesResourcesApi* | [**readAllResources**](docs/ManagementAPIsResourcesResourcesApi.md#readallresources) | **GET** /v1/environments/{envID}/resources | READ All Resources
 *ManagementAPIsResourcesResourcesApi* | [**updateResource**](docs/ManagementAPIsResourcesResourcesApi.md#updateresource) | **PUT** /v1/environments/{envID}/resources/{resourceID} | UPDATE Resource
 *ManagementAPIsResourcesResourcesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDGet**](docs/ManagementAPIsResourcesResourcesApi.md#v1environmentsenvidresourcesresourceidget) | **GET** /v1/environments/{envID}/resources/{resourceID} | READ One Resource
-*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**v1EnvironmentsEnvIDRiskPredictorsGet**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#v1environmentsenvidriskpredictorsget) | **GET** /v1/environments/{envID}/riskPredictors | READ All Risk Predictors
-*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#v1environmentsenvidriskpredictorsriskpredictoridget) | **GET** /v1/environments/{envID}/riskPredictors/{riskPredictorID} | READ One Risk Predictor
+*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**createRiskPredictor**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#createriskpredictor) | **POST** /v1/environments/{envID}/riskPredictors | CREATE Risk Predictor
+*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**deleteRiskAdvancedPredictor**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#deleteriskadvancedpredictor) | **DELETE** /v1/environments/{envID}/riskPredictors/{riskPredictorID} | DELETE Risk Advanced Predictor
+*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**readAllRiskPredictors**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#readallriskpredictors) | **GET** /v1/environments/{envID}/riskPredictors | READ All Risk Predictors
+*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**readOneRiskPredictor**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#readoneriskpredictor) | **GET** /v1/environments/{envID}/riskPredictors/{riskPredictorID} | READ One Risk Predictor
+*ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**updateRiskPredictor**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#updateriskpredictor) | **PUT** /v1/environments/{envID}/riskPredictors/{riskPredictorID} | UPDATE Risk Predictor
 *ManagementAPIsRiskManagementRiskEvaluationsApi* | [**createRiskEvaluation**](docs/ManagementAPIsRiskManagementRiskEvaluationsApi.md#createriskevaluation) | **POST** /v1/environments/{envID}/riskEvaluations | CREATE Risk Evaluation
 *ManagementAPIsRiskManagementRiskEvaluationsApi* | [**readOneRiskEvaluation**](docs/ManagementAPIsRiskManagementRiskEvaluationsApi.md#readoneriskevaluation) | **GET** /v1/environments/{envID}/riskEvaluations/{riskID} | READ One Risk Evaluation
 *ManagementAPIsRiskManagementRiskEvaluationsApi* | [**updateRiskEvaluation**](docs/ManagementAPIsRiskManagementRiskEvaluationsApi.md#updateriskevaluation) | **PUT** /v1/environments/{envID}/riskEvaluations/{riskID}/event | UPDATE Risk Evaluation
@@ -498,6 +501,11 @@ Class | Method | HTTP request | Description
  - [RiskEvaluationEventUserGroups](docs/RiskEvaluationEventUserGroups.md)
  - [RiskEvaluationResult](docs/RiskEvaluationResult.md)
  - [RiskEvaluationRiskPolicySet](docs/RiskEvaluationRiskPolicySet.md)
+ - [RiskPredictor](docs/RiskPredictor.md)
+ - [RiskPredictorDefault](docs/RiskPredictorDefault.md)
+ - [RiskPredictorDefaultResult](docs/RiskPredictorDefaultResult.md)
+ - [RiskPredictorMap](docs/RiskPredictorMap.md)
+ - [RiskPredictorMapBetween](docs/RiskPredictorMapBetween.md)
  - [Role](docs/Role.md)
  - [RoleAssignment](docs/RoleAssignment.md)
  - [RoleAssignmentRole](docs/RoleAssignmentRole.md)

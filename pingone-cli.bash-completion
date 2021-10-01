@@ -306,8 +306,11 @@ _pingone-cli()
     operations["readAllResources"]=1
     operations["updateResource"]=1
     operations["v1EnvironmentsEnvIDResourcesResourceIDGet"]=1
-    operations["v1EnvironmentsEnvIDRiskPredictorsGet"]=1
-    operations["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]=1
+    operations["createRiskPredictor"]=1
+    operations["deleteRiskAdvancedPredictor"]=1
+    operations["readAllRiskPredictors"]=1
+    operations["readOneRiskPredictor"]=1
+    operations["updateRiskPredictor"]=1
     operations["createRiskEvaluation"]=1
     operations["readOneRiskEvaluation"]=1
     operations["updateRiskEvaluation"]=1
@@ -639,8 +642,11 @@ _pingone-cli()
     operation_parameters["readAllResources"]="envID= "
     operation_parameters["updateResource"]="envID= resourceID= "
     operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDGet"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPredictorsGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"]="envID= riskPredictorID= "
+    operation_parameters["createRiskPredictor"]="envID= "
+    operation_parameters["deleteRiskAdvancedPredictor"]="envID= riskPredictorID= "
+    operation_parameters["readAllRiskPredictors"]="envID= "
+    operation_parameters["readOneRiskPredictor"]="envID= riskPredictorID= "
+    operation_parameters["updateRiskPredictor"]="envID= riskPredictorID= "
     operation_parameters["createRiskEvaluation"]="envID= "
     operation_parameters["readOneRiskEvaluation"]="envID= riskID= "
     operation_parameters["updateRiskEvaluation"]="envID= riskID= "

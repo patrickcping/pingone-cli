@@ -682,9 +682,16 @@ operation_parameters_minimum_occurrences["updateResource:::resourceID"]=1
 operation_parameters_minimum_occurrences["updateResource:::Resource"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=1
+operation_parameters_minimum_occurrences["createRiskPredictor:::envID"]=1
+operation_parameters_minimum_occurrences["createRiskPredictor:::RiskPredictor"]=0
+operation_parameters_minimum_occurrences["deleteRiskAdvancedPredictor:::envID"]=1
+operation_parameters_minimum_occurrences["deleteRiskAdvancedPredictor:::riskPredictorID"]=1
+operation_parameters_minimum_occurrences["readAllRiskPredictors:::envID"]=1
+operation_parameters_minimum_occurrences["readOneRiskPredictor:::envID"]=1
+operation_parameters_minimum_occurrences["readOneRiskPredictor:::riskPredictorID"]=1
+operation_parameters_minimum_occurrences["updateRiskPredictor:::envID"]=1
+operation_parameters_minimum_occurrences["updateRiskPredictor:::riskPredictorID"]=1
+operation_parameters_minimum_occurrences["updateRiskPredictor:::RiskPredictor"]=0
 operation_parameters_minimum_occurrences["createRiskEvaluation:::envID"]=1
 operation_parameters_minimum_occurrences["createRiskEvaluation:::RiskEvaluation"]=0
 operation_parameters_minimum_occurrences["readOneRiskEvaluation:::envID"]=1
@@ -1518,9 +1525,16 @@ operation_parameters_maximum_occurrences["updateResource:::resourceID"]=0
 operation_parameters_maximum_occurrences["updateResource:::Resource"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=0
+operation_parameters_maximum_occurrences["createRiskPredictor:::envID"]=0
+operation_parameters_maximum_occurrences["createRiskPredictor:::RiskPredictor"]=0
+operation_parameters_maximum_occurrences["deleteRiskAdvancedPredictor:::envID"]=0
+operation_parameters_maximum_occurrences["deleteRiskAdvancedPredictor:::riskPredictorID"]=0
+operation_parameters_maximum_occurrences["readAllRiskPredictors:::envID"]=0
+operation_parameters_maximum_occurrences["readOneRiskPredictor:::envID"]=0
+operation_parameters_maximum_occurrences["readOneRiskPredictor:::riskPredictorID"]=0
+operation_parameters_maximum_occurrences["updateRiskPredictor:::envID"]=0
+operation_parameters_maximum_occurrences["updateRiskPredictor:::riskPredictorID"]=0
+operation_parameters_maximum_occurrences["updateRiskPredictor:::RiskPredictor"]=0
 operation_parameters_maximum_occurrences["createRiskEvaluation:::envID"]=0
 operation_parameters_maximum_occurrences["createRiskEvaluation:::RiskEvaluation"]=0
 operation_parameters_maximum_occurrences["readOneRiskEvaluation:::envID"]=0
@@ -2351,9 +2365,16 @@ operation_parameters_collection_type["updateResource:::resourceID"]=""
 operation_parameters_collection_type["updateResource:::Resource"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet:::riskPredictorID"]=""
+operation_parameters_collection_type["createRiskPredictor:::envID"]=""
+operation_parameters_collection_type["createRiskPredictor:::RiskPredictor"]=""
+operation_parameters_collection_type["deleteRiskAdvancedPredictor:::envID"]=""
+operation_parameters_collection_type["deleteRiskAdvancedPredictor:::riskPredictorID"]=""
+operation_parameters_collection_type["readAllRiskPredictors:::envID"]=""
+operation_parameters_collection_type["readOneRiskPredictor:::envID"]=""
+operation_parameters_collection_type["readOneRiskPredictor:::riskPredictorID"]=""
+operation_parameters_collection_type["updateRiskPredictor:::envID"]=""
+operation_parameters_collection_type["updateRiskPredictor:::riskPredictorID"]=""
+operation_parameters_collection_type["updateRiskPredictor:::RiskPredictor"]=""
 operation_parameters_collection_type["createRiskEvaluation:::envID"]=""
 operation_parameters_collection_type["createRiskEvaluation:::RiskEvaluation"]=""
 operation_parameters_collection_type["readOneRiskEvaluation:::envID"]=""
@@ -3461,8 +3482,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsRiskManagementRiskAdvancedPredictors]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDRiskPredictorsGet${OFF};READ All Risk Predictors (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet${OFF};READ One Risk Predictor (AUTH)
+  ${CYAN}createRiskPredictor${OFF};CREATE Risk Predictor (AUTH)
+  ${CYAN}deleteRiskAdvancedPredictor${OFF};DELETE Risk Advanced Predictor (AUTH)
+  ${CYAN}readAllRiskPredictors${OFF};READ All Risk Predictors (AUTH)
+  ${CYAN}readOneRiskPredictor${OFF};READ One Risk Predictor (AUTH)
+  ${CYAN}updateRiskPredictor${OFF};UPDATE Risk Predictor (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -8930,12 +8954,55 @@ print_v1EnvironmentsEnvIDResourcesResourceIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskPredictorsGet operation
+# Print help for createRiskPredictor operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskPredictorsGet_help() {
+print_createRiskPredictor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPredictorsGet - READ All Risk Predictors${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createRiskPredictor - CREATE Risk Predictor${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRiskAdvancedPredictor operation
+#
+##############################################################################
+print_deleteRiskAdvancedPredictor_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRiskAdvancedPredictor - DELETE Risk Advanced Predictor${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}riskPredictorID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: riskPredictorID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readAllRiskPredictors operation
+#
+##############################################################################
+print_readAllRiskPredictors_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readAllRiskPredictors - READ All Risk Predictors${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8950,18 +9017,41 @@ print_v1EnvironmentsEnvIDRiskPredictorsGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet operation
+# Print help for readOneRiskPredictor operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet_help() {
+print_readOneRiskPredictor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet - READ One Risk Predictor${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneRiskPredictor - READ One Risk Predictor${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}riskPredictorID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: riskPredictorID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRiskPredictor operation
+#
+##############################################################################
+print_updateRiskPredictor_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRiskPredictor - UPDATE Risk Predictor${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}riskPredictorID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: riskPredictorID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -22912,10 +23002,124 @@ call_v1EnvironmentsEnvIDResourcesResourceIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskPredictorsGet operation
+# Call createRiskPredictor operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskPredictorsGet() {
+call_createRiskPredictor() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/riskPredictors" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRiskAdvancedPredictor operation
+#
+##############################################################################
+call_deleteRiskAdvancedPredictor() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID riskPredictorID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/riskPredictors/{riskPredictorID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllRiskPredictors operation
+#
+##############################################################################
+call_readAllRiskPredictors() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -22948,10 +23152,10 @@ call_v1EnvironmentsEnvIDRiskPredictorsGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet operation
+# Call readOneRiskPredictor operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet() {
+call_readOneRiskPredictor() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID riskPredictorID)
@@ -22979,6 +23183,84 @@ call_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet() {
         echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRiskPredictor operation
+#
+##############################################################################
+call_updateRiskPredictor() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID riskPredictorID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/riskPredictors/{riskPredictorID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -28341,11 +28623,20 @@ case $key in
     v1EnvironmentsEnvIDResourcesResourceIDGet)
     operation="v1EnvironmentsEnvIDResourcesResourceIDGet"
     ;;
-    v1EnvironmentsEnvIDRiskPredictorsGet)
-    operation="v1EnvironmentsEnvIDRiskPredictorsGet"
+    createRiskPredictor)
+    operation="createRiskPredictor"
     ;;
-    v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet)
-    operation="v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet"
+    deleteRiskAdvancedPredictor)
+    operation="deleteRiskAdvancedPredictor"
+    ;;
+    readAllRiskPredictors)
+    operation="readAllRiskPredictors"
+    ;;
+    readOneRiskPredictor)
+    operation="readOneRiskPredictor"
+    ;;
+    updateRiskPredictor)
+    operation="updateRiskPredictor"
     ;;
     createRiskEvaluation)
     operation="createRiskEvaluation"
@@ -29405,11 +29696,20 @@ case $operation in
     v1EnvironmentsEnvIDResourcesResourceIDGet)
     call_v1EnvironmentsEnvIDResourcesResourceIDGet
     ;;
-    v1EnvironmentsEnvIDRiskPredictorsGet)
-    call_v1EnvironmentsEnvIDRiskPredictorsGet
+    createRiskPredictor)
+    call_createRiskPredictor
     ;;
-    v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet)
-    call_v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet
+    deleteRiskAdvancedPredictor)
+    call_deleteRiskAdvancedPredictor
+    ;;
+    readAllRiskPredictors)
+    call_readAllRiskPredictors
+    ;;
+    readOneRiskPredictor)
+    call_readOneRiskPredictor
+    ;;
+    updateRiskPredictor)
+    call_updateRiskPredictor
     ;;
     createRiskEvaluation)
     call_createRiskEvaluation

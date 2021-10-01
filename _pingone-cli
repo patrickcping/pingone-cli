@@ -481,8 +481,11 @@ case $state in
             "deleteResource[DELETE Resource]" \
             "readAllResources[READ All Resources]" \
             "updateResource[UPDATE Resource]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDGet[READ One Resource]"             "v1EnvironmentsEnvIDRiskPredictorsGet[READ All Risk Predictors]" \
-            "v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet[READ One Risk Predictor]"             "createRiskEvaluation[CREATE Risk Evaluation]" \
+            "v1EnvironmentsEnvIDResourcesResourceIDGet[READ One Resource]"             "createRiskPredictor[CREATE Risk Predictor]" \
+            "deleteRiskAdvancedPredictor[DELETE Risk Advanced Predictor]" \
+            "readAllRiskPredictors[READ All Risk Predictors]" \
+            "readOneRiskPredictor[READ One Risk Predictor]" \
+            "updateRiskPredictor[UPDATE Risk Predictor]"             "createRiskEvaluation[CREATE Risk Evaluation]" \
             "readOneRiskEvaluation[READ One Risk Evaluation]" \
             "updateRiskEvaluation[UPDATE Risk Evaluation]"             "v1EnvironmentsEnvIDRiskPolicySetsGet[READ Risk Policy Sets]" \
             "v1EnvironmentsEnvIDRiskPolicySetsPost[CREATE Risk Policy Set]" \
@@ -2486,14 +2489,37 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDRiskPredictorsGet)
+      createRiskPredictor)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDRiskPredictorsRiskPredictorIDGet)
+      deleteRiskAdvancedPredictor)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"riskPredictorID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readAllRiskPredictors)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneRiskPredictor)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"riskPredictorID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRiskPredictor)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
