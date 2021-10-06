@@ -346,11 +346,11 @@ Class | Method | HTTP request | Description
 *ManagementAPIsRiskManagementRiskEvaluationsApi* | [**createRiskEvaluation**](docs/ManagementAPIsRiskManagementRiskEvaluationsApi.md#createriskevaluation) | **POST** /v1/environments/{envID}/riskEvaluations | CREATE Risk Evaluation
 *ManagementAPIsRiskManagementRiskEvaluationsApi* | [**readOneRiskEvaluation**](docs/ManagementAPIsRiskManagementRiskEvaluationsApi.md#readoneriskevaluation) | **GET** /v1/environments/{envID}/riskEvaluations/{riskID} | READ One Risk Evaluation
 *ManagementAPIsRiskManagementRiskEvaluationsApi* | [**updateRiskEvaluation**](docs/ManagementAPIsRiskManagementRiskEvaluationsApi.md#updateriskevaluation) | **PUT** /v1/environments/{envID}/riskEvaluations/{riskID}/event | UPDATE Risk Evaluation
-*ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsGet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsget) | **GET** /v1/environments/{envID}/riskPolicySets | READ Risk Policy Sets
-*ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsPost**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetspost) | **POST** /v1/environments/{envID}/riskPolicySets | CREATE Risk Policy Set
-*ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetiddelete) | **DELETE** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | DELETE Risk Policy Set
-*ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetidget) | **GET** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | READ One Risk Policy Set
-*ManagementAPIsRiskManagementRiskPoliciesApi* | [**v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#v1environmentsenvidriskpolicysetsriskpolicysetidput) | **PUT** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | UPDATE Risk Policy Set
+*ManagementAPIsRiskManagementRiskPoliciesApi* | [**createRiskPolicySet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#createriskpolicyset) | **POST** /v1/environments/{envID}/riskPolicySets | CREATE Risk Policy Set
+*ManagementAPIsRiskManagementRiskPoliciesApi* | [**deleteRiskPolicySet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#deleteriskpolicyset) | **DELETE** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | DELETE Risk Policy Set
+*ManagementAPIsRiskManagementRiskPoliciesApi* | [**readOneRiskPolicySet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#readoneriskpolicyset) | **GET** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | READ One Risk Policy Set
+*ManagementAPIsRiskManagementRiskPoliciesApi* | [**readRiskPolicySets**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#readriskpolicysets) | **GET** /v1/environments/{envID}/riskPolicySets | READ Risk Policy Sets
+*ManagementAPIsRiskManagementRiskPoliciesApi* | [**updateRiskPolicySet**](docs/ManagementAPIsRiskManagementRiskPoliciesApi.md#updateriskpolicyset) | **PUT** /v1/environments/{envID}/riskPolicySets/{riskPolicySetID} | UPDATE Risk Policy Set
 *ManagementAPIsRolesApi* | [**readAllRoles**](docs/ManagementAPIsRolesApi.md#readallroles) | **GET** /v1/roles | READ All Roles
 *ManagementAPIsRolesApi* | [**readOneRole**](docs/ManagementAPIsRolesApi.md#readonerole) | **GET** /v1/roles/{roleID} | READ One Role
 *ManagementAPIsSchemasApi* | [**createAttribute**](docs/ManagementAPIsSchemasApi.md#createattribute) | **POST** /v1/environments/{envID}/schemas/{schemaID}/attributes | CREATE Attribute
@@ -502,11 +502,18 @@ Class | Method | HTTP request | Description
  - [RiskEvaluationEventUserGroups](docs/RiskEvaluationEventUserGroups.md)
  - [RiskEvaluationResult](docs/RiskEvaluationResult.md)
  - [RiskEvaluationRiskPolicySet](docs/RiskEvaluationRiskPolicySet.md)
+ - [RiskPolicyResult](docs/RiskPolicyResult.md)
+ - [RiskPolicySet](docs/RiskPolicySet.md)
+ - [RiskPolicySetCondition](docs/RiskPolicySetCondition.md)
+ - [RiskPolicySetConditionAggregatedWeights](docs/RiskPolicySetConditionAggregatedWeights.md)
+ - [RiskPolicySetConditionBetween](docs/RiskPolicySetConditionBetween.md)
+ - [RiskPolicySetRiskPolicies](docs/RiskPolicySetRiskPolicies.md)
  - [RiskPredictor](docs/RiskPredictor.md)
  - [RiskPredictorDefault](docs/RiskPredictorDefault.md)
  - [RiskPredictorDefaultResult](docs/RiskPredictorDefaultResult.md)
+ - [RiskPredictorItemMap](docs/RiskPredictorItemMap.md)
+ - [RiskPredictorItemMapBetween](docs/RiskPredictorItemMapBetween.md)
  - [RiskPredictorMap](docs/RiskPredictorMap.md)
- - [RiskPredictorMapBetween](docs/RiskPredictorMapBetween.md)
  - [Role](docs/Role.md)
  - [RoleAssignment](docs/RoleAssignment.md)
  - [RoleAssignmentRole](docs/RoleAssignmentRole.md)

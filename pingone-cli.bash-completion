@@ -314,11 +314,11 @@ _pingone-cli()
     operations["createRiskEvaluation"]=1
     operations["readOneRiskEvaluation"]=1
     operations["updateRiskEvaluation"]=1
-    operations["v1EnvironmentsEnvIDRiskPolicySetsGet"]=1
-    operations["v1EnvironmentsEnvIDRiskPolicySetsPost"]=1
-    operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]=1
-    operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"]=1
-    operations["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"]=1
+    operations["createRiskPolicySet"]=1
+    operations["deleteRiskPolicySet"]=1
+    operations["readOneRiskPolicySet"]=1
+    operations["readRiskPolicySets"]=1
+    operations["updateRiskPolicySet"]=1
     operations["readAllRoles"]=1
     operations["readOneRole"]=1
     operations["createAttribute"]=1
@@ -650,11 +650,11 @@ _pingone-cli()
     operation_parameters["createRiskEvaluation"]="envID= "
     operation_parameters["readOneRiskEvaluation"]="envID= riskID= "
     operation_parameters["updateRiskEvaluation"]="envID= riskID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsPost"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"]="envID= riskPolicySetID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"]="envID= riskPolicySetID= "
-    operation_parameters["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"]="envID= riskPolicySetID= "
+    operation_parameters["createRiskPolicySet"]="envID= "
+    operation_parameters["deleteRiskPolicySet"]="envID= riskPolicySetID= "
+    operation_parameters["readOneRiskPolicySet"]="envID= riskPolicySetID= "
+    operation_parameters["readRiskPolicySets"]="envID= "
+    operation_parameters["updateRiskPolicySet"]="envID= riskPolicySetID= "
     operation_parameters["readAllRoles"]=""
     operation_parameters["readOneRole"]="roleID= "
     operation_parameters["createAttribute"]="envID= schemaID= "

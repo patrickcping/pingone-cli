@@ -699,16 +699,16 @@ operation_parameters_minimum_occurrences["readOneRiskEvaluation:::riskID"]=1
 operation_parameters_minimum_occurrences["updateRiskEvaluation:::envID"]=1
 operation_parameters_minimum_occurrences["updateRiskEvaluation:::riskID"]=1
 operation_parameters_minimum_occurrences["updateRiskEvaluation:::RiskEvaluationEvent"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete:::riskPolicySetID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet:::riskPolicySetID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::riskPolicySetID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=0
+operation_parameters_minimum_occurrences["createRiskPolicySet:::envID"]=1
+operation_parameters_minimum_occurrences["createRiskPolicySet:::RiskPolicySet"]=0
+operation_parameters_minimum_occurrences["deleteRiskPolicySet:::envID"]=1
+operation_parameters_minimum_occurrences["deleteRiskPolicySet:::riskPolicySetID"]=1
+operation_parameters_minimum_occurrences["readOneRiskPolicySet:::envID"]=1
+operation_parameters_minimum_occurrences["readOneRiskPolicySet:::riskPolicySetID"]=1
+operation_parameters_minimum_occurrences["readRiskPolicySets:::envID"]=1
+operation_parameters_minimum_occurrences["updateRiskPolicySet:::envID"]=1
+operation_parameters_minimum_occurrences["updateRiskPolicySet:::riskPolicySetID"]=1
+operation_parameters_minimum_occurrences["updateRiskPolicySet:::RiskPolicySet"]=0
 operation_parameters_minimum_occurrences["readOneRole:::roleID"]=1
 operation_parameters_minimum_occurrences["createAttribute:::envID"]=1
 operation_parameters_minimum_occurrences["createAttribute:::schemaID"]=1
@@ -1542,16 +1542,16 @@ operation_parameters_maximum_occurrences["readOneRiskEvaluation:::riskID"]=0
 operation_parameters_maximum_occurrences["updateRiskEvaluation:::envID"]=0
 operation_parameters_maximum_occurrences["updateRiskEvaluation:::riskID"]=0
 operation_parameters_maximum_occurrences["updateRiskEvaluation:::RiskEvaluationEvent"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete:::riskPolicySetID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet:::riskPolicySetID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::riskPolicySetID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=0
+operation_parameters_maximum_occurrences["createRiskPolicySet:::envID"]=0
+operation_parameters_maximum_occurrences["createRiskPolicySet:::RiskPolicySet"]=0
+operation_parameters_maximum_occurrences["deleteRiskPolicySet:::envID"]=0
+operation_parameters_maximum_occurrences["deleteRiskPolicySet:::riskPolicySetID"]=0
+operation_parameters_maximum_occurrences["readOneRiskPolicySet:::envID"]=0
+operation_parameters_maximum_occurrences["readOneRiskPolicySet:::riskPolicySetID"]=0
+operation_parameters_maximum_occurrences["readRiskPolicySets:::envID"]=0
+operation_parameters_maximum_occurrences["updateRiskPolicySet:::envID"]=0
+operation_parameters_maximum_occurrences["updateRiskPolicySet:::riskPolicySetID"]=0
+operation_parameters_maximum_occurrences["updateRiskPolicySet:::RiskPolicySet"]=0
 operation_parameters_maximum_occurrences["readOneRole:::roleID"]=0
 operation_parameters_maximum_occurrences["createAttribute:::envID"]=0
 operation_parameters_maximum_occurrences["createAttribute:::schemaID"]=0
@@ -2382,16 +2382,16 @@ operation_parameters_collection_type["readOneRiskEvaluation:::riskID"]=""
 operation_parameters_collection_type["updateRiskEvaluation:::envID"]=""
 operation_parameters_collection_type["updateRiskEvaluation:::riskID"]=""
 operation_parameters_collection_type["updateRiskEvaluation:::RiskEvaluationEvent"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete:::riskPolicySetID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet:::riskPolicySetID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::riskPolicySetID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut:::body"]=""
+operation_parameters_collection_type["createRiskPolicySet:::envID"]=""
+operation_parameters_collection_type["createRiskPolicySet:::RiskPolicySet"]=""
+operation_parameters_collection_type["deleteRiskPolicySet:::envID"]=""
+operation_parameters_collection_type["deleteRiskPolicySet:::riskPolicySetID"]=""
+operation_parameters_collection_type["readOneRiskPolicySet:::envID"]=""
+operation_parameters_collection_type["readOneRiskPolicySet:::riskPolicySetID"]=""
+operation_parameters_collection_type["readRiskPolicySets:::envID"]=""
+operation_parameters_collection_type["updateRiskPolicySet:::envID"]=""
+operation_parameters_collection_type["updateRiskPolicySet:::riskPolicySetID"]=""
+operation_parameters_collection_type["updateRiskPolicySet:::RiskPolicySet"]=""
 operation_parameters_collection_type["readOneRole:::roleID"]=""
 operation_parameters_collection_type["createAttribute:::envID"]=""
 operation_parameters_collection_type["createAttribute:::schemaID"]=""
@@ -3500,11 +3500,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsRiskManagementRiskPolicies]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDRiskPolicySetsGet${OFF};READ Risk Policy Sets (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskPolicySetsPost${OFF};CREATE Risk Policy Set (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete${OFF};DELETE Risk Policy Set (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet${OFF};READ One Risk Policy Set (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut${OFF};UPDATE Risk Policy Set (AUTH)
+  ${CYAN}createRiskPolicySet${OFF};CREATE Risk Policy Set (AUTH)
+  ${CYAN}deleteRiskPolicySet${OFF};DELETE Risk Policy Set (AUTH)
+  ${CYAN}readOneRiskPolicySet${OFF};READ One Risk Policy Set (AUTH)
+  ${CYAN}readRiskPolicySets${OFF};READ Risk Policy Sets (AUTH)
+  ${CYAN}updateRiskPolicySet${OFF};UPDATE Risk Policy Set (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -9127,32 +9127,12 @@ print_updateRiskEvaluation_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskPolicySetsGet operation
+# Print help for createRiskPolicySet operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskPolicySetsGet_help() {
+print_createRiskPolicySet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPolicySetsGet - READ Risk Policy Sets${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDRiskPolicySetsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDRiskPolicySetsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPolicySetsPost - CREATE Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createRiskPolicySet - CREATE Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9169,12 +9149,12 @@ print_v1EnvironmentsEnvIDRiskPolicySetsPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete operation
+# Print help for deleteRiskPolicySet operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete_help() {
+print_deleteRiskPolicySet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete - DELETE Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteRiskPolicySet - DELETE Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9190,12 +9170,12 @@ print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet operation
+# Print help for readOneRiskPolicySet operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet_help() {
+print_readOneRiskPolicySet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet - READ One Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneRiskPolicySet - READ One Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9211,12 +9191,32 @@ print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut operation
+# Print help for readRiskPolicySets operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut_help() {
+print_readRiskPolicySets_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut - UPDATE Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readRiskPolicySets - READ Risk Policy Sets${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRiskPolicySet operation
+#
+##############################################################################
+print_updateRiskPolicySet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRiskPolicySet - UPDATE Risk Policy Set${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -23458,46 +23458,10 @@ call_updateRiskEvaluation() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskPolicySetsGet operation
+# Call createRiskPolicySet operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskPolicySetsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/riskPolicySets" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDRiskPolicySetsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDRiskPolicySetsPost() {
+call_createRiskPolicySet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -23572,10 +23536,10 @@ call_v1EnvironmentsEnvIDRiskPolicySetsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete operation
+# Call deleteRiskPolicySet operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete() {
+call_deleteRiskPolicySet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID riskPolicySetID)
@@ -23608,10 +23572,10 @@ call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet operation
+# Call readOneRiskPolicySet operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet() {
+call_readOneRiskPolicySet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID riskPolicySetID)
@@ -23644,10 +23608,46 @@ call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut operation
+# Call readRiskPolicySets operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut() {
+call_readRiskPolicySets() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/riskPolicySets" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRiskPolicySet operation
+#
+##############################################################################
+call_updateRiskPolicySet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID riskPolicySetID)
@@ -28647,20 +28647,20 @@ case $key in
     updateRiskEvaluation)
     operation="updateRiskEvaluation"
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsGet)
-    operation="v1EnvironmentsEnvIDRiskPolicySetsGet"
+    createRiskPolicySet)
+    operation="createRiskPolicySet"
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsPost)
-    operation="v1EnvironmentsEnvIDRiskPolicySetsPost"
+    deleteRiskPolicySet)
+    operation="deleteRiskPolicySet"
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete)
-    operation="v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete"
+    readOneRiskPolicySet)
+    operation="readOneRiskPolicySet"
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet)
-    operation="v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet"
+    readRiskPolicySets)
+    operation="readRiskPolicySets"
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut)
-    operation="v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut"
+    updateRiskPolicySet)
+    operation="updateRiskPolicySet"
     ;;
     readAllRoles)
     operation="readAllRoles"
@@ -29720,20 +29720,20 @@ case $operation in
     updateRiskEvaluation)
     call_updateRiskEvaluation
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsGet)
-    call_v1EnvironmentsEnvIDRiskPolicySetsGet
+    createRiskPolicySet)
+    call_createRiskPolicySet
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsPost)
-    call_v1EnvironmentsEnvIDRiskPolicySetsPost
+    deleteRiskPolicySet)
+    call_deleteRiskPolicySet
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete)
-    call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDDelete
+    readOneRiskPolicySet)
+    call_readOneRiskPolicySet
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet)
-    call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDGet
+    readRiskPolicySets)
+    call_readRiskPolicySets
     ;;
-    v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut)
-    call_v1EnvironmentsEnvIDRiskPolicySetsRiskPolicySetIDPut
+    updateRiskPolicySet)
+    call_updateRiskPolicySet
     ;;
     readAllRoles)
     call_readAllRoles

@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **groupMemberships** | [**array[GroupMembership]**](GroupMembership.md) |  | [optional] [default to null]
 **populations** | [**array[Population]**](Population.md) |  | [optional] [default to null]
 **resources** | [**array[Resource]**](Resource.md) |  | [optional] [default to null]
+**riskPolicySets** | [**array[RiskPolicySet]**](RiskPolicySet.md) |  | [optional] [default to null]
 **riskPredictors** | [**array[RiskPredictor]**](RiskPredictor.md) |  | [optional] [default to null]
 **roleAssignments** | [**array[RoleAssignment]**](RoleAssignment.md) |  | [optional] [default to null]
 **roles** | [**array[Role]**](Role.md) |  | [optional] [default to null]
