@@ -470,6 +470,7 @@ Class | Method | HTTP request | Description
  - [Group](docs/Group.md)
  - [GroupDirectMemberCounts](docs/GroupDirectMemberCounts.md)
  - [GroupMembership](docs/GroupMembership.md)
+ - [GroupPopulation](docs/GroupPopulation.md)
  - [GroupTotalMemberCounts](docs/GroupTotalMemberCounts.md)
  - [InlineObject2](docs/InlineObject2.md)
  - [InlineObject3](docs/InlineObject3.md)
