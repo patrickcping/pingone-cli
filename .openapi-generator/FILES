@@ -7,11 +7,11 @@ docs/ApplicationAccessControlGroup.md
 docs/ApplicationAccessControlRole.md
 docs/ApplicationAttributeMapping.md
 docs/ApplicationIcon.md
-docs/ApplicationMobile.md
-docs/ApplicationMobileIntegrityDetection.md
-docs/ApplicationMobileIntegrityDetectionCacheDuration.md
 docs/ApplicationOIDC.md
 docs/ApplicationOIDCAllOf.md
+docs/ApplicationOIDCAllOfMobile.md
+docs/ApplicationOIDCAllOfMobileIntegrityDetection.md
+docs/ApplicationOIDCAllOfMobileIntegrityDetectionCacheDuration.md
 docs/ApplicationResourceGrant.md
 docs/ApplicationResourceGrantApplication.md
 docs/ApplicationResourceGrantResource.md
