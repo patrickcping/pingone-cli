@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **value** | **string** |  | [optional] [default to null]
-**equals** | **map** |  | [optional] [default to null]
+**equals** | [**OneOf&lt;string,boolean&gt;**](OneOf&lt;string,boolean&gt;.md) |  | [optional] [default to null]
 **aggregatedWeights** | [**array[RiskPolicySetConditionAggregatedWeights]**](RiskPolicySetConditionAggregatedWeights.md) |  | [optional] [default to null]
 **between** | [**RiskPolicySetConditionBetween**](RiskPolicySetConditionBetween.md) |  | [optional] [default to null]
 

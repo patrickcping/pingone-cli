@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **createdAt** | **string** |  | [optional] [readonly] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **id** | **string** |  | [optional] [readonly] [default to null]
-**name** | **string** |  | [optional] [default to null]
+**name** | **string** |  | [default to null]
 **updatedAt** | **string** |  | [optional] [readonly] [default to null]
 **userCount** | **integer** |  | [optional] [readonly] [default to null]
 

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **createdAt** | **string** |  | [optional] [readonly] [default to null]
 **details** | [**RiskEvaluationDetails**](RiskEvaluationDetails.md) |  | [optional] [default to null]
 **environment** | [**ObjectEnvironment**](ObjectEnvironment.md) |  | [optional] [default to null]
-**event** | [**RiskEvaluationEvent**](RiskEvaluationEvent.md) |  | [optional] [default to null]
+**event** | [**RiskEvaluationEvent**](RiskEvaluationEvent.md) |  | [default to null]
 **id** | **string** |  | [optional] [readonly] [default to null]
 **riskPolicySet** | [**RiskEvaluationRiskPolicySet**](RiskEvaluationRiskPolicySet.md) |  | [optional] [default to null]
 **result** | [**RiskEvaluationResult**](RiskEvaluationResult.md) |  | [optional] [default to null]

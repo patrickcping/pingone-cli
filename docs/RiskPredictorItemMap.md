@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contains** | **string** |  | [optional] [default to null]
+**contains** | **string** |  | [default to null]
 **ipRange** | **array[string]** |  | [optional] [default to null]
 **between** | [**RiskPredictorItemMapBetween**](RiskPredictorItemMapBetween.md) |  | [optional] [default to null]
 **list** | **array[string]** |  | [optional] [default to null]

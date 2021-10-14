@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **description** | **string** |  | [optional] [default to null]
 **environment** | [**ObjectEnvironment**](ObjectEnvironment.md) |  | [optional] [default to null]
 **id** | **string** |  | [optional] [readonly] [default to null]
-**name** | **string** |  | [optional] [default to null]
+**name** | **string** |  | [default to null]
 **riskPolicies** | [**array[RiskPolicySetRiskPolicies]**](RiskPolicySetRiskPolicies.md) |  | [optional] [default to null]
 **updatedAt** | **string** |  | [optional] [readonly] [default to null]
 

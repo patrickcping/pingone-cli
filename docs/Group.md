@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [readonly] [default to null]
 **environment** | [**ObjectEnvironment**](ObjectEnvironment.md) |  | [optional] [default to null]
 **population** | [**GroupPopulation**](GroupPopulation.md) |  | [optional] [default to null]
-**name** | **string** |  | [optional] [default to null]
+**name** | **string** |  | [default to null]
 **userFilter** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **externalId** | **string** |  | [optional] [default to null]

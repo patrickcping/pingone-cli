@@ -5,15 +5,15 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **string** |  | [optional] [default to null]
 **displayName** | **string** |  | [optional] [default to null]
-**enabled** | **boolean** |  | [optional] [default to null]
+**enabled** | **boolean** |  | [default to null]
 **environment** | [**ObjectEnvironment**](ObjectEnvironment.md) |  | [optional] [default to null]
 **id** | **string** |  | [optional] [readonly] [default to null]
 **ldapAttribute** | **string** |  | [optional] [readonly] [default to null]
-**name** | **string** |  | [optional] [default to null]
+**name** | **string** |  | [default to null]
 **required** | **boolean** |  | [optional] [default to null]
 **schema** | [**SchemaAttributeSchema**](SchemaAttributeSchema.md) |  | [optional] [default to null]
 **schemaType** | **string** |  | [optional] [default to null]
-**type** | **string** |  | [optional] [default to null]
+**type** | **string** |  | [default to null]
 **unique** | **boolean** |  | [optional] [default to null]
 **multiValued** | **boolean** |  | [optional] [default to null]
 

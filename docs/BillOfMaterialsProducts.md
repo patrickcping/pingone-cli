@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [readonly] [default to null]
-**type** | **string** |  | [optional] [default to null]
+**type** | **string** |  | [default to null]
 **description** | **string** |  | [optional] [readonly] [default to null]
 **console** | [**BillOfMaterialsConsole**](BillOfMaterialsConsole.md) |  | [optional] [default to null]
 **bookmarks** | [**array[BillOfMaterialsBookmarks]**](BillOfMaterialsBookmarks.md) |  | [optional] [default to null]
