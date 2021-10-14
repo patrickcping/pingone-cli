@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [optional] [readonly] [default to null]
 **createdAt** | **string** |  | [optional] [readonly] [default to null]
 **mappingType** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [default to null]

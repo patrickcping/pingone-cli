@@ -158,15 +158,15 @@ operation_parameters_minimum_occurrences["createApplicationAttributeMapping:::ap
 operation_parameters_minimum_occurrences["createApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
 operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::envID"]=1
 operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::appID"]=1
-operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::samlAttrID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationAttributeMapping:::attrMappingID"]=1
 operation_parameters_minimum_occurrences["readAllApplicationAttributeMappings:::envID"]=1
 operation_parameters_minimum_occurrences["readAllApplicationAttributeMappings:::appID"]=1
 operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::envID"]=1
 operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::appID"]=1
-operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::samlAttrID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationAttributeMapping:::attrMappingID"]=1
 operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::envID"]=1
 operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::appID"]=1
-operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::samlAttrID"]=1
+operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::attrMappingID"]=1
 operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=1
@@ -184,21 +184,21 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPu
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=0
-operation_parameters_minimum_occurrences["createGrant:::envID"]=1
-operation_parameters_minimum_occurrences["createGrant:::appID"]=1
-operation_parameters_minimum_occurrences["createGrant:::ApplicationResourceGrant"]=0
-operation_parameters_minimum_occurrences["readAllGrantsForAnApplication:::envID"]=1
-operation_parameters_minimum_occurrences["readAllGrantsForAnApplication:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::grantID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::grantID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::grantID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::body"]=0
+operation_parameters_minimum_occurrences["createApplicationGrant:::envID"]=1
+operation_parameters_minimum_occurrences["createApplicationGrant:::appID"]=1
+operation_parameters_minimum_occurrences["createApplicationGrant:::ApplicationResourceGrant"]=0
+operation_parameters_minimum_occurrences["deleteApplicationGrant:::envID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationGrant:::appID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationGrant:::grantID"]=1
+operation_parameters_minimum_occurrences["readAllApplicationGrants:::envID"]=1
+operation_parameters_minimum_occurrences["readAllApplicationGrants:::appID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationGrant:::envID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationGrant:::appID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationGrant:::grantID"]=1
+operation_parameters_minimum_occurrences["updateApplicationGrant:::envID"]=1
+operation_parameters_minimum_occurrences["updateApplicationGrant:::appID"]=1
+operation_parameters_minimum_occurrences["updateApplicationGrant:::grantID"]=1
+operation_parameters_minimum_occurrences["updateApplicationGrant:::ApplicationResourceGrant"]=0
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=1
@@ -1001,15 +1001,15 @@ operation_parameters_maximum_occurrences["createApplicationAttributeMapping:::ap
 operation_parameters_maximum_occurrences["createApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
 operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::envID"]=0
 operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::appID"]=0
-operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::samlAttrID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationAttributeMapping:::attrMappingID"]=0
 operation_parameters_maximum_occurrences["readAllApplicationAttributeMappings:::envID"]=0
 operation_parameters_maximum_occurrences["readAllApplicationAttributeMappings:::appID"]=0
 operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::envID"]=0
 operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::appID"]=0
-operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::samlAttrID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationAttributeMapping:::attrMappingID"]=0
 operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::envID"]=0
 operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::appID"]=0
-operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::samlAttrID"]=0
+operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::attrMappingID"]=0
 operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=0
@@ -1027,21 +1027,21 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPu
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=0
-operation_parameters_maximum_occurrences["createGrant:::envID"]=0
-operation_parameters_maximum_occurrences["createGrant:::appID"]=0
-operation_parameters_maximum_occurrences["createGrant:::ApplicationResourceGrant"]=0
-operation_parameters_maximum_occurrences["readAllGrantsForAnApplication:::envID"]=0
-operation_parameters_maximum_occurrences["readAllGrantsForAnApplication:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::grantID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::grantID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::grantID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::body"]=0
+operation_parameters_maximum_occurrences["createApplicationGrant:::envID"]=0
+operation_parameters_maximum_occurrences["createApplicationGrant:::appID"]=0
+operation_parameters_maximum_occurrences["createApplicationGrant:::ApplicationResourceGrant"]=0
+operation_parameters_maximum_occurrences["deleteApplicationGrant:::envID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationGrant:::appID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationGrant:::grantID"]=0
+operation_parameters_maximum_occurrences["readAllApplicationGrants:::envID"]=0
+operation_parameters_maximum_occurrences["readAllApplicationGrants:::appID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationGrant:::envID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationGrant:::appID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationGrant:::grantID"]=0
+operation_parameters_maximum_occurrences["updateApplicationGrant:::envID"]=0
+operation_parameters_maximum_occurrences["updateApplicationGrant:::appID"]=0
+operation_parameters_maximum_occurrences["updateApplicationGrant:::grantID"]=0
+operation_parameters_maximum_occurrences["updateApplicationGrant:::ApplicationResourceGrant"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=0
@@ -1841,15 +1841,15 @@ operation_parameters_collection_type["createApplicationAttributeMapping:::appID"
 operation_parameters_collection_type["createApplicationAttributeMapping:::ApplicationAttributeMapping"]=""
 operation_parameters_collection_type["deleteApplicationAttributeMapping:::envID"]=""
 operation_parameters_collection_type["deleteApplicationAttributeMapping:::appID"]=""
-operation_parameters_collection_type["deleteApplicationAttributeMapping:::samlAttrID"]=""
+operation_parameters_collection_type["deleteApplicationAttributeMapping:::attrMappingID"]=""
 operation_parameters_collection_type["readAllApplicationAttributeMappings:::envID"]=""
 operation_parameters_collection_type["readAllApplicationAttributeMappings:::appID"]=""
 operation_parameters_collection_type["readOneApplicationAttributeMapping:::envID"]=""
 operation_parameters_collection_type["readOneApplicationAttributeMapping:::appID"]=""
-operation_parameters_collection_type["readOneApplicationAttributeMapping:::samlAttrID"]=""
+operation_parameters_collection_type["readOneApplicationAttributeMapping:::attrMappingID"]=""
 operation_parameters_collection_type["updateApplicationAttributeMapping:::envID"]=""
 operation_parameters_collection_type["updateApplicationAttributeMapping:::appID"]=""
-operation_parameters_collection_type["updateApplicationAttributeMapping:::samlAttrID"]=""
+operation_parameters_collection_type["updateApplicationAttributeMapping:::attrMappingID"]=""
 operation_parameters_collection_type["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=""
@@ -1867,21 +1867,21 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCr
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=""
-operation_parameters_collection_type["createGrant:::envID"]=""
-operation_parameters_collection_type["createGrant:::appID"]=""
-operation_parameters_collection_type["createGrant:::ApplicationResourceGrant"]=""
-operation_parameters_collection_type["readAllGrantsForAnApplication:::envID"]=""
-operation_parameters_collection_type["readAllGrantsForAnApplication:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete:::grantID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet:::grantID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::grantID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut:::body"]=""
+operation_parameters_collection_type["createApplicationGrant:::envID"]=""
+operation_parameters_collection_type["createApplicationGrant:::appID"]=""
+operation_parameters_collection_type["createApplicationGrant:::ApplicationResourceGrant"]=""
+operation_parameters_collection_type["deleteApplicationGrant:::envID"]=""
+operation_parameters_collection_type["deleteApplicationGrant:::appID"]=""
+operation_parameters_collection_type["deleteApplicationGrant:::grantID"]=""
+operation_parameters_collection_type["readAllApplicationGrants:::envID"]=""
+operation_parameters_collection_type["readAllApplicationGrants:::appID"]=""
+operation_parameters_collection_type["readOneApplicationGrant:::envID"]=""
+operation_parameters_collection_type["readOneApplicationGrant:::appID"]=""
+operation_parameters_collection_type["readOneApplicationGrant:::grantID"]=""
+operation_parameters_collection_type["updateApplicationGrant:::envID"]=""
+operation_parameters_collection_type["updateApplicationGrant:::appID"]=""
+operation_parameters_collection_type["updateApplicationGrant:::grantID"]=""
+operation_parameters_collection_type["updateApplicationGrant:::ApplicationResourceGrant"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=""
@@ -3045,11 +3045,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplicationResourceGrants]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}createGrant${OFF};CREATE Grant (AUTH)
-  ${CYAN}readAllGrantsForAnApplication${OFF};READ All Grants for an Application (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete${OFF};DELETE Grant (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet${OFF};READ One Grant for an Application (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut${OFF};UPDATE Grant (AUTH)
+  ${CYAN}createApplicationGrant${OFF};CREATE Grant (AUTH)
+  ${CYAN}deleteApplicationGrant${OFF};DELETE Grant (AUTH)
+  ${CYAN}readAllApplicationGrants${OFF};READ All Grants for an Application (AUTH)
+  ${CYAN}readOneApplicationGrant${OFF};READ One Grant for an Application (AUTH)
+  ${CYAN}updateApplicationGrant${OFF};UPDATE Grant (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4254,7 +4254,7 @@ print_deleteApplicationAttributeMapping_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}samlAttrID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: samlAttrID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attrMappingID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attrMappingID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -4297,7 +4297,7 @@ print_readOneApplicationAttributeMapping_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}samlAttrID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: samlAttrID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attrMappingID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attrMappingID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -4319,7 +4319,7 @@ print_updateApplicationAttributeMapping_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}samlAttrID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: samlAttrID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}attrMappingID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attrMappingID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -4444,12 +4444,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for createGrant operation
+# Print help for createApplicationGrant operation
 #
 ##############################################################################
-print_createGrant_help() {
+print_createApplicationGrant_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createGrant - CREATE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createApplicationGrant - CREATE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4467,33 +4467,12 @@ print_createGrant_help() {
 }
 ##############################################################################
 #
-# Print help for readAllGrantsForAnApplication operation
+# Print help for deleteApplicationGrant operation
 #
 ##############################################################################
-print_readAllGrantsForAnApplication_help() {
+print_deleteApplicationGrant_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}readAllGrantsForAnApplication - READ All Grants for an Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete - DELETE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteApplicationGrant - DELETE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4510,12 +4489,33 @@ print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet operation
+# Print help for readAllApplicationGrants operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet_help() {
+print_readAllApplicationGrants_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet - READ One Grant for an Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllApplicationGrants - READ All Grants for an Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneApplicationGrant operation
+#
+##############################################################################
+print_readOneApplicationGrant_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneApplicationGrant - READ One Grant for an Application${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4532,12 +4532,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut operation
+# Print help for updateApplicationGrant operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut_help() {
+print_updateApplicationGrant_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut - UPDATE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateApplicationGrant - UPDATE Grant${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12166,13 +12166,13 @@ call_createApplicationAttributeMapping() {
 call_deleteApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID samlAttrID)
+    local path_parameter_names=(envID appID attrMappingID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes/{samlAttrID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes/{attrMappingID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -12238,13 +12238,13 @@ call_readAllApplicationAttributeMappings() {
 call_readOneApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID samlAttrID)
+    local path_parameter_names=(envID appID attrMappingID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes/{samlAttrID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes/{attrMappingID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -12274,13 +12274,13 @@ call_readOneApplicationAttributeMapping() {
 call_updateApplicationAttributeMapping() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID samlAttrID)
+    local path_parameter_names=(envID appID attrMappingID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes/{samlAttrID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/attributes/{attrMappingID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -12610,10 +12610,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut() {
 
 ##############################################################################
 #
-# Call createGrant operation
+# Call createApplicationGrant operation
 #
 ##############################################################################
-call_createGrant() {
+call_createApplicationGrant() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -12688,46 +12688,10 @@ call_createGrant() {
 
 ##############################################################################
 #
-# Call readAllGrantsForAnApplication operation
+# Call deleteApplicationGrant operation
 #
 ##############################################################################
-call_readAllGrantsForAnApplication() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/grants" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete() {
+call_deleteApplicationGrant() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID grantID)
@@ -12760,10 +12724,46 @@ call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet operation
+# Call readAllApplicationGrants operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet() {
+call_readAllApplicationGrants() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/grants" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneApplicationGrant operation
+#
+##############################################################################
+call_readOneApplicationGrant() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID grantID)
@@ -12796,10 +12796,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut operation
+# Call updateApplicationGrant operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut() {
+call_updateApplicationGrant() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID grantID)
@@ -28002,20 +28002,20 @@ case $key in
     v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
     operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"
     ;;
-    createGrant)
-    operation="createGrant"
+    createApplicationGrant)
+    operation="createApplicationGrant"
     ;;
-    readAllGrantsForAnApplication)
-    operation="readAllGrantsForAnApplication"
+    deleteApplicationGrant)
+    operation="deleteApplicationGrant"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete"
+    readAllApplicationGrants)
+    operation="readAllApplicationGrants"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet"
+    readOneApplicationGrant)
+    operation="readOneApplicationGrant"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut"
+    updateApplicationGrant)
+    operation="updateApplicationGrant"
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
     operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"
@@ -29075,20 +29075,20 @@ case $operation in
     v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
     call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut
     ;;
-    createGrant)
-    call_createGrant
+    createApplicationGrant)
+    call_createApplicationGrant
     ;;
-    readAllGrantsForAnApplication)
-    call_readAllGrantsForAnApplication
+    deleteApplicationGrant)
+    call_deleteApplicationGrant
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete)
-    call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete
+    readAllApplicationGrants)
+    call_readAllApplicationGrants
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet
+    readOneApplicationGrant)
+    call_readOneApplicationGrant
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut)
-    call_v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut
+    updateApplicationGrant)
+    call_updateApplicationGrant
     ;;
     v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
     call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet

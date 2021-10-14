@@ -320,11 +320,11 @@ case $state in
             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost[CREATE MFA Push Credential (FCM)]" \
             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete[DELETE MFA Push Credential]" \
             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet[READ One MFA Push Credential]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut[UPDATE MFA Push Credential]"             "createGrant[CREATE Grant]" \
-            "readAllGrantsForAnApplication[READ All Grants for an Application]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete[DELETE Grant]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet[READ One Grant for an Application]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut[UPDATE Grant]"             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet[READ Application Role Assignments]" \
+            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut[UPDATE MFA Push Credential]"             "createApplicationGrant[CREATE Grant]" \
+            "deleteApplicationGrant[DELETE Grant]" \
+            "readAllApplicationGrants[READ All Grants for an Application]" \
+            "readOneApplicationGrant[READ One Grant for an Application]" \
+            "updateApplicationGrant[UPDATE Grant]"             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet[READ Application Role Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost[CREATE Application Role Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete[DELETE Application Role Assignment]" \
             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet[READ One Application Role Assignment]"             "readApplicationSecret[READ Application Secret]" \
@@ -749,7 +749,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-"samlAttrID=:[PATH] "
+"attrMappingID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -766,7 +766,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-"samlAttrID=:[PATH] "
+"attrMappingID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -775,7 +775,7 @@ case $state in
         _op_arguments=(
           "envID=:[PATH] "
 "appID=:[PATH] "
-"samlAttrID=:[PATH] "
+"attrMappingID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -823,7 +823,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      createGrant)
+      createApplicationGrant)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -831,15 +831,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      readAllGrantsForAnApplication)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDDelete)
+      deleteApplicationGrant)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -848,7 +840,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDGet)
+      readAllApplicationGrants)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"appID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneApplicationGrant)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -857,7 +857,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDGrantsGrantIDPut)
+      updateApplicationGrant)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
