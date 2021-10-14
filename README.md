@@ -323,21 +323,21 @@ Class | Method | HTTP request | Description
 *ManagementAPIsPopulationsApi* | [**readAllPopulations**](docs/ManagementAPIsPopulationsApi.md#readallpopulations) | **GET** /v1/environments/{envID}/populations | READ All Populations
 *ManagementAPIsPopulationsApi* | [**readOnePopulation**](docs/ManagementAPIsPopulationsApi.md#readonepopulation) | **GET** /v1/environments/{envID}/populations/{popID} | READ One Population
 *ManagementAPIsPopulationsApi* | [**updatePopulation**](docs/ManagementAPIsPopulationsApi.md#updatepopulation) | **PUT** /v1/environments/{envID}/populations/{popID} | UPDATE Population
-*ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesGet**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributesget) | **GET** /v1/environments/{envID}/resources/{resourceID}/attributes | READ All Resource Attributes
-*ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesPost**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributespost) | **POST** /v1/environments/{envID}/resources/{resourceID}/attributes | CREATE Resource Attribute
-*ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributesresourceattriddelete) | **DELETE** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | DELETE Resource Attribute
-*ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributesresourceattridget) | **GET** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | READ One Resource Attribute
-*ManagementAPIsResourcesResourceAttributesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut**](docs/ManagementAPIsResourcesResourceAttributesApi.md#v1environmentsenvidresourcesresourceidattributesresourceattridput) | **PUT** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | UPDATE Resource Attribute
-*ManagementAPIsResourcesResourceScopesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDScopesGet**](docs/ManagementAPIsResourcesResourceScopesApi.md#v1environmentsenvidresourcesresourceidscopesget) | **GET** /v1/environments/{envID}/resources/{resourceID}/scopes | READ All Scopes (Resource)
-*ManagementAPIsResourcesResourceScopesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDScopesPost**](docs/ManagementAPIsResourcesResourceScopesApi.md#v1environmentsenvidresourcesresourceidscopespost) | **POST** /v1/environments/{envID}/resources/{resourceID}/scopes | CREATE PingOne access control scope
-*ManagementAPIsResourcesResourceScopesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete**](docs/ManagementAPIsResourcesResourceScopesApi.md#v1environmentsenvidresourcesresourceidscopesscopeiddelete) | **DELETE** /v1/environments/{envID}/resources/{resourceID}/scopes/{scopeID} | DELETE Scope
-*ManagementAPIsResourcesResourceScopesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet**](docs/ManagementAPIsResourcesResourceScopesApi.md#v1environmentsenvidresourcesresourceidscopesscopeidget) | **GET** /v1/environments/{envID}/resources/{resourceID}/scopes/{scopeID} | READ One Scope
-*ManagementAPIsResourcesResourceScopesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut**](docs/ManagementAPIsResourcesResourceScopesApi.md#v1environmentsenvidresourcesresourceidscopesscopeidput) | **PUT** /v1/environments/{envID}/resources/{resourceID}/scopes/{scopeID} | UPDATE PingOne access control scope
+*ManagementAPIsResourcesResourceAttributesApi* | [**createResourceAttribute**](docs/ManagementAPIsResourcesResourceAttributesApi.md#createresourceattribute) | **POST** /v1/environments/{envID}/resources/{resourceID}/attributes | CREATE Resource Attribute
+*ManagementAPIsResourcesResourceAttributesApi* | [**deleteResourceAttribute**](docs/ManagementAPIsResourcesResourceAttributesApi.md#deleteresourceattribute) | **DELETE** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | DELETE Resource Attribute
+*ManagementAPIsResourcesResourceAttributesApi* | [**readAllResourceAttributes**](docs/ManagementAPIsResourcesResourceAttributesApi.md#readallresourceattributes) | **GET** /v1/environments/{envID}/resources/{resourceID}/attributes | READ All Resource Attributes
+*ManagementAPIsResourcesResourceAttributesApi* | [**readOneResourceAttribute**](docs/ManagementAPIsResourcesResourceAttributesApi.md#readoneresourceattribute) | **GET** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | READ One Resource Attribute
+*ManagementAPIsResourcesResourceAttributesApi* | [**updateResourceAttribute**](docs/ManagementAPIsResourcesResourceAttributesApi.md#updateresourceattribute) | **PUT** /v1/environments/{envID}/resources/{resourceID}/attributes/{resourceAttrID} | UPDATE Resource Attribute
+*ManagementAPIsResourcesResourceScopesApi* | [**createResourceScope**](docs/ManagementAPIsResourcesResourceScopesApi.md#createresourcescope) | **POST** /v1/environments/{envID}/resources/{resourceID}/scopes | CREATE PingOne access control scope
+*ManagementAPIsResourcesResourceScopesApi* | [**deleteResourceScope**](docs/ManagementAPIsResourcesResourceScopesApi.md#deleteresourcescope) | **DELETE** /v1/environments/{envID}/resources/{resourceID}/scopes/{scopeID} | DELETE Scope
+*ManagementAPIsResourcesResourceScopesApi* | [**readAllResourceScopes**](docs/ManagementAPIsResourcesResourceScopesApi.md#readallresourcescopes) | **GET** /v1/environments/{envID}/resources/{resourceID}/scopes | READ All Scopes (Resource)
+*ManagementAPIsResourcesResourceScopesApi* | [**readOneResourceScope**](docs/ManagementAPIsResourcesResourceScopesApi.md#readoneresourcescope) | **GET** /v1/environments/{envID}/resources/{resourceID}/scopes/{scopeID} | READ One Scope
+*ManagementAPIsResourcesResourceScopesApi* | [**updateResourceScope**](docs/ManagementAPIsResourcesResourceScopesApi.md#updateresourcescope) | **PUT** /v1/environments/{envID}/resources/{resourceID}/scopes/{scopeID} | UPDATE PingOne access control scope
 *ManagementAPIsResourcesResourcesApi* | [**createResource**](docs/ManagementAPIsResourcesResourcesApi.md#createresource) | **POST** /v1/environments/{envID}/resources | CREATE Resource
 *ManagementAPIsResourcesResourcesApi* | [**deleteResource**](docs/ManagementAPIsResourcesResourcesApi.md#deleteresource) | **DELETE** /v1/environments/{envID}/resources/{resourceID} | DELETE Resource
 *ManagementAPIsResourcesResourcesApi* | [**readAllResources**](docs/ManagementAPIsResourcesResourcesApi.md#readallresources) | **GET** /v1/environments/{envID}/resources | READ All Resources
+*ManagementAPIsResourcesResourcesApi* | [**readOneResource**](docs/ManagementAPIsResourcesResourcesApi.md#readoneresource) | **GET** /v1/environments/{envID}/resources/{resourceID} | READ One Resource
 *ManagementAPIsResourcesResourcesApi* | [**updateResource**](docs/ManagementAPIsResourcesResourcesApi.md#updateresource) | **PUT** /v1/environments/{envID}/resources/{resourceID} | UPDATE Resource
-*ManagementAPIsResourcesResourcesApi* | [**v1EnvironmentsEnvIDResourcesResourceIDGet**](docs/ManagementAPIsResourcesResourcesApi.md#v1environmentsenvidresourcesresourceidget) | **GET** /v1/environments/{envID}/resources/{resourceID} | READ One Resource
 *ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**createRiskPredictor**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#createriskpredictor) | **POST** /v1/environments/{envID}/riskPredictors | CREATE Risk Predictor
 *ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**deleteRiskAdvancedPredictor**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#deleteriskadvancedpredictor) | **DELETE** /v1/environments/{envID}/riskPredictors/{riskPredictorID} | DELETE Risk Advanced Predictor
 *ManagementAPIsRiskManagementRiskAdvancedPredictorsApi* | [**readAllRiskPredictors**](docs/ManagementAPIsRiskManagementRiskAdvancedPredictorsApi.md#readallriskpredictors) | **GET** /v1/environments/{envID}/riskPredictors | READ All Risk Predictors
@@ -439,6 +439,7 @@ Class | Method | HTTP request | Description
  - [Application](docs/Application.md)
  - [ApplicationAccessControl](docs/ApplicationAccessControl.md)
  - [ApplicationAccessControlGroup](docs/ApplicationAccessControlGroup.md)
+ - [ApplicationAccessControlGroupGroups](docs/ApplicationAccessControlGroupGroups.md)
  - [ApplicationAccessControlRole](docs/ApplicationAccessControlRole.md)
  - [ApplicationAttributeMapping](docs/ApplicationAttributeMapping.md)
  - [ApplicationIcon](docs/ApplicationIcon.md)
@@ -480,6 +481,9 @@ Class | Method | HTTP request | Description
  - [P1ErrorDetails](docs/P1ErrorDetails.md)
  - [Population](docs/Population.md)
  - [Resource](docs/Resource.md)
+ - [ResourceAttribute](docs/ResourceAttribute.md)
+ - [ResourceResource](docs/ResourceResource.md)
+ - [ResourceScope](docs/ResourceScope.md)
  - [RiskEvaluation](docs/RiskEvaluation.md)
  - [RiskEvaluationDetails](docs/RiskEvaluationDetails.md)
  - [RiskEvaluationDetailsIpAddressReputation](docs/RiskEvaluationDetailsIpAddressReputation.md)

@@ -469,19 +469,19 @@ case $state in
             "deletePopulation[DELETE Population]" \
             "readAllPopulations[READ All Populations]" \
             "readOnePopulation[READ One Population]" \
-            "updatePopulation[UPDATE Population]"             "v1EnvironmentsEnvIDResourcesResourceIDAttributesGet[READ All Resource Attributes]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDAttributesPost[CREATE Resource Attribute]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete[DELETE Resource Attribute]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet[READ One Resource Attribute]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut[UPDATE Resource Attribute]"             "v1EnvironmentsEnvIDResourcesResourceIDScopesGet[READ All Scopes (Resource)]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDScopesPost[CREATE PingOne access control scope]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete[DELETE Scope]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet[READ One Scope]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut[UPDATE PingOne access control scope]"             "createResource[CREATE Resource]" \
+            "updatePopulation[UPDATE Population]"             "createResourceAttribute[CREATE Resource Attribute]" \
+            "deleteResourceAttribute[DELETE Resource Attribute]" \
+            "readAllResourceAttributes[READ All Resource Attributes]" \
+            "readOneResourceAttribute[READ One Resource Attribute]" \
+            "updateResourceAttribute[UPDATE Resource Attribute]"             "createResourceScope[CREATE PingOne access control scope]" \
+            "deleteResourceScope[DELETE Scope]" \
+            "readAllResourceScopes[READ All Scopes (Resource)]" \
+            "readOneResourceScope[READ One Scope]" \
+            "updateResourceScope[UPDATE PingOne access control scope]"             "createResource[CREATE Resource]" \
             "deleteResource[DELETE Resource]" \
             "readAllResources[READ All Resources]" \
-            "updateResource[UPDATE Resource]" \
-            "v1EnvironmentsEnvIDResourcesResourceIDGet[READ One Resource]"             "createRiskPredictor[CREATE Risk Predictor]" \
+            "readOneResource[READ One Resource]" \
+            "updateResource[UPDATE Resource]"             "createRiskPredictor[CREATE Risk Predictor]" \
             "deleteRiskAdvancedPredictor[DELETE Risk Advanced Predictor]" \
             "readAllRiskPredictors[READ All Risk Predictors]" \
             "readOneRiskPredictor[READ One Risk Predictor]" \
@@ -2365,7 +2365,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDAttributesGet)
+      createResourceAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2373,15 +2373,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDAttributesPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"resourceID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete)
+      deleteResourceAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2390,7 +2382,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet)
+      readAllResourceAttributes)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"resourceID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneResourceAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2399,7 +2399,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut)
+      updateResourceAttribute)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2408,7 +2408,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDScopesGet)
+      createResourceScope)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2416,15 +2416,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDScopesPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"resourceID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete)
+      deleteResourceScope)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2433,7 +2425,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet)
+      readAllResourceScopes)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"resourceID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneResourceScope)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2442,7 +2442,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut)
+      updateResourceScope)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2473,7 +2473,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateResource)
+      readOneResource)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -2481,7 +2481,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDResourcesResourceIDGet)
+      updateResource)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "

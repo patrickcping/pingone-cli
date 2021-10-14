@@ -291,21 +291,21 @@ _pingone-cli()
     operations["readAllPopulations"]=1
     operations["readOnePopulation"]=1
     operations["updatePopulation"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesGet"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesPost"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"]=1
+    operations["createResourceAttribute"]=1
+    operations["deleteResourceAttribute"]=1
+    operations["readAllResourceAttributes"]=1
+    operations["readOneResourceAttribute"]=1
+    operations["updateResourceAttribute"]=1
+    operations["createResourceScope"]=1
+    operations["deleteResourceScope"]=1
+    operations["readAllResourceScopes"]=1
+    operations["readOneResourceScope"]=1
+    operations["updateResourceScope"]=1
     operations["createResource"]=1
     operations["deleteResource"]=1
     operations["readAllResources"]=1
+    operations["readOneResource"]=1
     operations["updateResource"]=1
-    operations["v1EnvironmentsEnvIDResourcesResourceIDGet"]=1
     operations["createRiskPredictor"]=1
     operations["deleteRiskAdvancedPredictor"]=1
     operations["readAllRiskPredictors"]=1
@@ -627,21 +627,21 @@ _pingone-cli()
     operation_parameters["readAllPopulations"]="envID= limit= filter= "
     operation_parameters["readOnePopulation"]="envID= popID= "
     operation_parameters["updatePopulation"]="envID= popID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete"]="envID= resourceID= resourceAttrID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet"]="envID= resourceID= resourceAttrID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut"]="envID= resourceID= resourceAttrID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesGet"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesPost"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"]="envID= resourceID= scopeID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"]="envID= resourceID= scopeID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"]="envID= resourceID= scopeID= "
+    operation_parameters["createResourceAttribute"]="envID= resourceID= "
+    operation_parameters["deleteResourceAttribute"]="envID= resourceID= resourceAttrID= "
+    operation_parameters["readAllResourceAttributes"]="envID= resourceID= "
+    operation_parameters["readOneResourceAttribute"]="envID= resourceID= resourceAttrID= "
+    operation_parameters["updateResourceAttribute"]="envID= resourceID= resourceAttrID= "
+    operation_parameters["createResourceScope"]="envID= resourceID= "
+    operation_parameters["deleteResourceScope"]="envID= resourceID= scopeID= "
+    operation_parameters["readAllResourceScopes"]="envID= resourceID= "
+    operation_parameters["readOneResourceScope"]="envID= resourceID= scopeID= "
+    operation_parameters["updateResourceScope"]="envID= resourceID= scopeID= "
     operation_parameters["createResource"]="envID= "
     operation_parameters["deleteResource"]="envID= resourceID= "
     operation_parameters["readAllResources"]="envID= "
+    operation_parameters["readOneResource"]="envID= resourceID= "
     operation_parameters["updateResource"]="envID= resourceID= "
-    operation_parameters["v1EnvironmentsEnvIDResourcesResourceIDGet"]="envID= resourceID= "
     operation_parameters["createRiskPredictor"]="envID= "
     operation_parameters["deleteRiskAdvancedPredictor"]="envID= riskPredictorID= "
     operation_parameters["readAllRiskPredictors"]="envID= "

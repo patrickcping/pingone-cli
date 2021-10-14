@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **createdAt** | **string** |  | [optional] [readonly] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **environment** | [**ObjectEnvironment**](ObjectEnvironment.md) |  | [optional] [default to null]
+**resource** | [**ResourceResource**](ResourceResource.md) |  | [optional] [default to null]
 **id** | **string** |  | [optional] [readonly] [default to null]
 **name** | **string** |  | [default to null]
 **type** | **string** |  | [optional] [default to null]

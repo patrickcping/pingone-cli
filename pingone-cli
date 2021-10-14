@@ -642,46 +642,46 @@ operation_parameters_minimum_occurrences["readOnePopulation:::popID"]=1
 operation_parameters_minimum_occurrences["updatePopulation:::envID"]=1
 operation_parameters_minimum_occurrences["updatePopulation:::popID"]=1
 operation_parameters_minimum_occurrences["updatePopulation:::Population"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::resourceAttrID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::resourceAttrID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::resourceAttrID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesGet:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::scopeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::scopeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::resourceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::scopeID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::body"]=0
+operation_parameters_minimum_occurrences["createResourceAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["createResourceAttribute:::resourceID"]=1
+operation_parameters_minimum_occurrences["createResourceAttribute:::ResourceAttribute"]=0
+operation_parameters_minimum_occurrences["deleteResourceAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["deleteResourceAttribute:::resourceID"]=1
+operation_parameters_minimum_occurrences["deleteResourceAttribute:::resourceAttrID"]=1
+operation_parameters_minimum_occurrences["readAllResourceAttributes:::envID"]=1
+operation_parameters_minimum_occurrences["readAllResourceAttributes:::resourceID"]=1
+operation_parameters_minimum_occurrences["readOneResourceAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["readOneResourceAttribute:::resourceID"]=1
+operation_parameters_minimum_occurrences["readOneResourceAttribute:::resourceAttrID"]=1
+operation_parameters_minimum_occurrences["updateResourceAttribute:::envID"]=1
+operation_parameters_minimum_occurrences["updateResourceAttribute:::resourceID"]=1
+operation_parameters_minimum_occurrences["updateResourceAttribute:::resourceAttrID"]=1
+operation_parameters_minimum_occurrences["updateResourceAttribute:::ResourceAttribute"]=0
+operation_parameters_minimum_occurrences["createResourceScope:::envID"]=1
+operation_parameters_minimum_occurrences["createResourceScope:::resourceID"]=1
+operation_parameters_minimum_occurrences["createResourceScope:::ResourceScope"]=0
+operation_parameters_minimum_occurrences["deleteResourceScope:::envID"]=1
+operation_parameters_minimum_occurrences["deleteResourceScope:::resourceID"]=1
+operation_parameters_minimum_occurrences["deleteResourceScope:::scopeID"]=1
+operation_parameters_minimum_occurrences["readAllResourceScopes:::envID"]=1
+operation_parameters_minimum_occurrences["readAllResourceScopes:::resourceID"]=1
+operation_parameters_minimum_occurrences["readOneResourceScope:::envID"]=1
+operation_parameters_minimum_occurrences["readOneResourceScope:::resourceID"]=1
+operation_parameters_minimum_occurrences["readOneResourceScope:::scopeID"]=1
+operation_parameters_minimum_occurrences["updateResourceScope:::envID"]=1
+operation_parameters_minimum_occurrences["updateResourceScope:::resourceID"]=1
+operation_parameters_minimum_occurrences["updateResourceScope:::scopeID"]=1
+operation_parameters_minimum_occurrences["updateResourceScope:::ResourceScope"]=0
 operation_parameters_minimum_occurrences["createResource:::envID"]=1
 operation_parameters_minimum_occurrences["createResource:::Resource"]=0
 operation_parameters_minimum_occurrences["deleteResource:::envID"]=1
 operation_parameters_minimum_occurrences["deleteResource:::resourceID"]=1
 operation_parameters_minimum_occurrences["readAllResources:::envID"]=1
+operation_parameters_minimum_occurrences["readOneResource:::envID"]=1
+operation_parameters_minimum_occurrences["readOneResource:::resourceID"]=1
 operation_parameters_minimum_occurrences["updateResource:::envID"]=1
 operation_parameters_minimum_occurrences["updateResource:::resourceID"]=1
 operation_parameters_minimum_occurrences["updateResource:::Resource"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=1
 operation_parameters_minimum_occurrences["createRiskPredictor:::envID"]=1
 operation_parameters_minimum_occurrences["createRiskPredictor:::RiskPredictor"]=0
 operation_parameters_minimum_occurrences["deleteRiskAdvancedPredictor:::envID"]=1
@@ -1485,46 +1485,46 @@ operation_parameters_maximum_occurrences["readOnePopulation:::popID"]=0
 operation_parameters_maximum_occurrences["updatePopulation:::envID"]=0
 operation_parameters_maximum_occurrences["updatePopulation:::popID"]=0
 operation_parameters_maximum_occurrences["updatePopulation:::Population"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::resourceAttrID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::resourceAttrID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::resourceAttrID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesGet:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::scopeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::scopeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::resourceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::scopeID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::body"]=0
+operation_parameters_maximum_occurrences["createResourceAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["createResourceAttribute:::resourceID"]=0
+operation_parameters_maximum_occurrences["createResourceAttribute:::ResourceAttribute"]=0
+operation_parameters_maximum_occurrences["deleteResourceAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["deleteResourceAttribute:::resourceID"]=0
+operation_parameters_maximum_occurrences["deleteResourceAttribute:::resourceAttrID"]=0
+operation_parameters_maximum_occurrences["readAllResourceAttributes:::envID"]=0
+operation_parameters_maximum_occurrences["readAllResourceAttributes:::resourceID"]=0
+operation_parameters_maximum_occurrences["readOneResourceAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["readOneResourceAttribute:::resourceID"]=0
+operation_parameters_maximum_occurrences["readOneResourceAttribute:::resourceAttrID"]=0
+operation_parameters_maximum_occurrences["updateResourceAttribute:::envID"]=0
+operation_parameters_maximum_occurrences["updateResourceAttribute:::resourceID"]=0
+operation_parameters_maximum_occurrences["updateResourceAttribute:::resourceAttrID"]=0
+operation_parameters_maximum_occurrences["updateResourceAttribute:::ResourceAttribute"]=0
+operation_parameters_maximum_occurrences["createResourceScope:::envID"]=0
+operation_parameters_maximum_occurrences["createResourceScope:::resourceID"]=0
+operation_parameters_maximum_occurrences["createResourceScope:::ResourceScope"]=0
+operation_parameters_maximum_occurrences["deleteResourceScope:::envID"]=0
+operation_parameters_maximum_occurrences["deleteResourceScope:::resourceID"]=0
+operation_parameters_maximum_occurrences["deleteResourceScope:::scopeID"]=0
+operation_parameters_maximum_occurrences["readAllResourceScopes:::envID"]=0
+operation_parameters_maximum_occurrences["readAllResourceScopes:::resourceID"]=0
+operation_parameters_maximum_occurrences["readOneResourceScope:::envID"]=0
+operation_parameters_maximum_occurrences["readOneResourceScope:::resourceID"]=0
+operation_parameters_maximum_occurrences["readOneResourceScope:::scopeID"]=0
+operation_parameters_maximum_occurrences["updateResourceScope:::envID"]=0
+operation_parameters_maximum_occurrences["updateResourceScope:::resourceID"]=0
+operation_parameters_maximum_occurrences["updateResourceScope:::scopeID"]=0
+operation_parameters_maximum_occurrences["updateResourceScope:::ResourceScope"]=0
 operation_parameters_maximum_occurrences["createResource:::envID"]=0
 operation_parameters_maximum_occurrences["createResource:::Resource"]=0
 operation_parameters_maximum_occurrences["deleteResource:::envID"]=0
 operation_parameters_maximum_occurrences["deleteResource:::resourceID"]=0
 operation_parameters_maximum_occurrences["readAllResources:::envID"]=0
+operation_parameters_maximum_occurrences["readOneResource:::envID"]=0
+operation_parameters_maximum_occurrences["readOneResource:::resourceID"]=0
 operation_parameters_maximum_occurrences["updateResource:::envID"]=0
 operation_parameters_maximum_occurrences["updateResource:::resourceID"]=0
 operation_parameters_maximum_occurrences["updateResource:::Resource"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=0
 operation_parameters_maximum_occurrences["createRiskPredictor:::envID"]=0
 operation_parameters_maximum_occurrences["createRiskPredictor:::RiskPredictor"]=0
 operation_parameters_maximum_occurrences["deleteRiskAdvancedPredictor:::envID"]=0
@@ -2325,46 +2325,46 @@ operation_parameters_collection_type["readOnePopulation:::popID"]=""
 operation_parameters_collection_type["updatePopulation:::envID"]=""
 operation_parameters_collection_type["updatePopulation:::popID"]=""
 operation_parameters_collection_type["updatePopulation:::Population"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesGet:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete:::resourceAttrID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet:::resourceAttrID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::resourceAttrID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesGet:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete:::scopeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet:::scopeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::resourceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::scopeID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut:::body"]=""
+operation_parameters_collection_type["createResourceAttribute:::envID"]=""
+operation_parameters_collection_type["createResourceAttribute:::resourceID"]=""
+operation_parameters_collection_type["createResourceAttribute:::ResourceAttribute"]=""
+operation_parameters_collection_type["deleteResourceAttribute:::envID"]=""
+operation_parameters_collection_type["deleteResourceAttribute:::resourceID"]=""
+operation_parameters_collection_type["deleteResourceAttribute:::resourceAttrID"]=""
+operation_parameters_collection_type["readAllResourceAttributes:::envID"]=""
+operation_parameters_collection_type["readAllResourceAttributes:::resourceID"]=""
+operation_parameters_collection_type["readOneResourceAttribute:::envID"]=""
+operation_parameters_collection_type["readOneResourceAttribute:::resourceID"]=""
+operation_parameters_collection_type["readOneResourceAttribute:::resourceAttrID"]=""
+operation_parameters_collection_type["updateResourceAttribute:::envID"]=""
+operation_parameters_collection_type["updateResourceAttribute:::resourceID"]=""
+operation_parameters_collection_type["updateResourceAttribute:::resourceAttrID"]=""
+operation_parameters_collection_type["updateResourceAttribute:::ResourceAttribute"]=""
+operation_parameters_collection_type["createResourceScope:::envID"]=""
+operation_parameters_collection_type["createResourceScope:::resourceID"]=""
+operation_parameters_collection_type["createResourceScope:::ResourceScope"]=""
+operation_parameters_collection_type["deleteResourceScope:::envID"]=""
+operation_parameters_collection_type["deleteResourceScope:::resourceID"]=""
+operation_parameters_collection_type["deleteResourceScope:::scopeID"]=""
+operation_parameters_collection_type["readAllResourceScopes:::envID"]=""
+operation_parameters_collection_type["readAllResourceScopes:::resourceID"]=""
+operation_parameters_collection_type["readOneResourceScope:::envID"]=""
+operation_parameters_collection_type["readOneResourceScope:::resourceID"]=""
+operation_parameters_collection_type["readOneResourceScope:::scopeID"]=""
+operation_parameters_collection_type["updateResourceScope:::envID"]=""
+operation_parameters_collection_type["updateResourceScope:::resourceID"]=""
+operation_parameters_collection_type["updateResourceScope:::scopeID"]=""
+operation_parameters_collection_type["updateResourceScope:::ResourceScope"]=""
 operation_parameters_collection_type["createResource:::envID"]=""
 operation_parameters_collection_type["createResource:::Resource"]=""
 operation_parameters_collection_type["deleteResource:::envID"]=""
 operation_parameters_collection_type["deleteResource:::resourceID"]=""
 operation_parameters_collection_type["readAllResources:::envID"]=""
+operation_parameters_collection_type["readOneResource:::envID"]=""
+operation_parameters_collection_type["readOneResource:::resourceID"]=""
 operation_parameters_collection_type["updateResource:::envID"]=""
 operation_parameters_collection_type["updateResource:::resourceID"]=""
 operation_parameters_collection_type["updateResource:::Resource"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDResourcesResourceIDGet:::resourceID"]=""
 operation_parameters_collection_type["createRiskPredictor:::envID"]=""
 operation_parameters_collection_type["createRiskPredictor:::RiskPredictor"]=""
 operation_parameters_collection_type["deleteRiskAdvancedPredictor:::envID"]=""
@@ -3452,21 +3452,21 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsResourcesResourceAttributes]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDAttributesGet${OFF};READ All Resource Attributes (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDAttributesPost${OFF};CREATE Resource Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete${OFF};DELETE Resource Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet${OFF};READ One Resource Attribute (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut${OFF};UPDATE Resource Attribute (AUTH)
+  ${CYAN}createResourceAttribute${OFF};CREATE Resource Attribute (AUTH)
+  ${CYAN}deleteResourceAttribute${OFF};DELETE Resource Attribute (AUTH)
+  ${CYAN}readAllResourceAttributes${OFF};READ All Resource Attributes (AUTH)
+  ${CYAN}readOneResourceAttribute${OFF};READ One Resource Attribute (AUTH)
+  ${CYAN}updateResourceAttribute${OFF};UPDATE Resource Attribute (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsResourcesResourceScopes]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDScopesGet${OFF};READ All Scopes (Resource) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDScopesPost${OFF};CREATE PingOne access control scope (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete${OFF};DELETE Scope (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet${OFF};READ One Scope (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut${OFF};UPDATE PingOne access control scope (AUTH)
+  ${CYAN}createResourceScope${OFF};CREATE PingOne access control scope (AUTH)
+  ${CYAN}deleteResourceScope${OFF};DELETE Scope (AUTH)
+  ${CYAN}readAllResourceScopes${OFF};READ All Scopes (Resource) (AUTH)
+  ${CYAN}readOneResourceScope${OFF};READ One Scope (AUTH)
+  ${CYAN}updateResourceScope${OFF};UPDATE PingOne access control scope (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3475,8 +3475,8 @@ read -r -d '' ops <<EOF
   ${CYAN}createResource${OFF};CREATE Resource (AUTH)
   ${CYAN}deleteResource${OFF};DELETE Resource (AUTH)
   ${CYAN}readAllResources${OFF};READ All Resources (AUTH)
+  ${CYAN}readOneResource${OFF};READ One Resource (AUTH)
   ${CYAN}updateResource${OFF};UPDATE Resource (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDResourcesResourceIDGet${OFF};READ One Resource (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -8623,33 +8623,12 @@ print_updatePopulation_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDAttributesGet operation
+# Print help for createResourceAttribute operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDAttributesGet_help() {
+print_createResourceAttribute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDAttributesGet - READ All Resource Attributes${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDAttributesPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDAttributesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDAttributesPost - CREATE Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createResourceAttribute - CREATE Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8667,12 +8646,12 @@ print_v1EnvironmentsEnvIDResourcesResourceIDAttributesPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete operation
+# Print help for deleteResourceAttribute operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete_help() {
+print_deleteResourceAttribute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete - DELETE Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteResourceAttribute - DELETE Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8689,12 +8668,33 @@ print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete_help(
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet operation
+# Print help for readAllResourceAttributes operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet_help() {
+print_readAllResourceAttributes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet - READ One Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllResourceAttributes - READ All Resource Attributes${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneResourceAttribute operation
+#
+##############################################################################
+print_readOneResourceAttribute_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneResourceAttribute - READ One Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8711,12 +8711,12 @@ print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut operation
+# Print help for updateResourceAttribute operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut_help() {
+print_updateResourceAttribute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut - UPDATE Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateResourceAttribute - UPDATE Resource Attribute${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8735,33 +8735,12 @@ print_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDScopesGet operation
+# Print help for createResourceScope operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDScopesGet_help() {
+print_createResourceScope_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDScopesGet - READ All Scopes (Resource)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDScopesPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDScopesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDScopesPost - CREATE PingOne access control scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createResourceScope - CREATE PingOne access control scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8779,12 +8758,12 @@ print_v1EnvironmentsEnvIDResourcesResourceIDScopesPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete operation
+# Print help for deleteResourceScope operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete_help() {
+print_deleteResourceScope_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete - DELETE Scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteResourceScope - DELETE Scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8801,12 +8780,33 @@ print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet operation
+# Print help for readAllResourceScopes operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet_help() {
+print_readAllResourceScopes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet - READ One Scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllResourceScopes - READ All Scopes (Resource)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneResourceScope operation
+#
+##############################################################################
+print_readOneResourceScope_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneResourceScope - READ One Scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8823,12 +8823,12 @@ print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut operation
+# Print help for updateResourceScope operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut_help() {
+print_updateResourceScope_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut - UPDATE PingOne access control scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateResourceScope - UPDATE PingOne access control scope${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8910,6 +8910,27 @@ print_readAllResources_help() {
 }
 ##############################################################################
 #
+# Print help for readOneResource operation
+#
+##############################################################################
+print_readOneResource_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneResource - READ One Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateResource operation
 #
 ##############################################################################
@@ -8924,27 +8945,6 @@ print_updateResource_help() {
     echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDResourcesResourceIDGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDResourcesResourceIDGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDResourcesResourceIDGet - READ One Resource${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}resourceID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: resourceID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -22210,46 +22210,10 @@ call_updatePopulation() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDAttributesGet operation
+# Call createResourceAttribute operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDAttributesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID resourceID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}/attributes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDResourcesResourceIDAttributesPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDAttributesPost() {
+call_createResourceAttribute() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID)
@@ -22324,10 +22288,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDAttributesPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete operation
+# Call deleteResourceAttribute operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete() {
+call_deleteResourceAttribute() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID resourceAttrID)
@@ -22360,10 +22324,46 @@ call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet operation
+# Call readAllResourceAttributes operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet() {
+call_readAllResourceAttributes() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID resourceID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}/attributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneResourceAttribute operation
+#
+##############################################################################
+call_readOneResourceAttribute() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID resourceAttrID)
@@ -22396,10 +22396,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut operation
+# Call updateResourceAttribute operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut() {
+call_updateResourceAttribute() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID resourceAttrID)
@@ -22474,46 +22474,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDScopesGet operation
+# Call createResourceScope operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDScopesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID resourceID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}/scopes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDResourcesResourceIDScopesPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDScopesPost() {
+call_createResourceScope() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID)
@@ -22588,10 +22552,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDScopesPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete operation
+# Call deleteResourceScope operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete() {
+call_deleteResourceScope() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID scopeID)
@@ -22624,10 +22588,46 @@ call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet operation
+# Call readAllResourceScopes operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet() {
+call_readAllResourceScopes() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID resourceID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}/scopes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneResourceScope operation
+#
+##############################################################################
+call_readOneResourceScope() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID scopeID)
@@ -22660,10 +22660,10 @@ call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut operation
+# Call updateResourceScope operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut() {
+call_updateResourceScope() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID resourceID scopeID)
@@ -22888,6 +22888,42 @@ call_readAllResources() {
 
 ##############################################################################
 #
+# Call readOneResource operation
+#
+##############################################################################
+call_readOneResource() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID resourceID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call updateResource operation
 #
 ##############################################################################
@@ -22961,42 +22997,6 @@ call_updateResource() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDResourcesResourceIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDResourcesResourceIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID resourceID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/resources/{resourceID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -28578,35 +28578,35 @@ case $key in
     updatePopulation)
     operation="updatePopulation"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesGet)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDAttributesGet"
+    createResourceAttribute)
+    operation="createResourceAttribute"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesPost)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDAttributesPost"
+    deleteResourceAttribute)
+    operation="deleteResourceAttribute"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete"
+    readAllResourceAttributes)
+    operation="readAllResourceAttributes"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet"
+    readOneResourceAttribute)
+    operation="readOneResourceAttribute"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut"
+    updateResourceAttribute)
+    operation="updateResourceAttribute"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesGet)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDScopesGet"
+    createResourceScope)
+    operation="createResourceScope"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesPost)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDScopesPost"
+    deleteResourceScope)
+    operation="deleteResourceScope"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete"
+    readAllResourceScopes)
+    operation="readAllResourceScopes"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet"
+    readOneResourceScope)
+    operation="readOneResourceScope"
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut"
+    updateResourceScope)
+    operation="updateResourceScope"
     ;;
     createResource)
     operation="createResource"
@@ -28617,11 +28617,11 @@ case $key in
     readAllResources)
     operation="readAllResources"
     ;;
+    readOneResource)
+    operation="readOneResource"
+    ;;
     updateResource)
     operation="updateResource"
-    ;;
-    v1EnvironmentsEnvIDResourcesResourceIDGet)
-    operation="v1EnvironmentsEnvIDResourcesResourceIDGet"
     ;;
     createRiskPredictor)
     operation="createRiskPredictor"
@@ -29651,35 +29651,35 @@ case $operation in
     updatePopulation)
     call_updatePopulation
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesGet)
-    call_v1EnvironmentsEnvIDResourcesResourceIDAttributesGet
+    createResourceAttribute)
+    call_createResourceAttribute
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesPost)
-    call_v1EnvironmentsEnvIDResourcesResourceIDAttributesPost
+    deleteResourceAttribute)
+    call_deleteResourceAttribute
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete)
-    call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDDelete
+    readAllResourceAttributes)
+    call_readAllResourceAttributes
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet)
-    call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDGet
+    readOneResourceAttribute)
+    call_readOneResourceAttribute
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut)
-    call_v1EnvironmentsEnvIDResourcesResourceIDAttributesResourceAttrIDPut
+    updateResourceAttribute)
+    call_updateResourceAttribute
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesGet)
-    call_v1EnvironmentsEnvIDResourcesResourceIDScopesGet
+    createResourceScope)
+    call_createResourceScope
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesPost)
-    call_v1EnvironmentsEnvIDResourcesResourceIDScopesPost
+    deleteResourceScope)
+    call_deleteResourceScope
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete)
-    call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDDelete
+    readAllResourceScopes)
+    call_readAllResourceScopes
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet)
-    call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDGet
+    readOneResourceScope)
+    call_readOneResourceScope
     ;;
-    v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut)
-    call_v1EnvironmentsEnvIDResourcesResourceIDScopesScopeIDPut
+    updateResourceScope)
+    call_updateResourceScope
     ;;
     createResource)
     call_createResource
@@ -29690,11 +29690,11 @@ case $operation in
     readAllResources)
     call_readAllResources
     ;;
+    readOneResource)
+    call_readOneResource
+    ;;
     updateResource)
     call_updateResource
-    ;;
-    v1EnvironmentsEnvIDResourcesResourceIDGet)
-    call_v1EnvironmentsEnvIDResourcesResourceIDGet
     ;;
     createRiskPredictor)
     call_createRiskPredictor
