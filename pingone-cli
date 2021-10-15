@@ -199,17 +199,17 @@ operation_parameters_minimum_occurrences["updateApplicationGrant:::envID"]=1
 operation_parameters_minimum_occurrences["updateApplicationGrant:::appID"]=1
 operation_parameters_minimum_occurrences["updateApplicationGrant:::grantID"]=1
 operation_parameters_minimum_occurrences["updateApplicationGrant:::ApplicationResourceGrant"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::roleAssignmentID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=1
+operation_parameters_minimum_occurrences["createApplicationRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["createApplicationRoleAssignment:::appID"]=1
+operation_parameters_minimum_occurrences["createApplicationRoleAssignment:::RoleAssignment"]=0
+operation_parameters_minimum_occurrences["deleteApplicationRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationRoleAssignment:::appID"]=1
+operation_parameters_minimum_occurrences["deleteApplicationRoleAssignment:::roleAssignmentID"]=1
+operation_parameters_minimum_occurrences["readApplicationRoleAssignments:::envID"]=1
+operation_parameters_minimum_occurrences["readApplicationRoleAssignments:::appID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationRoleAssignment:::appID"]=1
+operation_parameters_minimum_occurrences["readOneApplicationRoleAssignment:::roleAssignmentID"]=1
 operation_parameters_minimum_occurrences["readApplicationSecret:::envID"]=1
 operation_parameters_minimum_occurrences["readApplicationSecret:::appID"]=1
 operation_parameters_minimum_occurrences["updateApplicationSecret:::envID"]=1
@@ -898,9 +898,9 @@ operation_parameters_minimum_occurrences["createUserRoleAssignment:::RoleAssignm
 operation_parameters_minimum_occurrences["deleteUserRoleAssignment:::envID"]=1
 operation_parameters_minimum_occurrences["deleteUserRoleAssignment:::userID"]=1
 operation_parameters_minimum_occurrences["deleteUserRoleAssignment:::roleAssignmentID"]=1
-operation_parameters_minimum_occurrences["readOneRoleAssignment:::envID"]=1
-operation_parameters_minimum_occurrences["readOneRoleAssignment:::userID"]=1
-operation_parameters_minimum_occurrences["readOneRoleAssignment:::roleAssignmentID"]=1
+operation_parameters_minimum_occurrences["readOneUserRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["readOneUserRoleAssignment:::userID"]=1
+operation_parameters_minimum_occurrences["readOneUserRoleAssignment:::roleAssignmentID"]=1
 operation_parameters_minimum_occurrences["readUserRoleAssignments:::envID"]=1
 operation_parameters_minimum_occurrences["readUserRoleAssignments:::userID"]=1
 operation_parameters_minimum_occurrences["createUser:::envID"]=1
@@ -1042,17 +1042,17 @@ operation_parameters_maximum_occurrences["updateApplicationGrant:::envID"]=0
 operation_parameters_maximum_occurrences["updateApplicationGrant:::appID"]=0
 operation_parameters_maximum_occurrences["updateApplicationGrant:::grantID"]=0
 operation_parameters_maximum_occurrences["updateApplicationGrant:::ApplicationResourceGrant"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::roleAssignmentID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=0
+operation_parameters_maximum_occurrences["createApplicationRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["createApplicationRoleAssignment:::appID"]=0
+operation_parameters_maximum_occurrences["createApplicationRoleAssignment:::RoleAssignment"]=0
+operation_parameters_maximum_occurrences["deleteApplicationRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationRoleAssignment:::appID"]=0
+operation_parameters_maximum_occurrences["deleteApplicationRoleAssignment:::roleAssignmentID"]=0
+operation_parameters_maximum_occurrences["readApplicationRoleAssignments:::envID"]=0
+operation_parameters_maximum_occurrences["readApplicationRoleAssignments:::appID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationRoleAssignment:::appID"]=0
+operation_parameters_maximum_occurrences["readOneApplicationRoleAssignment:::roleAssignmentID"]=0
 operation_parameters_maximum_occurrences["readApplicationSecret:::envID"]=0
 operation_parameters_maximum_occurrences["readApplicationSecret:::appID"]=0
 operation_parameters_maximum_occurrences["updateApplicationSecret:::envID"]=0
@@ -1741,9 +1741,9 @@ operation_parameters_maximum_occurrences["createUserRoleAssignment:::RoleAssignm
 operation_parameters_maximum_occurrences["deleteUserRoleAssignment:::envID"]=0
 operation_parameters_maximum_occurrences["deleteUserRoleAssignment:::userID"]=0
 operation_parameters_maximum_occurrences["deleteUserRoleAssignment:::roleAssignmentID"]=0
-operation_parameters_maximum_occurrences["readOneRoleAssignment:::envID"]=0
-operation_parameters_maximum_occurrences["readOneRoleAssignment:::userID"]=0
-operation_parameters_maximum_occurrences["readOneRoleAssignment:::roleAssignmentID"]=0
+operation_parameters_maximum_occurrences["readOneUserRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["readOneUserRoleAssignment:::userID"]=0
+operation_parameters_maximum_occurrences["readOneUserRoleAssignment:::roleAssignmentID"]=0
 operation_parameters_maximum_occurrences["readUserRoleAssignments:::envID"]=0
 operation_parameters_maximum_occurrences["readUserRoleAssignments:::userID"]=0
 operation_parameters_maximum_occurrences["createUser:::envID"]=0
@@ -1882,17 +1882,17 @@ operation_parameters_collection_type["updateApplicationGrant:::envID"]=""
 operation_parameters_collection_type["updateApplicationGrant:::appID"]=""
 operation_parameters_collection_type["updateApplicationGrant:::grantID"]=""
 operation_parameters_collection_type["updateApplicationGrant:::ApplicationResourceGrant"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete:::roleAssignmentID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet:::roleAssignmentID"]=""
+operation_parameters_collection_type["createApplicationRoleAssignment:::envID"]=""
+operation_parameters_collection_type["createApplicationRoleAssignment:::appID"]=""
+operation_parameters_collection_type["createApplicationRoleAssignment:::RoleAssignment"]=""
+operation_parameters_collection_type["deleteApplicationRoleAssignment:::envID"]=""
+operation_parameters_collection_type["deleteApplicationRoleAssignment:::appID"]=""
+operation_parameters_collection_type["deleteApplicationRoleAssignment:::roleAssignmentID"]=""
+operation_parameters_collection_type["readApplicationRoleAssignments:::envID"]=""
+operation_parameters_collection_type["readApplicationRoleAssignments:::appID"]=""
+operation_parameters_collection_type["readOneApplicationRoleAssignment:::envID"]=""
+operation_parameters_collection_type["readOneApplicationRoleAssignment:::appID"]=""
+operation_parameters_collection_type["readOneApplicationRoleAssignment:::roleAssignmentID"]=""
 operation_parameters_collection_type["readApplicationSecret:::envID"]=""
 operation_parameters_collection_type["readApplicationSecret:::appID"]=""
 operation_parameters_collection_type["updateApplicationSecret:::envID"]=""
@@ -2581,9 +2581,9 @@ operation_parameters_collection_type["createUserRoleAssignment:::RoleAssignment"
 operation_parameters_collection_type["deleteUserRoleAssignment:::envID"]=""
 operation_parameters_collection_type["deleteUserRoleAssignment:::userID"]=""
 operation_parameters_collection_type["deleteUserRoleAssignment:::roleAssignmentID"]=""
-operation_parameters_collection_type["readOneRoleAssignment:::envID"]=""
-operation_parameters_collection_type["readOneRoleAssignment:::userID"]=""
-operation_parameters_collection_type["readOneRoleAssignment:::roleAssignmentID"]=""
+operation_parameters_collection_type["readOneUserRoleAssignment:::envID"]=""
+operation_parameters_collection_type["readOneUserRoleAssignment:::userID"]=""
+operation_parameters_collection_type["readOneUserRoleAssignment:::roleAssignmentID"]=""
 operation_parameters_collection_type["readUserRoleAssignments:::envID"]=""
 operation_parameters_collection_type["readUserRoleAssignments:::userID"]=""
 operation_parameters_collection_type["createUser:::envID"]=""
@@ -3055,10 +3055,10 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplicationRoleAssignments]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet${OFF};READ Application Role Assignments (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost${OFF};CREATE Application Role Assignments (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete${OFF};DELETE Application Role Assignment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet${OFF};READ One Application Role Assignment (AUTH)
+  ${CYAN}createApplicationRoleAssignment${OFF};CREATE Application Role Assignments (AUTH)
+  ${CYAN}deleteApplicationRoleAssignment${OFF};DELETE Application Role Assignment (AUTH)
+  ${CYAN}readApplicationRoleAssignments${OFF};READ Application Role Assignments (AUTH)
+  ${CYAN}readOneApplicationRoleAssignment${OFF};READ One Application Role Assignment (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3674,7 +3674,7 @@ echo "  $ops" | column -t -s ';'
 read -r -d '' ops <<EOF
   ${CYAN}createUserRoleAssignment${OFF};CREATE User Role Assignment (AUTH)
   ${CYAN}deleteUserRoleAssignment${OFF};DELETE User's Role Assignment (AUTH)
-  ${CYAN}readOneRoleAssignment${OFF};READ One Role Assignment (AUTH)
+  ${CYAN}readOneUserRoleAssignment${OFF};READ One Role Assignment (AUTH)
   ${CYAN}readUserRoleAssignments${OFF};READ Role Assignments (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4556,33 +4556,12 @@ print_updateApplicationGrant_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet operation
+# Print help for createApplicationRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet_help() {
+print_createApplicationRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet - READ Application Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost - CREATE Application Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createApplicationRoleAssignment - CREATE Application Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4600,12 +4579,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete operation
+# Print help for deleteApplicationRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete_help() {
+print_deleteApplicationRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete - DELETE Application Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteApplicationRoleAssignment - DELETE Application Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4622,12 +4601,33 @@ print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete_
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet operation
+# Print help for readApplicationRoleAssignments operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet_help() {
+print_readApplicationRoleAssignments_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet - READ One Application Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readApplicationRoleAssignments - READ Application Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneApplicationRoleAssignment operation
+#
+##############################################################################
+print_readOneApplicationRoleAssignment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneApplicationRoleAssignment - READ One Application Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10762,12 +10762,12 @@ print_deleteUserRoleAssignment_help() {
 }
 ##############################################################################
 #
-# Print help for readOneRoleAssignment operation
+# Print help for readOneUserRoleAssignment operation
 #
 ##############################################################################
-print_readOneRoleAssignment_help() {
+print_readOneUserRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}readOneRoleAssignment - READ One Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneUserRoleAssignment - READ One Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12874,46 +12874,10 @@ call_updateApplicationGrant() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet operation
+# Call createApplicationRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/roleAssignments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost() {
+call_createApplicationRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -12988,10 +12952,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete operation
+# Call deleteApplicationRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete() {
+call_deleteApplicationRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID roleAssignmentID)
@@ -13024,10 +12988,46 @@ call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete()
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet operation
+# Call readApplicationRoleAssignments operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet() {
+call_readApplicationRoleAssignments() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/roleAssignments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneApplicationRoleAssignment operation
+#
+##############################################################################
+call_readOneApplicationRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID roleAssignmentID)
@@ -27172,10 +27172,10 @@ call_deleteUserRoleAssignment() {
 
 ##############################################################################
 #
-# Call readOneRoleAssignment operation
+# Call readOneUserRoleAssignment operation
 #
 ##############################################################################
-call_readOneRoleAssignment() {
+call_readOneUserRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID userID roleAssignmentID)
@@ -28017,17 +28017,17 @@ case $key in
     updateApplicationGrant)
     operation="updateApplicationGrant"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"
+    createApplicationRoleAssignment)
+    operation="createApplicationRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"
+    deleteApplicationRoleAssignment)
+    operation="deleteApplicationRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"
+    readApplicationRoleAssignments)
+    operation="readApplicationRoleAssignments"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"
+    readOneApplicationRoleAssignment)
+    operation="readOneApplicationRoleAssignment"
     ;;
     readApplicationSecret)
     operation="readApplicationSecret"
@@ -28869,8 +28869,8 @@ case $key in
     deleteUserRoleAssignment)
     operation="deleteUserRoleAssignment"
     ;;
-    readOneRoleAssignment)
-    operation="readOneRoleAssignment"
+    readOneUserRoleAssignment)
+    operation="readOneUserRoleAssignment"
     ;;
     readUserRoleAssignments)
     operation="readUserRoleAssignments"
@@ -29090,17 +29090,17 @@ case $operation in
     updateApplicationGrant)
     call_updateApplicationGrant
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet
+    createApplicationRoleAssignment)
+    call_createApplicationRoleAssignment
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost)
-    call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost
+    deleteApplicationRoleAssignment)
+    call_deleteApplicationRoleAssignment
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete)
-    call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete
+    readApplicationRoleAssignments)
+    call_readApplicationRoleAssignments
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet
+    readOneApplicationRoleAssignment)
+    call_readOneApplicationRoleAssignment
     ;;
     readApplicationSecret)
     call_readApplicationSecret
@@ -29942,8 +29942,8 @@ case $operation in
     deleteUserRoleAssignment)
     call_deleteUserRoleAssignment
     ;;
-    readOneRoleAssignment)
-    call_readOneRoleAssignment
+    readOneUserRoleAssignment)
+    call_readOneUserRoleAssignment
     ;;
     readUserRoleAssignments)
     call_readUserRoleAssignments

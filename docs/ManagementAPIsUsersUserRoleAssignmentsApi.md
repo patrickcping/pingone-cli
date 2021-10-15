@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createUserRoleAssignment**](ManagementAPIsUsersUserRoleAssignmentsApi.md#createUserRoleAssignment) | **POST** /v1/environments/{envID}/users/{userID}/roleAssignments | CREATE User Role Assignment
 [**deleteUserRoleAssignment**](ManagementAPIsUsersUserRoleAssignmentsApi.md#deleteUserRoleAssignment) | **DELETE** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | DELETE User&#39;s Role Assignment
-[**readOneRoleAssignment**](ManagementAPIsUsersUserRoleAssignmentsApi.md#readOneRoleAssignment) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | READ One Role Assignment
+[**readOneUserRoleAssignment**](ManagementAPIsUsersUserRoleAssignmentsApi.md#readOneUserRoleAssignment) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments/{roleAssignmentID} | READ One Role Assignment
 [**readUserRoleAssignments**](ManagementAPIsUsersUserRoleAssignmentsApi.md#readUserRoleAssignments) | **GET** /v1/environments/{envID}/users/{userID}/roleAssignments | READ Role Assignments
 
 
@@ -85,7 +85,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## readOneRoleAssignment
+## readOneUserRoleAssignment
 
 READ One Role Assignment
 
@@ -94,7 +94,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli readOneRoleAssignment envID=value userID=value roleAssignmentID=value
+pingone-cli readOneUserRoleAssignment envID=value userID=value roleAssignmentID=value
 ```
 
 ### Parameters

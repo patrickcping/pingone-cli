@@ -104,10 +104,10 @@ _pingone-cli()
     operations["readAllApplicationGrants"]=1
     operations["readOneApplicationGrant"]=1
     operations["updateApplicationGrant"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"]=1
+    operations["createApplicationRoleAssignment"]=1
+    operations["deleteApplicationRoleAssignment"]=1
+    operations["readApplicationRoleAssignments"]=1
+    operations["readOneApplicationRoleAssignment"]=1
     operations["readApplicationSecret"]=1
     operations["updateApplicationSecret"]=1
     operations["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"]=1
@@ -388,7 +388,7 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDUsersUserIDPopulationPut"]=1
     operations["createUserRoleAssignment"]=1
     operations["deleteUserRoleAssignment"]=1
-    operations["readOneRoleAssignment"]=1
+    operations["readOneUserRoleAssignment"]=1
     operations["readUserRoleAssignments"]=1
     operations["createUser"]=1
     operations["deleteUser"]=1
@@ -440,10 +440,10 @@ _pingone-cli()
     operation_parameters["readAllApplicationGrants"]="envID= appID= "
     operation_parameters["readOneApplicationGrant"]="envID= appID= grantID= "
     operation_parameters["updateApplicationGrant"]="envID= appID= grantID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete"]="envID= appID= roleAssignmentID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet"]="envID= appID= roleAssignmentID= "
+    operation_parameters["createApplicationRoleAssignment"]="envID= appID= "
+    operation_parameters["deleteApplicationRoleAssignment"]="envID= appID= roleAssignmentID= "
+    operation_parameters["readApplicationRoleAssignments"]="envID= appID= "
+    operation_parameters["readOneApplicationRoleAssignment"]="envID= appID= roleAssignmentID= "
     operation_parameters["readApplicationSecret"]="envID= appID= "
     operation_parameters["updateApplicationSecret"]="envID= appID= "
     operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet"]="envID= appID= "
@@ -724,7 +724,7 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDUsersUserIDPopulationPut"]="envID= userID= "
     operation_parameters["createUserRoleAssignment"]="envID= userID= "
     operation_parameters["deleteUserRoleAssignment"]="envID= userID= roleAssignmentID= "
-    operation_parameters["readOneRoleAssignment"]="envID= userID= roleAssignmentID= "
+    operation_parameters["readOneUserRoleAssignment"]="envID= userID= roleAssignmentID= "
     operation_parameters["readUserRoleAssignments"]="envID= userID= "
     operation_parameters["createUser"]="envID= content-type: "
     operation_parameters["deleteUser"]="envID= userID= "

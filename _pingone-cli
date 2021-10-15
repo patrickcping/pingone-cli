@@ -324,10 +324,10 @@ case $state in
             "deleteApplicationGrant[DELETE Grant]" \
             "readAllApplicationGrants[READ All Grants for an Application]" \
             "readOneApplicationGrant[READ One Grant for an Application]" \
-            "updateApplicationGrant[UPDATE Grant]"             "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet[READ Application Role Assignments]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost[CREATE Application Role Assignments]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete[DELETE Application Role Assignment]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet[READ One Application Role Assignment]"             "readApplicationSecret[READ Application Secret]" \
+            "updateApplicationGrant[UPDATE Grant]"             "createApplicationRoleAssignment[CREATE Application Role Assignments]" \
+            "deleteApplicationRoleAssignment[DELETE Application Role Assignment]" \
+            "readApplicationRoleAssignments[READ Application Role Assignments]" \
+            "readOneApplicationRoleAssignment[READ One Application Role Assignment]"             "readApplicationSecret[READ Application Secret]" \
             "updateApplicationSecret[UPDATE Application Secret]"             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsGet[READ All SOP Assignments]" \
             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsPost[CREATE SOP Assignment]" \
             "v1EnvironmentsEnvIDApplicationsAppIDSignOnPolicyAssignmentsSOPAssignmentIDDelete[DELETE SOP Assignment]" \
@@ -541,7 +541,7 @@ case $state in
             "v1EnvironmentsEnvIDUsersUserIDPasswordPut[UPDATE Password (Set)]"             "v1EnvironmentsEnvIDUsersUserIDPopulationGet[READ User Population]" \
             "v1EnvironmentsEnvIDUsersUserIDPopulationPut[UPDATE User Population]"             "createUserRoleAssignment[CREATE User Role Assignment]" \
             "deleteUserRoleAssignment[DELETE User's Role Assignment]" \
-            "readOneRoleAssignment[READ One Role Assignment]" \
+            "readOneUserRoleAssignment[READ One Role Assignment]" \
             "readUserRoleAssignments[READ Role Assignments]"             "createUser[CREATE User]" \
             "deleteUser[DELETE User]" \
             "readAllUsers[READ All Users]" \
@@ -866,7 +866,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsGet)
+      createApplicationRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -874,15 +874,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDDelete)
+      deleteApplicationRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -891,7 +883,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDRoleAssignmentsRoleAssignmentIDGet)
+      readApplicationRoleAssignments)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"appID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneApplicationRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -3168,7 +3168,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      readOneRoleAssignment)
+      readOneUserRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
