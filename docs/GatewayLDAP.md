@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [default to null]
 **description** | **string** |  | [optional] [default to null]
 **type** | **string** |  | [default to null]
-**enabled** | **boolean** |  | [optional] [default to null]
+**enabled** | **boolean** |  | [default to null]
 **supportedVersions** | [**GatewaySupportedVersions**](GatewaySupportedVersions.md) |  | [optional] [default to null]
 **bindDN** | **string** |  | [default to null]
 **bindPassword** | **string** |  | [default to null]
