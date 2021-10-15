@@ -373,17 +373,17 @@ case $state in
             "readAllEnvironments[READ All Environments]" \
             "readOneEnvironment[READ One Environment]" \
             "updateEnvironment[UPDATE Environment]" \
-            "updateEnvironmentType[UPDATE Environment Type]"             "v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete[DELETE Gateway Credentials]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost[CREATE Gateway Credentials]"             "v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet[READ All Gateway Instances]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet[READ One Gateway Instance]"             "v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete[DELETE Gateway Role Assignment]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet[READ One Gateway Role Assignment]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut[UPDATE Gateway Role Assignments]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet[READ Gateway Role Assignments]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost[CREATE Gateway Role Assignments]"             "v1EnvironmentsEnvIDGatewaysGatewayIDDelete[DELETE Gateway]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDGet[READ One Gateway]" \
-            "v1EnvironmentsEnvIDGatewaysGatewayIDPut[UPDATE Gateway]" \
-            "v1EnvironmentsEnvIDGatewaysGet[READ All Gateways]" \
-            "v1EnvironmentsEnvIDGatewaysPost[CREATE Ping Federate Gateway]"             "createGroup[CREATE Group]" \
+            "updateEnvironmentType[UPDATE Environment Type]"             "createGatewayCredential[CREATE Gateway Credentials]" \
+            "deleteGatewayCredential[DELETE Gateway Credentials]"             "readAllGatewayInstances[READ All Gateway Instances]" \
+            "readOneGatewayInstance[READ One Gateway Instance]"             "createGatewayRoleAssignment[CREATE Gateway Role Assignments]" \
+            "deleteGatewayRoleAssignment[DELETE Gateway Role Assignment]" \
+            "readGatewayRoleAssignments[READ Gateway Role Assignments]" \
+            "readOneGatewayRoleAssignment[READ One Gateway Role Assignment]" \
+            "updateGatewayRoleAssignment[UPDATE Gateway Role Assignments]"             "createGateway[CREATE Gateway]" \
+            "deleteGateway[DELETE Gateway]" \
+            "readAllGateways[READ All Gateways]" \
+            "readOneGateway[READ One Gateway]" \
+            "updateGateway[UPDATE Gateway]"             "createGroup[CREATE Group]" \
             "deleteGroup[DELETE Group]" \
             "readAllGroups[READ All Groups]" \
             "readOneGroup[READ One Group]" \
@@ -1368,7 +1368,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete)
+      createGatewayCredential)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"gatewayID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteGatewayCredential)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1377,7 +1385,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost)
+      readAllGatewayInstances)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1385,15 +1393,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"gatewayID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet)
+      readOneGatewayInstance)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1402,34 +1402,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"gatewayID=:[PATH] "
-"gatewayRoleAssignmentsID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"gatewayID=:[PATH] "
-"gatewayRoleAssignmentsID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"gatewayID=:[PATH] "
-"gatewayRoleAssignmentsID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet)
+      createGatewayRoleAssignment)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1437,7 +1410,16 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost)
+      deleteGatewayRoleAssignment)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"gatewayID=:[PATH] "
+"gatewayRoleAssignmentID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readGatewayRoleAssignments)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1445,7 +1427,32 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDDelete)
+      readOneGatewayRoleAssignment)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"gatewayID=:[PATH] "
+"gatewayRoleAssignmentID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateGatewayRoleAssignment)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"gatewayID=:[PATH] "
+"gatewayRoleAssignmentID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createGateway)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteGateway)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1453,7 +1460,14 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDGet)
+      readAllGateways)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneGateway)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1461,25 +1475,11 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDGatewaysGatewayIDPut)
+      updateGateway)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
 "gatewayID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGatewaysGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDGatewaysPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **environment** | [**ObjectEnvironment**](ObjectEnvironment.md) |  | [optional] [default to null]
+**gateway** | [**GatewayInstanceGateway**](GatewayInstanceGateway.md) |  | [optional] [default to null]
 **id** | **string** |  | [optional] [readonly] [default to null]
 **readOnly** | **boolean** |  | [optional] [readonly] [default to null]
 **role** | [**RoleAssignmentRole**](RoleAssignmentRole.md) |  | [default to null]

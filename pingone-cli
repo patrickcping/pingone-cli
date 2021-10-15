@@ -349,41 +349,41 @@ operation_parameters_minimum_occurrences["updateEnvironment:::envID"]=1
 operation_parameters_minimum_occurrences["updateEnvironment:::Environment"]=0
 operation_parameters_minimum_occurrences["updateEnvironmentType:::envID"]=1
 operation_parameters_minimum_occurrences["updateEnvironmentType:::InlineObject2"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::credentialID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::instanceID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::gatewayRoleAssignmentsID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::gatewayRoleAssignmentsID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::gatewayRoleAssignmentsID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDDelete:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDGet:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::gatewayID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::body"]=0
+operation_parameters_minimum_occurrences["createGatewayCredential:::envID"]=1
+operation_parameters_minimum_occurrences["createGatewayCredential:::gatewayID"]=1
+operation_parameters_minimum_occurrences["deleteGatewayCredential:::envID"]=1
+operation_parameters_minimum_occurrences["deleteGatewayCredential:::gatewayID"]=1
+operation_parameters_minimum_occurrences["deleteGatewayCredential:::credentialID"]=1
+operation_parameters_minimum_occurrences["readAllGatewayInstances:::envID"]=1
+operation_parameters_minimum_occurrences["readAllGatewayInstances:::gatewayID"]=1
+operation_parameters_minimum_occurrences["readOneGatewayInstance:::envID"]=1
+operation_parameters_minimum_occurrences["readOneGatewayInstance:::gatewayID"]=1
+operation_parameters_minimum_occurrences["readOneGatewayInstance:::instanceID"]=1
+operation_parameters_minimum_occurrences["createGatewayRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["createGatewayRoleAssignment:::gatewayID"]=1
+operation_parameters_minimum_occurrences["createGatewayRoleAssignment:::RoleAssignment"]=0
+operation_parameters_minimum_occurrences["deleteGatewayRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["deleteGatewayRoleAssignment:::gatewayID"]=1
+operation_parameters_minimum_occurrences["deleteGatewayRoleAssignment:::gatewayRoleAssignmentID"]=1
+operation_parameters_minimum_occurrences["readGatewayRoleAssignments:::envID"]=1
+operation_parameters_minimum_occurrences["readGatewayRoleAssignments:::gatewayID"]=1
+operation_parameters_minimum_occurrences["readOneGatewayRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["readOneGatewayRoleAssignment:::gatewayID"]=1
+operation_parameters_minimum_occurrences["readOneGatewayRoleAssignment:::gatewayRoleAssignmentID"]=1
+operation_parameters_minimum_occurrences["updateGatewayRoleAssignment:::envID"]=1
+operation_parameters_minimum_occurrences["updateGatewayRoleAssignment:::gatewayID"]=1
+operation_parameters_minimum_occurrences["updateGatewayRoleAssignment:::gatewayRoleAssignmentID"]=1
+operation_parameters_minimum_occurrences["updateGatewayRoleAssignment:::body"]=0
+operation_parameters_minimum_occurrences["createGateway:::envID"]=1
+operation_parameters_minimum_occurrences["createGateway:::UNKNOWN_BASE_TYPE"]=0
+operation_parameters_minimum_occurrences["deleteGateway:::envID"]=1
+operation_parameters_minimum_occurrences["deleteGateway:::gatewayID"]=1
+operation_parameters_minimum_occurrences["readAllGateways:::envID"]=1
+operation_parameters_minimum_occurrences["readOneGateway:::envID"]=1
+operation_parameters_minimum_occurrences["readOneGateway:::gatewayID"]=1
+operation_parameters_minimum_occurrences["updateGateway:::envID"]=1
+operation_parameters_minimum_occurrences["updateGateway:::gatewayID"]=1
+operation_parameters_minimum_occurrences["updateGateway:::UNKNOWN_BASE_TYPE"]=0
 operation_parameters_minimum_occurrences["createGroup:::envID"]=1
 operation_parameters_minimum_occurrences["createGroup:::Group"]=0
 operation_parameters_minimum_occurrences["deleteGroup:::envID"]=1
@@ -1192,41 +1192,41 @@ operation_parameters_maximum_occurrences["updateEnvironment:::envID"]=0
 operation_parameters_maximum_occurrences["updateEnvironment:::Environment"]=0
 operation_parameters_maximum_occurrences["updateEnvironmentType:::envID"]=0
 operation_parameters_maximum_occurrences["updateEnvironmentType:::InlineObject2"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::credentialID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::instanceID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::gatewayRoleAssignmentsID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::gatewayRoleAssignmentsID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::gatewayRoleAssignmentsID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDDelete:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDGet:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::gatewayID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDGatewaysPost:::body"]=0
+operation_parameters_maximum_occurrences["createGatewayCredential:::envID"]=0
+operation_parameters_maximum_occurrences["createGatewayCredential:::gatewayID"]=0
+operation_parameters_maximum_occurrences["deleteGatewayCredential:::envID"]=0
+operation_parameters_maximum_occurrences["deleteGatewayCredential:::gatewayID"]=0
+operation_parameters_maximum_occurrences["deleteGatewayCredential:::credentialID"]=0
+operation_parameters_maximum_occurrences["readAllGatewayInstances:::envID"]=0
+operation_parameters_maximum_occurrences["readAllGatewayInstances:::gatewayID"]=0
+operation_parameters_maximum_occurrences["readOneGatewayInstance:::envID"]=0
+operation_parameters_maximum_occurrences["readOneGatewayInstance:::gatewayID"]=0
+operation_parameters_maximum_occurrences["readOneGatewayInstance:::instanceID"]=0
+operation_parameters_maximum_occurrences["createGatewayRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["createGatewayRoleAssignment:::gatewayID"]=0
+operation_parameters_maximum_occurrences["createGatewayRoleAssignment:::RoleAssignment"]=0
+operation_parameters_maximum_occurrences["deleteGatewayRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["deleteGatewayRoleAssignment:::gatewayID"]=0
+operation_parameters_maximum_occurrences["deleteGatewayRoleAssignment:::gatewayRoleAssignmentID"]=0
+operation_parameters_maximum_occurrences["readGatewayRoleAssignments:::envID"]=0
+operation_parameters_maximum_occurrences["readGatewayRoleAssignments:::gatewayID"]=0
+operation_parameters_maximum_occurrences["readOneGatewayRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["readOneGatewayRoleAssignment:::gatewayID"]=0
+operation_parameters_maximum_occurrences["readOneGatewayRoleAssignment:::gatewayRoleAssignmentID"]=0
+operation_parameters_maximum_occurrences["updateGatewayRoleAssignment:::envID"]=0
+operation_parameters_maximum_occurrences["updateGatewayRoleAssignment:::gatewayID"]=0
+operation_parameters_maximum_occurrences["updateGatewayRoleAssignment:::gatewayRoleAssignmentID"]=0
+operation_parameters_maximum_occurrences["updateGatewayRoleAssignment:::body"]=0
+operation_parameters_maximum_occurrences["createGateway:::envID"]=0
+operation_parameters_maximum_occurrences["createGateway:::UNKNOWN_BASE_TYPE"]=0
+operation_parameters_maximum_occurrences["deleteGateway:::envID"]=0
+operation_parameters_maximum_occurrences["deleteGateway:::gatewayID"]=0
+operation_parameters_maximum_occurrences["readAllGateways:::envID"]=0
+operation_parameters_maximum_occurrences["readOneGateway:::envID"]=0
+operation_parameters_maximum_occurrences["readOneGateway:::gatewayID"]=0
+operation_parameters_maximum_occurrences["updateGateway:::envID"]=0
+operation_parameters_maximum_occurrences["updateGateway:::gatewayID"]=0
+operation_parameters_maximum_occurrences["updateGateway:::UNKNOWN_BASE_TYPE"]=0
 operation_parameters_maximum_occurrences["createGroup:::envID"]=0
 operation_parameters_maximum_occurrences["createGroup:::Group"]=0
 operation_parameters_maximum_occurrences["deleteGroup:::envID"]=0
@@ -2032,41 +2032,41 @@ operation_parameters_collection_type["updateEnvironment:::envID"]=""
 operation_parameters_collection_type["updateEnvironment:::Environment"]=""
 operation_parameters_collection_type["updateEnvironmentType:::envID"]=""
 operation_parameters_collection_type["updateEnvironmentType:::InlineObject2"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete:::credentialID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet:::instanceID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete:::gatewayRoleAssignmentsID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet:::gatewayRoleAssignmentsID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::gatewayRoleAssignmentsID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDDelete:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDGet:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::gatewayID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGatewayIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDGatewaysPost:::body"]=""
+operation_parameters_collection_type["createGatewayCredential:::envID"]=""
+operation_parameters_collection_type["createGatewayCredential:::gatewayID"]=""
+operation_parameters_collection_type["deleteGatewayCredential:::envID"]=""
+operation_parameters_collection_type["deleteGatewayCredential:::gatewayID"]=""
+operation_parameters_collection_type["deleteGatewayCredential:::credentialID"]=""
+operation_parameters_collection_type["readAllGatewayInstances:::envID"]=""
+operation_parameters_collection_type["readAllGatewayInstances:::gatewayID"]=""
+operation_parameters_collection_type["readOneGatewayInstance:::envID"]=""
+operation_parameters_collection_type["readOneGatewayInstance:::gatewayID"]=""
+operation_parameters_collection_type["readOneGatewayInstance:::instanceID"]=""
+operation_parameters_collection_type["createGatewayRoleAssignment:::envID"]=""
+operation_parameters_collection_type["createGatewayRoleAssignment:::gatewayID"]=""
+operation_parameters_collection_type["createGatewayRoleAssignment:::RoleAssignment"]=""
+operation_parameters_collection_type["deleteGatewayRoleAssignment:::envID"]=""
+operation_parameters_collection_type["deleteGatewayRoleAssignment:::gatewayID"]=""
+operation_parameters_collection_type["deleteGatewayRoleAssignment:::gatewayRoleAssignmentID"]=""
+operation_parameters_collection_type["readGatewayRoleAssignments:::envID"]=""
+operation_parameters_collection_type["readGatewayRoleAssignments:::gatewayID"]=""
+operation_parameters_collection_type["readOneGatewayRoleAssignment:::envID"]=""
+operation_parameters_collection_type["readOneGatewayRoleAssignment:::gatewayID"]=""
+operation_parameters_collection_type["readOneGatewayRoleAssignment:::gatewayRoleAssignmentID"]=""
+operation_parameters_collection_type["updateGatewayRoleAssignment:::envID"]=""
+operation_parameters_collection_type["updateGatewayRoleAssignment:::gatewayID"]=""
+operation_parameters_collection_type["updateGatewayRoleAssignment:::gatewayRoleAssignmentID"]=""
+operation_parameters_collection_type["updateGatewayRoleAssignment:::body"]=""
+operation_parameters_collection_type["createGateway:::envID"]=""
+operation_parameters_collection_type["createGateway:::UNKNOWN_BASE_TYPE"]=""
+operation_parameters_collection_type["deleteGateway:::envID"]=""
+operation_parameters_collection_type["deleteGateway:::gatewayID"]=""
+operation_parameters_collection_type["readAllGateways:::envID"]=""
+operation_parameters_collection_type["readOneGateway:::envID"]=""
+operation_parameters_collection_type["readOneGateway:::gatewayID"]=""
+operation_parameters_collection_type["updateGateway:::envID"]=""
+operation_parameters_collection_type["updateGateway:::gatewayID"]=""
+operation_parameters_collection_type["updateGateway:::UNKNOWN_BASE_TYPE"]=""
 operation_parameters_collection_type["createGroup:::envID"]=""
 operation_parameters_collection_type["createGroup:::Group"]=""
 operation_parameters_collection_type["deleteGroup:::envID"]=""
@@ -3188,35 +3188,35 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsGatewayManagementGatewayCredentials]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete${OFF};DELETE Gateway Credentials (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost${OFF};CREATE Gateway Credentials (AUTH)
+  ${CYAN}createGatewayCredential${OFF};CREATE Gateway Credentials (AUTH)
+  ${CYAN}deleteGatewayCredential${OFF};DELETE Gateway Credentials (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsGatewayManagementGatewayInstances]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet${OFF};READ All Gateway Instances (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet${OFF};READ One Gateway Instance (AUTH)
+  ${CYAN}readAllGatewayInstances${OFF};READ All Gateway Instances (AUTH)
+  ${CYAN}readOneGatewayInstance${OFF};READ One Gateway Instance (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsGatewayManagementGatewayRoleAssignments]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete${OFF};DELETE Gateway Role Assignment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet${OFF};READ One Gateway Role Assignment (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut${OFF};UPDATE Gateway Role Assignments (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet${OFF};READ Gateway Role Assignments (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost${OFF};CREATE Gateway Role Assignments (AUTH)
+  ${CYAN}createGatewayRoleAssignment${OFF};CREATE Gateway Role Assignments (AUTH)
+  ${CYAN}deleteGatewayRoleAssignment${OFF};DELETE Gateway Role Assignment (AUTH)
+  ${CYAN}readGatewayRoleAssignments${OFF};READ Gateway Role Assignments (AUTH)
+  ${CYAN}readOneGatewayRoleAssignment${OFF};READ One Gateway Role Assignment (AUTH)
+  ${CYAN}updateGatewayRoleAssignment${OFF};UPDATE Gateway Role Assignments (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsGatewayManagementGateways]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDDelete${OFF};DELETE Gateway (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDGet${OFF};READ One Gateway (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGatewayIDPut${OFF};UPDATE Gateway (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysGet${OFF};READ All Gateways (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDGatewaysPost${OFF};CREATE Ping Federate Gateway (AUTH)
+  ${CYAN}createGateway${OFF};CREATE Gateway (AUTH)
+  ${CYAN}deleteGateway${OFF};DELETE Gateway (AUTH)
+  ${CYAN}readAllGateways${OFF};READ All Gateways (AUTH)
+  ${CYAN}readOneGateway${OFF};READ One Gateway (AUTH)
+  ${CYAN}updateGateway${OFF};UPDATE Gateway (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5928,12 +5928,33 @@ print_updateEnvironmentType_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete operation
+# Print help for createGatewayCredential operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete_help() {
+print_createGatewayCredential_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete - DELETE Gateway Credentials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGatewayCredential - CREATE Gateway Credentials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteGatewayCredential operation
+#
+##############################################################################
+print_deleteGatewayCredential_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteGatewayCredential - DELETE Gateway Credentials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5950,33 +5971,12 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost operation
+# Print help for readAllGatewayInstances operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost_help() {
+print_readAllGatewayInstances_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost - CREATE Gateway Credentials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet - READ All Gateway Instances${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllGatewayInstances - READ All Gateway Instances${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5992,12 +5992,12 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet operation
+# Print help for readOneGatewayInstance operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet_help() {
+print_readOneGatewayInstance_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet - READ One Gateway Instance${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readOneGatewayInstance - READ One Gateway Instance${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6014,101 +6014,12 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete operation
+# Print help for createGatewayRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete_help() {
+print_createGatewayRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete - DELETE Gateway Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayRoleAssignmentsID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayRoleAssignmentsID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet - READ One Gateway Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayRoleAssignmentsID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayRoleAssignmentsID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut - UPDATE Gateway Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayRoleAssignmentsID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayRoleAssignmentsID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet - READ Gateway Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost - CREATE Gateway Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGatewayRoleAssignment - CREATE Gateway Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6126,12 +6037,123 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDDelete operation
+# Print help for deleteGatewayRoleAssignment operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDDelete_help() {
+print_deleteGatewayRoleAssignment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDDelete - DELETE Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteGatewayRoleAssignment - DELETE Gateway Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayRoleAssignmentID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayRoleAssignmentID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readGatewayRoleAssignments operation
+#
+##############################################################################
+print_readGatewayRoleAssignments_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readGatewayRoleAssignments - READ Gateway Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneGatewayRoleAssignment operation
+#
+##############################################################################
+print_readOneGatewayRoleAssignment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneGatewayRoleAssignment - READ One Gateway Role Assignment${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayRoleAssignmentID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayRoleAssignmentID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateGatewayRoleAssignment operation
+#
+##############################################################################
+print_updateGatewayRoleAssignment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateGatewayRoleAssignment - UPDATE Gateway Role Assignments${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gatewayRoleAssignmentID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gatewayRoleAssignmentID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createGateway operation
+#
+##############################################################################
+print_createGateway_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createGateway - CREATE Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteGateway operation
+#
+##############################################################################
+print_deleteGateway_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteGateway - DELETE Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6147,12 +6169,32 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDGet operation
+# Print help for readAllGateways operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDGet_help() {
+print_readAllGateways_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDGet - READ One Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllGateways - READ All Gateways${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneGateway operation
+#
+##############################################################################
+print_readOneGateway_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneGateway - READ One Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6168,12 +6210,12 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDGatewaysGatewayIDPut operation
+# Print help for updateGateway operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGatewayIDPut_help() {
+print_updateGateway_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGatewayIDPut - UPDATE Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateGateway - UPDATE Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6188,48 +6230,6 @@ print_v1EnvironmentsEnvIDGatewaysGatewayIDPut_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysGet operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysGet - READ All Gateways${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDGatewaysPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDGatewaysPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDGatewaysPost - CREATE Ping Federate Gateway${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -16066,46 +16066,10 @@ call_updateEnvironmentType() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete operation
+# Call createGatewayCredential operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID credentialID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/credentials/{credentialID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost() {
+call_createGatewayCredential() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID gatewayID)
@@ -16138,10 +16102,46 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet operation
+# Call deleteGatewayCredential operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet() {
+call_deleteGatewayCredential() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID gatewayID credentialID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/credentials/{credentialID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllGatewayInstances operation
+#
+##############################################################################
+call_readAllGatewayInstances() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID gatewayID)
@@ -16174,10 +16174,10 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet operation
+# Call readOneGatewayInstance operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet() {
+call_readOneGatewayInstance() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID gatewayID instanceID)
@@ -16210,196 +16210,10 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete operation
+# Call createGatewayRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID gatewayRoleAssignmentsID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentsID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID gatewayRoleAssignmentsID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentsID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID gatewayRoleAssignmentsID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentsID}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost() {
+call_createGatewayRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID gatewayID)
@@ -16474,19 +16288,19 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDDelete operation
+# Call deleteGatewayRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDDelete() {
+call_deleteGatewayRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID)
+    local path_parameter_names=(envID gatewayID gatewayRoleAssignmentID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -16510,10 +16324,10 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDGet operation
+# Call readGatewayRoleAssignments operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDGet() {
+call_readGatewayRoleAssignments() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID gatewayID)
@@ -16522,7 +16336,7 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDGet() {
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -16546,19 +16360,55 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGatewayIDPut operation
+# Call readOneGatewayRoleAssignment operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGatewayIDPut() {
+call_readOneGatewayRoleAssignment() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID gatewayID)
+    local path_parameter_names=(envID gatewayID gatewayRoleAssignmentID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateGatewayRoleAssignment operation
+#
+##############################################################################
+call_updateGatewayRoleAssignment() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID gatewayID gatewayRoleAssignmentID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -16624,10 +16474,124 @@ call_v1EnvironmentsEnvIDGatewaysGatewayIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysGet operation
+# Call createGateway operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysGet() {
+call_createGateway() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteGateway operation
+#
+##############################################################################
+call_deleteGateway() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID gatewayID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readAllGateways operation
+#
+##############################################################################
+call_readAllGateways() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID)
@@ -16660,23 +16624,59 @@ call_v1EnvironmentsEnvIDGatewaysGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDGatewaysPost operation
+# Call readOneGateway operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDGatewaysPost() {
+call_readOneGateway() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
+    local path_parameter_names=(envID gatewayID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(  )
     local path
 
-    if ! path=$(build_request_path "/v1/environments/{envID}/gateways" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="POST"
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateGateway operation
+#
+##############################################################################
+call_updateGateway() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID gatewayID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/gateways/{gatewayID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -28206,47 +28206,47 @@ case $key in
     updateEnvironmentType)
     operation="updateEnvironmentType"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"
+    createGatewayCredential)
+    operation="createGatewayCredential"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"
+    deleteGatewayCredential)
+    operation="deleteGatewayCredential"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"
+    readAllGatewayInstances)
+    operation="readAllGatewayInstances"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet"
+    readOneGatewayInstance)
+    operation="readOneGatewayInstance"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete"
+    createGatewayRoleAssignment)
+    operation="createGatewayRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet"
+    deleteGatewayRoleAssignment)
+    operation="deleteGatewayRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut"
+    readGatewayRoleAssignments)
+    operation="readGatewayRoleAssignments"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet"
+    readOneGatewayRoleAssignment)
+    operation="readOneGatewayRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost"
+    updateGatewayRoleAssignment)
+    operation="updateGatewayRoleAssignment"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDDelete)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDDelete"
+    createGateway)
+    operation="createGateway"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDGet)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDGet"
+    deleteGateway)
+    operation="deleteGateway"
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDPut)
-    operation="v1EnvironmentsEnvIDGatewaysGatewayIDPut"
+    readAllGateways)
+    operation="readAllGateways"
     ;;
-    v1EnvironmentsEnvIDGatewaysGet)
-    operation="v1EnvironmentsEnvIDGatewaysGet"
+    readOneGateway)
+    operation="readOneGateway"
     ;;
-    v1EnvironmentsEnvIDGatewaysPost)
-    operation="v1EnvironmentsEnvIDGatewaysPost"
+    updateGateway)
+    operation="updateGateway"
     ;;
     createGroup)
     operation="createGroup"
@@ -29279,47 +29279,47 @@ case $operation in
     updateEnvironmentType)
     call_updateEnvironmentType
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete
+    createGatewayCredential)
+    call_createGatewayCredential
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost
+    deleteGatewayCredential)
+    call_deleteGatewayCredential
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet
+    readAllGatewayInstances)
+    call_readAllGatewayInstances
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet
+    readOneGatewayInstance)
+    call_readOneGatewayInstance
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete
+    createGatewayRoleAssignment)
+    call_createGatewayRoleAssignment
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet
+    deleteGatewayRoleAssignment)
+    call_deleteGatewayRoleAssignment
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut
+    readGatewayRoleAssignments)
+    call_readGatewayRoleAssignments
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet
+    readOneGatewayRoleAssignment)
+    call_readOneGatewayRoleAssignment
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost
+    updateGatewayRoleAssignment)
+    call_updateGatewayRoleAssignment
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDDelete)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDDelete
+    createGateway)
+    call_createGateway
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDGet)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDGet
+    deleteGateway)
+    call_deleteGateway
     ;;
-    v1EnvironmentsEnvIDGatewaysGatewayIDPut)
-    call_v1EnvironmentsEnvIDGatewaysGatewayIDPut
+    readAllGateways)
+    call_readAllGateways
     ;;
-    v1EnvironmentsEnvIDGatewaysGet)
-    call_v1EnvironmentsEnvIDGatewaysGet
+    readOneGateway)
+    call_readOneGateway
     ;;
-    v1EnvironmentsEnvIDGatewaysPost)
-    call_v1EnvironmentsEnvIDGatewaysPost
+    updateGateway)
+    call_updateGateway
     ;;
     createGroup)
     call_createGroup

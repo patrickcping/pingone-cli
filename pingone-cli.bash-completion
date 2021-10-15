@@ -167,20 +167,20 @@ _pingone-cli()
     operations["readOneEnvironment"]=1
     operations["updateEnvironment"]=1
     operations["updateEnvironmentType"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDDelete"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDGet"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGatewayIDPut"]=1
-    operations["v1EnvironmentsEnvIDGatewaysGet"]=1
-    operations["v1EnvironmentsEnvIDGatewaysPost"]=1
+    operations["createGatewayCredential"]=1
+    operations["deleteGatewayCredential"]=1
+    operations["readAllGatewayInstances"]=1
+    operations["readOneGatewayInstance"]=1
+    operations["createGatewayRoleAssignment"]=1
+    operations["deleteGatewayRoleAssignment"]=1
+    operations["readGatewayRoleAssignments"]=1
+    operations["readOneGatewayRoleAssignment"]=1
+    operations["updateGatewayRoleAssignment"]=1
+    operations["createGateway"]=1
+    operations["deleteGateway"]=1
+    operations["readAllGateways"]=1
+    operations["readOneGateway"]=1
+    operations["updateGateway"]=1
     operations["createGroup"]=1
     operations["deleteGroup"]=1
     operations["readAllGroups"]=1
@@ -503,20 +503,20 @@ _pingone-cli()
     operation_parameters["readOneEnvironment"]="envID= "
     operation_parameters["updateEnvironment"]="envID= "
     operation_parameters["updateEnvironmentType"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete"]="envID= gatewayID= credentialID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet"]="envID= gatewayID= instanceID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete"]="envID= gatewayID= gatewayRoleAssignmentsID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet"]="envID= gatewayID= gatewayRoleAssignmentsID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut"]="envID= gatewayID= gatewayRoleAssignmentsID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDDelete"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDGet"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGatewayIDPut"]="envID= gatewayID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysGet"]="envID= "
-    operation_parameters["v1EnvironmentsEnvIDGatewaysPost"]="envID= "
+    operation_parameters["createGatewayCredential"]="envID= gatewayID= "
+    operation_parameters["deleteGatewayCredential"]="envID= gatewayID= credentialID= "
+    operation_parameters["readAllGatewayInstances"]="envID= gatewayID= "
+    operation_parameters["readOneGatewayInstance"]="envID= gatewayID= instanceID= "
+    operation_parameters["createGatewayRoleAssignment"]="envID= gatewayID= "
+    operation_parameters["deleteGatewayRoleAssignment"]="envID= gatewayID= gatewayRoleAssignmentID= "
+    operation_parameters["readGatewayRoleAssignments"]="envID= gatewayID= "
+    operation_parameters["readOneGatewayRoleAssignment"]="envID= gatewayID= gatewayRoleAssignmentID= "
+    operation_parameters["updateGatewayRoleAssignment"]="envID= gatewayID= gatewayRoleAssignmentID= "
+    operation_parameters["createGateway"]="envID= "
+    operation_parameters["deleteGateway"]="envID= gatewayID= "
+    operation_parameters["readAllGateways"]="envID= "
+    operation_parameters["readOneGateway"]="envID= gatewayID= "
+    operation_parameters["updateGateway"]="envID= gatewayID= "
     operation_parameters["createGroup"]="envID= "
     operation_parameters["deleteGroup"]="envID= groupID= "
     operation_parameters["readAllGroups"]="envID= filter= limit= "

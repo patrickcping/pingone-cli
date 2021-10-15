@@ -4,24 +4,24 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1EnvironmentsEnvIDGatewaysGatewayIDDelete**](ManagementAPIsGatewayManagementGatewaysApi.md#v1EnvironmentsEnvIDGatewaysGatewayIDDelete) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID} | DELETE Gateway
-[**v1EnvironmentsEnvIDGatewaysGatewayIDGet**](ManagementAPIsGatewayManagementGatewaysApi.md#v1EnvironmentsEnvIDGatewaysGatewayIDGet) | **GET** /v1/environments/{envID}/gateways/{gatewayID} | READ One Gateway
-[**v1EnvironmentsEnvIDGatewaysGatewayIDPut**](ManagementAPIsGatewayManagementGatewaysApi.md#v1EnvironmentsEnvIDGatewaysGatewayIDPut) | **PUT** /v1/environments/{envID}/gateways/{gatewayID} | UPDATE Gateway
-[**v1EnvironmentsEnvIDGatewaysGet**](ManagementAPIsGatewayManagementGatewaysApi.md#v1EnvironmentsEnvIDGatewaysGet) | **GET** /v1/environments/{envID}/gateways | READ All Gateways
-[**v1EnvironmentsEnvIDGatewaysPost**](ManagementAPIsGatewayManagementGatewaysApi.md#v1EnvironmentsEnvIDGatewaysPost) | **POST** /v1/environments/{envID}/gateways | CREATE Ping Federate Gateway
+[**createGateway**](ManagementAPIsGatewayManagementGatewaysApi.md#createGateway) | **POST** /v1/environments/{envID}/gateways | CREATE Gateway
+[**deleteGateway**](ManagementAPIsGatewayManagementGatewaysApi.md#deleteGateway) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID} | DELETE Gateway
+[**readAllGateways**](ManagementAPIsGatewayManagementGatewaysApi.md#readAllGateways) | **GET** /v1/environments/{envID}/gateways | READ All Gateways
+[**readOneGateway**](ManagementAPIsGatewayManagementGatewaysApi.md#readOneGateway) | **GET** /v1/environments/{envID}/gateways/{gatewayID} | READ One Gateway
+[**updateGateway**](ManagementAPIsGatewayManagementGatewaysApi.md#updateGateway) | **PUT** /v1/environments/{envID}/gateways/{gatewayID} | UPDATE Gateway
 
 
 
-## v1EnvironmentsEnvIDGatewaysGatewayIDDelete
+## createGateway
 
-DELETE Gateway
+CREATE Gateway
 
 By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
 
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDDelete envID=value gatewayID=value
+pingone-cli createGateway envID=value
 ```
 
 ### Parameters
@@ -30,84 +30,11 @@ pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDDelete envID=value gatewayID=val
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **gatewayID** | **string** |  | [default to null]
+ **uNKNOWNBASETYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## v1EnvironmentsEnvIDGatewaysGatewayIDGet
-
-READ One Gateway
-
-By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
-
-### Example
-
-```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDGet envID=value gatewayID=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **envID** | **string** |  | [default to null]
- **gatewayID** | **string** |  | [default to null]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## v1EnvironmentsEnvIDGatewaysGatewayIDPut
-
-UPDATE Gateway
-
-By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
-
-### Example
-
-```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDPut envID=value gatewayID=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **envID** | **string** |  | [default to null]
- **gatewayID** | **string** |  | [default to null]
- **body** | **map** |  | [optional]
-
-### Return type
-
-(empty response body)
+[**OneOf<Gateway,GatewayLDAP>**](OneOf&lt;Gateway,GatewayLDAP&gt;.md)
 
 ### Authorization
 
@@ -121,16 +48,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDGatewaysGet
+## deleteGateway
 
-READ All Gateways
+DELETE Gateway
 
 By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
 
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGet envID=value
+pingone-cli deleteGateway envID=value gatewayID=value
 ```
 
 ### Parameters
@@ -139,6 +66,7 @@ pingone-cli v1EnvironmentsEnvIDGatewaysGet envID=value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
+ **gatewayID** | **string** |  | [default to null]
 
 ### Return type
 
@@ -156,16 +84,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDGatewaysPost
+## readAllGateways
 
-CREATE Ping Federate Gateway
+READ All Gateways
 
 By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
 
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysPost envID=value
+pingone-cli readAllGateways envID=value
 ```
 
 ### Parameters
@@ -174,11 +102,83 @@ pingone-cli v1EnvironmentsEnvIDGatewaysPost envID=value
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
- **body** | **map** |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**EntityArray**](EntityArray.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## readOneGateway
+
+READ One Gateway
+
+By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
+
+### Example
+
+```bash
+pingone-cli readOneGateway envID=value gatewayID=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **envID** | **string** |  | [default to null]
+ **gatewayID** | **string** |  | [default to null]
+
+### Return type
+
+[**OneOf<Gateway,GatewayLDAP>**](OneOf&lt;Gateway,GatewayLDAP&gt;.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateGateway
+
+UPDATE Gateway
+
+By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
+
+### Example
+
+```bash
+pingone-cli updateGateway envID=value gatewayID=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **envID** | **string** |  | [default to null]
+ **gatewayID** | **string** |  | [default to null]
+ **uNKNOWNBASETYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional]
+
+### Return type
+
+[**OneOf<Gateway,GatewayLDAP>**](OneOf&lt;Gateway,GatewayLDAP&gt;.md)
 
 ### Authorization
 

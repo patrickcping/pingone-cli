@@ -199,20 +199,20 @@ Class | Method | HTTP request | Description
 *ManagementAPIsEnvironmentsApi* | [**readOneEnvironment**](docs/ManagementAPIsEnvironmentsApi.md#readoneenvironment) | **GET** /v1/environments/{envID} | READ One Environment
 *ManagementAPIsEnvironmentsApi* | [**updateEnvironment**](docs/ManagementAPIsEnvironmentsApi.md#updateenvironment) | **PUT** /v1/environments/{envID} | UPDATE Environment
 *ManagementAPIsEnvironmentsApi* | [**updateEnvironmentType**](docs/ManagementAPIsEnvironmentsApi.md#updateenvironmenttype) | **PUT** /v1/environments/{envID}/type | UPDATE Environment Type
-*ManagementAPIsGatewayManagementGatewayCredentialsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsCredentialIDDelete**](docs/ManagementAPIsGatewayManagementGatewayCredentialsApi.md#v1environmentsenvidgatewaysgatewayidcredentialscredentialiddelete) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID}/credentials/{credentialID} | DELETE Gateway Credentials
-*ManagementAPIsGatewayManagementGatewayCredentialsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDCredentialsPost**](docs/ManagementAPIsGatewayManagementGatewayCredentialsApi.md#v1environmentsenvidgatewaysgatewayidcredentialspost) | **POST** /v1/environments/{envID}/gateways/{gatewayID}/credentials | CREATE Gateway Credentials
-*ManagementAPIsGatewayManagementGatewayInstancesApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet**](docs/ManagementAPIsGatewayManagementGatewayInstancesApi.md#v1environmentsenvidgatewaysgatewayidinstancesget) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances | READ All Gateway Instances
-*ManagementAPIsGatewayManagementGatewayInstancesApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet**](docs/ManagementAPIsGatewayManagementGatewayInstancesApi.md#v1environmentsenvidgatewaysgatewayidinstancesinstanceidget) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances/{instanceID} | READ One Gateway Instance
-*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDDelete**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#v1environmentsenvidgatewaysgatewayidroleassignmentsgatewayroleassignmentsiddelete) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentsID} | DELETE Gateway Role Assignment
-*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDGet**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#v1environmentsenvidgatewaysgatewayidroleassignmentsgatewayroleassignmentsidget) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentsID} | READ One Gateway Role Assignment
-*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGatewayRoleAssignmentsIDPut**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#v1environmentsenvidgatewaysgatewayidroleassignmentsgatewayroleassignmentsidput) | **PUT** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentsID} | UPDATE Gateway Role Assignments
-*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsGet**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#v1environmentsenvidgatewaysgatewayidroleassignmentsget) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments | READ Gateway Role Assignments
-*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDRoleAssignmentsPost**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#v1environmentsenvidgatewaysgatewayidroleassignmentspost) | **POST** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments | CREATE Gateway Role Assignments
-*ManagementAPIsGatewayManagementGatewaysApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDDelete**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#v1environmentsenvidgatewaysgatewayiddelete) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID} | DELETE Gateway
-*ManagementAPIsGatewayManagementGatewaysApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDGet**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#v1environmentsenvidgatewaysgatewayidget) | **GET** /v1/environments/{envID}/gateways/{gatewayID} | READ One Gateway
-*ManagementAPIsGatewayManagementGatewaysApi* | [**v1EnvironmentsEnvIDGatewaysGatewayIDPut**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#v1environmentsenvidgatewaysgatewayidput) | **PUT** /v1/environments/{envID}/gateways/{gatewayID} | UPDATE Gateway
-*ManagementAPIsGatewayManagementGatewaysApi* | [**v1EnvironmentsEnvIDGatewaysGet**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#v1environmentsenvidgatewaysget) | **GET** /v1/environments/{envID}/gateways | READ All Gateways
-*ManagementAPIsGatewayManagementGatewaysApi* | [**v1EnvironmentsEnvIDGatewaysPost**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#v1environmentsenvidgatewayspost) | **POST** /v1/environments/{envID}/gateways | CREATE Ping Federate Gateway
+*ManagementAPIsGatewayManagementGatewayCredentialsApi* | [**createGatewayCredential**](docs/ManagementAPIsGatewayManagementGatewayCredentialsApi.md#creategatewaycredential) | **POST** /v1/environments/{envID}/gateways/{gatewayID}/credentials | CREATE Gateway Credentials
+*ManagementAPIsGatewayManagementGatewayCredentialsApi* | [**deleteGatewayCredential**](docs/ManagementAPIsGatewayManagementGatewayCredentialsApi.md#deletegatewaycredential) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID}/credentials/{credentialID} | DELETE Gateway Credentials
+*ManagementAPIsGatewayManagementGatewayInstancesApi* | [**readAllGatewayInstances**](docs/ManagementAPIsGatewayManagementGatewayInstancesApi.md#readallgatewayinstances) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances | READ All Gateway Instances
+*ManagementAPIsGatewayManagementGatewayInstancesApi* | [**readOneGatewayInstance**](docs/ManagementAPIsGatewayManagementGatewayInstancesApi.md#readonegatewayinstance) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances/{instanceID} | READ One Gateway Instance
+*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**createGatewayRoleAssignment**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#creategatewayroleassignment) | **POST** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments | CREATE Gateway Role Assignments
+*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**deleteGatewayRoleAssignment**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#deletegatewayroleassignment) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentID} | DELETE Gateway Role Assignment
+*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**readGatewayRoleAssignments**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#readgatewayroleassignments) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments | READ Gateway Role Assignments
+*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**readOneGatewayRoleAssignment**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#readonegatewayroleassignment) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentID} | READ One Gateway Role Assignment
+*ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi* | [**updateGatewayRoleAssignment**](docs/ManagementAPIsGatewayManagementGatewayRoleAssignmentsApi.md#updategatewayroleassignment) | **PUT** /v1/environments/{envID}/gateways/{gatewayID}/roleAssignments/{gatewayRoleAssignmentID} | UPDATE Gateway Role Assignments
+*ManagementAPIsGatewayManagementGatewaysApi* | [**createGateway**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#creategateway) | **POST** /v1/environments/{envID}/gateways | CREATE Gateway
+*ManagementAPIsGatewayManagementGatewaysApi* | [**deleteGateway**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#deletegateway) | **DELETE** /v1/environments/{envID}/gateways/{gatewayID} | DELETE Gateway
+*ManagementAPIsGatewayManagementGatewaysApi* | [**readAllGateways**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#readallgateways) | **GET** /v1/environments/{envID}/gateways | READ All Gateways
+*ManagementAPIsGatewayManagementGatewaysApi* | [**readOneGateway**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#readonegateway) | **GET** /v1/environments/{envID}/gateways/{gatewayID} | READ One Gateway
+*ManagementAPIsGatewayManagementGatewaysApi* | [**updateGateway**](docs/ManagementAPIsGatewayManagementGatewaysApi.md#updategateway) | **PUT** /v1/environments/{envID}/gateways/{gatewayID} | UPDATE Gateway
 *ManagementAPIsGroupsApi* | [**createGroup**](docs/ManagementAPIsGroupsApi.md#creategroup) | **POST** /v1/environments/{envID}/groups | CREATE Group
 *ManagementAPIsGroupsApi* | [**deleteGroup**](docs/ManagementAPIsGroupsApi.md#deletegroup) | **DELETE** /v1/environments/{envID}/groups/{groupID} | DELETE Group
 *ManagementAPIsGroupsApi* | [**readAllGroups**](docs/ManagementAPIsGroupsApi.md#readallgroups) | **GET** /v1/environments/{envID}/groups | READ All Groups
@@ -468,6 +468,19 @@ Class | Method | HTTP request | Description
  - [Environment](docs/Environment.md)
  - [EnvironmentLicense](docs/EnvironmentLicense.md)
  - [EnvironmentOrganization](docs/EnvironmentOrganization.md)
+ - [Gateway](docs/Gateway.md)
+ - [GatewayCredential](docs/GatewayCredential.md)
+ - [GatewayInstance](docs/GatewayInstance.md)
+ - [GatewayInstanceCredential](docs/GatewayInstanceCredential.md)
+ - [GatewayInstanceGateway](docs/GatewayInstanceGateway.md)
+ - [GatewayInstanceVersion](docs/GatewayInstanceVersion.md)
+ - [GatewayLDAP](docs/GatewayLDAP.md)
+ - [GatewayLDAPAllOf](docs/GatewayLDAPAllOf.md)
+ - [GatewayLDAPAllOfNewUserLookup](docs/GatewayLDAPAllOfNewUserLookup.md)
+ - [GatewayLDAPAllOfNewUserLookupAttributeMappings](docs/GatewayLDAPAllOfNewUserLookupAttributeMappings.md)
+ - [GatewayLDAPAllOfNewUserLookupPopulation](docs/GatewayLDAPAllOfNewUserLookupPopulation.md)
+ - [GatewayLDAPAllOfUserTypes](docs/GatewayLDAPAllOfUserTypes.md)
+ - [GatewaySupportedVersions](docs/GatewaySupportedVersions.md)
  - [Group](docs/Group.md)
  - [GroupDirectMemberCounts](docs/GroupDirectMemberCounts.md)
  - [GroupMembership](docs/GroupMembership.md)

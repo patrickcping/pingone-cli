@@ -4,12 +4,12 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet**](ManagementAPIsGatewayManagementGatewayInstancesApi.md#v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances | READ All Gateway Instances
-[**v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet**](ManagementAPIsGatewayManagementGatewayInstancesApi.md#v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances/{instanceID} | READ One Gateway Instance
+[**readAllGatewayInstances**](ManagementAPIsGatewayManagementGatewayInstancesApi.md#readAllGatewayInstances) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances | READ All Gateway Instances
+[**readOneGatewayInstance**](ManagementAPIsGatewayManagementGatewayInstancesApi.md#readOneGatewayInstance) | **GET** /v1/environments/{envID}/gateways/{gatewayID}/instances/{instanceID} | READ One Gateway Instance
 
 
 
-## v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet
+## readAllGatewayInstances
 
 READ All Gateway Instances
 
@@ -18,7 +18,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDInstancesGet envID=value gatewayID=value
+pingone-cli readAllGatewayInstances envID=value gatewayID=value
 ```
 
 ### Parameters
@@ -31,7 +31,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EntityArray**](EntityArray.md)
 
 ### Authorization
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet
+## readOneGatewayInstance
 
 READ One Gateway Instance
 
@@ -54,7 +54,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDGatewaysGatewayIDInstancesInstanceIDGet envID=value gatewayID=value instanceID=value
+pingone-cli readOneGatewayInstance envID=value gatewayID=value instanceID=value
 ```
 
 ### Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**GatewayInstance**](GatewayInstance.md)
 
 ### Authorization
 

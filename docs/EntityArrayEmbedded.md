@@ -5,7 +5,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **attributes** | [**array[OneOf&lt;ApplicationAttributeMapping,SchemaAttribute,ResourceAttribute&gt;]**](OneOf&lt;ApplicationAttributeMapping,SchemaAttribute,ResourceAttribute&gt;.md) |  | [optional] [default to null]
 **applications** | [**array[AnyOf&lt;ApplicationSAML,ApplicationOIDC&gt;]**](AnyOf&lt;ApplicationSAML,ApplicationOIDC&gt;.md) |  | [optional] [default to null]
+**credentials** | [**array[GatewayCredential]**](GatewayCredential.md) |  | [optional] [default to null]
 **environments** | [**array[Environment]**](Environment.md) |  | [optional] [default to null]
+**gatewayInstances** | [**array[GatewayInstance]**](GatewayInstance.md) |  | [optional] [default to null]
+**gateways** | [**array[AnyOf&lt;Gateway,GatewayLDAP&gt;]**](AnyOf&lt;Gateway,GatewayLDAP&gt;.md) |  | [optional] [default to null]
 **grants** | [**array[ApplicationResourceGrant]**](ApplicationResourceGrant.md) |  | [optional] [default to null]
 **groups** | [**array[Group]**](Group.md) |  | [optional] [default to null]
 **groupMemberships** | [**array[GroupMembership]**](GroupMembership.md) |  | [optional] [default to null]
