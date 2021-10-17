@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**contains** | **string** |  | [optional] [default to null]
+**ipRange** | **array[string]** |  | [optional] [default to null]
 **value** | **string** |  | [optional] [default to null]
 **equals** | [**OneOf&lt;string,boolean&gt;**](OneOf&lt;string,boolean&gt;.md) |  | [optional] [default to null]
 **aggregatedWeights** | [**array[RiskPolicySetConditionAggregatedWeights]**](RiskPolicySetConditionAggregatedWeights.md) |  | [optional] [default to null]
