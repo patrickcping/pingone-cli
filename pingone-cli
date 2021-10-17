@@ -168,22 +168,22 @@ operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::en
 operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::appID"]=1
 operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::attrMappingID"]=1
 operation_parameters_minimum_occurrences["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::pushCredID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::Authorization"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::pushCredID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::appID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=0
+operation_parameters_minimum_occurrences["createMFAPushCredential:::envID"]=1
+operation_parameters_minimum_occurrences["createMFAPushCredential:::appID"]=1
+operation_parameters_minimum_occurrences["createMFAPushCredential:::UNKNOWN_BASE_TYPE"]=0
+operation_parameters_minimum_occurrences["deleteMFAPushCredential:::envID"]=1
+operation_parameters_minimum_occurrences["deleteMFAPushCredential:::appID"]=1
+operation_parameters_minimum_occurrences["deleteMFAPushCredential:::pushCredID"]=1
+operation_parameters_minimum_occurrences["deleteMFAPushCredential:::Authorization"]=0
+operation_parameters_minimum_occurrences["readAllMFAPushCredentials:::envID"]=1
+operation_parameters_minimum_occurrences["readAllMFAPushCredentials:::appID"]=1
+operation_parameters_minimum_occurrences["readOneMFAPushCredential:::envID"]=1
+operation_parameters_minimum_occurrences["readOneMFAPushCredential:::appID"]=1
+operation_parameters_minimum_occurrences["readOneMFAPushCredential:::pushCredID"]=1
+operation_parameters_minimum_occurrences["updateMFAPushCredential:::envID"]=1
+operation_parameters_minimum_occurrences["updateMFAPushCredential:::appID"]=1
+operation_parameters_minimum_occurrences["updateMFAPushCredential:::pushCredID"]=1
+operation_parameters_minimum_occurrences["updateMFAPushCredential:::UNKNOWN_BASE_TYPE"]=0
 operation_parameters_minimum_occurrences["createApplicationGrant:::envID"]=1
 operation_parameters_minimum_occurrences["createApplicationGrant:::appID"]=1
 operation_parameters_minimum_occurrences["createApplicationGrant:::ApplicationResourceGrant"]=0
@@ -500,13 +500,14 @@ operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIdentityProvidersPr
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::providerID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::body"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesImgIDDelete:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesImgIDDelete:::imgID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesImgIDGet:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesImgIDGet:::imgID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesPost:::envID"]=1
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesPost:::Content-Type"]=0
-operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDImagesPost:::Content-Disposition"]=0
+operation_parameters_minimum_occurrences["createImage:::envID"]=1
+operation_parameters_minimum_occurrences["createImage:::Content-Type"]=0
+operation_parameters_minimum_occurrences["createImage:::Content-Disposition"]=0
+operation_parameters_minimum_occurrences["createImage:::body"]=0
+operation_parameters_minimum_occurrences["deleteImage:::envID"]=1
+operation_parameters_minimum_occurrences["deleteImage:::imgID"]=1
+operation_parameters_minimum_occurrences["readImage:::envID"]=1
+operation_parameters_minimum_occurrences["readImage:::imgID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIntegrationsGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet:::envID"]=1
 operation_parameters_minimum_occurrences["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet:::integrationID"]=1
@@ -1011,22 +1012,22 @@ operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::en
 operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::appID"]=0
 operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::attrMappingID"]=0
 operation_parameters_maximum_occurrences["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::pushCredID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::Authorization"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::pushCredID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::appID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=0
+operation_parameters_maximum_occurrences["createMFAPushCredential:::envID"]=0
+operation_parameters_maximum_occurrences["createMFAPushCredential:::appID"]=0
+operation_parameters_maximum_occurrences["createMFAPushCredential:::UNKNOWN_BASE_TYPE"]=0
+operation_parameters_maximum_occurrences["deleteMFAPushCredential:::envID"]=0
+operation_parameters_maximum_occurrences["deleteMFAPushCredential:::appID"]=0
+operation_parameters_maximum_occurrences["deleteMFAPushCredential:::pushCredID"]=0
+operation_parameters_maximum_occurrences["deleteMFAPushCredential:::Authorization"]=0
+operation_parameters_maximum_occurrences["readAllMFAPushCredentials:::envID"]=0
+operation_parameters_maximum_occurrences["readAllMFAPushCredentials:::appID"]=0
+operation_parameters_maximum_occurrences["readOneMFAPushCredential:::envID"]=0
+operation_parameters_maximum_occurrences["readOneMFAPushCredential:::appID"]=0
+operation_parameters_maximum_occurrences["readOneMFAPushCredential:::pushCredID"]=0
+operation_parameters_maximum_occurrences["updateMFAPushCredential:::envID"]=0
+operation_parameters_maximum_occurrences["updateMFAPushCredential:::appID"]=0
+operation_parameters_maximum_occurrences["updateMFAPushCredential:::pushCredID"]=0
+operation_parameters_maximum_occurrences["updateMFAPushCredential:::UNKNOWN_BASE_TYPE"]=0
 operation_parameters_maximum_occurrences["createApplicationGrant:::envID"]=0
 operation_parameters_maximum_occurrences["createApplicationGrant:::appID"]=0
 operation_parameters_maximum_occurrences["createApplicationGrant:::ApplicationResourceGrant"]=0
@@ -1343,13 +1344,14 @@ operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIdentityProvidersPr
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::providerID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::body"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesImgIDDelete:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesImgIDDelete:::imgID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesImgIDGet:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesImgIDGet:::imgID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesPost:::envID"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesPost:::Content-Type"]=0
-operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDImagesPost:::Content-Disposition"]=0
+operation_parameters_maximum_occurrences["createImage:::envID"]=0
+operation_parameters_maximum_occurrences["createImage:::Content-Type"]=0
+operation_parameters_maximum_occurrences["createImage:::Content-Disposition"]=0
+operation_parameters_maximum_occurrences["createImage:::body"]=0
+operation_parameters_maximum_occurrences["deleteImage:::envID"]=0
+operation_parameters_maximum_occurrences["deleteImage:::imgID"]=0
+operation_parameters_maximum_occurrences["readImage:::envID"]=0
+operation_parameters_maximum_occurrences["readImage:::imgID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIntegrationsGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet:::envID"]=0
 operation_parameters_maximum_occurrences["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet:::integrationID"]=0
@@ -1851,22 +1853,22 @@ operation_parameters_collection_type["updateApplicationAttributeMapping:::envID"
 operation_parameters_collection_type["updateApplicationAttributeMapping:::appID"]=""
 operation_parameters_collection_type["updateApplicationAttributeMapping:::attrMappingID"]=""
 operation_parameters_collection_type["updateApplicationAttributeMapping:::ApplicationAttributeMapping"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::pushCredID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete:::Authorization"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet:::pushCredID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::appID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::pushCredID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut:::body"]=""
+operation_parameters_collection_type["createMFAPushCredential:::envID"]=""
+operation_parameters_collection_type["createMFAPushCredential:::appID"]=""
+operation_parameters_collection_type["createMFAPushCredential:::UNKNOWN_BASE_TYPE"]=""
+operation_parameters_collection_type["deleteMFAPushCredential:::envID"]=""
+operation_parameters_collection_type["deleteMFAPushCredential:::appID"]=""
+operation_parameters_collection_type["deleteMFAPushCredential:::pushCredID"]=""
+operation_parameters_collection_type["deleteMFAPushCredential:::Authorization"]=""
+operation_parameters_collection_type["readAllMFAPushCredentials:::envID"]=""
+operation_parameters_collection_type["readAllMFAPushCredentials:::appID"]=""
+operation_parameters_collection_type["readOneMFAPushCredential:::envID"]=""
+operation_parameters_collection_type["readOneMFAPushCredential:::appID"]=""
+operation_parameters_collection_type["readOneMFAPushCredential:::pushCredID"]=""
+operation_parameters_collection_type["updateMFAPushCredential:::envID"]=""
+operation_parameters_collection_type["updateMFAPushCredential:::appID"]=""
+operation_parameters_collection_type["updateMFAPushCredential:::pushCredID"]=""
+operation_parameters_collection_type["updateMFAPushCredential:::UNKNOWN_BASE_TYPE"]=""
 operation_parameters_collection_type["createApplicationGrant:::envID"]=""
 operation_parameters_collection_type["createApplicationGrant:::appID"]=""
 operation_parameters_collection_type["createApplicationGrant:::ApplicationResourceGrant"]=""
@@ -2183,13 +2185,14 @@ operation_parameters_collection_type["v1EnvironmentsEnvIDIdentityProvidersProvid
 operation_parameters_collection_type["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::providerID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut:::body"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesImgIDDelete:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesImgIDDelete:::imgID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesImgIDGet:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesImgIDGet:::imgID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesPost:::envID"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesPost:::Content-Type"]=""
-operation_parameters_collection_type["v1EnvironmentsEnvIDImagesPost:::Content-Disposition"]=""
+operation_parameters_collection_type["createImage:::envID"]=""
+operation_parameters_collection_type["createImage:::Content-Type"]=""
+operation_parameters_collection_type["createImage:::Content-Disposition"]=""
+operation_parameters_collection_type["createImage:::body"]=""
+operation_parameters_collection_type["deleteImage:::envID"]=""
+operation_parameters_collection_type["deleteImage:::imgID"]=""
+operation_parameters_collection_type["readImage:::envID"]=""
+operation_parameters_collection_type["readImage:::imgID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDIntegrationsGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet:::envID"]=""
 operation_parameters_collection_type["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet:::integrationID"]=""
@@ -3035,11 +3038,11 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsApplicationsApplicationMFAPushCredentials]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet${OFF};READ All MFA Push Credentials (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost${OFF};CREATE MFA Push Credential (FCM) (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete${OFF};DELETE MFA Push Credential (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet${OFF};READ One MFA Push Credential (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut${OFF};UPDATE MFA Push Credential (AUTH)
+  ${CYAN}createMFAPushCredential${OFF};CREATE MFA Push Credential (AUTH)
+  ${CYAN}deleteMFAPushCredential${OFF};DELETE MFA Push Credential (AUTH)
+  ${CYAN}readAllMFAPushCredentials${OFF};READ All MFA Push Credentials (AUTH)
+  ${CYAN}readOneMFAPushCredential${OFF};READ One MFA Push Credential (AUTH)
+  ${CYAN}updateMFAPushCredential${OFF};UPDATE MFA Push Credential (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3311,9 +3314,9 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[managementAPIsImages]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}v1EnvironmentsEnvIDImagesImgIDDelete${OFF};DELETE Image (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDImagesImgIDGet${OFF};READ Image (AUTH)
-  ${CYAN}v1EnvironmentsEnvIDImagesPost${OFF};CREATE Image (AUTH)
+  ${CYAN}createImage${OFF};CREATE Image (AUTH)
+  ${CYAN}deleteImage${OFF};DELETE Image (AUTH)
+  ${CYAN}readImage${OFF};READ Image (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4331,33 +4334,12 @@ print_updateApplicationAttributeMapping_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet operation
+# Print help for createMFAPushCredential operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet_help() {
+print_createMFAPushCredential_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet - READ All MFA Push Credentials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost - CREATE MFA Push Credential (FCM)${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createMFAPushCredential - CREATE MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4375,12 +4357,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete operation
+# Print help for deleteMFAPushCredential operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete_help() {
+print_deleteMFAPushCredential_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete - DELETE MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteMFAPushCredential - DELETE MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4398,12 +4380,33 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete_help()
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet operation
+# Print help for readAllMFAPushCredentials operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet_help() {
+print_readAllMFAPushCredentials_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet - READ One MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readAllMFAPushCredentials - READ All MFA Push Credentials${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for readOneMFAPushCredential operation
+#
+##############################################################################
+print_readOneMFAPushCredential_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}readOneMFAPushCredential - READ One MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -4420,12 +4423,12 @@ print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut operation
+# Print help for updateMFAPushCredential operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut_help() {
+print_updateMFAPushCredential_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut - UPDATE MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateMFAPushCredential - UPDATE MFA Push Credential${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7207,12 +7210,36 @@ print_v1EnvironmentsEnvIDIdentityProvidersProviderIDPut_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDImagesImgIDDelete operation
+# Print help for createImage operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDImagesImgIDDelete_help() {
+print_createImage_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDImagesImgIDDelete - DELETE Image${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createImage - CREATE Image${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}Content-Disposition${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Disposition:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[image/*]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteImage operation
+#
+##############################################################################
+print_deleteImage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteImage - DELETE Image${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7228,12 +7255,12 @@ print_v1EnvironmentsEnvIDImagesImgIDDelete_help() {
 }
 ##############################################################################
 #
-# Print help for v1EnvironmentsEnvIDImagesImgIDGet operation
+# Print help for readImage operation
 #
 ##############################################################################
-print_v1EnvironmentsEnvIDImagesImgIDGet_help() {
+print_readImage_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDImagesImgIDGet - READ Image${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}readImage - READ Image${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7246,28 +7273,6 @@ print_v1EnvironmentsEnvIDImagesImgIDGet_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for v1EnvironmentsEnvIDImagesPost operation
-#
-##############################################################################
-print_v1EnvironmentsEnvIDImagesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}v1EnvironmentsEnvIDImagesPost - CREATE Image${OFF}${BLUE}(AUTH - BASIC)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}envID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: envID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Type${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Type:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}Content-Disposition${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: Content-Disposition:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorised${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Successful response${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -12346,46 +12351,10 @@ call_updateApplicationAttributeMapping() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet operation
+# Call createMFAPushCredential operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID appID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/pushCredentials" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost() {
+call_createMFAPushCredential() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID)
@@ -12460,10 +12429,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete operation
+# Call deleteMFAPushCredential operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete() {
+call_deleteMFAPushCredential() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID pushCredID)
@@ -12496,10 +12465,46 @@ call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet operation
+# Call readAllMFAPushCredentials operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet() {
+call_readAllMFAPushCredentials() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID appID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/applications/{appID}/pushCredentials" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call readOneMFAPushCredential operation
+#
+##############################################################################
+call_readOneMFAPushCredential() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID pushCredID)
@@ -12532,10 +12537,10 @@ call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut operation
+# Call updateMFAPushCredential operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut() {
+call_updateMFAPushCredential() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID appID pushCredID)
@@ -19120,10 +19125,88 @@ call_v1EnvironmentsEnvIDIdentityProvidersProviderIDPut() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDImagesImgIDDelete operation
+# Call createImage operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDImagesImgIDDelete() {
+call_createImage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(envID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(  )
+    local path
+
+    if ! path=$(build_request_path "/v1/environments/{envID}/images" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="image/*"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- image/*"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteImage operation
+#
+##############################################################################
+call_deleteImage() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID imgID)
@@ -19156,10 +19239,10 @@ call_v1EnvironmentsEnvIDImagesImgIDDelete() {
 
 ##############################################################################
 #
-# Call v1EnvironmentsEnvIDImagesImgIDGet operation
+# Call readImage operation
 #
 ##############################################################################
-call_v1EnvironmentsEnvIDImagesImgIDGet() {
+call_readImage() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(envID imgID)
@@ -19173,42 +19256,6 @@ call_v1EnvironmentsEnvIDImagesImgIDGet() {
         exit 1
     fi
     local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call v1EnvironmentsEnvIDImagesPost operation
-#
-##############################################################################
-call_v1EnvironmentsEnvIDImagesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(envID)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(  )
-    local path
-
-    if ! path=$(build_request_path "/v1/environments/{envID}/images" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -27987,20 +28034,20 @@ case $key in
     updateApplicationAttributeMapping)
     operation="updateApplicationAttributeMapping"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"
+    createMFAPushCredential)
+    operation="createMFAPushCredential"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"
+    deleteMFAPushCredential)
+    operation="deleteMFAPushCredential"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"
+    readAllMFAPushCredentials)
+    operation="readAllMFAPushCredentials"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"
+    readOneMFAPushCredential)
+    operation="readOneMFAPushCredential"
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
-    operation="v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"
+    updateMFAPushCredential)
+    operation="updateMFAPushCredential"
     ;;
     createApplicationGrant)
     operation="createApplicationGrant"
@@ -28380,14 +28427,14 @@ case $key in
     v1EnvironmentsEnvIDIdentityProvidersProviderIDPut)
     operation="v1EnvironmentsEnvIDIdentityProvidersProviderIDPut"
     ;;
-    v1EnvironmentsEnvIDImagesImgIDDelete)
-    operation="v1EnvironmentsEnvIDImagesImgIDDelete"
+    createImage)
+    operation="createImage"
     ;;
-    v1EnvironmentsEnvIDImagesImgIDGet)
-    operation="v1EnvironmentsEnvIDImagesImgIDGet"
+    deleteImage)
+    operation="deleteImage"
     ;;
-    v1EnvironmentsEnvIDImagesPost)
-    operation="v1EnvironmentsEnvIDImagesPost"
+    readImage)
+    operation="readImage"
     ;;
     v1EnvironmentsEnvIDIntegrationsGet)
     operation="v1EnvironmentsEnvIDIntegrationsGet"
@@ -29060,20 +29107,20 @@ case $operation in
     updateApplicationAttributeMapping)
     call_updateApplicationAttributeMapping
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet
+    createMFAPushCredential)
+    call_createMFAPushCredential
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost)
-    call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost
+    deleteMFAPushCredential)
+    call_deleteMFAPushCredential
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete)
-    call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete
+    readAllMFAPushCredentials)
+    call_readAllMFAPushCredentials
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet)
-    call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet
+    readOneMFAPushCredential)
+    call_readOneMFAPushCredential
     ;;
-    v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
-    call_v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut
+    updateMFAPushCredential)
+    call_updateMFAPushCredential
     ;;
     createApplicationGrant)
     call_createApplicationGrant
@@ -29453,14 +29500,14 @@ case $operation in
     v1EnvironmentsEnvIDIdentityProvidersProviderIDPut)
     call_v1EnvironmentsEnvIDIdentityProvidersProviderIDPut
     ;;
-    v1EnvironmentsEnvIDImagesImgIDDelete)
-    call_v1EnvironmentsEnvIDImagesImgIDDelete
+    createImage)
+    call_createImage
     ;;
-    v1EnvironmentsEnvIDImagesImgIDGet)
-    call_v1EnvironmentsEnvIDImagesImgIDGet
+    deleteImage)
+    call_deleteImage
     ;;
-    v1EnvironmentsEnvIDImagesPost)
-    call_v1EnvironmentsEnvIDImagesPost
+    readImage)
+    call_readImage
     ;;
     v1EnvironmentsEnvIDIntegrationsGet)
     call_v1EnvironmentsEnvIDIntegrationsGet

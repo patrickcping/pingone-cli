@@ -4,24 +4,24 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet) | **GET** /v1/environments/{envID}/applications/{appID}/pushCredentials | READ All MFA Push Credentials
-[**v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost) | **POST** /v1/environments/{envID}/applications/{appID}/pushCredentials | CREATE MFA Push Credential (FCM)
-[**v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete) | **DELETE** /v1/environments/{envID}/applications/{appID}/pushCredentials/{pushCredID} | DELETE MFA Push Credential
-[**v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet) | **GET** /v1/environments/{envID}/applications/{appID}/pushCredentials/{pushCredID} | READ One MFA Push Credential
-[**v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut) | **PUT** /v1/environments/{envID}/applications/{appID}/pushCredentials/{pushCredID} | UPDATE MFA Push Credential
+[**createMFAPushCredential**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#createMFAPushCredential) | **POST** /v1/environments/{envID}/applications/{appID}/pushCredentials | CREATE MFA Push Credential
+[**deleteMFAPushCredential**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#deleteMFAPushCredential) | **DELETE** /v1/environments/{envID}/applications/{appID}/pushCredentials/{pushCredID} | DELETE MFA Push Credential
+[**readAllMFAPushCredentials**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#readAllMFAPushCredentials) | **GET** /v1/environments/{envID}/applications/{appID}/pushCredentials | READ All MFA Push Credentials
+[**readOneMFAPushCredential**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#readOneMFAPushCredential) | **GET** /v1/environments/{envID}/applications/{appID}/pushCredentials/{pushCredID} | READ One MFA Push Credential
+[**updateMFAPushCredential**](ManagementAPIsApplicationsApplicationMFAPushCredentialsApi.md#updateMFAPushCredential) | **PUT** /v1/environments/{envID}/applications/{appID}/pushCredentials/{pushCredID} | UPDATE MFA Push Credential
 
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet
+## createMFAPushCredential
 
-READ All MFA Push Credentials
+CREATE MFA Push Credential
 
 By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
 
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet envID=value appID=value
+pingone-cli createMFAPushCredential envID=value appID=value
 ```
 
 ### Parameters
@@ -31,47 +31,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
+ **uNKNOWNBASETYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost
-
-CREATE MFA Push Credential (FCM)
-
-By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
-
-### Example
-
-```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost envID=value appID=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **envID** | **string** |  | [default to null]
- **appID** | **string** |  | [default to null]
- **body** | **map** |  | [optional]
-
-### Return type
-
-(empty response body)
+[**OneOf<MFAPushCredentialAPNS,MFAPushCredential>**](OneOf&lt;MFAPushCredentialAPNS,MFAPushCredential&gt;.md)
 
 ### Authorization
 
@@ -85,7 +49,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete
+## deleteMFAPushCredential
 
 DELETE MFA Push Credential
 
@@ -94,7 +58,7 @@ By design, PingOne requests solely comprise this collection. For complete docume
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete envID=value appID=value pushCredID=value Authorization:value
+pingone-cli deleteMFAPushCredential envID=value appID=value pushCredID=value Authorization:value
 ```
 
 ### Parameters
@@ -123,16 +87,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet
+## readAllMFAPushCredentials
 
-READ One MFA Push Credential
+READ All MFA Push Credentials
 
 By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
 
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet envID=value appID=value pushCredID=value
+pingone-cli readAllMFAPushCredentials envID=value appID=value
 ```
 
 ### Parameters
@@ -142,11 +106,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
- **pushCredID** | **string** |  | [default to null]
 
 ### Return type
 
-(empty response body)
+[**EntityArray**](EntityArray.md)
 
 ### Authorization
 
@@ -160,16 +123,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut
+## readOneMFAPushCredential
 
-UPDATE MFA Push Credential
+READ One MFA Push Credential
 
 By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
 
 ### Example
 
 ```bash
-pingone-cli v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut envID=value appID=value pushCredID=value
+pingone-cli readOneMFAPushCredential envID=value appID=value pushCredID=value
 ```
 
 ### Parameters
@@ -180,11 +143,48 @@ Name | Type | Description  | Notes
  **envID** | **string** |  | [default to null]
  **appID** | **string** |  | [default to null]
  **pushCredID** | **string** |  | [default to null]
- **body** | **map** |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**OneOf<MFAPushCredentialAPNS,MFAPushCredential>**](OneOf&lt;MFAPushCredentialAPNS,MFAPushCredential&gt;.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateMFAPushCredential
+
+UPDATE MFA Push Credential
+
+By design, PingOne requests solely comprise this collection. For complete documentation, direct a browser to <a href='https://apidocs.pingidentity.com/pingone/platform/v1/api/'>apidocs.pingidentity.com</a>.
+
+### Example
+
+```bash
+pingone-cli updateMFAPushCredential envID=value appID=value pushCredID=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **envID** | **string** |  | [default to null]
+ **appID** | **string** |  | [default to null]
+ **pushCredID** | **string** |  | [default to null]
+ **uNKNOWNBASETYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional]
+
+### Return type
+
+[**OneOf<MFAPushCredentialAPNS,MFAPushCredential>**](OneOf&lt;MFAPushCredentialAPNS,MFAPushCredential&gt;.md)
 
 ### Authorization
 

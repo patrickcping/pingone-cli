@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **groups** | [**array[Group]**](Group.md) |  | [optional] [default to null]
 **groupMemberships** | [**array[GroupMembership]**](GroupMembership.md) |  | [optional] [default to null]
 **populations** | [**array[Population]**](Population.md) |  | [optional] [default to null]
+**pushCredentials** | [**array[AnyOf&lt;MFAPushCredentialAPNS,MFAPushCredential&gt;]**](AnyOf&lt;MFAPushCredentialAPNS,MFAPushCredential&gt;.md) |  | [optional] [default to null]
 **resources** | [**array[Resource]**](Resource.md) |  | [optional] [default to null]
 **scopes** | [**array[ResourceScope]**](ResourceScope.md) |  | [optional] [default to null]
 **riskPolicySets** | [**array[RiskPolicySet]**](RiskPolicySet.md) |  | [optional] [default to null]

@@ -316,11 +316,11 @@ case $state in
             "deleteApplicationAttributeMapping[DELETE Application Attribute Mapping]" \
             "readAllApplicationAttributeMappings[READ All Application Attribute Mappings]" \
             "readOneApplicationAttributeMapping[READ One Application Attribute Mapping]" \
-            "updateApplicationAttributeMapping[UPDATE Application Attribute Mapping]"             "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet[READ All MFA Push Credentials]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost[CREATE MFA Push Credential (FCM)]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete[DELETE MFA Push Credential]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet[READ One MFA Push Credential]" \
-            "v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut[UPDATE MFA Push Credential]"             "createApplicationGrant[CREATE Grant]" \
+            "updateApplicationAttributeMapping[UPDATE Application Attribute Mapping]"             "createMFAPushCredential[CREATE MFA Push Credential]" \
+            "deleteMFAPushCredential[DELETE MFA Push Credential]" \
+            "readAllMFAPushCredentials[READ All MFA Push Credentials]" \
+            "readOneMFAPushCredential[READ One MFA Push Credential]" \
+            "updateMFAPushCredential[UPDATE MFA Push Credential]"             "createApplicationGrant[CREATE Grant]" \
             "deleteApplicationGrant[DELETE Grant]" \
             "readAllApplicationGrants[READ All Grants for an Application]" \
             "readOneApplicationGrant[READ One Grant for an Application]" \
@@ -418,9 +418,9 @@ case $state in
             "v1EnvironmentsEnvIDIdentityProvidersPost[Discover OpenID Provider Metadata]" \
             "v1EnvironmentsEnvIDIdentityProvidersProviderIDDelete[DELETE Identity Provider]" \
             "v1EnvironmentsEnvIDIdentityProvidersProviderIDGet[READ One Identity Provider]" \
-            "v1EnvironmentsEnvIDIdentityProvidersProviderIDPut[UPDATE Identity Provider]"             "v1EnvironmentsEnvIDImagesImgIDDelete[DELETE Image]" \
-            "v1EnvironmentsEnvIDImagesImgIDGet[READ Image]" \
-            "v1EnvironmentsEnvIDImagesPost[CREATE Image]"             "v1EnvironmentsEnvIDIntegrationsGet[READ Integration Metadata]" \
+            "v1EnvironmentsEnvIDIdentityProvidersProviderIDPut[UPDATE Identity Provider]"             "createImage[CREATE Image]" \
+            "deleteImage[DELETE Image]" \
+            "readImage[READ Image]"             "v1EnvironmentsEnvIDIntegrationsGet[READ Integration Metadata]" \
             "v1EnvironmentsEnvIDIntegrationsIntegrationIDGet[READ One Integration Metadata]" \
             "v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsGet[READ Integration Version Metadata]" \
             "v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsIntegrationVersionIDAssetGet[READ Integration Version Asset Download]" \
@@ -779,7 +779,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet)
+      createMFAPushCredential)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -787,15 +787,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"appID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete)
+      deleteMFAPushCredential)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -805,7 +797,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet)
+      readAllMFAPushCredentials)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"appID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readOneMFAPushCredential)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -814,7 +814,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut)
+      updateMFAPushCredential)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
@@ -1844,29 +1844,29 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      v1EnvironmentsEnvIDImagesImgIDDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"imgID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDImagesImgIDGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "envID=:[PATH] "
-"imgID=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      v1EnvironmentsEnvIDImagesPost)
+      createImage)
         local -a _op_arguments
         _op_arguments=(
           "envID=:[PATH] "
                     "Content-Type\::[HEADER] "
 "Content-Disposition\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteImage)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"imgID=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      readImage)
+        local -a _op_arguments
+        _op_arguments=(
+          "envID=:[PATH] "
+"imgID=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       v1EnvironmentsEnvIDIntegrationsGet)

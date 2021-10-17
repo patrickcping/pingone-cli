@@ -51,8 +51,13 @@ docs/GroupDirectMemberCounts.md
 docs/GroupMembership.md
 docs/GroupPopulation.md
 docs/GroupTotalMemberCounts.md
+docs/Image.md
+docs/ImageTargets.md
 docs/InlineObject2.md
 docs/InlineObject3.md
+docs/MFAPushCredential.md
+docs/MFAPushCredentialAPNS.md
+docs/MFAPushCredentialAPNSAllOf.md
 docs/ManagementAPIsActiveIdentityCountsApi.md
 docs/ManagementAPIsAgreementManagementAgreementLanguagesResourcesApi.md
 docs/ManagementAPIsAgreementManagementAgreementRevisionsResourcesApi.md

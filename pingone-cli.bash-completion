@@ -94,11 +94,11 @@ _pingone-cli()
     operations["readAllApplicationAttributeMappings"]=1
     operations["readOneApplicationAttributeMapping"]=1
     operations["updateApplicationAttributeMapping"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"]=1
-    operations["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"]=1
+    operations["createMFAPushCredential"]=1
+    operations["deleteMFAPushCredential"]=1
+    operations["readAllMFAPushCredentials"]=1
+    operations["readOneMFAPushCredential"]=1
+    operations["updateMFAPushCredential"]=1
     operations["createApplicationGrant"]=1
     operations["deleteApplicationGrant"]=1
     operations["readAllApplicationGrants"]=1
@@ -225,9 +225,9 @@ _pingone-cli()
     operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDDelete"]=1
     operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDGet"]=1
     operations["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut"]=1
-    operations["v1EnvironmentsEnvIDImagesImgIDDelete"]=1
-    operations["v1EnvironmentsEnvIDImagesImgIDGet"]=1
-    operations["v1EnvironmentsEnvIDImagesPost"]=1
+    operations["createImage"]=1
+    operations["deleteImage"]=1
+    operations["readImage"]=1
     operations["v1EnvironmentsEnvIDIntegrationsGet"]=1
     operations["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet"]=1
     operations["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsGet"]=1
@@ -430,11 +430,11 @@ _pingone-cli()
     operation_parameters["readAllApplicationAttributeMappings"]="envID= appID= "
     operation_parameters["readOneApplicationAttributeMapping"]="envID= appID= attrMappingID= "
     operation_parameters["updateApplicationAttributeMapping"]="envID= appID= attrMappingID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsGet"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPost"]="envID= appID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDDelete"]="envID= appID= pushCredID= Authorization: "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDGet"]="envID= appID= pushCredID= "
-    operation_parameters["v1EnvironmentsEnvIDApplicationsAppIDPushCredentialsPushCredIDPut"]="envID= appID= pushCredID= "
+    operation_parameters["createMFAPushCredential"]="envID= appID= "
+    operation_parameters["deleteMFAPushCredential"]="envID= appID= pushCredID= Authorization: "
+    operation_parameters["readAllMFAPushCredentials"]="envID= appID= "
+    operation_parameters["readOneMFAPushCredential"]="envID= appID= pushCredID= "
+    operation_parameters["updateMFAPushCredential"]="envID= appID= pushCredID= "
     operation_parameters["createApplicationGrant"]="envID= appID= "
     operation_parameters["deleteApplicationGrant"]="envID= appID= grantID= "
     operation_parameters["readAllApplicationGrants"]="envID= appID= "
@@ -561,9 +561,9 @@ _pingone-cli()
     operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDDelete"]="envID= providerID= "
     operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDGet"]="envID= providerID= "
     operation_parameters["v1EnvironmentsEnvIDIdentityProvidersProviderIDPut"]="envID= providerID= "
-    operation_parameters["v1EnvironmentsEnvIDImagesImgIDDelete"]="envID= imgID= "
-    operation_parameters["v1EnvironmentsEnvIDImagesImgIDGet"]="envID= imgID= "
-    operation_parameters["v1EnvironmentsEnvIDImagesPost"]="envID= Content-Type: Content-Disposition: "
+    operation_parameters["createImage"]="envID= Content-Type: Content-Disposition: "
+    operation_parameters["deleteImage"]="envID= imgID= "
+    operation_parameters["readImage"]="envID= imgID= "
     operation_parameters["v1EnvironmentsEnvIDIntegrationsGet"]="envID= "
     operation_parameters["v1EnvironmentsEnvIDIntegrationsIntegrationIDGet"]="envID= integrationID= "
     operation_parameters["v1EnvironmentsEnvIDIntegrationsIntegrationIDVersionsGet"]="envID= integrationID= "
